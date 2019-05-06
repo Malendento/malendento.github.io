@@ -1,20 +1,24 @@
 @media screen and (max-width: 556px) {
     .image-top {
         margin-left: 0px !important;
-        width: 45% !important;
+        width: 100% !important;
     }
-    
+
     #main-text {
         font-size: 30pt !important;
     }
-    
+
     #second-text {
         font-size: 18pt !important;
     }
-    
+
     #third-text {
         font-size: 16pt !important;
-    }    
+    }
+
+    .navabar-image {
+        width: 50% !important;
+    }
 }
 
 html {
