@@ -1,0 +1,194 @@
+@media screen and (max-width: 556px) {
+    .image-top {
+        margin-left: 0px !important;
+    }
+    
+    #main-text {
+        font-size: 30pt !important;
+    }
+    
+    #second-text {
+        font-size: 18pt !important;
+    }
+    
+    #third-text {
+        font-size: 16pt !important;
+    }    
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-div {
+    background-image: url(../img/fancycrave-530798-unsplash.png);
+    background-size: cover;
+}
+
+#main-text {
+    font-family: 'Oswald', sans-serif;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.pt-10 {
+    padding-top: 10vh;
+}
+
+#transparent-background {
+    background: rgba(0, 0, 0, 0.41);
+}
+
+#second-text {
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+#third-text {
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+.pb-15 {
+    padding-bottom: 15vh;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-size: 14pt;
+}
+
+.bg-light {
+    display: flex;
+}
+
+.card-header {
+    padding: 60px 0px;
+    text-align: center;
+    color: #0E76D8;
+}
+
+.card-title {}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    text-align: center;
+    font-weight: 100 !important;
+}
+
+.second-title {
+    font-family: 'Oswald', sans-serif;
+    color: #0E76D8;
+    text-transform: uppercase;
+}
+
+.bg-lgrey {
+    background-color: #FAFAFA
+}
+
+.fa-wrench,
+.fa-desktop,
+.fa-laptop,
+.fa-print,
+.fa-headphones {
+    color: #0E76D8;
+}
+
+h1 {
+    color: #0E76D8;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 38pt;
+}
+
+.h3-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Oswald', sans-serif;
+    color: #242424;
+    font-size: 22pt;
+}
+
+.text-thin {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #8A8A8A;
+}
+
+.bg-lblue {
+    background-color: #0E76D8;
+
+}
+
+.text-footer {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-margin {
+    margin-top: -10px;
+}
+
+.nav-link {
+    color: #242424;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+}
+
+
+.image-top {
+    width: 80%;
+    height: 80%;
+    margin-left: 50px;
+}
+
+.pt-15 {
+    padding-top: 150px;
+}
+
+
+
+.h2-text {
+    font-family: 'Oswald', sans-serif;
+    color: #242424;
+    font-size: 24pt;
+}
+
+
+
+.button {
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    color: yellow !important;
+    background-color: blue !important;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.text-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 26pt;
+    text-align: center;
+    text-transform: uppercase;
+    color: #242424;
+}
+
+.custom-card {
+    width: 100%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.custom-card:hover {
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.15);
+    margin-top: -20px;
+}
