@@ -19,6 +19,15 @@
     .navabar-image {
         width: 50% !important;
     }
+
+    .pt-15 {
+        padding-top: 75px !important;
+    }
+
+    .pb-15 {
+        padding-bottom: 20px !important;
+    }
+
 }
 
 html {
