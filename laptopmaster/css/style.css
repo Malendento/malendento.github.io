@@ -1,7 +1,7 @@
 @media screen and (max-width: 556px) {
     .image-top {
         margin-left: 0px !important;
-        width: 20px;
+        width: 10px;
     }
     
     #main-text {
@@ -87,7 +87,7 @@ p {
 }
 
 .bg-lgrey {
-    background-color: #FAFAFA;
+    background-color: #FF0000;
 }
 
 .fa-wrench,
