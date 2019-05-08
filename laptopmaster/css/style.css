@@ -139,8 +139,12 @@ h1 {
 }
 
 .text-footer {
-    color: #FFFFFF;
+    color: #BEBEBE;
     font-family: 'Roboto', sans-serif;
+}
+
+.text-footer a {
+    color: #FFFFFF !important;
 }
 
 .footer-margin {
@@ -185,7 +189,8 @@ h1 {
     border: 1px solid #0E76D8;
     background-color: #fff;
     color: #0E76D8;
-    border-radius: 20px;
+
+    box-shadow: 0 6px 40px 0 #0E76D855;
 }
 
 .text-title {
@@ -207,4 +212,13 @@ h1 {
 .custom-card:hover {
     box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.15);
     margin-top: -20px;
+}
+
+.nav-btns li a {
+    transition: all .5s !important;
+}
+
+.nav-btns li a:hover {
+    color: #0E76D8 !important;
+    font-size: 16pt;
 }
