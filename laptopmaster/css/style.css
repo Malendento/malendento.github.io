@@ -78,21 +78,6 @@ p {
     display: flex;
 }
 
-.card-header {
-    padding: 60px 0px;
-    text-align: center;
-    color: #0E76D8;
-}
-
-.card-title {}
-
-.card-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12pt;
-    text-align: center;
-    font-weight: 100 !important;
-}
-
 .second-title {
     font-family: 'Oswald', sans-serif;
     color: #0E76D8;
