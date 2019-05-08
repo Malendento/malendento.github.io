@@ -101,6 +101,7 @@ p {
 
 .bg-lgrey {
     background-color: #FAFAFA;
+    width: 100%;
 }
 
 .fa-wrench,
@@ -172,18 +173,19 @@ h1 {
 }
 
 
-
 .button {
     width: 100%;
     text-transform: uppercase;
     transition: all 0.5s;
+    background-color: #0E76D8;
+    color: #FFF;
 }
 
 .button:hover {
-    color: yellow !important;
-    background-color: blue !important;
-    margin-top: -5px;
-    margin-bottom: 5px;
+    border: 1px solid #0E76D8;
+    background-color: #fff;
+    color: #0E76D8;
+    border-radius: 20px;
 }
 
 .text-title {
