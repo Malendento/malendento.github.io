@@ -43,6 +43,11 @@ body {
     background-color: #fff;
     border-radius: 5px;
     padding: 50px;
+    transition: padding .3s;
+}
+
+.custom-card-image:hover {
+     padding: 40px;
 }
 
 .custom-card {
@@ -92,7 +97,7 @@ body {
 
 .text-grey {
     color: #888888;
-    font-size: 9pt;
+    font-size: 12pt;
 }
 
 .footer-background {
