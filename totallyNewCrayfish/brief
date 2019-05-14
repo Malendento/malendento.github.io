@@ -214,7 +214,7 @@
                     <label>19. Посилання на ваші соцмережі</label>
                 </div>                
             </div>
-            <button class="btn btn-custom-outline-brief mb-5">Відправити бриф<i class="fas fa-arrow-right"></i></button>
+            <button class="btn btn-custom-outline-brief">Відправити бриф<i class="fas fa-arrow-right"></i></button>
         </form>
     </div>
 
