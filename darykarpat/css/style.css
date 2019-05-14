@@ -1,0 +1,152 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+.bg-lgrey {
+    background-color: #F2F2F2;
+}
+
+.v-line {
+    height: 1px;
+    width: 100%;
+    background-color: #888;
+}
+
+.px-header {
+    padding-right: calc(6vw + 10px);
+    padding-left: calc(6vw + 10px);
+}
+
+
+
+.custom-card-image {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.custom-card {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+
+
+.custom-button {
+    color: #C20000;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 6px 0px;
+}
+
+.number-bold {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+
+.bold-text {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.img-padding {
+    padding: 10px;
+}
+
+.px-10px {
+    padding: 0px 10px;
+}
+
+.text-grey {
+    color: #888888;
+    font-size: 9pt;
+}
+
+.footer-background {
+    background-color: #1C1B1A;
+}
+
+.ancor-text {
+    color: #F2F2F2;
+    transition: all .5s;
+    display: block;
+    text-decoration: none !important;
+    margin: 0px 15px;
+}
+
+.ancor-text:hover {
+    color: #F2F2F2;
+    margin-top: -4px;
+    margin-bottom: 4px;
+}
+
+.nav-btns li {
+    font-size: 15px;
+}
+
+.px-6 {
+     padding-right: 6vw;
+    padding-left: 6vw;
+}
+
+#romb-desktop, #romb-mobile {
+    background-color: #C20000;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+#zamok-desktop, #zamok-mobile {
+    position: relative;
+    height: 32px;
+    width: 31px;
+}
+
+#objects-count-desktop, #objects-count-mobile {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #000;
+    position: absolute;
+    margin-top: -3px;
+    margin-left: -6px;
+    height: 25px;
+    width: 15px;
+    transform: rotate(-45deg);
+}
+
+.btn:focus, .form-control:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.custom-button-call {
+    width: 100%;
+    color: #C20000;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 0px;
+}
+
+
+
+.input-form {
+    width: 100%;
+    background-color: #1C1B1A;
+    border-radius: 0px;
+}
+
+input {
+    transition: all .3s !important;
+}
