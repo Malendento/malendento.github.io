@@ -1,6 +1,29 @@
+@media screen and (min-width: 1200px) {
+    #zamok-mobile {
+        display: none;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #zamok-desktop {
+        display: none;
+    }
+    .ancor-text:hover {
+    color: #F2F2F2;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    }
+
+}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
+
 .bg-lgrey {
     background-color: #F2F2F2;
 }
@@ -16,8 +39,6 @@ body {
     padding-left: calc(6vw + 10px);
 }
 
-
-
 .custom-card-image {
     background-color: #fff;
     border-radius: 5px;
@@ -29,23 +50,29 @@ body {
     padding: 10px;
 }
 
-
-
 .custom-button {
     color: #C20000;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 6px 0px;
+    padding: 0px 0px;
+    margin-bottom: 10px;
 }
 
 .number-bold {
     font-family: 'Jura', sans-serif;
     font-weight: bold;
     font-size: 12pt;
+    margin-bottom: 10px;
 }
 
 .text-bold {
+    color: #000;
     font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text-bold:hover {
+    color: #000;
 }
 
 
@@ -77,7 +104,7 @@ body {
     transition: all .5s;
     display: block;
     text-decoration: none !important;
-    margin: 0px 15px;
+    margin: 0px 25px;
 }
 
 .ancor-text:hover {
@@ -91,31 +118,42 @@ body {
 }
 
 .px-6 {
-     padding-right: 6vw;
+    padding-right: 6vw;
     padding-left: 6vw;
 }
 
-#romb-desktop, #romb-mobile {
+#romb-desktop {
     background-color: #C20000;
     height: 16px;
     width: 16px;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -1.5px;
     transform: rotate(45deg);
 }
 
-#zamok-desktop, #zamok-mobile {
+#romb-mobile {
+    background-color: #C20000;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    transform: rotate(45deg);
+}
+
+#zamok-desktop,
+#zamok-mobile {
     position: relative;
     height: 32px;
     width: 31px;
 }
 
-#objects-count-desktop, #objects-count-mobile {
+#objects-count-desktop {
     font-family: 'Jura', sans-serif;
     font-weight: bold;
     font-size: 13px;
-    color: #000;
+    color: #fff;
     position: absolute;
     margin-top: -3px;
     margin-left: -6px;
@@ -124,7 +162,22 @@ body {
     transform: rotate(-45deg);
 }
 
-.btn:focus, .form-control:focus {
+#objects-count-mobile {
+
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    position: absolute;
+    margin-top: -2.5px;
+    margin-left: 6.5px;
+    height: 28px;
+    width: 6px;
+    transform: rotate(-45deg);
+}
+
+.btn:focus,
+.form-control:focus {
     box-shadow: none;
     border: none;
 }
@@ -149,4 +202,53 @@ body {
 
 input {
     transition: all .3s !important;
+}
+
+.footer-anchor {
+    color: #FFFFFF;
+    transition: all .5s;
+    display: block;
+}
+
+.footer-anchor:hover {
+    color: #FFFFFF;
+    margin-top: -4px;
+    margin-bottom: 4px;
+}
+
+.anchors {
+    color: #888888;
+
+}
+
+.anchors:hover {
+    color: #fff;
+    transition: all .3s;
+}
+
+.footer-text {
+    color: #888888;
+}
+
+.footer-anchor-number {
+    font-family: 'Jura', sans-serif;
+    color: #FFFFFF;
+    font-size: 26px;
+    transition: all .5s;
+    display: block;
+}
+
+.footer-anchor-number:hover {
+    color: #FFFFFF;
+    margin-top: -4px;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+#hamburger div {
+    height: 3px;
+    width: 25px;
+    background-color: #C20000;
+}
+#hamburger div:nth-of-type(2) {
+    margin: 6px 0px;
 }
