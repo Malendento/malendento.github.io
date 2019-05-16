@@ -383,7 +383,7 @@ textarea::placeholder {
     margin-bottom: 45px;
 }
 
- input {
+.brief-form input {
     border-bottom: 1px solid #000;
     color: #000;
     padding: 10px 0px 0px 0px;

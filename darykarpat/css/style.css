@@ -12,10 +12,11 @@
     #zamok-desktop {
         display: none;
     }
+
     .ancor-text:hover {
-    color: #F2F2F2;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+        color: #F2F2F2;
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
     }
 
 }
@@ -34,6 +35,20 @@ body {
     background-color: #888;
 }
 
+.card-line {
+    height: 1px;
+    width: 100%;
+    background-color: #888;
+    transition: all .3s;
+}
+
+.v-line-slider {
+    height: 1px;
+    width: 92px;
+    background-color: #888;
+}
+
+
 .px-header {
     padding-right: calc(6vw + 10px);
     padding-left: calc(6vw + 10px);
@@ -43,14 +58,33 @@ body {
     background-color: #fff;
     border-radius: 5px;
     padding: 50px;
-    transition: padding .3s;
 }
 
-.custom-card-image:hover {
-     padding: 40px;
-}
+
 
 .custom-card {
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+.custom-card:hover .card-line {
+    height: 4px;
+    background-color: #c20000;
+    margin-top: -3px;
+}
+
+.custom-card:hover .card-item-name {
+    padding-top: -3px;
+    color: #000;
+}
+
+.card-item-name {
+    color: #000;
+    font-weight: 700;
+}
+
+.custom-card-slider {
     margin-top: 20px;
     padding: 10px;
 }
@@ -61,6 +95,15 @@ body {
     font-weight: bold;
     padding: 0px 0px;
     margin-bottom: 10px;
+}
+
+.custom-button-slider {
+    color: #C20000;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0px 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
 .number-bold {
@@ -85,6 +128,15 @@ body {
     font-family: 'Jura', sans-serif;
     font-weight: bold;
     font-size: 25px;
+    color: #000;
+}
+
+.bold-text-slider {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #000;
+    margin: 20px 0px 0px 0px;
 }
 
 .img-padding {
@@ -100,8 +152,15 @@ body {
     font-size: 12pt;
 }
 
+.text-grey-slider {
+    color: #888888;
+    font-size: 12pt;
+    margin: 0px;
+}
+
 .footer-background {
     background-color: #1C1B1A;
+
 }
 
 .ancor-text {
@@ -133,7 +192,14 @@ body {
     width: 16px;
     position: absolute;
     bottom: 0;
-    right: -1.5px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+#romb-slider {
+    background-color: #C20000;
+    height: 16px;
+    width: 16px;
     transform: rotate(45deg);
 }
 
@@ -197,8 +263,6 @@ body {
     border-radius: 0px;
 }
 
-
-
 .input-form {
     width: 100%;
     background-color: #1C1B1A;
@@ -249,11 +313,107 @@ input {
     margin-bottom: 4px;
     text-decoration: none;
 }
+
 #hamburger div {
     height: 3px;
     width: 25px;
     background-color: #C20000;
 }
+
 #hamburger div:nth-of-type(2) {
     margin: 6px 0px;
+}
+
+.medium-text {
+    font-weight: 500;
+    color: #000;
+    font-size: 23px;
+}
+
+.img-slider {
+    max-height: 60vh;
+}
+
+.fa-chevron-right {
+    color: #C20000;
+
+}
+
+.fa-chevron-left {
+    color: #C20000;
+}
+
+#slider-controls {
+    position: relative;
+    display: flex;
+}
+
+#slider-controls div {
+    height: 8px;
+    width: 8px;
+    background-color: #666;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    margin: 16px;
+    transition: .3s all;
+    cursor: pointer;
+}
+
+#slider-controls div:hover {
+    height: 12px;
+    width: 12px;
+    background-color: #888;
+    margin: 14px;
+}
+
+#slider-controls div.dot-active {
+    margin: 12px;
+    height: 16px;
+    width: 16px;
+    background-color: #C20000;
+}
+
+.control-arrow-left,
+.control-arrow-right {
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    transform-origin: 50% 50%;
+    margin: 14px;
+    box-sizing: border-box;
+    border-bottom: 3px solid #C20000;
+    border-right: 3px solid #C20000;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.control-arrow-left:hover,
+.control-arrow-right:hover {
+    height: 24px;
+    width: 24px;
+    margin: 8px;
+    border-bottom: 4px solid #C20000;
+    border-right: 4px solid #C20000;
+}
+
+.control-arrow-left {
+    transform: rotate(135deg);
+}
+
+.control-arrow-right {
+    transform: rotate(-45deg);
+}
+
+
+#slider-img a {
+    align-items: flex-end;
+    border: 0px;
+}
+
+.full-vh {
+    height: calc(100vh - 150px);
+}
+
+.py-10 {
+    margin-top: 150px;
 }
