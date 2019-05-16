@@ -20,7 +20,7 @@
     }
 
     .img-slider {
-        max-height: 30vh !important;
+        max-height: 35vh !important;
         padding: 0px !important;
         align-self: center !important;
     }
@@ -61,6 +61,11 @@
     
     .custom-card:hover .card-line {     
         height: 1px !important;
+    }
+    
+    .top-margin-150 {
+        
+    margin-top: 90px !important;
     }
 
 
@@ -462,6 +467,6 @@ input {
     height: calc(100vh - 150px);
 }
 
-.py-10 {
+.top-margin-150 {
     margin-top: 150px;
 }
