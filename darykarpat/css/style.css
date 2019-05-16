@@ -53,19 +53,23 @@
     .img-padding {
         padding: 10px;
     }
-    
-    .custom-card:hover .card-item-name {        
+
+    .custom-card:hover .card-item-name {
         margin-top: 0px !important;
         margin-bottom: 0px !important;
     }
-    
-    .custom-card:hover .card-line {     
+
+    .custom-card:hover .card-line {
         height: 1px !important;
     }
-    
+
     .top-margin-150 {
-        
-    margin-top: 90px !important;
+
+        margin-top: 90px !important;
+    }
+
+    .margin-mobile {
+        margin-top: 16px;
     }
 
 
