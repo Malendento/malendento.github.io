@@ -80,8 +80,8 @@
 
     <div class="container-fluid full-vh top-margin-150">
         <div class="row no-gutters justify-content-end">
-            <div class="col-md-4 pr-md-5">
-                <div id="slider-img">
+            <div class="col-md-4">
+                <!--<div id="slider-img">
                     <a href="#">
                         <img class="img-slider" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
                     </a>
@@ -94,6 +94,20 @@
                     <a href="#">
                         <img class="img-slider" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
                     </a>
+                </div>-->
+                <div id="navigate-slider">
+                    <div class="slide-image">
+                        <img class="img-fluid" id="slide-1" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
+                    </div>
+                    <div class="slide-image">
+                        <img class="img-fluid" id="slide-2" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
+                    </div>
+                    <div class="slide-image" >
+                        <img class="img-fluid" id="slide-3" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
+                    </div>
+                    <div class="slide-image" >
+                        <img class="img-fluid" id="slide-4" src="img/5055c3b1f930b3bf66876a261fb0253f.png">
+                    </div>
                 </div>
             </div>
             <div class="col-md-6 pl-4 pt-md-5">
@@ -107,10 +121,10 @@
         <div class="row justify-content-center py-md-4 my-md-5">
             <div id="slider-controls">
                 <span class="control-arrow-left"></span>
-                <div></div>
-                <div class="dot-active button"></div>
-                <div></div>
-                <div></div>
+                <a href="#slide-1"><div></div></a>
+                <a href="#slide-2"><div class="dot-active button"></div></a>
+                <a href="#slide-3"><div></div></a>
+                <a href="#slide-4"><div></div></a>
                 <span class="control-arrow-right"></span>
             </div>
         </div>
@@ -317,7 +331,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="js/slick.min.js"></script>
-
+    <!--
     <script>
         $('#slider-img').slick({
             slidesToShow: 1,
@@ -327,7 +341,7 @@
             nextArrow: $('.control-arrow-right'),
         });
     </script>
-
+-->
     <script>
         var phoneMask = IMask(
             document.getElementById('recipient-phone'), {

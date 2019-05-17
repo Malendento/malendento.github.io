@@ -75,6 +75,7 @@
 
 }
 
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -473,4 +474,32 @@ input {
 
 .top-margin-150 {
     margin-top: 150px;
+}
+
+
+#navigate-slider {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+#navigate-slider div.slide-image {
+    height: 100%;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 10px;
+    background-color: yellow;
+}
+::-webkit-scrollbar-thumb {
+    background: blue;
 }
