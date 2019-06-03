@@ -529,13 +529,7 @@ input {
 }
 
 #navigate-slider::-webkit-scrollbar {
-    height: 8px;
-    width: 10px;
-    background-color: yellow;
-}
-
-::-webkit-scrollbar-thumb {
-    background: blue;
+    display: none !important;
 }
 
 
