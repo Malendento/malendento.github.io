@@ -1,3 +1,10 @@
+
+@media screen and (min-width: 992px) {
+    .custom-button-dropdown {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     #zamok-mobile {
         display: none;
@@ -6,7 +13,11 @@
     #hamburger {
         display: none;
     }
+    .custom-button-dropdown {
+        display: none;
+    }
 }
+
 
 @media screen and (max-width: 1200px) {
     #zamok-desktop {
@@ -535,6 +546,7 @@ input {
 
 input::-webkit-calendar-picker-indicator {
     color: #c20000;
+    display: ;
 }
 
 
@@ -608,4 +620,25 @@ input::-webkit-calendar-picker-indicator {
 .radio-review input[type="radio"]:checked + label {
     border: solid 1px #C20000;
     color: #C20000;
+}
+
+.custom-button-dropdown {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.dropdown-chevron {
+    color: #c20;
+    
+}
+
+.dropdown-navbar {
+    width: 100%;
+    padding: 0px 0px;
+}
+
+.dropdown-form-goods {
+    width: 100%
 }

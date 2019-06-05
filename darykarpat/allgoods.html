@@ -80,51 +80,68 @@
 
 
     <div id="#" class="bg-lgrey">
-        <div class="conteiner-fluid top-margin-60 py-5 px-6">
+        <div class="container-fluid top-margin-60 py-5 px-6">
             <div class="row no-gutters px-10px">
                 <div class="col text-center text-md-left">
                     <p class="bold-text">ВИШИВАНКИ</p>
                 </div>
                 <div class="v-line"></div>
             </div>
-            
-            <form class="dropdown-form-goods">
-                <div class="row no-gutters px-10px">
-                    <div class="col-md-3 pr-md-3">
-                        <input type="text" class="input-form-dropdown pl-md-3 py-md-2 mt-md-4 my-2" list="dropdown-type" placeholder="Тип (жіноча, чоловіча, тощо)">
-                        <datalist id="dropdown-type">
-                            <option value="Інше"></option>
-                            <option value="Інше"></option>
-                            <option value="Інше"></option>
-                        </datalist>
+
+            <div class="row dropdown-navbar no-gutters">
+                <nav class="navbar dropdown-navbar navbar-expand-lg navbar-light">
+                    <div class="btn custom-button-dropdown " data-toggle="collapse" data-target="#filters-dropdown" aria-controls="filters-dropdown" role="button" aria-pressed="true">
+                        <div class="row">
+                            <div class="col-6">
+                                Фільтри
+                            </div>
+                            <div class="col-6 text-right">
+                                <i class="fas dropdown-chevron fa-chevron-down ml-auto"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-3 px-md-2">
-                        <input type="text" class="input-form-dropdown pl-md-3 py-md-2 mt-md-4 mb-2" list="dropdown-size" id="city" placeholder="Розмір">
-                        <datalist id="dropdown-size">
-                            <option value="Інше"></option>
-                            <option value="Інше"></option>
-                            <option value="Інше"></option>
-                        </datalist>
+
+                    <div class="collapse navbar-collapse" id="filters-dropdown">
+                        <form class="dropdown-form-goods">
+                            <div class="row no-gutters px-10px">
+                                <div class="col-md-3 pr-md-3">
+                                    <input type="text" class="input-form-dropdown pl-md-3 py-md-2 mt-md-4 my-2" list="dropdown-type" placeholder="Тип (жіноча, чоловіча, тощо)">
+                                    <datalist id="dropdown-type">
+                                        <option value="Інше"></option>
+                                        <option value="Інше"></option>
+                                        <option value="Інше"></option>
+                                    </datalist>
+                                </div>
+                                <div class="col-md-3 px-md-2">
+                                    <input type="text" class="input-form-dropdown pl-md-3 py-md-2 mt-md-4 mb-2" list="dropdown-size" id="city" placeholder="Розмір">
+                                    <datalist id="dropdown-size">
+                                        <option value="Інше"></option>
+                                        <option value="Інше"></option>
+                                        <option value="Інше"></option>
+                                    </datalist>
+                                </div>
+                                <div class="col-md-3 px-md-2">
+                                    <input type="text" class="input-form-dropdown pl-md-3 py-md-2 mt-md-4 mb-2" list="dropdown-availability" placeholder="Наявність">
+                                    <datalist id="dropdown-availability">
+                                        <option value="Інше"></option>
+                                        <option value="Інше"></option>
+                                        <option value="Інше"></option>
+                                    </datalist>
+                                </div>
+                                <div class="col-md-3 pl-md-3">
+                                    <input type="text" class="input-form-dropdown pl-md-3 py-md-2 mt-md-4 mb-2" list="dropdown-sort" placeholder="Сортування">
+                                    <datalist id="dropdown-sort">
+                                        <option value="Інше"></option>
+                                        <option value="Інше"></option>
+                                        <option value="Інше"></option>
+                                    </datalist>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-md-3 px-md-2">
-                        <input type="text" class="input-form-dropdown pl-md-3 py-md-2 mt-md-4 mb-2" list="dropdown-availability" placeholder="Наявність">
-                        <datalist id="dropdown-availability">
-                            <option value="Інше"></option>
-                            <option value="Інше"></option>
-                            <option value="Інше"></option>
-                        </datalist>
-                    </div>
-                    <div class="col-md-3 pl-md-3">
-                        <input type="text" class="input-form-dropdown pl-md-3 py-md-2 mt-md-4 mb-2" list="dropdown-sort" placeholder="Сортування">
-                        <datalist id="dropdown-sort">
-                            <option value="Інше"></option>
-                            <option value="Інше"></option>
-                            <option value="Інше"></option>
-                        </datalist>
-                    </div>
-                </div>
-            </form>
-            
+                </nav>
+            </div>
+
             <div class="row no-gutters">
                 <div class="col-md-3">
                     <div class="custom-card">
@@ -293,13 +310,13 @@
         <div class="container-fluid">
             <form>
                 <div class="row py-5 justify-content-center no-gutters">
-                    <div class="col-md-2  px-2">
+                    <div class="col-md-4 col-lg-3 col-xl-2  px-2">
                         <input type="text" class="form-control input-form mb-2" id="recipient-name" placeholder="Ім'я">
                     </div>
-                    <div class="col-md-2 px-2">
+                    <div class="col-md-4 col-lg-3 col-xl-2 px-2">
                         <input class="form-control input-form mb-2" id="recipient-phone" placeholder="Телефон">
                     </div>
-                    <div class="col-md-2 px-2">
+                    <div class="col-md-4 col-lg-3 col-xl-2 px-2">
                         <a href="#" class="btn custom-button-call" role="button" aria-pressed="true">подзвоніть мені</a>
                     </div>
                 </div>
