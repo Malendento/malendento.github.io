@@ -685,7 +685,3 @@ input::-webkit-calendar-picker-indicator {
     width: 100%;
     background-color: green;
 }
-.hamburger-border {
-    border: 10px solid #000;
-    padding-right: 10px;
-}
