@@ -132,7 +132,6 @@ body {
 .custom-card {
     margin-top: 20px;
     padding: 10px;
-
 }
 
 .custom-card:hover .card-line {
@@ -640,5 +639,11 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .dropdown-form-goods {
-    width: 100%
+    width: 100%;
 }
+
+.dropdown-form-goods input{
+    padding: 10px 20px;
+}
+
+
