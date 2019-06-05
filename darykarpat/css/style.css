@@ -2,14 +2,15 @@
     .price-total-top {
         display: none;
     }
-   
+    
+
 }
 
 @media screen and (min-width: 992px) {
     .custom-button-dropdown {
         display: none;
     }
-   
+
 }
 
 @media screen and (min-width: 1200px) {
@@ -20,19 +21,24 @@
     #hamburger {
         display: none;
     }
+
     .custom-button-dropdown {
         display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
-     .price-total-bot {
+    .price-total-bot {
         display: none;
+    }
+    .radio-review label {
+        padding: 10px !important;
+        width: 46px !important;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    
+
     #zamok-desktop {
         display: none;
     }
@@ -346,7 +352,8 @@ body {
 .btn:focus,
 .form-control:focus {
     box-shadow: none;
-    border: none;
+    
+    border: 1px solid #777;
 }
 
 .custom-button-call {
@@ -585,9 +592,15 @@ input::-webkit-calendar-picker-indicator {
     font-size: 23px;
 }
 
-#review-area {
+.review-area {
     width: 100%;
     border: 1px solid #777777;
+}
+
+.btn:focus,
+.review-area:focus {
+    box-shadow: none;
+    border: 1px solid #777 !important;
 }
 
 .custom-button-review {
@@ -643,7 +656,7 @@ input::-webkit-calendar-picker-indicator {
 
 .dropdown-chevron {
     color: #c20;
-    
+
 }
 
 .dropdown-navbar {
@@ -655,6 +668,24 @@ input::-webkit-calendar-picker-indicator {
     width: 100%;
 }
 
-.dropdown-form-goods input{
+.dropdown-form-goods input {
     padding: 10px 20px;
+}
+
+
+
+.kvadrat-po {
+    height: 50%;
+    width: 100%;
+    background-color: grey;
+}
+
+.kvadrat-ze {
+    height: 50%;
+    width: 100%;
+    background-color: green;
+}
+.hamburger-border {
+    border: 10px solid #000;
+    padding-right: 10px;
 }
