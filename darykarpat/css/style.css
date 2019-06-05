@@ -1,8 +1,15 @@
+@media screen and (min-width: 768px) {
+    .price-total-top {
+        display: none;
+    }
+   
+}
 
 @media screen and (min-width: 992px) {
     .custom-button-dropdown {
         display: none;
     }
+   
 }
 
 @media screen and (min-width: 1200px) {
@@ -18,8 +25,14 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+     .price-total-bot {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1200px) {
+    
     #zamok-desktop {
         display: none;
     }
@@ -645,5 +658,3 @@ input::-webkit-calendar-picker-indicator {
 .dropdown-form-goods input{
     padding: 10px 20px;
 }
-
-
