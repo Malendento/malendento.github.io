@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>Ти під*р</title>
+</head>
+
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-white py-3 px-header">
+        <a class="navbar-brand navabar-image mr-auto" href="#">
+            <img src="img/Capture001.png">
+        </a>
+        <div id="hamburger" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto nav-btns">
+                <li class="nav-item">
+                    <a class="nav-link mx-md-3" href="#">послуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-md-3" href="#">досягнення</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-md-3" href="#">роботи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-md-3" href="#">контакти</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container-fluid top-margin-60 py-5">
+        <div class="row">
+            <div class="col-5">
+                <div class="slider-sklo">
+                    <div> <img class="img-fluid" src="img/Capture003.PNG"></div>
+                    <div> <img class="img-fluid" src="img/Capture004.PNG"></div>
+                    <div> <img class="img-fluid" src="img/Capture005.PNG"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+
+    <script>
+        var phoneMask = IMask(
+            document.getElementById('recipient-phone'), {
+                mask: '+{38}(000)000-00-00'
+            });
+    </script>
+    <script>
+        $('.slider-sklo').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows: true,
+            autoplaySpeed: 2000,
+        });
+    </script>
+</body>
+
+</html>
