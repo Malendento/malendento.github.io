@@ -35,6 +35,9 @@
         padding: 10px !important;
         width: 46px !important;
     }
+    .bold-text-submit {
+         font-size: 20px !important;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -221,6 +224,13 @@ body {
 
 
 .bold-text {
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #000;
+}
+
+.bold-text-submit {
     font-family: 'Jura', sans-serif;
     font-weight: bold;
     font-size: 25px;
