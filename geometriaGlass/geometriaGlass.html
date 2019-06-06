@@ -51,9 +51,11 @@
                     <div> <img class="img-fluid" src="img/Capture004.PNG"></div>
                     <div> <img class="img-fluid" src="img/Capture005.PNG"></div>
                 </div>
-                <i class="fas fa-long-arrow-alt-left"></i>
-                <i class="fas fa-long-arrow-alt-right"></i>
-                
+                <div class="arrows-slider">
+                    <i class="fas slider-left fa-long-arrow-alt-left"></i>
+                    <i class="fas slider-right fa-long-arrow-alt-right"></i>
+                </div>
+
             </div>
             <div class="col-7">
             </div>
@@ -90,9 +92,11 @@
             slidesToScroll: 1,
             autoplay: true,
             arrows: false,
+            appendArrows: $('.arrows-slider'),
             autoplaySpeed: 2000,
         });
     </script>
+
 </body>
 
 </html>
