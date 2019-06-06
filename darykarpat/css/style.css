@@ -351,8 +351,7 @@ body {
 
 .btn:focus,
 .form-control:focus {
-    box-shadow: none;
-    
+    box-shadow: none;    
     border: 1px solid #777;
 }
 
@@ -364,6 +363,19 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 0px;
+}
+
+.custom-button-submit {
+    width: 100%;
+    color: #C20000;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.custom-button-submit:focus {
+    border: none !important;
 }
 
 .input-form {
@@ -574,6 +586,7 @@ input::-webkit-calendar-picker-indicator {
     font-weight: bold;
     font-size: 35px;
     color: #000;
+    margin: 0px;
 }
 
 .text-review {
@@ -597,7 +610,6 @@ input::-webkit-calendar-picker-indicator {
     border: 1px solid #777777;
 }
 
-.btn:focus,
 .review-area:focus {
     box-shadow: none;
     border: 1px solid #777 !important;
@@ -684,4 +696,60 @@ input::-webkit-calendar-picker-indicator {
     height: 50%;
     width: 100%;
     background-color: green;
+}
+
+.button-submit {
+    color: #c20;
+    padding: 0px;
+    border: none;
+}
+
+.button-submit:hover {
+    text-decoration: none;
+    color: #c20;
+    border: none;
+}
+.button-submit:hover #romb-submit-intime {
+    transform-origin: 50% 50%;
+    transform: rotate(-45deg);
+    height: 16px;
+    width: 16px;
+    background-color: #c20;
+}
+
+.button-submit:hover #romb-submit-novaposhta {
+    transform-origin: 50% 50%;
+    transform: rotate(-45deg);
+    height: 16px;
+    width: 16px;
+    background-color: #c20;
+}
+
+.btn-link:focus {
+    text-decoration: none;
+    border: none !important;
+}
+
+#romb-submit-intime {
+    background-color: #777777;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    display: inline-block;
+    padding-right: 10px;
+    transition: all .3s;
+}
+
+#romb-submit-novaposhta {
+    background-color: #777777;
+    height: 12px;
+    width: 12px;
+    transform: rotate(45deg);
+    display: inline-block;
+    padding-right: 10px;
+    transition: all .3s;
+}
+
+.text-submit {
+    display: inline;
 }
