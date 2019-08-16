@@ -267,9 +267,15 @@ $id = $_GET["id"];
             <h2 class="g-title">Планування</h2>
 
             <div class="planning__block">
-                <img class="img-fluid" src="./img/house/house1-plan1.png" data-action="zoom" alt="" srcset="">
-                <img class="img-fluid" src="./img/house/house1-plan2.png" data-action="zoom" alt="" srcset="">
-                <img class="img-fluid" src="./img/house/house1-plan3.png" data-action="zoom" alt="" srcset="">
+                <div class="planning__imgBlock">
+                    <img class="img-fluid" src="./img/house/house1-plan1.png" data-action="zoom" alt="" srcset="">
+                </div>
+                <div class="planning__imgBlock">
+                    <img class="img-fluid" src="./img/house/house1-plan2.png" data-action="zoom" alt="" srcset="">
+                </div>
+                <div class="planning__imgBlock">
+                    <img class="img-fluid" src="./img/house/house1-plan3.png" data-action="zoom" alt="" srcset="">
+                </div>
             </div>
         </section>
 

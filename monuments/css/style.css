@@ -120,6 +120,10 @@
         padding: 20px 20px !important;
     }
 
+    #desktop-monuments {
+        display: none;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -129,6 +133,11 @@
 
     .nav-links-custom li {
         margin-left: 45px !important;
+    }
+
+
+    #mobile-monuments {
+        display: none;
     }
 }
 
@@ -153,10 +162,6 @@
     }
 
     #slider-mobile {
-        display: none;
-    }
-
-    #mobile-monuments {
         display: none;
     }
 
@@ -342,7 +347,7 @@ li:hover .nav-link {
     background-color: #FCFCFC;
     box-shadow: 0px 0px 30px rgba(225, 225, 225, 0.5);
     padding: 0px 20px;
-    width: 32%;
+    width: 23%;
     display: flex;
     justify-content: center;
 }
@@ -690,8 +695,6 @@ li:hover .nav-link {
     justify-content: center;
 }
 
-
-
 .right-arrow-granite,
 .left-arrow-granite,
 #left-arrow-marble,
@@ -726,6 +729,7 @@ li:hover .nav-link {
 }
 
 .button-custom-monument {
+    background-color: #fcfcfc;
     width: 100%;
     font-size: 16px;
     line-height: 165.9%;
@@ -753,9 +757,8 @@ li:hover .nav-link {
     cursor: pointer;
 }
 
-.mx-card {
-    margin-left: 2%;
-    margin-right: 2%;
+.mr-card {
+    margin-right: 2.65%;
 }
 
 .nav-pills .nav-link-tab.active,
@@ -770,22 +773,24 @@ li:hover .nav-link {
     background-size: cover;
     height: 40vw;
 }
+
 .btn-link:hover {
     text-decoration: none;
     color: #262626 !important;
 }
 
-.btn-link.focus, .btn-link:focus {
+.btn-link.focus,
+.btn-link:focus {
     text-decoration: none !important;
     box-shadow: none;
 }
 
 
 .btn {
-    display: inline-block; 
+    display: inline-block;
     font-weight: 400;
     color: #212529;
-    text-align: left; 
+    text-align: left;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -794,7 +799,7 @@ li:hover .nav-link {
     background-color: transparent;
     border: 0px solid transparent;
     padding: 0rem 0rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     outline: none;
     font-weight: 500;
     font-size: 16px;
@@ -806,5 +811,5 @@ li:hover .nav-link {
 .card-header {
     background-color: #fcfcfc;
     border: none;
-    padding: 0rem 0rem; 
+    padding: 0rem 0rem;
 }

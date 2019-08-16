@@ -46,8 +46,6 @@
     width: 100%;
   }
   .slider-house__title {
-    text-transform: uppercase;
-    color: #0b0b0b;
     position: absolute;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.6);

@@ -447,7 +447,7 @@ a:focus, div:focus, img:focus {
   position: absolute;
   z-index: 100;
   bottom: 0;
-  right: 0px;
+  right: 0;
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
 }
@@ -574,6 +574,16 @@ a:focus, div:focus, img:focus {
   margin-top: 80px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.planning__imgBlock {
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .document {
@@ -947,6 +957,16 @@ a:focus, div:focus, img:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .planning__imgBlock {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
   }
   .building_row {
     position: relative;

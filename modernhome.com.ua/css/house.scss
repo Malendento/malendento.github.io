@@ -505,6 +505,12 @@ a:focus, div:focus, img:focus {
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    &__imgBlock {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .document {
@@ -879,6 +885,13 @@ a:focus, div:focus, img:focus {
 
         &__block {
             flex-direction: column;
+        }
+    
+        &__imgBlock {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
         }
     }
 
