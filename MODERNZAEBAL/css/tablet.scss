@@ -534,3 +534,17 @@
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .navbar {
+        &-brand {
+            padding-left: 14px;
+        }
+    }
+
+    .nav {
+        &-burger {
+            right: 5px;
+        }
+    }
+}
