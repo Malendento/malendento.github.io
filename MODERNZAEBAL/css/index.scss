@@ -1,0 +1,236 @@
+.d-hide {
+    display: none;
+}
+
+.sect-5__card {
+    & .fas, & .far {
+        color: #212529 !important;
+        transition: 0.4s;
+    }
+
+    
+    &:hover .fas, &:hover .far {
+        color: #F53248 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px 5px;
+    }
+
+    .left-arrow-house {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+    }
+
+    .right-arrow-house {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+    }
+
+    .d-hide {
+        display: block;
+    }
+
+    .m-hide {
+        display: none;
+    }
+
+    .px-container {
+        padding: 0 15px;
+    }
+
+    .padding-container {
+        padding: 0;
+    }
+
+    .houses {
+        width: 100%;
+        position: relative;
+    }
+
+    .slider-house {
+        width: 100%;
+
+        &__title {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.6);
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 20px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            color: #212529;
+        }
+
+        &__img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            height: 300px;
+        }
+    }
+
+    .fas, .far {
+        color: #F53248 !important;
+        transition: 0.4s;
+    }
+
+    .sect-1 {
+        &__wrapper {
+            padding-top: 0;
+            margin-top: 30px;
+        }
+
+        &__img {
+            margin: 0 auto;
+        }
+
+        &__button-learn {
+            display: flex;
+            justify-content: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        &__button-call {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            margin-left: 0 !important;
+        }
+    }
+    
+    .sect-2 {
+        .background-cottage {
+            background-image: none;
+        }
+
+        & .text-content-container {
+            margin-top: 15px;
+        }
+
+        & .text-regular-container {
+            margin-bottom: 25px;
+            margin-top: 15px;
+        }
+    }
+
+    .sect-3 {
+        margin-top: 50px;
+        margin-bottom: 0 !important;
+
+        &__underline {
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            margin-bottom: 15px;
+        }
+    }
+
+    .sect-4 {
+        margin-bottom: 0 !important;
+
+        &__text {
+            text-align: left !important;
+        }
+
+        &__line {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            margin-left: 0;
+        }
+
+        & .text-center {
+            text-align: left !important;
+        }
+
+        & .px-5 {
+            padding: 0 !important;
+        }
+
+        & .custom-card {
+            margin-bottom: 45px;
+        }
+    }
+
+    .sect-5 {
+        padding-top: 0 !important;
+        padding: 0 15px !important;
+        margin-bottom: 0 !important;
+
+        & > #background-full {
+            background-image: none;
+            padding: 0;
+
+            & > .background-transparent {
+                padding: 0px !important;
+
+                & > .text-center {
+                    padding-top: 15px !important;
+                }
+            }
+
+            & .underline {
+                margin-left: 0;
+            }
+        }
+
+        & .text-center {
+            text-align: left !important;
+        }
+
+        &__card {
+            text-align: center;
+            margin-bottom: 15px !important;
+            margin-left: 20px !important;
+            margin-right: 20px !important;
+        }
+    }
+
+    .sect-6 {
+        & .text-center {
+            text-align: left !important;
+        }
+
+        &__line {
+            margin-bottom: 50px !important;
+            margin-left: 0 !important;
+            margin-top: 36px !important;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1258px) {
+    .sect-1 {
+        &__wrapper {
+            & > .m-hide {
+                width: 90%;
+            }
+        }
+
+        &__button-call {
+            & > div {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .sidenav {
+        &-footer {
+            &-m_flex {
+                flex-direction: column;
+            }
+        }
+    }
+}
