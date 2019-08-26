@@ -13,19 +13,14 @@
 
         images.one('loadScroll', function() {
             
-            if (this.getAttribute('src')) {
-                this.setAttribute('src',
-                this.getAttribute('src'));
-                
                 if (duration) {
                     
                     $(this).hide()
-                           .fadeIn(duration)
+                           .fadeIn(600)
                            .add('img')
                            .removeAttr('style');
                     
                 } else return false;
-            }
             
         });
     
