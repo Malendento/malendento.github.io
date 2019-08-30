@@ -439,7 +439,10 @@ li:hover .nav-link {
     color: #14B358;
 }
 
-.fa-clipboard-list, .fa-archway, .fa-cog, .fa-pencil-alt {
+.fa-clipboard-list,
+.fa-archway,
+.fa-cog,
+.fa-pencil-alt {
     transition: .4s all;
 }
 
