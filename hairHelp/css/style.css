@@ -126,11 +126,16 @@
     }
 
     .sect3 {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
         padding-top: 70px;
         background-image: none !important;
     }
+    
+    .sect3__px {
+        padding-left: 20px !important;
+        padding-right: 20px !important;   
+}
 
     .form__radio {
         display: block !important;
@@ -236,11 +241,12 @@
 
     .sect4__button {
         font-size: 20px !important;
-        line-height: 26px;
-        color: #FFFFFF;
-        background-color: #231F20;
-        padding: 17px 79px;
-        margin-bottom: 29px;
+        line-height: 23px !important;
+    }
+
+    .sect5__button {
+        font-size: 20px !important;
+        line-height: 23px !important;
     }
 }
 
@@ -265,8 +271,6 @@
     }
 
     .sect3 {
-        padding-left: 61px;
-        padding-right: 61px;
         padding-top: 161px;
         background-image: url(../img/sect3-bg.svg);
         background-position: bottom;
@@ -697,7 +701,6 @@ input::-webkit-calendar-picker-indicator {
 
 .sect5__button {
     display: block;
-
     font-size: 22px;
     line-height: 26px;
     text-transform: uppercase;
@@ -996,4 +999,8 @@ input::-webkit-calendar-picker-indicator {
 .header {
     padding: 0px 61px;
     background-color: #fff;
+}
+.sect3__px {
+        padding-left: 61px;
+        padding-right: 61px;    
 }
