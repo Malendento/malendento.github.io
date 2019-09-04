@@ -25,12 +25,9 @@
 
 <body>
 
-    <header class="header">
-        <nav class="navbar navbar-expand-lg fixed-top bg-white navbar__px-container">
-            <a class="navbar-brand" href="#"><img class="brand__m" src=./img/nav_logo.svg></a>
-               
-               
-               <div id="hamburger" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg navbar__px-container">
+            <a class="navbar-brand" href="#"><img class="brand__m" src=./img/nav_logo.svg> </a> <div id="hamburger" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -65,7 +62,10 @@
                 <div class="row no-gutters justify-content-between">
                     <div class="col-lg-6 sect1__margin">
                         <div class="sect1__underline"></div>
-                        <img class="sect1__title" src="./img/h1-desktop.svg">
+                        <picture>
+                            <source srcset="./img/h1-mobile.svg" media="(max-width: 992px)">
+                            <img src="./img/h1-desktop.svg" alt="hairHelp">
+                        </picture>
                         <h1 class="sect1__subtitle">Центр трихологии и<br> эстетической косметологии</h1>
                         <div class="sect1__button">
                             <a href="#" class="sect1__button_left">записаться</a>
@@ -86,43 +86,46 @@
                     <div class="col-12 text-lg-center text-left">
                         <h2 class="sect2__title">топ<span class="sect2__title_thin"> услуг:</span></h2>
                     </div>
-                    <div class="col-lg-4 text-center mt-5">
-                        <div class="sect2__card pt-5">
+                    <div class="col-lg-4 text-lg-center text-left mt-5">
+                        <div class="sect2__card">
                             <div class="card__title">название услуги</div>
-                            <div class="card__text pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                             </div>
                             <div class="row justify-content-center">
-                                <a href="#" class="card__button">записаться</a>
+                                <div class="col-lg-10 text-center">
+                                    <a href="#" class="card__button">записаться</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center mt-5">
-                        <div class="sect2__card pt-5">
+                    <div class="col-lg-4 text-lg-center text-left mt-5">
+                        <div class="sect2__card">
                             <div class="card__title">название услуги</div>
-                            <div class="card__text pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                             </div>
                             <div class="row justify-content-center">
-                                <a href="#" class="card__button">записаться</a>
+                                <div class="col-lg-10 text-center">
+                                    <a href="#" class="card__button">записаться</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center mt-5">
-                        <div class="sect2__card pt-5">
+                    <div class="col-lg-4 text-lg-center text-left mt-5">
+                        <div class="sect2__card">
                             <div class="card__title">название услуги</div>
-                            <div class="card__text pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                            <div class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                             </div>
                             <div class="row justify-content-center">
-                                <a href="#" class="card__button">записаться</a>
+                                <div class="col-lg-10 text-center">
+                                    <a href="#" class="card__button">записаться</a></div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="text-center">
-                        <a href="#" class="sect2__button mt-5">полный список услуг</a>
-                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 text-center">
+                        <a href="#" class="sect2__button">полный список услуг</a></div>
                 </div>
             </div>
         </section>
@@ -133,8 +136,11 @@
                     <div class="col-lg-5 text-right">
                         <img class="sect3__image" src="./img/sect3-png.png">
                     </div>
-                    <div class="col-lg-6 sect3__right">
-                        <img class="sect3__right_image" src="./img/sect3-help.svg">
+                    <div class="col-lg-6 sect3__right sect3__right_image">
+                        <picture>
+                            <source srcset="./img/h1-mobile.svg" media="(max-width: 992px)">
+                            <img src="./img/h1-desktop.svg" alt="hairHelp">
+                        </picture>
                         <div class="sect3__right_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
                         </div>
@@ -147,16 +153,16 @@
         <section class="sect4">
             <div class="container-fluid px-container">
                 <div class="row justify-content-center">
-                    <div class="col-12 text-center">
+                    <div class="col-12 text-lg-center text-center">
                         <h2 class="sect4__title">быстрое решение</h2>
                     </div>
                     <form class="sect4__form">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-2">
+                        <div class="row  no-gutters justify-content-center">
+                            <div class="col-lg-3 pr-lg-5 pr-0 text-lg-right text-center">
                                 <h3 class="form__text_pt">моя проблема:</h3>
-                                <h3 class="form__text pt-5">я хочу:</h3>
+
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 text-center">
                                 <input class="form__input" list="my-problem" name="choose-problem" placeholder="Выберите из списка">
                                 <datalist id="my-problem">
                                     <option value="rykablood">
@@ -166,26 +172,37 @@
                                     <option value="sooqa">
                                     <option value="eblanishe">
                                 </datalist>
-                                <div class="form__radio">
-                                    <div>
-                                        <input id="service" type="checkbox" name="choose-radio" value="service">
-                                        <label for="service" class="pr-lg-5">Услуги / Процедуры</label>
-                                    </div>
-                                    <div>
-                                        <input id="product" type="checkbox" name="choose-radio" value="product">
-                                        <label for="product">Товар / Средство</label>
-                                    </div>
-
-                                </div>
                             </div>
-                            <div class="col-12 text-center">
-                                <button class="form__submit" type="submit">поиск</button></div>
+
                         </div>
+
+                        <div class="row no-gutters justify-content-center">
+                            <div class="col-lg-2 pr-lg-5 pr-0 text-lg-right text-center">
+                                <h3 class="form__text pt-5">я хочу:</h3>
+
+                            </div>
+                            <div class="form__radio">
+                                <div>
+                                    <input id="service" type="checkbox" name="choose-radio" value="service">
+                                    <label for="service" class="pr-lg-5">Услуги / Процедуры</label>
+                                </div>
+                                <div>
+                                    <input id="product" type="checkbox" name="choose-radio" value="product">
+                                    <label for="product">Товар / Средство</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button class="form__submit" type="submit">поиск</button></div>
+
                     </form>
                     <div class="col-lg-6 sect4__underline"></div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-6 text-center">
+                    <div class="col-lg-6 text-center">
                         <h2 class="sect4__title_second">или вы можете проконсультироваться с нашими специалистами</h2>
                     </div>
                 </div>
@@ -210,7 +227,21 @@
                             <div class="sect5-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
                             <div class="row">
-                                <a href="#" class="sect5-card__button">записаться</a></div>
+                                <div class="col-xl-8 text-center">
+                                    <a href="#" class="sect5-card__button">записаться</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 my-lg-0 my-4">
+                        <div class="sect5-card">
+                            <div class="sect5-card__image"></div>
+                            <div class="sect5-card__title">имя фамилия</div>
+                            <div class="sect5-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-8 text-center">
+                                    <a href="#" class="sect5-card__button">записаться</a></div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -220,22 +251,15 @@
                             <div class="sect5-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
                             <div class="row">
-                                <a href="#" class="sect5-card__button">записаться</a></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="sect5-card">
-                            <div class="sect5-card__image"></div>
-                            <div class="sect5-card__title">имя фамилия</div>
-                            <div class="sect5-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                <div class="col-xl-8 text-center">
+                                    <a href="#" class="sect5-card__button">записаться</a></div>
                             </div>
-                            <div class="row">
-                                <a href="#" class="sect5-card__button">записаться</a></div>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <a href="#" class="sect5__button">полный список специалистов</a>
+                    <div class="col-lg-5 text-center">
+                        <a href="#" class="sect5__button">полный список специалистов</a></div>
                 </div>
             </div>
         </section>
@@ -244,12 +268,14 @@
             <div class="container-fluid px-container">
                 <div class="row no-gutters">
                     <div class="col-lg-7 text-center">
+
                         <!--
                     <div><img class="img-fluid" src="./img/sect6-left.png"></div>
                     <div><img class="img-fluid" src="./img/sect6-center.png"></div>
                     <div><img class="img-fluid" src="./img/sect6-right.png"></div>
                     <div><img class="img-fluid" src="./img/sect6-right.png"></div>
 -->
+
                         КРУТИЙ СЛАЙДЕР ЗНАХОДИТЬСЯ ТУТЬ↓↓↓↓
                     </div>
                     <div class="col-lg-5">
@@ -258,10 +284,12 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <a href="#" class="sect6__button">запись на консультацию</a>
+                    <div class="col-lg-4 text-center">
+                        <a href="#" class="sect6__button">запись на консультацию</a></div>
                 </div>
             </div>
         </section>
+
         <!--
 <div class="container">
   <h1>Slider</h1>
@@ -289,24 +317,25 @@
       <div class="pagination"></div>
 </div>
 -->
+
     </main>
 
 
     <footer class="footer">
-        <div class="container-fluid footer__bg">
-            <div class="row px-container footer_pt">
+        <div class="container-fluid px-container footer__bg">
+            <div class="row footer_pt">
                 <div class="col-lg-6 order-lg-2">
                     <div class="row no-gutters">
                         <div class="col-lg-4">
                             <h3 class="footer__title">связаться с нами</h3>
-                            <a href="tel:+380975938308" class="footer__phone">+380975938308</a>
+                            <a href="tel:+380975938308" class="footer__phone">+38 (097) 5938308</a>
                             <a class="footer__adress" target="_blank" href="https://goo.gl/maps/yjSAKD7qjCjyvdk67">Киев ул. Сахарова 30б</a>
                             <a class="footer__mail" href="mailto:companymail@mail.com">companymail@mail.com</a>
                             <h3 class="footer__title_time">часы роботы</h3>
                             <span>Пн-Пт: 9-18</span>
                             <span>Сб-Вс: 10-16</span>
                         </div>
-                        <div class="col-lg-4 text-lg-right footer-navbar__nav">
+                        <div class="col-lg-4 pt-lg-0 pt-5 text-lg-right footer-navbar__nav">
                             <h3>меню</h3>
                             <a href="#">записаться</a>
                             <a href="#">магазин</a>
@@ -318,7 +347,7 @@
                                 <a href="#" target="_blank">facebook</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 text-lg-right footer-navbar__service">
+                        <div class="col-lg-4 pt-lg-0 pt-5  text-lg-right footer-navbar__service">
                             <h3>услуги</h3>
                             <a href="#">услуга 1</a>
                             <a href="#">услуга 2</a>
@@ -326,18 +355,19 @@
                             <a href="#">услуга 4</a>
                         </div>
                     </div>
-                    <div class="row no-gutters">
-                        <p class="footer__company"><a href="#">hairHelp</a> 2019&#169; Все права защищены</p>
-                    </div>
 
                 </div>
 
-                <div class="col-lg-6 order-lg-1 pr-lg-5">
+                <div class="col-lg-6 order-lg-1 pr-lg-5 pr-0 pl-0 pt-lg-0 pt-5">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68780316407!2d30.252511957059642!3d50.4016990487754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1567524682983!5m2!1suk!2sua" width="100%" height="524" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
 
             </div>
 
+            <div class="row no-gutters">
+               <div class="col-lg-12 text-lg-right text-center">
+                <p class="footer__company pt-lg-0 pt-3"><a href="#">hairHelp</a> 2019&#169; Все права защищены</p></div>
+            </div>
         </div>
 
     </footer>
@@ -357,6 +387,7 @@
                 mask: '+{38}(000)000-00-00'
             });
     </script>
+
 
     <!--
     <script>
@@ -387,6 +418,7 @@
     </script>
 -->
 
+
     <script>
         $(document).on('click', '.scroll-nav', function(event) {
             event.preventDefault();
@@ -396,6 +428,7 @@
             }, 900);
         });
     </script>
+
 
     <!--
     <script>
@@ -436,6 +469,7 @@
         });
     </script>
 -->
+
 </body>
 
 </html>

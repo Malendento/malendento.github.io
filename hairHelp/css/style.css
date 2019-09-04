@@ -1,15 +1,23 @@
+@media (max-width: 1300px) {
+    .sect4 {
+        margin-top: 50px !important;
+        background-image: none !important;
+    }
+}
+
 @media (max-width: 991.98px) {
     .px-container {
         padding: 0 20px !important;
     }
 
     .navbar__px-container {
-        margin: 0 0px !important;
         padding: 0px
     }
 
     .navbar-brand {
-        padding-top: 15px;
+        width: 74px !importnat;
+        height: 74px !important;
+        padding-top: 2px !important;
         margin-left: 20px !important;
     }
 
@@ -20,12 +28,13 @@
 
     .navbar {
         background-image: none !important;
+        background-color: transparent !important;
     }
 
     .sect1__button {
         display: block !important;
         margin-top: 52px;
-        padding-bottom: 50px !important;
+        padding-bottom: 120px !important;
     }
 
     .sect1__margin {
@@ -33,23 +42,24 @@
         padding-left: 0px !important;
     }
 
-    .sect1__button_right {
-        display: block;
-        padding: 17px 120px;
-        text-transform: uppercase;
-        background-color: #D7BDB1;
+    .sect1__button_left {
+        padding: 17px 22px !important;
         font-size: 1.375rem;
         line-height: 29px;
-        color: #FFFFFF;
+    }
+
+    .sect1__button_right {
+        font-size: 1.375rem;
+        line-height: 29px;
+        padding: 17px 20px !important;
         margin-left: 0 !important;
         margin-top: 13px;
-        text-align: center;
     }
 
     .sect1__subtitle {
         font-weight: 300;
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 20px !important;
+        line-height: 23px !important;
         letter-spacing: 0.09em;
     }
 
@@ -62,7 +72,6 @@
     }
 
     .sect1 {
-
         margin-top: 0px !important;
         background-image: url(../img/sect1-mob-bg.svg) !important;
         background-size: cover;
@@ -73,6 +82,150 @@
         margin-top: 78px;
         width: 157px !important;
         height: 2px !important;
+    }
+
+    .sect2__card {
+        padding: 44px 15px !important;
+    }
+
+    .card__button {
+        margin-top: 29px;
+        display: block;
+        font-size: 20px;
+        line-height: 23px;
+        padding: 17px 17px !important;
+    }
+
+    .sect2__title {
+        font-weight: 900;
+        font-size: 30px !important;
+        line-height: 35px !important;
+    }
+
+    .card__title {
+        font-size: 26px !important;
+        line-height: 30px !important;
+    }
+
+    .card__text {
+        font-size: 16px !important;
+    }
+
+    .sect2__button {
+        font-size: 20px !important;
+        line-height: 23px !important;
+        padding: 20px 10px !important;
+    }
+
+    .sect3__image {
+        display: none;
+    }
+
+    .sect3__underline {
+        padding-bottom: 100px !important;
+    }
+
+    .sect3 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        padding-top: 70px;
+        background-image: none !important;
+    }
+
+    .form__radio {
+        display: block !important;
+    }
+
+    .sect4__title_second {
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 55px !important;
+        margin-bottom: 31px !important;
+    }
+
+    .form__input {
+        width: 60% !important;
+        font-weight: 300;
+        font-size: 25px !important;
+        line-height: 29px !important;
+        color: #0b0b0b;
+        padding: 12px 12px !important;
+        outline: none;
+        transition: .4s all;
+        border: none;
+        max-width: 540px;
+    }
+
+    .form__input::placeholder {
+        font-size: 25px !important;
+        line-height: 29px !important;
+    }
+
+    .form__submit {
+        width: 60%;
+        font-size: 20px !important;
+        line-height: 23px !important;
+        outline: none !important;
+    }
+
+    .sect5 {
+        margin-top: 91px !important;
+    }
+
+    .sect4__title {
+        font-size: 30px !important;
+        line-height: 35px !imporant;
+    }
+
+    .sect5__title {
+        font-size: 30px !important;
+        line-height: 35px !important;
+        color: #0b0b0b;
+        text-transform: uppercase;
+        margin-bottom: 32px !important;
+    }
+
+    .header {
+        padding: 0px 20px !important;
+    }
+
+    .sect6__title {
+        font-size: 30px !important;
+        line-height: 35px !important;
+        margin-top: 50px !important;
+    }
+
+    .sect6__text {
+        font-size: 18px !important;
+        margin-top: 25px !important;
+    }
+
+    .sect6__button {
+        font-size: 20px !important;
+        line-height: 23px !important;
+        margin-top: 44px !important;
+    }
+
+    .footer {
+        margin-top: 90px !important;
+    }
+
+    .footer__title {
+        font-size: 25px !important;
+        line-height: 29px !important;
+        padding-top: 66px !important;
+    }
+
+    .footer__adress, .footer__mail, .footer__phone {
+        font-size: 25px !important;
+        line-height: 29px !important;
+        margin-top: 10px !important;
+    }
+
+    .footer-navbar__nav a, .footer-navbar__service a, .footer-navbar__nav h3 , .footer-navbar__service h3 {
+        font-size: 25px !important;
+        line-height: 29px !important;
+        padding-top: 10px !important;
     }
 }
 
@@ -85,9 +238,31 @@
         margin-top: 41px;
         padding-left: 106px !important;
     }
+
+    .sect3__right {
+        padding-left: 0px !important;
+        margin-top: 90px;
+    }
+
+    .sect3__right {
+        padding-left: 109px !important;
+        margin-top: 90px;
+    }
+
+    .sect3 {
+        padding-left: 61px;
+        padding-right: 61px;
+        padding-top: 161px;
+        background-image: url(../img/sect3-bg.svg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    .sect3__underline {
+        background-image: none !important;
+        padding-bottom: 167px;
+    }
 }
-
-
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -137,7 +312,6 @@ a {
 }
 
 .navbar__px-container {
-    margin: 0px 61px;
     padding: 0px;
 }
 
@@ -157,6 +331,7 @@ a {
     background-position: right;
     background-repeat: no-repeat;
     border-bottom: 1px solid #0b0b0b;
+    background-color: #fff;
 }
 
 .language__non-active {
@@ -174,7 +349,7 @@ a {
 
 .sect1 {
     margin-top: 161px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     background-image: url(../img/elp.svg);
     background-position: 0 100%;
     background-repeat: no-repeat;
@@ -188,14 +363,13 @@ a {
     background-color: #231F20;
     width: 207px;
     height: 3px;
+    margin-bottom: 67px;
 }
 
-.sect1__title {
-    padding-top: 67px;
-    padding-bottom: 38px;
-}
+
 
 .sect1__subtitle {
+    margin-top: 38px;
     font-weight: 300;
     font-size: 36px;
     line-height: 42px;
@@ -245,7 +419,6 @@ a {
 }
 
 .sect2__title {
-    font-style: normal;
     text-transform: uppercase;
     font-weight: 900;
     font-size: 50px;
@@ -259,11 +432,10 @@ a {
 
 .sect2__card {
     background-color: #E0C0B4;
-    padding: 0px 40px;
+    padding: 44px 40px;
 }
 
 .card__title {
-    font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 35px;
@@ -273,17 +445,16 @@ a {
 
 .card__button {
     margin-top: 29px;
-    margin-bottom: 44px;
     display: block;
-    font-style: normal;
-    font-weight: normal;
+
+
     font-size: 22px;
     line-height: 29px;
     color: #111111;
     text-transform: uppercase;
     border: 2px solid #000000;
     box-sizing: border-box;
-    padding: 17px 87px;
+    padding: 17px 0px;
     transition: .4s all;
 }
 
@@ -293,61 +464,50 @@ a {
     text-transform: uppercase;
     border: 2px solid #000000;
     box-sizing: border-box;
-    padding: 17px 87px;
+    padding: 17px 0px;
 }
 
 .sect2__button {
+    margin-top: 72px;
     text-transform: uppercase;
     display: block;
-    font-style: normal;
-    font-weight: normal;
     font-size: 22px;
-    line-height: 29px;
+    line-height: 26px;
     color: #FFFFFF;
     background-color: #231F20;
-    padding: 20px 140px;
+    padding: 20px 10px;
     transition: .4s all;
 }
 
 .sect2__button:hover {
     color: #231F20;
     background-color: #E0C0B4;
-    padding: 20px 140px;
+    padding: 20px 10px;
 }
 
-.sect3 {
-    padding-left: 61px;
-    padding-right: 61px;
-    padding-top: 161px;
-    background-image: url(../img/sect3-bg.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-}
 
-.sect3__right_image {
-    margin-top: 90px;
-}
+
+
 
 .sect3__right_text {
     margin-top: 29px;
-    font-style: normal;
+
     font-weight: 300;
     font-size: 22px;
     line-height: 140%;
     color: #0b0b0b;
 }
 
-.sect3__right {
-    padding-left: 109px;
-}
-
 .sect3__underline {
+    background-image: url(../img/sect3-bg-mobile.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
     padding-bottom: 167px;
     border-bottom: 1px solid #0b0b0b;
 }
 
 .sect4__title {
-    font-style: normal;
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
@@ -360,6 +520,7 @@ a {
     background-image: url(../img/sect4-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .sect4__form {
@@ -368,7 +529,7 @@ a {
 }
 
 .form__text {
-    font-style: normal;
+
     font-weight: 900;
     font-size: 22px;
     line-height: 26px;
@@ -399,7 +560,6 @@ a {
 
 .form__text_pt {
     padding-top: 14px;
-    font-style: normal;
     font-weight: 900;
     font-size: 22px;
     line-height: 26px;
@@ -414,7 +574,7 @@ input::-webkit-calendar-picker-indicator {
 
 .form__radio label {
     margin-top: 40px;
-    font-style: normal;
+
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
@@ -423,8 +583,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .form__submit {
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
@@ -444,7 +603,6 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .sect4__title_second {
-    font-style: normal;
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
@@ -458,8 +616,8 @@ input::-webkit-calendar-picker-indicator {
 .sect4__button {
     text-transform: uppercase;
     display: block;
-    font-style: normal;
-    font-weight: normal;
+
+
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
@@ -469,8 +627,6 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .sect5__title {
-    font-style: normal;
-    font-weight: normal;
     font-size: 40px;
     line-height: 47px;
     color: #0b0b0b;
@@ -497,7 +653,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .sect5-card__title {
-    font-style: normal;
+
     font-weight: 900;
     font-size: 22px;
     line-height: 26px;
@@ -507,7 +663,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .sect5-card__text {
-    font-style: normal;
+
     font-weight: 300;
     font-size: 18px;
     line-height: 131.19%;
@@ -517,26 +673,24 @@ input::-webkit-calendar-picker-indicator {
 
 .sect5-card__button {
     display: block;
-    font-style: normal;
-    font-weight: normal;
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
     text-transform: uppercase;
     background-color: #231F20;
-    padding: 17px 93px 17px 93px;
+    padding: 17px 10px;
     text-align: center;
     margin-bottom: 40px;
 }
 
 .sect5__button {
-    font-style: normal;
-    font-weight: normal;
+    display: block;
+
     font-size: 22px;
     line-height: 26px;
     text-transform: uppercase;
     color: #FFFFFF;
-    padding: 22px 106px;
+    padding: 22px 0px;
     background-color: #231F20;
     margin-top: 69px;
 }
@@ -546,6 +700,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 /*
+
 .cl {
   height:200px;
   padding:10px;
@@ -592,10 +747,11 @@ input::-webkit-calendar-picker-indicator {
 
 .slick-current {
     opacity: 1 !important;
-}*/
+}
+*/
 
 .sect6__title {
-    font-style: normal;
+
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
@@ -606,7 +762,6 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .sect6__text {
-    font-style: normal;
     font-weight: 300;
     font-size: 20px;
     line-height: 140%;
@@ -617,7 +772,6 @@ input::-webkit-calendar-picker-indicator {
 
 .sect6__button {
     display: block;
-    font-style: normal;
     font-weight: bold;
     font-size: 25px;
     line-height: 29px;
@@ -625,7 +779,7 @@ input::-webkit-calendar-picker-indicator {
     text-transform: uppercase;
     color: #231F20;
     margin-top: 120px;
-    padding: 25px 155px;
+    padding: 25px 10px;
     background-color: #E0C0B4;
 }
 
@@ -651,8 +805,6 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .footer__title {
-    font-style: normal;
-    font-weight: normal;
     font-size: 22px;
     line-height: 26px;
     text-transform: uppercase;
@@ -661,8 +813,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .footer__title_time {
-    font-style: normal;
-    font-weight: normal;
+
+
     font-size: 22px;
     line-height: 26px;
     text-transform: uppercase;
@@ -672,7 +824,6 @@ input::-webkit-calendar-picker-indicator {
 
 .footer__phone {
     display: block;
-    font-style: normal;
     font-weight: 900;
     font-size: 22px;
     line-height: 26px;
@@ -682,7 +833,6 @@ input::-webkit-calendar-picker-indicator {
 
 .footer__adress {
     display: block;
-    font-style: normal;
     font-weight: 900;
     font-size: 22px;
     line-height: 26px;
@@ -693,7 +843,6 @@ input::-webkit-calendar-picker-indicator {
 .footer__mail {
     display: block;
     margin-top: 13px;
-    font-style: normal;
     font-weight: 900;
     font-size: 22px;
     line-height: 26px;
@@ -755,7 +904,6 @@ input::-webkit-calendar-picker-indicator {
     font-size: 20px;
     line-height: 23px;
     color: #E0C0B4;
-    padding-top: 15vh;
 }
 
 .footer__company a {
@@ -822,4 +970,18 @@ input::-webkit-calendar-picker-indicator {
 
 .form__radio {
     display: inline-flex;
+    padding-left: 2%;
+}
+
+.card__text {
+    padding-top: 22px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #0b0b0b;
+}
+
+.header {
+    padding: 0px 61px;
+    background-color: #fff;
 }
