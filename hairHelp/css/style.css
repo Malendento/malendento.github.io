@@ -137,19 +137,19 @@
     }
 
     .sect4__title_second {
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 20px !important;
+        line-height: 28px !importat;
         margin-top: 55px !important;
         margin-bottom: 31px !important;
     }
 
     .form__input {
-        width: 60% !important;
+        width: 90% !important;
         font-weight: 300;
         font-size: 25px !important;
         line-height: 29px !important;
         color: #0b0b0b;
-        padding: 12px 12px !important;
+        padding: 12px 6px !important;
         outline: none;
         transition: .4s all;
         border: none;
@@ -162,6 +162,7 @@
     }
 
     .form__submit {
+        padding: 17px 9px !important;
         width: 60%;
         font-size: 20px !important;
         line-height: 23px !important;
@@ -216,16 +217,30 @@
         padding-top: 66px !important;
     }
 
-    .footer__adress, .footer__mail, .footer__phone {
+    .footer__adress,
+    .footer__mail,
+    .footer__phone {
         font-size: 25px !important;
         line-height: 29px !important;
         margin-top: 10px !important;
     }
 
-    .footer-navbar__nav a, .footer-navbar__service a, .footer-navbar__nav h3 , .footer-navbar__service h3 {
+    .footer-navbar__nav a,
+    .footer-navbar__service a,
+    .footer-navbar__nav h3,
+    .footer-navbar__service h3 {
         font-size: 25px !important;
         line-height: 29px !important;
         padding-top: 10px !important;
+    }
+
+    .sect4__button {
+        font-size: 20px !important;
+        line-height: 26px;
+        color: #FFFFFF;
+        background-color: #231F20;
+        padding: 17px 79px;
+        margin-bottom: 29px;
     }
 }
 
@@ -583,7 +598,6 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .form__submit {
-
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
@@ -616,8 +630,6 @@ input::-webkit-calendar-picker-indicator {
 .sect4__button {
     text-transform: uppercase;
     display: block;
-
-
     font-size: 22px;
     line-height: 26px;
     color: #FFFFFF;
