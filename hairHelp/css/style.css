@@ -246,7 +246,7 @@
     }
 
     .sect5__button {
-        font-size: 1.250rem !important;
+        font-size: 19px !important;
         line-height: 23px !important;
     }
 }
@@ -337,8 +337,8 @@ a {
 
 .navbar-brand {
     padding-top: 15px;
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     margin-left: 87px;
 }
 
