@@ -27,12 +27,13 @@
 
     <header class="header fixed-top">
         <nav class="navbar navbar-expand-lg navbar__px-container">
-            <a class="navbar-brand" href="#"><img class="brand__m" src=./img/nav_logo.svg></a>
+            <a class="navbar-brand" href="#"><img class="brand__m" src=./img/nav_logo.svg> </a>
                
-                 <div id="hamburger" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <div></div>
-                <div></div>
-                <div></div>
+                
+                  <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -57,16 +58,35 @@
         </nav>
     </header>
 
-            <div class="navbar__mobile">
-                 <div class="row">
-                     <div class="col-6">
-                         <a class="navbar-brand" href="#"><img class="brand__m" src=./img/nav_logo.svg></a>
-                     </div>
-                     <div class="col-6 text-right">
-                         
-                     </div>
-                 </div>
-            </div>
+    <div id="sidebar" class="sidebar__mobile">
+        <div class="sidebar-mobile__nav">
+            <a class="side-brand" href="#"><img class="brand__m" src=./img/nav_logo.svg> </a> <div class="nav__chrested">
+                <div></div>
+                <div></div>
+        </div>
+
+
+    </div>
+    <div class="row no-gutters px-container sidebar-mobile__lang">
+        <div class="col-6"><a href="#">записаться</a></div>
+        <div class="col-6 text-right"><a href="#">en </a><span>/</span>
+            <a href="#">ru</a></div>
+    </div>
+    <div class="sidebar-mobile__items px-container">
+        <a href="#">магазин</a>
+        <a href="#">услуги</a>
+        <a href="#">контакты</a>
+        <a href="#">блог</a>
+        <a href="#">faq</a>
+    </div>
+    <div class="px-container">
+        <a href="tel:+380975938308" class="sidebar-mobile__social_phone">+380975938308</a>
+    </div>
+    <div class="sidebar-mobile__social px-container">
+        <a href="#" target="_blank">instagram</a>
+        <a class="pl-5" href="#" target="_blank">facebook</a>
+    </div>
+    </div>
 
     <main class="main">
         <section class="sect1">
@@ -403,6 +423,18 @@
             });
     </script>
 
+    <script>
+        $(document).ready(function() {
+            $('.sidebar-mobile__lang a, .nav__chrested, .sidebar-mobile__items a, .sidebar-mobile__social a, .sidebar-mobile__social_phone a').on('click', function() {
+                $('.sidebar__mobile').removeClass('active');
+            });
+
+            $('#hamburger').on('click', function() {
+                $('.sidebar__mobile').addClass('active');
+            });
+        });
+    </script>
+
 
     <!--
     <script>
@@ -485,4 +517,6 @@
     </script>
 -->
 
-</body></html>
+</body>
+
+</html>
