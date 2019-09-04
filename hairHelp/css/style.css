@@ -79,7 +79,7 @@
     }
 
     .sect1__underline {
-        margin-top: 78px;
+        margin-top: 78px !important;
         width: 157px !important;
         height: 2px !important;
     }
@@ -380,16 +380,17 @@ a {
 }
 
 .sect1__underline {
+    margin-top: 78px;
     background-color: #231F20;
     width: 207px;
     height: 3px;
-    margin-bottom: 47px;
+    margin-bottom: 67px;
 }
 
 
 
 .sect1__subtitle {
-    margin-top: 28px;
+    margin-top: 38px;
     font-weight: 300;
     font-size: 30px;
     line-height: 35px;
@@ -422,7 +423,7 @@ a {
 
 .sect1__button {
     display: inline-flex;
-    margin-top: 32px;
+    margin-top: 51px;
     padding-bottom: 210px;
 }
 
