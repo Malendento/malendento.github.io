@@ -429,7 +429,7 @@ input::-webkit-calendar-picker-indicator {
     line-height: 26px;
     color: #FFFFFF;
     background-color: #231F20;
-    outline: none;
+    outline: none !important;
     border: none;
     padding: 17px 79px;
     margin-top: 48px;
@@ -710,7 +710,6 @@ input::-webkit-calendar-picker-indicator {
     color: #E0C0B4;
     display: block;
     padding-top: 13px;
-    padding-left: 70px;
 }
 
 .footer-navbar__service a {
@@ -749,7 +748,6 @@ input::-webkit-calendar-picker-indicator {
     text-transform: uppercase;
     color: #E0C0B4;
     padding-bottom: 21px;
-    padding-left: 70px;
 }
 
 .footer__company {
@@ -757,7 +755,7 @@ input::-webkit-calendar-picker-indicator {
     font-size: 20px;
     line-height: 23px;
     color: #E0C0B4;
-    padding-top: 140px;
+    padding-top: 15vh;
 }
 
 .footer__company a {
