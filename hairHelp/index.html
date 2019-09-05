@@ -14,7 +14,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
@@ -23,11 +22,11 @@
     <title>Hair Help</title>
 </head>
 
-<body>
+<body id="page-top">
 
     <header class="header fixed-top">
         <nav class="navbar navbar-expand-lg navbar__px-container">
-            <a class="navbar-brand" href="#"><img class="brand__m" src=./img/nav_logo.svg> </a>
+            <a class="navbar-brand" href="#page-top"><img class="brand__m" src=./img/nav_logo.svg> </a>
                
                 
                   <div id="hamburger">
@@ -70,7 +69,7 @@
     <div class="row no-gutters px-container sidebar-mobile__lang">
         <div class="col-6"><a href="#">записаться</a></div>
         <div class="col-6 text-right"><a href="#">en </a><span>/</span>
-            <a href="#">ru</a></div>
+            <a class="non-active" href="#">ru</a></div>
     </div>
     <div class="sidebar-mobile__items px-container">
         <a href="#">магазин</a>
@@ -356,9 +355,9 @@
 
 
     <footer class="footer">
-        <div class="container-fluid px-container footer__bg">
+        <div class="container-fluid footer__bg">
             <div class="row footer_pt">
-                <div class="col-lg-6 order-lg-2">
+                <div class="col-lg-6 px-container order-lg-2">
                     <div class="row no-gutters">
                         <div class="col-lg-4">
                             <h3 class="footer__title">связаться с нами</h3>
@@ -426,11 +425,11 @@
     <script>
         $(document).ready(function() {
             $('.sidebar-mobile__lang a, .nav__chrested, .sidebar-mobile__items a, .sidebar-mobile__social a, .sidebar-mobile__social_phone a').on('click', function() {
-                $('.sidebar__mobile').removeClass('active');
+                $('.sidebar__mobile').removeClass('active-sidebar');
             });
 
             $('#hamburger').on('click', function() {
-                $('.sidebar__mobile').addClass('active');
+                $('.sidebar__mobile').addClass('active-sidebar');
             });
         });
     </script>
@@ -467,7 +466,7 @@
 
 
     <script>
-        $(document).on('click', '.scroll-nav', function(event) {
+        $(document).on('click', 'a[href^="#"]', function(event) {
             event.preventDefault();
 
             $('html, body').animate({

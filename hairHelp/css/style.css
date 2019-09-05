@@ -3,7 +3,7 @@
         margin-top: 50px !important;
         background-image: none !important;
     }
-    
+
     .sect3__image {
         width: 100%;
     }
@@ -36,7 +36,6 @@
     .navbar-brand {
         width: 74px !importnat;
         height: 74px !important;
-        padding-top: 2px !important;
         margin-left: 0px !important;
     }
 
@@ -264,6 +263,42 @@
         padding-top: 10px !important;
     }
 
+    .faq-card__title h3 {
+        font-size: 20px !important;
+        line-height: 23px !important;
+    }
+    
+    .faq__card:hover .faq-card__title h3 {
+    transform: translateX(0px) !important;
+}
+
+    .faq-card__header {
+        padding: 0px !important;
+        background: #E0C0B4;
+        border: 1px solid #0b0b0b;
+        box-sizing: border-box;
+        border-radius: 0px !important;
+        margin-bottom: 47px !important;
+    }
+    
+    .faq-card__body {
+    font-size: 20px !important;
+    line-height: 131.19% !important;
+    border: none !important;
+    box-sizing: border-box;
+    margin-bottom: 80px !important;
+    padding: 10px !important;
+}
+    
+    .faq-card__title img {
+    transform: translateY(14px) !important;
+}
+
+    .doctors-card__text a {
+        font-size: 20px !important;
+        line-height: 23px !important;
+    }
+
     .sect4__button {
         font-size: 20px !important;
         line-height: 23px !important;
@@ -277,6 +312,105 @@
     .footer_pt {
         padding-top: 0px !important;
     }
+
+    .shopcart__text h1 {
+        font-size: 30px !important;
+        line-height: 35px !important;
+    }
+    
+    .faq h1 {
+    margin-top: 38px;
+    margin-bottom: 33px !important;
+    font-size: 30px !important;
+    line-height: 35px !important;
+        padding: 0px 10px;
+}
+
+    .shopcart-card__text {
+        padding-left: 0px !important;
+    }
+
+    .shopcart__button,
+    .checkout__form button {
+        font-size: 20px !important;
+        line-height: 23px !important;
+    }
+
+    .checkout__card {
+        display: none;
+    }
+
+    .checkout__title {
+        margin-bottom: 16px !important;
+        font-size: 30px !important;
+        line-height: 35px !important;
+    }
+
+    .checkout__number {
+        display: block;
+        margin-bottom: 16px;
+        color: #848484 !important;
+        font-size: 20px !important;
+        line-height: 23px !important;
+    }
+
+    .checkout__price {
+        font-size: 25px !important;
+        line-height: 29px !important;
+    }
+
+    .checkout__form h2,
+    .checkout__form input,
+    .checkout__form input::placeholder,
+    .checkout__form textarea,
+    .checkout__form textarea::placeholder,
+    .checkout__form select {
+        font-size: 25px !important;
+        line-height: 29px !important;
+    }
+
+    .doctors-card__text h2 {
+        font-size: 24px !important;
+        line-height: 28px !important;
+    }
+
+    .doctors-card__text span {
+        display: none !important;
+    }
+
+    .shopcart-card__number input {
+        width: 30% !important;
+        margin-left: 10px !important;
+    }
+
+    .shopcart-card__bg {
+        height: 25vh !important;
+    }
+
+    .shopcart-card__number {
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+        padding-right: 0px !important;
+    }
+
+    .doctors-card__bg {
+        background-image: url(../img/antoshka.jpg);
+        background-repeat: no-repeat;
+        height: 85vw !important;
+    }
+
+    .nav-item__width {
+        width: 100% !important;
+        transition: .5s all;
+    }
+
+    .doctors-card__text {
+        padding-left: 0px !important;
+    }
+
+
+
 }
 
 @media (min-width: 992px) {
@@ -314,13 +448,28 @@
     .sidebar__mobile {
         display: none;
     }
+
+    .doctors-card__text {
+        padding-left: 35px !important;
+    }
+
+    .faq-card__header {
+        padding: 25px 18px !important;
+        background: #E0C0B4;
+        border: 1px solid #0b0b0b;
+        box-sizing: border-box;
+        border-radius: 0px !important;
+        margin-bottom: 21px !important;
+    }
+
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-a {
+a,
+button {
     text-decoration: none !important;
 }
 
@@ -352,8 +501,8 @@ a {
 .nav-link {
     padding: 9px 0 0 0 !important;
     text-transform: uppercase;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 21px;
     color: #242323;
 }
 
@@ -401,7 +550,7 @@ a {
 .language__non-active {
     font-weight: bold;
     font-size: 18px;
-    line-height: 23px;
+    line-height: 21px;
     color: #E0C0B4;
 }
 
@@ -1053,7 +1202,7 @@ input::-webkit-calendar-picker-indicator {
     transition: 1s all;
 }
 
-.active {
+.active-sidebar {
     right: 0;
     transition: 1s all;
 }
@@ -1104,7 +1253,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .sidebar-mobile__lang a,
-span {
+.sidebar-mobile__lang span {
     font-size: 20px;
     line-height: 23px;
     color: #0b0b0b;
@@ -1133,4 +1282,506 @@ span {
     text-transform: uppercase;
     margin-top: 29px;
     margin-bottom: 45px;
+}
+
+.non-active {
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF !important;
+}
+
+.shopcart__text h1 {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+}
+
+.shopcart__text p {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 23px;
+    color: #848484;
+}
+
+.shopcart__text span {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #231F20;
+}
+
+.shopcart__button {
+    display: block;
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 65px;
+    padding: 17px;
+    background-color: #231F20;
+}
+
+.shopcart__card {
+    border: 1px solid #0b0b0b;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 58px;
+}
+
+.shopcart-card__padding {
+    padding: 40px 22px;
+}
+
+.shopcart-card__bg {
+    background-image: url(../img/product.png);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.shopcart-card__number div {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #242323;
+}
+
+.shopcart-card__number div:nth-child(1) {
+    padding: 8px 37px;
+    background-color: #E0C0B4;
+}
+
+.shopcart-card__number img:nth-child(2) {
+    padding-top: 8px;
+    display: block;
+    text-align: left;
+}
+
+.shopcart-card__chrested div {
+    height: 2px;
+    background-color: #E0C0B4;
+    transition: all .3s;
+}
+
+.shopcart-card__chrested div:nth-child(1) {
+    width: 23px;
+    transform: rotate(45deg);
+}
+
+.shopcart-card__chrested div:nth-child(2) {
+    width: 23px;
+    transform: rotate(-45deg);
+    margin-top: -2px;
+}
+
+.shopcart-card__number {
+    display: inline-flex;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.shopcart-card__number input {
+    border: none !important;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #242323;
+    width: 50%;
+    margin-left: 40px;
+    outline: none !important;
+}
+
+.shopcart-card__text h2 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+}
+
+.shopcart-card__text p {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 25px;
+    margin-top: 19px;
+    text-transform: uppercase;
+    color: #848484;
+}
+
+.shopcart-card__text {
+    padding-left: 25px;
+}
+
+.shopcart-card__text span {
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #0b0b0b;
+    padding-top: 22px;
+    padding-bottom: 27px;
+}
+
+.checkout__title {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    margin-bottom: 58px;
+}
+
+.checkout__number {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #231F20;
+}
+
+.checkout__price {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #231F20;
+    margin-bottom: 38px;
+}
+
+.checkout__card {
+    padding: 42px 57px !important;
+    border: 1px solid #0b0b0b;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.checkout-card__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+}
+
+.checkout-card__inline {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.checkout-card__price {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #0b0b0b;
+    transform: translateY(-6px);
+}
+
+.checkout-card__name {
+    margin-bottom: 26px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #848484;
+    text-transform: uppercase;
+}
+
+.checkout-card__volume {
+    padding: 9px 40px;
+    background-color: #E0C0B4;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #242323;
+}
+
+.checkout-card__inline_bottom {
+    display: inline-flex;
+}
+
+.checkout-card__count {
+    font-size: 18px;
+    line-height: 21px;
+    color: #242323;
+    padding-top: 9px;
+    margin-left: 68px;
+}
+
+.checkout__form h2 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #231F20;
+    margin-bottom: 28px;
+    margin-top: 30px;
+}
+
+.checkout__form h2:nth-child(1) {
+    margin-top: 0px;
+}
+
+.checkout__form h2:nth-child(2) {
+    margin-top: 30px;
+}
+
+.checkout__form input {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    color: #242323;
+    width: 100%;
+    padding: 20px;
+    background-color: #E0C0B4;
+    border: none !important;
+    outline: none !important;
+    margin-bottom: 15px;
+}
+
+.checkout__form textarea {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: none;
+    color: #242323;
+    padding: 20px;
+    width: 100%;
+    background-color: #E0C0B4;
+    border: none !important;
+    outline: none !important;
+    margin-bottom: 40px;
+}
+
+.checkout__form textarea::placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #242323;
+    background-color: #E0C0B4;
+}
+
+.checkout__form input::placeholder {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #242323;
+}
+
+.checkout__form button {
+    width: 100%;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #231F20;
+    padding: 17px;
+    border: none !important;
+    outline: none !important;
+}
+
+.checkout__form select {
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #242323;
+    padding: 20px;
+    width: 100%;
+    background-color: #E0C0B4;
+    border: none !important;
+    outline: none !important;
+    margin-bottom: 15px;
+}
+
+.shopcart-card__chrested {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+    z-index: 1101;
+    padding: 15px 5px;
+    transition: .4s all;
+}
+
+.shopcart-card__chrested:hover {
+    transform: rotate(270deg);
+}
+
+.shopcart-card__image img {
+    cursor: pointer;
+}
+
+.shopcart-card__form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item__width {
+    width: 32%;
+    transition: .5s all;
+}
+
+.nav-link__text {
+    font-weight: bold;
+    font-size: 22px;
+    padding: 22px 0px !important;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+    border: none !important;
+    border-radius: 0px !important;
+    border: 3px solid #fff !important;
+    transition: .4s all;
+}
+
+.nav-pills .active {
+    border: 3px solid #E0C0B4 !important;
+}
+
+.nav-link__text:hover {
+    color: #0b0b0b;
+    border: 3px solid #E0C0B4 !important;
+}
+
+.nav-pills li:nth-child(1),
+.nav-pills li:nth-child(2),
+.nav-pills li:nth-child(4),
+.nav-pills li:nth-child(5) {
+    margin-right: 2% !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #0b0b0b !important;
+    background-color: #E0C0B4 !important;
+}
+
+.doctors .nav-item:hover {}
+
+.nav-pills {
+    border-bottom: 1px solid #0b0b0b;
+}
+
+.doctors__card {
+    border: 1px solid #0b0b0b;
+    box-sizing: border-box;
+    padding: 25px 25px 40px 28px;
+    margin-top: 40px;
+}
+
+.doctors-card__bg {
+    background-image: url(../img/antoshka.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0%;
+    height: 100%;
+}
+
+.doctors-card__text h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+}
+
+.doctors-card__text span {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #939393;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.doctors-card__text p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #0b0b0b;
+    margin-bottom: 24px;
+}
+
+.doctors-card__text a {
+    display: block;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #231F20;
+    padding: 17px 5px;
+}
+
+.faq h1 {
+    margin-top: 38px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq__card {
+    outline: none !important;
+    border: none !important;
+}
+
+
+
+
+
+.faq-card__title {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.faq-card__title img {
+    transform: translateY(8px);
+}
+
+.faq-card__title h3 {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    text-align: left !important;
+    color: #0b0b0b;
+    outline: none !important;
+    border: none !important;
+    transition: .4s all;
+}
+
+.faq__card:hover .faq-card__title h3 {
+    text-decoration: none !important;
+    transform: translateX(8px);
+    color: #0b0b0b;
+    outline: none !important;
+    border: none !important;
+}
+
+.faq-card__body {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #0b0b0b;
+    outline: none !important;
+    border: 1px solid #0b0b0b;
+    box-sizing: border-box;
+    margin-bottom: 66px;
+    padding: 47px 45px 80px;
+}
+
+.faq-card__body span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #0b0b0b;
 }
