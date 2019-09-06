@@ -22,7 +22,7 @@
 
 <body id="page-top">
 
-    <header class="header header__shop position-sticky">
+    <header class="header header__shop fixed-top">
         <div id="one" class="row no-gutters">
             <div class="col-lg-5 text-center header-shop__phone">
                 <a href="tel:+380984835443">+380984835443</a>
@@ -43,7 +43,7 @@
         </div>
         <div id="two" class="row no-gutters header-shop__underline_bot">
             <div class="col-lg-2 header-shop__brand">
-                <a href="#"><img src=./img/nav_logo.svg> </a> </div> <div class="col-lg-6 header-shop__content">
+                <a href="#"><img src=./img/nav_logo.svg> </a> </div> <div id="three" class="col-lg-6 header-shop__content">
                     <a href="#">записаться</a>
                     <a href="#">магазин</a>
                     <a href="#">услуги</a>
@@ -52,14 +52,14 @@
             <div class="col-lg-2 header-shop__search">
                 <form>
                     <button type="submit">
-                        <img src="./img/zoom.svg"></button>
-                    <input type="text" placeholder="поиск...">
+                        <img id="eight" src="./img/zoom.svg"></button>
+                    <input id="four" type="text" placeholder="поиск...">
                 </form>
             </div>
             <div class="col-lg-2 header-shop__cart">
-                <span>₴1488</span>
-                <div>
-                    <div class="header-shop__cart_bg">
+                <span id="five">₴1488</span>
+                <div id="six" class="header-shop_mt">
+                    <div id="seven" class="header-shop__cart_bg">
                         <div class="header-shop__cart_number">228</div>
                     </div>
                     <img src="./img/cart.svg">
@@ -249,60 +249,8 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/imask"></script>
-
-    <script>
-        var phoneMask = IMask(
-            document.getElementById('recipient-phone-1'), {
-                mask: '+{38}(000)000-00-00'
-            });
-    </script>
-    <script>
-        window.onload = () => {
-            window.onscroll = (e) => {
-                console.log(e)
-            }
-        }
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('.sidebar-mobile__lang a, .nav__chrested, .sidebar-mobile__items a, .sidebar-mobile__social a, .sidebar-mobile__social_phone a').on('click', function() {
-                $('.sidebar__mobile').removeClass('active-sidebar');
-            });
-
-            $('#hamburger').on('click', function() {
-                $('.sidebar__mobile').addClass('active-sidebar');
-            });
-        });
-    </script>
-
-    <script>
-        function incrementValue() {
-            var value = parseInt(document.getElementById('number').value, 10);
-            value = isNaN(value) ? 0 : value;
-            value++;
-            document.getElementById('number').value = value;
-        }
-
-        function decrementValue() {
-            var value = parseInt(document.getElementById('number').value, 10);
-            value = isNaN(value) ? 0 : value;
-            value--;
-            if (value > 0) {
-                document.getElementById('number').value = value;
-            }
-        }
-    </script>
-
-    <script>
-        $(document).on('click', 'a[href^="#"]', function(event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top - 120
-            }, 900);
-        });
-    </script>
+    <script src="js/function.js"></script>
+    
 </body>
 
 </html>

@@ -397,14 +397,14 @@
         line-height: 35px !important;
         padding: 0px 10px;
     }
-    
+
     .blog-card__p {
-    padding: 23px 18px 38px 18px !important;
-}
-    
-    .blog__card h2{
-    padding-right: 0 !important;
-}
+        padding: 23px 18px 38px 18px !important;
+    }
+
+    .blog__card h2 {
+        padding-right: 0 !important;
+    }
 
     .shopcart-card__text {
         padding-left: 0px !important;
@@ -453,6 +453,19 @@
         font-size: 24px !important;
         line-height: 28px !important;
     }
+    
+    .news__text h2 {
+    margin-top: 40px;
+    font-size: 26px !important;
+    line-height: 30px !important;
+    margin-bottom: 25px !important;
+}
+    
+        .news__text h3 {
+    font-size: 20px !important;
+    line-height: 131.19% !important;
+    margin-bottom: 20px !important;
+}
 
     .doctors-card__text span {
         display: none !important;
@@ -478,7 +491,7 @@
     }
 
     .shopcart-card__bg {
-        height: 25vh !important;
+        height: 60vw !important;
     }
 
     .shopcart-card__number {
@@ -507,20 +520,42 @@
         display: none;
     }
 
-    .blog h1, .news h1{
+    .blog h1,
+    .news h1 {
         font-size: 30px !important;
-        line-height: 35px !important;    
+        line-height: 35px !important;
         margin-bottom: 25px !important;
     }
     
-    .blog-card__bg {
-        height: 40vh !important;
+    .news__bg, .news__bg_second {
+    height: 70vw !important;
 }
     
-    .blog__card p{
-    font-size: 16px !important;
-    margin: 20px 0px 30px 0px !important;
+    .news__bg_p {
+    padding-left: 15px !important;
 }
+
+    .blog-card__bg {
+        height: 40vh !important;
+    }
+
+    .blog__card p {
+        font-size: 16px !important;
+        margin: 20px 0px 30px 0px !important;
+    }
+    
+    .news__buttons a{
+    display: block !important;
+}
+    
+    .news__buttons a:nth-child(2){
+    margin-left: 0px !important;
+    margin-top: 22px;
+}
+
+    .main {
+        margin-top: 0px !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1300,6 +1335,7 @@ input::-webkit-calendar-picker-indicator {
     padding: 0px 61px;
     background-color: #fff;
     transition: .6s all;
+    z-index: 1488;
 }
 
 .sect3__px {
@@ -1968,11 +2004,9 @@ input::-webkit-calendar-picker-indicator {
     line-height: 21px;
     text-transform: uppercase;
     color: #242323;
-    margin-top: 30px;
     display: inline-block;
     transition: .4s all;
     border-bottom: 4px solid #fff;
-    transform: translateY(-8px);
 }
 
 .header-shop__content a:hover {
@@ -1991,7 +2025,7 @@ input::-webkit-calendar-picker-indicator {
     border: none !important;
     outline: none !important;
     width: 100%;
-    margin-top: 11px;
+    margin-top: 13px;
     padding: 10px 40px 10px 15px;
     font-size: 18px;
     line-height: 21px;
@@ -2024,7 +2058,7 @@ input::-webkit-calendar-picker-indicator {
     height: 37px;
     width: 37px;
     right: 5px;
-    top: 13px;
+    top: 15px;
     padding: 0px;
     z-index: 2;
     transition: all .2s;
@@ -2038,8 +2072,8 @@ input::-webkit-calendar-picker-indicator {
     font-weight: bold;
     font-size: 22px;
     line-height: 26px;
-    color: #242323;
     margin-top: 18px;
+    color: #242323;
     display: block;
     margin-right: 30px;
 }
@@ -2049,10 +2083,7 @@ input::-webkit-calendar-picker-indicator {
     justify-content: flex-end;
 }
 
-.header-shop__cart img {
-    margin-top: 20px;
-    margin-right: 9px;
-}
+
 
 .header-shop__cart_bg {
     position: absolute;
@@ -2106,7 +2137,8 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 50px;
 }
 
-.blog h1, .news h1{
+.blog h1,
+.news h1 {
     font-weight: bold;
     font-size: 40px;
     line-height: 47px;
@@ -2115,14 +2147,15 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 40px;
     margin-bottom: 52px;
 }
+
 .blog__card {
     border: 1px solid #0b0b0b;
     box-sizing: border-box;
     margin-bottom: 30px;
 }
 
-.blog__card a{
-   display: block;
+.blog__card a {
+    display: block;
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
@@ -2130,7 +2163,7 @@ input::-webkit-calendar-picker-indicator {
     color: #0b0b0b;
 }
 
-.blog__card p{
+.blog__card p {
     font-weight: 300;
     font-size: 18px;
     line-height: 131.19%;
@@ -2149,7 +2182,7 @@ input::-webkit-calendar-picker-indicator {
     height: 100%;
 }
 
-.blog__card h2{
+.blog__card h2 {
     font-weight: bold;
     font-size: 25px;
     line-height: 29px;
@@ -2159,10 +2192,16 @@ input::-webkit-calendar-picker-indicator {
 }
 
 #one {
-    transition: 0.5s all;
+    transition: 0.4s all;
 }
 
-#two {
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight {
     transition: 1s all;
 }
 
@@ -2170,7 +2209,7 @@ input::-webkit-calendar-picker-indicator {
     padding: 52px 80px 56px 0;
 }
 
-.news__text h2{
+.news__text h2 {
     font-weight: bold;
     font-size: 30px;
     line-height: 35px;
@@ -2179,29 +2218,63 @@ input::-webkit-calendar-picker-indicator {
     margin-bottom: 36px;
 }
 
-.news__text p{
+.news__text p {
     font-weight: 300;
     font-size: 20px;
     line-height: 131.19%;
     color: #0b0b0b;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 }
 
-
-
-
-
-.news__text h3{
+.news__text h3 {
     font-weight: normal;
     font-size: 25px;
     line-height: 131.19%;
     color: #838383;
 }
 
+.header-shop__content {
+    margin-top: 22px;
+}
 
+.main {
+    margin-top: 129px;
+}
 
-.news__img {
-    float: right;
-    margin-left: 79px;
-    margin-bottom: 52px;
+.header-shop_mt {
+    margin-top: 20px;
+    margin-right: 9px;
+}
+.news__bg_p {
+    padding-left: 10%;
+}
+
+.news__bg, .news__bg_second {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.news__buttons {
+    display: inline-block;
+}
+
+.news__buttons a{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    transition: .5s all;
+}
+
+.news__buttons a:hover{
+    padding-left: 10px;
+    margin-right: -10px;
+}
+
+.news__buttons a:nth-child(2){
+    margin-left: 70px;
 }
