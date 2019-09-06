@@ -89,7 +89,7 @@
             <div class="container-fluid px-container">
                 <div class="row no-gutters justify-content-between">
                     <div class="col-lg-6 sect1__margin">
-                        <div class="sect1__underline"></div>
+                        <div id="bg-white" class="sect1__underline"></div>
                         <picture>
                             <source srcset="./img/h1-mobile.svg" media="(max-width: 992px)">
                             <img src="./img/h1-desktop.svg" alt="hairHelp">
@@ -434,8 +434,8 @@
     <script>
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
-            var objectSelect = $("#sect2");
-            var objectPosition = objectSelect.offset().top - 100;
+            var objectSelect = $("#bg-white");
+            var objectPosition = objectSelect.offset().top;
             if (scroll > objectPosition) {
                 $(".header").addClass("change");
             } else {
