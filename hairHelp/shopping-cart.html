@@ -22,8 +22,8 @@
 
 <body id="page-top">
 
-    <header class="header header__shop fixed-top">
-        <div class="row no-gutters">
+    <header class="header header__shop position-sticky">
+        <div id="one" class="row no-gutters">
             <div class="col-lg-5 text-center header-shop__phone">
                 <a href="tel:+380984835443">+380984835443</a>
             </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="header-shop__underline"></div>
         </div>
-        <div class="row no-gutters header-shop__underline_bot">
+        <div id="two" class="row no-gutters header-shop__underline_bot">
             <div class="col-lg-2 header-shop__brand">
                 <a href="#"><img src=./img/nav_logo.svg> </a> </div> <div class="col-lg-6 header-shop__content">
                     <a href="#">записаться</a>
@@ -257,7 +257,13 @@
                 mask: '+{38}(000)000-00-00'
             });
     </script>
-
+    <script>
+        window.onload = () => {
+            window.onscroll = (e) => {
+                console.log(e)
+            }
+        }
+    </script>
     <script>
         $(document).ready(function() {
             $('.sidebar-mobile__lang a, .nav__chrested, .sidebar-mobile__items a, .sidebar-mobile__social a, .sidebar-mobile__social_phone a').on('click', function() {

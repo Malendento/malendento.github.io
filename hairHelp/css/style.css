@@ -17,6 +17,7 @@
     }
 }
 
+
 @media (min-width: 1321px) and (max-width: 1480px) {
 
     .header-shop__content a:nth-child(1),
@@ -344,13 +345,13 @@
         transform: translateY(14px) !important;
     }
 
-    .header-shop__search img {        
+    .header-shop__search img {
         position: relative;
-        height: 30px!important;
+        height: 30px !important;
         width: 30px !important;
         right: 8px !important;
     }
-    
+
     .header-shop__search button {
         right: 18px !important;
         top: 96px !important;
@@ -358,7 +359,7 @@
         height: 46px !important;
         width: 46px !important;
     }
-    
+
 
 
     .header-shop__search:hover img {
@@ -396,6 +397,14 @@
         line-height: 35px !important;
         padding: 0px 10px;
     }
+    
+    .blog-card__p {
+    padding: 23px 18px 38px 18px !important;
+}
+    
+    .blog__card h2{
+    padding-right: 0 !important;
+}
 
     .shopcart-card__text {
         padding-left: 0px !important;
@@ -497,6 +506,21 @@
     .header__shop {
         display: none;
     }
+
+    .blog h1, .news h1{
+        font-size: 30px !important;
+        line-height: 35px !important;    
+        margin-bottom: 25px !important;
+    }
+    
+    .blog-card__bg {
+        height: 40vh !important;
+}
+    
+    .blog__card p{
+    font-size: 16px !important;
+    margin: 20px 0px 30px 0px !important;
+}
 }
 
 @media (min-width: 992px) {
@@ -547,7 +571,7 @@
         border-radius: 0px !important;
         margin-bottom: 21px !important;
     }
-    
+
     .header__mobile {
         display: none !important;
     }
@@ -635,7 +659,7 @@ button {
     background-position: right;
     background-repeat: no-repeat;
     border-bottom: 1px solid #0b0b0b;
-    background-color: #fff;    
+    background-color: #fff;
 }
 
 .language__non-active {
@@ -1766,7 +1790,6 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .doctors-card__bg {
-    background-image: url(../img/antoshka.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 0%;
@@ -2081,4 +2104,104 @@ input::-webkit-calendar-picker-indicator {
 
 .doctors {
     margin-top: 50px;
+}
+
+.blog h1, .news h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    margin-top: 40px;
+    margin-bottom: 52px;
+}
+.blog__card {
+    border: 1px solid #0b0b0b;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.blog__card a{
+   display: block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+}
+
+.blog__card p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #0b0b0b;
+    margin: 14px 0px;
+}
+
+.blog-card__bg_p {
+    padding: 16px;
+}
+
+.blog-card__bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.blog__card h2{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    padding-right: 25%;
+}
+
+#one {
+    transition: 0.5s all;
+}
+
+#two {
+    transition: 1s all;
+}
+
+.blog-card__p {
+    padding: 52px 80px 56px 0;
+}
+
+.news__text h2{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    margin-bottom: 36px;
+}
+
+.news__text p{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 131.19%;
+    color: #0b0b0b;
+    margin-bottom: 45px;
+}
+
+
+
+
+
+.news__text h3{
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 131.19%;
+    color: #838383;
+}
+
+
+
+.news__img {
+    float: right;
+    margin-left: 79px;
+    margin-bottom: 52px;
 }
