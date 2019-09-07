@@ -83,6 +83,9 @@
     height: 100%;
     min-height: 1px;
     outline: none !important;
+    opacity: .5;
+    transition: .5s all;
+    z-index: -1;
 }
 [dir='rtl'] .slick-slide
 {
@@ -118,4 +121,34 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+
+.slick-active { 
+  padding: 20px 0; 
+}
+
+.slick-center { 
+  transform: scale(1.1);
+}
+
+.slick-slide:not(.slick-active) { 
+  margin: 20px 0; 
+}
+
+.child { 
+  width:100%; 
+}
+
+.slide:not(.slick-active) { 
+  cursor: pointer; 
+}
+
+.slick-current {
+    opacity: 1 !important;    
+    transition-delay: 0s;
+}
+
+.slick-cloned {
+    transition: .5s all;
 }

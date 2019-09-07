@@ -64,3 +64,16 @@
                 document.getElementById('number').value = value;
             }
         }
+
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            var objectSelect = $("#bg-white");
+            var objectPosition = objectSelect.offset().top;
+            if (scroll > objectPosition) {
+                $(".header").addClass("change");
+            } else {
+                $(".header").removeClass("change");
+            }
+        });
+
+     
