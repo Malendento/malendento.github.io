@@ -580,11 +580,9 @@
     .slider-arrow-left {
         left: 0 !important;
     }
-    
-        .slider-arrow-right
-    {
-        
-    right: 0% !important;
+
+    .slider-arrow-right {
+        right: 0% !important;
     }
 
     .news__buttons a:nth-child(2) {
@@ -595,6 +593,15 @@
     .main {
         margin-top: 0px !important;
     }
+
+    .item.slick-slide {
+        transform: scale(0.8) translate(0px) !important;
+    }
+    .slick-slide:after {
+    background: rgba(0, 0, 0, 0) !important;
+}
+
+
 }
 
 @media (min-width: 992px) {
@@ -970,7 +977,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .form__radio label {
-    margin-top: 40px;
+    margin-top: 45px;
     font-weight: 300;
     font-size: 18px;
     line-height: 26px;
@@ -1037,8 +1044,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .sect5-card__image {
-    background-image: url(../img/sect5-photo.jpg);
     background-size: cover;
+    background-position: center;
     height: 39vh;
     background-repeat: no-repeat;
     margin-top: 39px;
@@ -2627,7 +2634,6 @@ input::-webkit-calendar-picker-indicator {
     margin: 5rem 0rem auto;
     max-width: 800px;
     width: 100%;
-    padding: 0 60px;
 }
 
 .slick-prev {
@@ -2663,6 +2669,10 @@ input::-webkit-calendar-picker-indicator {
     transform: scale(0.7) translate(640px);
 }
 
+.item.slick-slide.slick-active {
+    transform: scale(0.8) translate(250px);
+}
+
 .item.slick-slide.slick-center + .slick-slide {
     transform: scale(0.8) translate(-250px);
     z-index: 10;
@@ -2671,10 +2681,6 @@ input::-webkit-calendar-picker-indicator {
 .item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
     transform: scale(0.7) translate(-640px);
     z-index: 5;
-}
-
-.item.slick-slide.slick-active {
-    transform: scale(0.8) translate(250px);
 }
 
 .item.slick-slide.slick-center {

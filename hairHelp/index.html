@@ -190,7 +190,7 @@
                                 <h3 class="form__text_pt pb-lg-2 pb-3">моя проблема:</h3>
 
                             </div>
-                            <div class="col-lg-4 text-center">
+                            <div class="col-lg-4 text-lg-left text-center">
                                 <input class="form__input" list="my-problem" name="choose-problem" placeholder="Выберите из списка">
                                 <datalist id="my-problem">
                                     <option value="rykablood">
@@ -205,11 +205,11 @@
                         </div>
 
                         <div class="row no-gutters justify-content-center">
-                            <div class="col-lg-2 pr-lg-5 pr-0 text-lg-right text-center">
+                            <div class="col-lg-3 pr-lg-5 pr-0 text-lg-right text-center">
                                 <h3 class="form__text pt-5">я хочу:</h3>
 
                             </div>
-                            <div class="form__radio">
+                            <div class="col-lg-4 text-lg-left text-center form__radio">
                                 <div>
                                     <input id="service" type="checkbox" name="choose-radio" value="service">
                                     <label for="service" class="pr-lg-5">Услуги / Процедуры</label>
@@ -252,7 +252,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="sect5-card">
-                            <div class="sect5-card__image"></div>
+                            <div class="sect5-card__image" style="
+    background-image: url(../img/sect5-photo.jpg);"></div>
                             <div class="sect5-card__title">имя фамилия</div>
                             <div class="sect5-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
@@ -264,7 +265,8 @@
                     </div>
                     <div class="col-lg-4 my-lg-0 my-4">
                         <div class="sect5-card">
-                            <div class="sect5-card__image"></div>
+                            <div class="sect5-card__image" style="
+    background-image: url(../img/sect5-photo.jpg);"></div>
                             <div class="sect5-card__title">имя фамилия</div>
                             <div class="sect5-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
@@ -276,7 +278,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="sect5-card">
-                            <div class="sect5-card__image"></div>
+                            <div class="sect5-card__image" style="
+    background-image: url(../img/sect5-photo.jpg);"></div>
                             <div class="sect5-card__title">имя фамилия</div>
                             <div class="sect5-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
@@ -299,43 +302,43 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center">
 
-                    <div>
-                        <div class="wrap">
-                            <div class="slider-arrow-left">
-                                <img src="./img/arrow-left.svg"></div>
-                            <div class="slider">
+                        <div>
+                            <div class="wrap">
+                                <div class="slider-arrow-left">
+                                    <img src="./img/arrow-left.svg"></div>
+                                <div class="slider">
 
-                                <div class="item">
-                                    <img class="img-fluid" src="./img/antoshka.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-fluid" src="./img/zoom.svg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-fluid" src="./img/blog.png" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-fluid" src="./img/cart.svg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-fluid" src="./img/myjchina.png" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-fluid" src="./img/product.png" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-fluid" src="./img/sect5-photo.jpg" alt="">
-                                </div>
-                                <div class="item">
-                                    <img class="img-fluid" src="./img/sect6-center.png" alt="">
-                                </div>
+                                    <div class="item">
+                                        <img class="img-fluid" src="./img/antoshka.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-fluid" src="./img/zoom.svg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-fluid" src="./img/blog.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-fluid" src="./img/cart.svg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-fluid" src="./img/myjchina.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-fluid" src="./img/product.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-fluid" src="./img/sect5-photo.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-fluid" src="./img/sect6-center.png" alt="">
+                                    </div>
 
-                            </div>
-                            <div class="slider-arrow-right">
-                                <img src="./img/arrow-right.svg">
+                                </div>
+                                <div class="slider-arrow-right">
+                                    <img src="./img/arrow-right.svg">
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                     </div>
                     <div class="col-lg-5 sect6__P">
@@ -447,7 +450,10 @@
             responsive: [{
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    arrows: false,
+                    centerMode: false,
+                    variableWidth: false,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
             }, ]
@@ -462,6 +468,7 @@
                 'background-position': 'center',
                 '-webkit-background-size': 'cover',
                 'background-size': 'cover',
+                'background-repeat': 'no-repeat',
             });
             $(this).hide();
         });
