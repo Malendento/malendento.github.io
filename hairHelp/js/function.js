@@ -42,13 +42,6 @@
             });
         });
 
-
-        var phoneMask = IMask(
-            document.getElementById('recipient-phone-1'), {
-                mask: '+{00}(000)000-00-00'
-            });
-
-
         function incrementValue() {
             var value = parseInt(document.getElementById('number').value, 10);
             value = isNaN(value) ? 0 : value;
@@ -74,6 +67,4 @@
             } else {
                 $(".header").removeClass("change");
             }
-        });
-
-     
+        });     

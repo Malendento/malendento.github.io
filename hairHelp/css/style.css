@@ -72,7 +72,11 @@
 }
 
 @media (max-width: 991.98px) {
-    .px-container {
+    .px-container__foter {
+        padding: 0 20px !important;
+    }
+    
+        .px-container {
         padding: 0 20px !important;
     }
 
@@ -291,10 +295,8 @@
         margin-top: 90px !important;
     }
 
-    .footer__title {
-        font-size: 25px !important;
-        line-height: 29px !important;
-        padding-top: 66px !important;
+    .footer__title h3{
+        padding-top: 36px !important;
     }
 
     .item-card__bg {
@@ -304,8 +306,6 @@
     .footer__adress,
     .footer__mail,
     .footer__phone {
-        font-size: 25px !important;
-        line-height: 29px !important;
         margin-top: 10px !important;
     }
 
@@ -313,28 +313,31 @@
     .footer-navbar__service a,
     .footer-navbar__nav h3,
     .footer-navbar__service h3 {
-        font-size: 25px !important;
-        line-height: 29px !important;
         padding-top: 10px !important;
     }
 
     .faq-card__title h3 {
         font-size: 20px !important;
         line-height: 23px !important;
+        padding-right: 30px;
     }
 
     .faq__card:hover .faq-card__title h3 {
         transform: translateX(0px) !important;
     }
 
-    .faq-card__header {
-        padding: 0px !important;
+    .faq-card__header {        
+        padding: 0 !important;
         background: #E0C0B4;
         border: 1px solid #0b0b0b;
         box-sizing: border-box;
         border-radius: 0px !important;
         margin-bottom: 47px !important;
     }
+    
+    .faq-card__title {
+    padding: 17px 19px 17px 17px!important;
+}
 
     .faq-card__body {
         font-size: 20px !important;
@@ -474,6 +477,12 @@
         line-height: 30px !important;
         margin-bottom: 25px !important;
     }
+    
+    .shopcart-card__text h2 {
+    font-size: 25px !important;
+    line-height: 29px !important;
+    margin-top: 15px !important;
+}
 
     .sect6__P {
         padding-left: 15px !important;
@@ -575,6 +584,10 @@
     .news__buttons a {
         display: block !important;
     }
+    
+    .pl__map {
+    padding-left: 0px !important;
+}
 
 
     .slider-arrow-left {
@@ -645,7 +658,7 @@
     }
 
     .faq-card__header {
-        padding: 25px 18px !important;
+        padding: 0;
         background: #E0C0B4;
         border: 1px solid #0b0b0b;
         box-sizing: border-box;
@@ -667,6 +680,7 @@ a,
 button {
     text-decoration: none !important;
     outline: none !important;
+    border: none !important;
 }
 
 #hamburger {
@@ -761,6 +775,10 @@ button {
 
 .px-container {
     padding: 0 61px;
+}
+
+.px-container__footer {
+    padding-right: 61px;
 }
 
 .sect1__underline {
@@ -1138,8 +1156,8 @@ input::-webkit-calendar-picker-indicator {
     display: block;
     padding-top: 19px;
     font-weight: 900;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 23px;
     color: #E0C0B4;
 }
 
@@ -1151,19 +1169,11 @@ input::-webkit-calendar-picker-indicator {
     padding-top: 64px;
 }
 
-.footer__title {
-    font-size: 22px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #E0C0B4;
-    padding-top: 10px;
-}
+
 
 .footer__title_time {
-
-
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 23px;
     text-transform: uppercase;
     color: #E0C0B4;
     padding-top: 64px;
@@ -1172,34 +1182,34 @@ input::-webkit-calendar-picker-indicator {
 .footer__phone {
     display: block;
     font-weight: 900;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 23px;
     color: #E0C0B4;
-    margin-top: 13px;
+    padding-top: 13px
 }
 
 .footer__adress {
     display: block;
     font-weight: 900;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 23px;
     color: #E0C0B4;
-    margin-top: 38px;
+    margin-top: 48px;
 }
 
 .footer__mail {
     display: block;
-    margin-top: 13px;
+    padding-top: 13px;
     font-weight: 900;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 23px;
     color: #E0C0B4;
 }
 
 .footer-navbar__nav a {
     font-weight: 300;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 23px;
     text-transform: uppercase;
     color: #E0C0B4;
     display: block;
@@ -1208,8 +1218,8 @@ input::-webkit-calendar-picker-indicator {
 
 .footer-navbar__service a {
     font-weight: 300;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 23px;
     text-transform: uppercase;
     color: #E0C0B4;
     display: block;
@@ -1217,42 +1227,34 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .footer-social {
-    padding-top: 36px;
+    padding-top: 45px;
 }
 
 .footer-social a {
     font-weight: bold;
+    padding-top: 19px;
 }
 
-.footer-navbar__service h3 {
+.footer-navbar__service h3, .footer-navbar__nav h3, .footer__title h3 {
     font-weight: bold;
-    font-size: 22px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #E0C0B4;
-    padding-bottom: 21px;
-}
-
-.footer-navbar__nav h3 {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #E0C0B4;
-    padding-bottom: 21px;
-}
-
-.footer__company {
-    font-weight: 400;
     font-size: 20px;
     line-height: 23px;
+    text-transform: uppercase;
+    color: #E0C0B4;
+}
+
+
+
+.footer__company {
+    font-size: 18px;
+    line-height: 20px;
     color: #E0C0B4;
 }
 
 .footer__company a {
     font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 18px;
+    line-height: 20px;
     color: #FFFFFF;
 }
 
@@ -1468,6 +1470,7 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 65px;
     padding: 17px;
     background-color: #231F20;
+    border: none !important;
 }
 
 .shopcart__card {
@@ -1478,11 +1481,10 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .shopcart-card__padding {
-    padding: 40px 22px;
+    padding: 40px 0px;
 }
 
 .shopcart-card__bg {
-    background-image: url(../img/product.png);
     background-position: center;
     background-size: contain;
     height: 100%;
@@ -1547,6 +1549,7 @@ input::-webkit-calendar-picker-indicator {
     line-height: 26px;
     text-transform: uppercase;
     color: #0b0b0b;
+    margin-top: 40px;
 }
 
 .shopcart-card__text p {
@@ -1886,6 +1889,7 @@ input::-webkit-calendar-picker-indicator {
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
+    padding: 25px;
 }
 
 .faq-card__title img {
@@ -1897,6 +1901,7 @@ input::-webkit-calendar-picker-indicator {
     font-size: 25px;
     line-height: 29px;
     text-transform: uppercase;
+    margin-bottom: 0px;
     text-align: left !important;
     color: #0b0b0b;
     outline: none !important;
@@ -1922,6 +1927,11 @@ input::-webkit-calendar-picker-indicator {
     box-sizing: border-box;
     margin-bottom: 66px;
     padding: 47px 45px 80px;
+}
+
+.faq-card__body p{
+    font-weight: bold;
+    margin-bottom: 0px;
 }
 
 
@@ -2731,4 +2741,31 @@ input::-webkit-calendar-picker-indicator {
 
 .products__tabs a{
     padding: 14px 17px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    display: block;
+    border: 3px solid #fff;
+    transition: .4s all;
+}
+
+.products__tabs a:hover {
+    border: 3px solid #E0C0B4;
+}
+
+.products__active {  
+    background-color: #E0C0B4;
+    padding: 14px 17px !important;
+    border: 3px solid #E0C0B4 !important;
+}
+
+.products__active:hover {
+    border: 3px solid #E0C0B4 !important;
+}
+
+.pl__map {
+    padding-left: 61px;
 }
