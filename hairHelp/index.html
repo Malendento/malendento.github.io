@@ -13,7 +13,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
@@ -108,7 +108,7 @@
             </div>
         </section>
 
-        <section id="sect2" class="sect2 mt-5">
+        <section id="sect2" class="sect2">
             <div class="container-fluid px-container">
                 <div class="row justify-content-center">
                     <div class="col-12 text-lg-center text-left">
@@ -190,17 +190,29 @@
                                 <h3 class="form__text_pt pb-lg-2 pb-3">моя проблема:</h3>
 
                             </div>
-                            <div class="col-lg-4 text-lg-left text-center">
-                                <input class="form__input" list="my-problem" name="choose-problem" placeholder="Выберите из списка">
-                                <datalist id="my-problem">
-                                    <option value="rykablood">
-                                    <option value="ssanina">
-                                    <option value="ochkoblyadyn">
-                                    <option value="vagina">
-                                    <option value="sooqa">
-                                    <option value="eblanishe">
-                                </datalist>
-                            </div>
+                         <div class="col-lg-4 d-flex flex-md-row flex-column flex-wrap align-items-md-end align-items-start">
+                                    <div class="col-lg-12 px-0 position-relative">
+                                        <div class="input-popup input-popup-radio">
+                                            <p class="mb-0">Выберите из списка</p>
+                                            <input id="halp-please-1" type="radio" name="volume" value="100ml" checked="">
+                                            <input id="halp-please-2" type="radio" name="volume" value="halp-please-2">
+                                            <input id="halp-please-3" type="radio" name="volume" value="halp-please-3">
+                                            <input id="halp-please-4" type="radio" name="volume" value="halp-please-4">
+                                            <input id="halp-please-5" type="radio" name="volume" value="halp-please-5">
+                                            <div class="input-popup-arrow">
+                                                <div></div>
+                                                <div></div>
+                                            </div>
+                                        </div>
+                                        <div class="input-popup-content radio-popup p-2">
+                                            <p to="#halp-please-1">halp-please-1</p>
+                                            <p to="#halp-please-2">halp-please-2</p>
+                                            <p to="#halp-please-3">halp-please-3</p>
+                                            <p to="#halp-please-4">halp-please-4</p>
+                                            <p to="#halp-please-5">halp-please-5</p>
+                                        </div>
+                                    </div>
+                                </div>
 
                         </div>
 

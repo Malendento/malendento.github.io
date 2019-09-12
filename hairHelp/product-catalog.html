@@ -13,6 +13,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/multirange.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
@@ -134,26 +135,223 @@
         <section class="products">
             <div class="container-fluid px-container">
                 <div class="row no-gutters justify-content-center">
-               <div class="col-lg-4 text-center products__tabs">
-                   <a class="products__active" href="#">трихологическая<br>продукция</a>
-               </div>
-               <div class="col-lg-4 my-lg-0 my-3 px-lg-3 px-0 text-center products__tabs">
-                   <a href="cosmetic-catalog.html">лечебная косметика для домашнего использования</a>
-               </div>
-               <div class="col-lg-4 text-center products__tabs">
-                   <a href="preparations-catalog.html">таблетированные<br>препараты</a>
-               </div>
+                    <div class="col-lg-4 text-center products__tabs">
+                        <a class="products__active" href="#">трихологическая<br>продукция</a>
+                    </div>
+                    <div class="col-lg-4 my-lg-0 my-3 px-lg-3 px-0 text-center products__tabs">
+                        <a href="cosmetic-catalog.html">лечебная косметика для домашнего использования</a>
+                    </div>
+                    <div class="col-lg-4 text-center products__tabs">
+                        <a href="preparations-catalog.html">таблетированные<br>препараты</a>
+                    </div>
+                </div>
+                <div class="row filters mx-0">
+                    <div class="col-lg-3 px-md-3 filters-pr">
+                        <div class="input-popup">
+                            <p>Тип<span></span></p>
+                            <div class="input-popup-arrow">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="input-popup-content py-2">
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Уходовая косметика для волос</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Шампуни</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Маски</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Наружные средства терапии</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Лосьоны</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Сыворотки</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Ампулы для наружного применения</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Спреи</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Миноксидилсодержащие препараты</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-lg-0 price mt-3 filters-px">
+                        <div class="input-popup">
+                            <p>Цена<span></span></p>
+                            <div class="input-popup-arrow">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="input-popup-content py-2">
+                            <div class="d-flex justify-content-start align-items-center p-18">
+                                <div class="input-number input-number-popup">
+                                    <input id="min-range-number" type="number" readonly="" disabled="">
+                                </div>
+                                <span class="px-1 f-18 color-grey">-</span>
+                                <div class="input-number input-number-popup">
+                                    <input id="max-range-number" type="number" readonly="" disabled="">
+                                </div>
+                                <button id="number_btn" class="button button-number w-100 ml-3">ok</button>
+                            </div>
+                            <input id="rangeid" class="mt-3 multirange original" type="range" min="340" max="5000" value="340,5000" multirange=""><input id="rangeid" class="mt-3 multirange ghost" type="range" min="340" max="5000" value="340,5000" multirange="" style="--low:1%; --high:99%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mt-lg-0 mt-3 brand filters-px">
+                        <div class="input-popup ">
+                            <p>Бренд<span></span></p>
+                            <div class="input-popup-arrow">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="input-popup-content py-2">
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Пацаны</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Ваще</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Ребята</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Классно</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Чотко</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Умеете</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Могёте</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Да и ваще вы все молодцы</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Не внатуре классно</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Заебись.</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 mt-lg-0 gender mt-3 filters-pl">
+                        <div class="input-popup">
+                            <p>Товар для<span></span></p>
+                            <div class="input-popup-arrow">
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="input-popup-content py-2">
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Людей</span>
+                            </label>
+                            <label class="label label-2 d-flex align-items-center">
+                                <input type="checkbox">
+                                <span class="checkbox checkbox-2"></span>
+                                <span>Женщин</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters filters">
+                    <div class="col-lg-3 mb-lg-3 filters-pr text-center product-card">
+                       <a class="product-card__border" href="#">
+                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                        <h4>крутая бутылочка с крутым содержимым</h4>
+                        <p>шампунь для волос</p>
+                        <span>₴320</span></a>
+                    </div>
+                    <div class="col-lg-3 mb-lg-3 filters-px text-center product-card">
+                       <a class="product-card__border" href="#">
+                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                        <h4>крутая бутылочка с крутым содержимым</h4>
+                        <p>шампунь для волос</p>
+                           <span>₴320</span></a>
+                    </div>
+                    <div class="col-lg-3 mb-lg-3 filters-px text-center product-card">
+                       <a class="product-card__border" href="#">
+                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                        <h4>крутая бутылочка с крутым содержимым</h4>
+                        <p>шампунь для волос</p>
+                           <span>₴320</span></a>
+                    </div>
+                    <div class="col-lg-3 mb-lg-3 filters-pl text-center product-card">
+                       <a class="product-card__border" href="#">
+                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                        <h4>крутая бутылочка с крутым содержимым</h4>
+                        <p>шампунь для волос</p>
+                           <span>₴320</span></a>
+                    </div>
+                    <div class="col-lg-3 mb-lg-3 filters-pr text-center product-card">
+                       <a class="product-card__border" href="#">
+                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                        <h4>крутая бутылочка с крутым содержимым</h4>
+                        <p>шампунь для волос</p>
+                           <span>₴320</span></a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
 
-
-
-
-
- <footer class="footer">
+    <footer class="footer">
         <div class="container-fluid footer__bg">
             <div class="row footer_pt">
                 <div class="col-lg-6 px-container__footer order-lg-2">
@@ -204,5 +402,15 @@
         </div>
 
     </footer>
+    <!-- Optional JavaScript 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/function.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="js/multirange.js"></script>
+
+</body>
 
 </html>
