@@ -145,8 +145,8 @@
                         <a href="preparations-catalog.html">таблетированные<br>препараты</a>
                     </div>
                 </div>
-                <div class="row filters mx-0">
-                    <div class="col-lg-3 px-md-3 filters-pr">
+                <div class="row justify-content-between filters mx-0">
+                    <div class="filters-card mb-lg-0 mb-3">
                         <div class="input-popup">
                             <p>Тип<span></span></p>
                             <div class="input-popup-arrow">
@@ -198,11 +198,11 @@
                             <label class="label label-2 d-flex align-items-center">
                                 <input type="checkbox">
                                 <span class="checkbox checkbox-2"></span>
-                                <span>Миноксидилсодержащие препараты</span>
+                                <span>Миноксидил содержащие препараты</span>
                             </label>
                         </div>
                     </div>
-                    <div class="col-lg-3 mt-lg-0 price mt-3 filters-px">
+                    <div class="filters-card mb-lg-0 mb-3">
                         <div class="input-popup">
                             <p>Цена<span></span></p>
                             <div class="input-popup-arrow">
@@ -211,21 +211,21 @@
                             </div>
                         </div>
                         <div class="input-popup-content py-2">
-                            <div class="d-flex justify-content-start align-items-center p-18">
+                            <div class="d-flex justify-content-start align-items-center px-3">
                                 <div class="input-number input-number-popup">
-                                    <input id="min-range-number" type="number" readonly="" disabled="">
+                                    <input id="min-range-number" type="number" readonly disabled />
                                 </div>
-                                <span class="px-1 f-18 color-grey">-</span>
+                                <span class="px-1">-</span>
                                 <div class="input-number input-number-popup">
-                                    <input id="max-range-number" type="number" readonly="" disabled="">
+                                    <input id="max-range-number" type="number" readonly disabled />
                                 </div>
                                 <button id="number_btn" class="button button-number w-100 ml-3">ok</button>
                             </div>
-                            <input id="rangeid" class="mt-3 multirange original" type="range" min="340" max="5000" value="340,5000" multirange=""><input id="rangeid" class="mt-3 multirange ghost" type="range" min="340" max="5000" value="340,5000" multirange="" style="--low:1%; --high:99%;">
+                            <input id="rangeid" class="mt-3" type="range" min="340" max="5000" value="340,5000" multirange>
                         </div>
                     </div>
-                    <div class="col-lg-3 mt-lg-0 mt-3 brand filters-px">
-                        <div class="input-popup ">
+                    <div class="filters-card mb-lg-0 mb-3">
+                        <div class="input-popup">
                             <p>Бренд<span></span></p>
                             <div class="input-popup-arrow">
                                 <div></div>
@@ -287,7 +287,7 @@
                     </div>
 
 
-                    <div class="col-lg-3 mt-lg-0 gender mt-3 filters-pl">
+                    <div class="filters-card mb-lg-0 mb-3">
                         <div class="input-popup">
                             <p>Товар для<span></span></p>
                             <div class="input-popup-arrow">
@@ -309,41 +309,46 @@
                         </div>
                     </div>
                 </div>
-                <div class="row no-gutters filters">
-                    <div class="col-lg-3 mb-lg-3 filters-pr text-center product-card">
-                       <a class="product-card__border" href="#">
-                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
-                        <h4>крутая бутылочка с крутым содержимым</h4>
-                        <p>шампунь для волос</p>
-                        <span>₴320</span></a>
+                <div class="row justify-content-between no-gutters filters">
+                    <div class="mb-lg-3 text-center product-card">
+                        <a class="product-card__border" href="#">
+                            <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                            <h4>крутая бутылочка с крутым содержимым</h4>
+                            <p>шампунь для волос</p>
+                            <span>₴320</span>
+                        </a>
                     </div>
-                    <div class="col-lg-3 mb-lg-3 filters-px text-center product-card">
-                       <a class="product-card__border" href="#">
-                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
-                        <h4>крутая бутылочка с крутым содержимым</h4>
-                        <p>шампунь для волос</p>
-                           <span>₴320</span></a>
+                    <div class="mb-lg-3 text-center product-card">
+                        <a class="product-card__border" href="#">
+                            <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                            <h4>крутая бутылочка с крутым содержимым</h4>
+                            <p>шампунь для волос</p>
+                            <span>₴320</span>
+                        </a>
                     </div>
-                    <div class="col-lg-3 mb-lg-3 filters-px text-center product-card">
-                       <a class="product-card__border" href="#">
-                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
-                        <h4>крутая бутылочка с крутым содержимым</h4>
-                        <p>шампунь для волос</p>
-                           <span>₴320</span></a>
+                    <div class="mb-lg-3 text-center product-card">
+                        <a class="product-card__border" href="#">
+                            <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                            <h4>крутая бутылочка с крутым содержимым</h4>
+                            <p>шампунь для волос</p>
+                            <span>₴320</span>
+                        </a>
                     </div>
-                    <div class="col-lg-3 mb-lg-3 filters-pl text-center product-card">
-                       <a class="product-card__border" href="#">
-                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
-                        <h4>крутая бутылочка с крутым содержимым</h4>
-                        <p>шампунь для волос</p>
-                           <span>₴320</span></a>
+                    <div class="mb-lg-3 text-center product-card">
+                        <a class="product-card__border" href="#">
+                            <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                            <h4>крутая бутылочка с крутым содержимым</h4>
+                            <p>шампунь для волос</p>
+                            <span>₴320</span>
+                        </a>
                     </div>
-                    <div class="col-lg-3 mb-lg-3 filters-pr text-center product-card">
-                       <a class="product-card__border" href="#">
-                        <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
-                        <h4>крутая бутылочка с крутым содержимым</h4>
-                        <p>шампунь для волос</p>
-                           <span>₴320</span></a>
+                    <div class="mb-lg-3 text-center product-card">
+                        <a class="product-card__border" href="#">
+                            <div class="product-card__bg" style="background-image: url(./img/product.png)"></div>
+                            <h4>крутая бутылочка с крутым содержимым</h4>
+                            <p>шампунь для волос</p>
+                            <span>₴320</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -408,8 +413,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/function.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="js/multirange.js"></script>
+    <script type="text/javascript" src="js/multirange.js"></script>
+    <script>
+        var range = document.getElementById("rangeid");
+        multirange(range);
+
+        $('input[type=range]').on("change mousemove", function() {
+            $("#min-range-number").val(range.valueLow);
+            $("#max-range-number").val(range.valueHigh);
+
+            if ($(this).parent().parent().find('.input-popup').hasClass('input-popup-active')) {
+                var text_for_p = "";
+                text_for_p = ", " + range.valueLow + " - " + range.valueHigh;
+                $(this).parent().parent().find('.input-popup').find('p').find('span').text(text_for_p);
+            }
+        });
+
+        $("#number_btn").click(function() {
+            var text_for_p = "";
+
+            if ($(this).hasClass('button-active')) {
+                $(this).removeClass('button-active');
+                $("#min-range-number").prop("disabled", true);
+                $("#max-range-number").prop("disabled", true);
+                $(this).parent().parent().parent().find('.input-popup').removeClass('input-popup-active');
+
+            } else {
+                $(this).addClass('button-active');
+                $("#min-range-number").prop("disabled", false);
+                $("#max-range-number").prop("disabled", false);
+                $(this).parent().parent().parent().find('.input-popup').addClass('input-popup-active');
+
+                text_for_p = ", " + range.valueLow + " - " + range.valueHigh;
+            }
+
+            $(this).parent().parent().parent().find('.input-popup').find('p').find('span').text(text_for_p);
+            $(this).parent().parent().parent().find('.input-popup').removeClass('input-popup-open');
+            $(this).parent().parent().parent().find('.input-popup-content').fadeToggle(300);
+        });
+    </script>
 
 </body>
 

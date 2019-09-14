@@ -146,7 +146,7 @@
                             <div class="item-card-flex">
                                 <span>₴320</span>
                                 <div class="d-flex d-lg-none flex-md-row flex-column flex-wrap align-items-md-end align-items-start">
-                                    <div class="ml-lg-auto col-md-3 px-md-2 px-0 position-relative">
+                                    <div class="ml-lg-auto col-lg-3 px-md-2 px-0 position-relative">
                                         <div class="input-popup input-popup-radio">
                                             <p class="mb-0">100ml</p>
                                             <input id="100ml" type="radio" name="volume" value="100ml" checked="">
@@ -164,13 +164,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="m__hide">
-                                    <input name="volume" value="100ml" id="100ml" type="radio" />
-                                    <label for="100ml">100ml</label>
-                                    <input name="volume" value="350ml" id="350ml" type="radio" />
-                                    <label for="350ml">350ml</label>
-                                    <input name="volume" value="700ml" id="700ml" type="radio" />
-                                    <label for="700ml">700ml</label></div>
                                 <input type="text" id="number" value="1" />
                                 <div class="shopcart-card__image">
                                     <img onclick="incrementValue(); multiplyBy()" value="Increment Value" class="img-fluid mb-1" src="img/./arrow-top.svg">
@@ -178,6 +171,16 @@
                                 </div>
                             </div>
                             <div class="row item-card__button">
+                               <div class="col-12 item-card-flex mb-lg-4">
+                                   
+                                <div class="m__hide">
+                                    <input name="volume" value="min" id="min" type="radio" checked=""/>
+                                    <label for="min">100ml</label>
+                                    <input name="volume" value="middle" id="middle" type="radio" />
+                                    <label for="middle">350ml</label>
+                                    <input name="volume" value="max" id="max" type="radio" />
+                                    <label for="max">700ml</label></div>
+                               </div>
                                 <div class="col-lg-6 text-center">
                                     <button type="submit">в корзину</button></div>
                                 <div class="col-lg-6 mt-lg-0 mt-4 text-center">

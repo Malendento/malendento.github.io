@@ -12,7 +12,7 @@
                     five.style.marginTop = '6px';
                     six.style.marginTop = '4px';
                     seven.style.top = '-4px';
-                    eight.style.top = '-15px';
+                    eight.style.top = '-13px';
                 } else {
                     one.style.visibility = 'visible';
                     one.style.opacity = '1';
@@ -22,7 +22,7 @@
                     five.style.marginTop = '18px';
                     six.style.marginTop = '20px';
                     seven.style.top = '10px';
-                    eight.style.top = '-2px';
+                    eight.style.top = '0px';
                 }
 
             }
@@ -42,16 +42,6 @@
             });
 
             $(document).ready(function () {
-
-                $('.block').find('h3').click(function () {
-                    $(this).parent().find('.info').slideToggle(500);
-
-                    if ($(this).parent().find('.plus').hasClass('active-plus')) {
-                        $(this).parent().find('.plus').removeClass('active-plus');
-                    } else {
-                        $(this).parent().find('.plus').addClass('active-plus');
-                    }
-                });
                 $('.label').click(function () {
                     var text_for_p = "";
 
