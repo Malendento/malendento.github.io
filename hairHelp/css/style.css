@@ -3188,8 +3188,8 @@ input::-webkit-calendar-picker-indicator {
 }
 .modal-text {
     font-weight: 700 !important;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 16px;
+    line-height: 18px;
     color: #0b0b0b;
     padding-top: 11px;
 }
