@@ -466,6 +466,7 @@
     .doctors-card__text h2 {
         font-size: 24px !important;
         line-height: 28px !important;
+        margin-top: 20px;
     }
 
     .catalog-card {
@@ -2478,7 +2479,7 @@ input::-webkit-calendar-picker-indicator {
     font-size: 40px;
     line-height: 47px;
     color: #242323;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .item-card__button button {
@@ -2562,7 +2563,7 @@ input::-webkit-calendar-picker-indicator {
     color: #242323;
     transform: translateY(-4px);
     text-align: center;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .radio-review img {
@@ -2996,14 +2997,16 @@ input::-webkit-calendar-picker-indicator {
     transition: .3s;
 }
 
-.modal-body .input-popup-arrow {
+.item .input-popup-arrow {
     position: absolute;
     width: 40px;
     height: 30px;
     top: 7px;
-    right: 10px;
+    right: 2px;
     transition: .3s;
 }
+
+
 
 .input-popup-arrow div {
     position: absolute;
@@ -3191,7 +3194,7 @@ input::-webkit-calendar-picker-indicator {
     font-size: 16px;
     line-height: 18px;
     color: #0b0b0b;
-    padding-top: 11px;
+    padding-top: 15px;
 }
 
 .modal-record button{
