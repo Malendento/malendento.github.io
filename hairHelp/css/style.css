@@ -68,7 +68,6 @@
 }
 
 @media (max-width: 991.98px) {
-
     [type="checkbox"]:not(:checked) + label:after,
     [type="checkbox"]:checked + label:after {
         padding-left: 0.1em !important;
@@ -1527,6 +1526,10 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 8vh;
 }
 
+.sidebar-mobile__social_phone:hover {
+    color: #FFFFFF;
+}
+
 .sidebar-mobile__social a {
     font-weight: 500;
     display: inline-block;
@@ -1986,7 +1989,6 @@ input::-webkit-calendar-picker-indicator {
 
 .doctors-card__text a:hover {
     background-color: #E0C0B4;
-    ;
 }
 
 .faq h1 {
@@ -2061,6 +2063,12 @@ input::-webkit-calendar-picker-indicator {
     display: block;
     margin-top: 19px;
     color: #8E8E8E;
+    transition: .4s all;
+}
+
+.header-shop__phone a:hover, .header-shop__links a:hover,
+.header-shop__social a:hover{
+    transform: translateY(-4px);
 }
 
 
@@ -2072,6 +2080,7 @@ input::-webkit-calendar-picker-indicator {
     display: inline-block;
     text-transform: uppercase;
     color: #8E8E8E;
+    transition: .4s all;
 }
 
 .header-shop__links a:nth-child(1) {
@@ -2092,6 +2101,7 @@ input::-webkit-calendar-picker-indicator {
     line-height: 23px;
     color: #8E8E8E;
     margin-top: 18px;
+    transition: .4s all;
 }
 
 .header-shop__lang a {
@@ -2101,6 +2111,11 @@ input::-webkit-calendar-picker-indicator {
     text-transform: uppercase;
     margin-top: 18px;
     display: inline-block;
+    transition: .4s all;
+}
+
+.header-shop__lang a:hover {
+    text-decoration: underline !important;
 }
 
 
@@ -2919,6 +2934,8 @@ input::-webkit-calendar-picker-indicator {
     transition: .3s;
 }
 
+
+
 .item .input-popup {
     position: relative;
     font-weight: 300;
@@ -2961,6 +2978,9 @@ input::-webkit-calendar-picker-indicator {
     white-space: nowrap;
     overflow: hidden;
     margin-bottom: 0px;
+    color: #0b0b0b;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .input-popup input[type="radio"] {
@@ -2972,6 +2992,15 @@ input::-webkit-calendar-picker-indicator {
     width: 40px;
     height: 30px;
     top: 10px;
+    right: 10px;
+    transition: .3s;
+}
+
+.modal-body .input-popup-arrow {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 7px;
     right: 10px;
     transition: .3s;
 }
@@ -3156,4 +3185,40 @@ input::-webkit-calendar-picker-indicator {
 .button-active {
     background-color: #1f1f1f;
     color: #fff;
+}
+.modal-text {
+    font-weight: 700 !important;
+    font-size: 30px;
+    line-height: 35px;
+    color: #0b0b0b;
+    padding-top: 11px;
+}
+
+.modal-record button{
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #0b0b0b;
+    padding: 15px 0px;
+    width: 100%;
+    border: none !important;
+    text-transform: uppercase;
+    outline: none !important;
+}
+
+.modal-record input{
+    background-color: #E0C0B4;
+    border: none;
+    outline: none;
+    padding: 11px 30px;
+    color: #0b0b0b;
+    width: 100%;
+}
+
+.modal-record input::placeholder{
+    color: #0b0b0b;
+}
+
+.modal {
+    padding-right: 0px !important;
 }
