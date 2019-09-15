@@ -459,8 +459,8 @@
     .checkout__form textarea,
     .checkout__form textarea::placeholder,
     .checkout__form select {
-        font-size: 25px !important;
-        line-height: 29px !important;
+        font-size: 18px !important;
+        line-height: 20px !important;
     }
 
     .doctors-card__text h2 {
@@ -1795,7 +1795,7 @@ input::-webkit-calendar-picker-indicator {
 
 .checkout__form input {
     font-size: 18px;
-    line-height: 21px;
+    line-height: 20px;
     text-transform: none;
     color: #242323;
     width: 100%;
@@ -1829,7 +1829,7 @@ input::-webkit-calendar-picker-indicator {
 
 .checkout__form input::placeholder {
     font-size: 18px;
-    line-height: 21px;
+    line-height: 20px;
     text-transform: uppercase;
     color: #242323;
 }
@@ -2953,7 +2953,7 @@ input::-webkit-calendar-picker-indicator {
 
 .checkout .input-popup {
     font-size: 18px;
-    line-height: 21px;
+    line-height: 20px;
     text-transform: none;
     color: #242323;
     width: 100%;
@@ -2981,7 +2981,8 @@ input::-webkit-calendar-picker-indicator {
     margin-bottom: 0px;
     color: #0b0b0b;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .input-popup input[type="radio"] {

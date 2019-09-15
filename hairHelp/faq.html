@@ -68,66 +68,73 @@
         </div>
     </header>
 
-    <div class="container-fluid header__mobile header-mobile__mb px-0">
-        <div class="row no-gutters header-shop__mobile px-container justify-content-between fixed-top">
-            <div class="col-6">
-                <a class="navbar-brand" href="#page-top">
-                    <img class="brand__m" src=./img/nav_logo.svg> </a> </div> <div class="col-3">
-                    <a href="shopping-cart.html" class="header-shop__mobile_mt">
-                        <div class="header-shop__cart_bg_m">
-                            <div class="header-shop__cart_number">228</div>
-                        </div>
-                        <img src="./img/cart.svg">
-                    </a>
+    <section class="mobile-search">
+        <div class="container-fluid header__mobile header-mobile__mb px-0">
+            <div class="row no-gutters header-shop__mobile px-container justify-content-between fixed-top">
+                <div class="col-6">
+                    <a class="navbar-brand" href="#page-top">
+                        <img class="brand__m" src=./img/nav_logo.svg> </a> </div> <div class="col-3">
+                        <a href="shopping-cart.html" class="header-shop__mobile_mt">
+                            <div class="header-shop__cart_bg_m">
+                                <div class="header-shop__cart_number">228</div>
+                            </div>
+                            <img src="./img/cart.svg">
+                        </a>
+                </div>
+                <div class="col-1 header-shop__mobile_mt_h text-right">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
             </div>
-            <div class="col-1 header-shop__mobile_mt_h text-right">
-                <div id="hamburger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+            <div class="row no-gutters">
+                <div class="col-lg header-shop__search">
+                    <form>
+                        <button type="submit">
+                            <img src="./img/zoom.svg"></button>
+                        <input type="text" placeholder="поиск...">
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="row no-gutters">
-            <div class="col-lg header-shop__search">
-                <form>
-                    <button type="submit">
-                        <img src="./img/zoom.svg"></button>
-                    <input type="text" placeholder="поиск...">
-                </form>
+    </section>
+
+
+    <section class="sidebar">
+        <div id="sidebar" class="sidebar__mobile">
+            <div class="sidebar-mobile__nav">
+                <a class="side-brand" href="#">
+                    <img class="brand__m" src=./img/nav_logo.svg> </a> <div class="nav__chrested">
+                    <div></div>
+                    <div></div>
             </div>
+
+
         </div>
-    </div>
-
-    <div id="sidebar" class="sidebar__mobile">
-        <div class="sidebar-mobile__nav">
-            <a class="side-brand" href="#"><img class="brand__m" src=./img/nav_logo.svg> </a> <div class="nav__chrested">
-                <div></div>
-                <div></div>
+        <div class="row no-gutters px-container sidebar-mobile__lang">
+            <div class="col-6"><a href="#">записаться</a></div>
+            <div class="col-6 text-right"><a href="#">en </a><span>/</span>
+                <a class="non-active" href="#">ru</a></div>
         </div>
+        <div class="sidebar-mobile__items px-container">
+            <a href="#">магазин</a>
+            <a href="#">услуги</a>
+            <a href="#">контакты</a>
+            <a href="#">блог</a>
+            <a href="#">faq</a>
+        </div>
+        <div class="px-container">
+            <a href="tel:+380975938308" class="sidebar-mobile__social_phone">+380975938308</a>
+        </div>
+        <div class="sidebar-mobile__social px-container">
+            <a href="#" target="_blank">instagram</a>
+            <a class="pl-5" href="#" target="_blank">facebook</a>
+        </div>
+        </div>
+    </section>
 
-
-    </div>
-    <div class="row no-gutters px-container sidebar-mobile__lang">
-        <div class="col-6"><a href="#">записаться</a></div>
-        <div class="col-6 text-right"><a href="#">en </a><span>/</span>
-            <a class="non-active" href="#">ru</a></div>
-    </div>
-    <div class="sidebar-mobile__items px-container">
-        <a href="#">магазин</a>
-        <a href="#">услуги</a>
-        <a href="#">контакты</a>
-        <a href="#">блог</a>
-        <a href="#">faq</a>
-    </div>
-    <div class="px-container">
-        <a href="tel:+380975938308" class="sidebar-mobile__social_phone">+380975938308</a>
-    </div>
-    <div class="sidebar-mobile__social px-container">
-        <a href="#" target="_blank">instagram</a>
-        <a class="pl-5" href="#" target="_blank">facebook</a>
-    </div>
-    </div>
 
     <main class="main">
         <section class="faq">
