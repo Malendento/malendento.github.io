@@ -28,13 +28,23 @@
             <div class="container-fluid header__bg px-0">
                 <div class="container px-0">
                     <div class="row">
-                        <div class="col-lg-5 header__top  pt-lg-2">
+                        <div class="col-lg-6 header__top  pt-lg-2">
                             <span>Контакти:</span>
                             <a href="tel:+380504645000">+380504645000</a>
                             <a href="tel:+380964645000">+380964645000</a>
-                            <a href="#">ua</a>
+                            <div class="popover__wrapper">
+                                <div>ua
+                                    <img src="./img/ua.svg">
+                                    <img src="./img/arrow-header.svg">
+                                </div>
+                                <div class="popover__content">
+                                    <a href="#">ua<img class="pl-2" src="./img/ua.svg"></a>
+                                    <a href="#">ru<img class="pl-2" src="./img/ru.svg"></a>
+                                    <a href="#">en<img class="pl-2" src="./img/eng.svg"></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-7 text-right">
+                        <div class="col-lg-6 text-right">
                             <form class="header__search">
                                 <input type="text" placeholder="Пошук">
                                 <button type="submit">
@@ -86,6 +96,7 @@
 
     <section class="sidebar-content">
         <div class="sidebar__mobile">
+            <!--
             <div class="row sidebar-search no-gutters justify-content-between px-mobile py-3">
                 <div class="col-6">
                     <a href="#">
@@ -100,6 +111,7 @@
                     </div>
                 </div>
             </div>
+-->
             <div class="col-12 px-0">
                 <form class="sidebar__search">
                     <input type="text" placeholder="Пошук">
@@ -135,7 +147,7 @@
     <main class="main">
         <section class="item-preview">
             <div class="container px-0">
-                <div class="row px-mobile no-gutters">
+                <div class="row px-mobile mb-3 no-gutters">
                     <div class="col-lg-2 col-4">
                         <a class="return__button" href="#">
                             <img class="img-fluid pr-3" src="./img/item/arrow-left.svg">Каталог
@@ -145,19 +157,205 @@
                 <div class="row px-mobile no-gutters">
                     <div class="col-lg-6">
                         <div class="slider-for">
-                            <div>1111111</div>
-                            <div>2222222</div>
-                            <div>3333333</div>
+                            <div>
+                                <div class="slider-for__bg" style="background-image: url(./img/item/1.png)"></div>
+                            </div>
+                            <div>
+                                <div class="slider-for__bg" style="background-image: url(./img/item/3.png)"></div>
+                            </div>
+                            <div>
+                                <div class="slider-for__bg" style="background-image: url(./img/item/4.png)"></div>
+                            </div>
+                            <div>
+                                <div class="slider-for__bg" style="background-image: url(./img/item/1.png)"></div>
+                            </div>
+                            <div>
+                                <div class="slider-for__bg" style="background-image: url(./img/item/3.png)"></div>
+                            </div>
+                            <div>
+                                <div class="slider-for__bg" style="background-image: url(./img/item/4.png)"></div>
+                            </div>
                         </div>
-                        <div class="row slider-nav no-gutters">
+                        <div class="arrows">
+                            <div class="arrow-left">
+                                <img src="./img/item/slider-left.svg">
+                            </div>
+                            <div class="arrow-right">
+                                <img src="./img/item/slider-right.svg">
+                            </div>
+                        </div>
+                        <div class="row slider-nav">
                             <div class="col-4">
-                                <div>111</div>
+                                <div>
+                                    <div class="slider-nav__bg" style="background-image: url(./img/item/1.png)"></div>
+                                </div>
                             </div>
                             <div class="col-4">
-                                <div>222</div>
+                                <div>
+                                    <div class="slider-nav__bg" style="background-image: url(./img/item/3.png)"></div>
+                                </div>
                             </div>
                             <div class="col-4">
-                                <div>333</div>
+                                <div>
+                                    <div class="slider-nav__bg" style="background-image: url(./img/item/4.png)"></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div>
+                                    <div class="slider-nav__bg" style="background-image: url(./img/item/1.png)"></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div>
+                                    <div class="slider-nav__bg" style="background-image: url(./img/item/3.png)"></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div>
+                                    <div class="slider-nav__bg" style="background-image: url(./img/item/4.png)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 item-card">
+                        <h2 class="item-title">Gehl Caterpillar DP30NT</h2>
+                        <h5 class="item-subtitle">Вилочні навантажувачі</h5>
+                        <p>Різновид:<span>Навантажувач-екскаватор</span></p>
+                        <p>Вантажопідйомність:<span>2 тонн</span></p>
+                        <p>Тип приводу:<span>Дизельний</span></p>
+                        <div class="row no-gutters">
+                            <div class="col-2 mr-4 mb-4 mt-3">
+                                <p>Бренд:</p>
+                            </div>
+                            <div class="col-4 mb-4 mt-3">
+                                <div class="item-brand" style="background-image: url(./img/item/yellow_gehl.svg)"></div>
+                            </div>
+                        </div>
+                        <p>Опис товару:</p>
+                        <p class="item-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        <div class="row no-gutters">
+                            <a class="item__button" href="#"><span>купити</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="more">
+            <div class="container px-mobile">
+                <h2>ще у "<span>вилочні навантажувачі</span>"</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row item-custom-card">
+                            <div class="col-lg-4 pr-lg-3 item-custom-card__bg">
+                                <div style="background-image: url(./img/item/1.png)"></div>
+                            </div>
+                            <div class="col-lg-8 item-custom-card__content">
+                                <div class="row no-gutters justify-content-between">
+                                    <div class="col-lg-10">
+                                        <h3>Gehl Caterpillar DP30NT</h3>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="item-brand" style="background-image: url(./img/item/yellow_gehl.svg)"></div>
+                                    </div>
+                                </div>
+                                <h5>Вилочні навантажувачі</h5>
+                                <div class="content-flex">
+                                    <p>Різновид:<span>Навантажувач-екскаватор</span></p>
+                                    <p>Вантажопідйомність:<span>2 тонн</span></p>
+                                    <p>Тип приводу:<span>Дизельний</span></p>
+                                </div>
+                                <p class="item-custom-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <div class="row justify-content-end">
+                                    <a class="learn-more" href="#"><span>дізнатися більше</span></a>
+                                    <a class="buy" href="#"><span>купити</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row item-custom-card">
+                            <div class="col-lg-4 pr-lg-3 item-custom-card__bg">
+                                <div style="background-image: url(./img/item/1.png)"></div>
+                            </div>
+                            <div class="col-lg-8 item-custom-card__content">
+                                <div class="row no-gutters justify-content-between">
+                                    <div class="col-lg-10">
+                                        <h3>Gehl Caterpillar DP30NT</h3>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="item-brand" style="background-image: url(./img/item/yellow_gehl.svg)"></div>
+                                    </div>
+                                </div>
+                                <h5>Вилочні навантажувачі</h5>
+                                <div class="content-flex">
+                                    <p>Різновид:<span>Навантажувач-екскаватор</span></p>
+                                    <p>Вантажопідйомність:<span>2 тонн</span></p>
+                                    <p>Тип приводу:<span>Дизельний</span></p>
+                                </div>
+                                <p class="item-custom-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <div class="row justify-content-end">
+                                    <a class="learn-more" href="#"><span>дізнатися більше</span></a>
+                                    <a class="buy" href="#"><span>купити</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row item-custom-card">
+                            <div class="col-lg-4 pr-lg-3 item-custom-card__bg">
+                                <div style="background-image: url(./img/item/1.png)"></div>
+                            </div>
+                            <div class="col-lg-8 item-custom-card__content">
+                                <div class="row no-gutters justify-content-between">
+                                    <div class="col-lg-10">
+                                        <h3>Gehl Caterpillar DP30NT</h3>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="item-brand" style="background-image: url(./img/item/yellow_gehl.svg)"></div>
+                                    </div>
+                                </div>
+                                <h5>Вилочні навантажувачі</h5>
+                                <div class="content-flex">
+                                    <p>Різновид:<span>Навантажувач-екскаватор</span></p>
+                                    <p>Вантажопідйомність:<span>2 тонн</span></p>
+                                    <p>Тип приводу:<span>Дизельний</span></p>
+                                </div>
+                                <p class="item-custom-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <div class="row justify-content-end">
+                                    <a class="learn-more" href="#"><span>дізнатися більше</span></a>
+                                    <a class="buy" href="#"><span>купити</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row item-custom-card">
+                            <div class="col-lg-4 pr-lg-3 item-custom-card__bg">
+                                <div style="background-image: url(./img/item/1.png)"></div>
+                            </div>
+                            <div class="col-lg-8 item-custom-card__content">
+                                <div class="row no-gutters justify-content-between">
+                                    <div class="col-lg-10">
+                                        <h3>Gehl Caterpillar DP30NT</h3>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div class="item-brand" style="background-image: url(./img/item/yellow_gehl.svg)"></div>
+                                    </div>
+                                </div>
+                                <h5>Вилочні навантажувачі</h5>
+                                <div class="content-flex">
+                                    <p>Різновид:<span>Навантажувач-екскаватор</span></p>
+                                    <p>Вантажопідйомність:<span>2 тонн</span></p>
+                                    <p>Тип приводу:<span>Дизельний</span></p>
+                                </div>
+                                <p class="item-custom-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <div class="row justify-content-end">
+                                    <a class="learn-more" href="#"><span>дізнатися більше</span></a>
+                                    <a class="buy" href="#"><span>купити</span></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -167,6 +365,9 @@
     </main>
 
 
+    <div class="g-border__bottom mt-lg-5">
+        <div></div>
+    </div>
     <footer id="contacts" class="footer">
         <div class="container px-mobile footer-content">
             <div class="row no-gutters">
@@ -241,83 +442,6 @@
     <script src="js/slick.min.js"></script>
     <script src="./js/main.js"></script>
 
-    <script>
-        var phoneMask = IMask(
-            document.getElementById('recipient-phone'), {
-                mask: '+{38}(000)000-00-00'
-            });
-    </script>
-
-    <script>
-        $('.slider').slick({
-            infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            pauseOnHover: false,
-            autoplaySpeed: 3000,
-            speed: 1200,
-            touchMove: true,
-            swipeToSlide: true,
-            draggable: true,
-            arrows: true,
-            prevArrow: $('.left-arrow'),
-            nextArrow: $('.right-arrow'),
-            responsive: [{
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
-        });
-    </script>
-
-    <script>
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            focusOnSelect: true
-        });
-    </script>
-
-    <script>
-        $(document).on('click', '.scroll-nav', function(event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: $($.attr(this, 'href')).offset().top - 120
-            }, 900);
-        });
-    </script>
-
-    <script>
-        $(document).ready(function() {
-            $('.sidebar-search__anchors a, .nav__chrested, .mobile-sidebar__logo, .sidebar-search__language a').on('click', function() {
-                $('.sidebar__mobile').removeClass('active-sidebar');
-            });
-
-            $('.sidebar-search__anchors a, #hamburger, #nav__chrested, .mobile-sidebar__logo, .sidebar-search__language a').on('click', function() {
-                $('.hamburger').removeClass('nav__chrested');
-            });
-
-            $('#hamburger').on('click', function() {
-                $('.sidebar__mobile').addClass('active-sidebar');
-            });
-
-            $('#hamburger').on('click', function() {
-                $('.hamburger').addClass('nav__chrested');
-            });
-        });
-    </script>
 </body>
 
 </html>
