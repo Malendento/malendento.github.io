@@ -11,6 +11,20 @@
         margin-top: 6.7vh !important;
     }
 
+
+    .pl-footer {
+        padding-left: 0% !important;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    [type="checkbox"]:not(:checked) + label:after,
+    [type="checkbox"]:checked + label:after {
+        padding-left: 0.25em !important;
+    }
+
     .about-content h3 {
         font-size: 24px !important;
         line-height: 28px !important;
@@ -36,6 +50,11 @@
     .brands-images img:nth-child(1),
     .brands img:nth-child(3) {
         margin-right: 4% !important;
+    }
+
+    .footer-studio p,
+    .footer-studio a {
+        margin-bottom: 2.5vh !important;
     }
 
     .main {
@@ -76,7 +95,7 @@
     }
 
     .subtitle-border {
-        border-left: 25px solid var(--mainColor) !important;
+        border-left: 20px solid var(--mainColor) !important;
     }
 
     .branches__button,
@@ -90,6 +109,15 @@
     .branches-anchors a {
         width: 100% !important;
         margin-bottom: 4% !important;
+    }
+
+    .branches-anchors a:nth-child(1),
+    .branches-anchors a:nth-child(2),
+    .branches-anchors a:nth-child(3),
+    .branches-anchors a:nth-child(5),
+    .branches-anchors a:nth-child(6),
+    .branches-anchors a:nth-child(7) {
+        margin-right: 0 !important;
     }
 
     .products-card h3 {
@@ -110,6 +138,10 @@
 
     .px-mobile {
         padding: 0 0px !important;
+    }
+
+    .pl-footer {
+        padding-left: 10% !important;
     }
 }
 
@@ -154,7 +186,7 @@ input {
 }
 
 .header__search input {
-    padding: 8px 35px 8px 20px;
+    padding: 8px 40px 8px 20px;
     font-size: 18px;
     line-height: 21px;
     color: #fff;
@@ -219,37 +251,40 @@ input {
     padding: 0 20px;
 }
 
-#hamburger {
+.hamburger {
     cursor: pointer;
     transition: all .5s;
     float: right;
     margin-top: 5px;
 }
 
-#hamburger div {
+.hamburger div {
     height: 3px;
     background-color: #2E2E2E;
     transition: all .3s;
 }
 
-#hamburger div:nth-child(1) {
+.hamburger div:nth-child(1) {
     width: 30px;
 }
 
-#hamburger div:nth-child(2) {
+.hamburger div:nth-child(2) {
     width: 24px;
     margin-left: 6px;
     margin-top: 5px;
+    transition: 1s all;
+    opacity: 1;
 }
 
-#hamburger div:nth-child(3) {
+.hamburger div:nth-child(3) {
     width: 30px;
     margin-top: 5px;
 }
 
 .sidebar__mobile {
     background-color: #F5F5F5;
-    height: 100vh;
+    margin-top: 57px;
+    height: calc(100vh - 57px);
     z-index: 12150;
     position: fixed;
     right: -100%;
@@ -263,7 +298,7 @@ input {
 }
 
 .active-sidebar {
-    right: 0;
+    right: 0%;
     transition: 1s all;
 }
 
@@ -277,7 +312,6 @@ input {
 .nav__chrested div {
     height: 3px;
     background-color: #2E2E2E;
-    transition: .4s all;
 }
 
 .nav__chrested div:nth-child(1) {
@@ -286,9 +320,13 @@ input {
 }
 
 .nav__chrested div:nth-child(2) {
+    opacity: 0;
+}
+
+.nav__chrested div:nth-child(3) {
     width: 30px;
     transform: rotate(-45deg);
-    margin-top: -3px;
+    margin-top: -11px;
 }
 
 .sidebar-content__bg {
@@ -378,9 +416,7 @@ input {
     margin-right: 4.6%;
 }
 
-.sidebar-search {
-    background-color: #fff;
-}
+
 
 .main {
     margin-top: 94px;
@@ -525,7 +561,7 @@ input {
 }
 
 .sect1-mobile__button {
-    padding: 12px 18px;
+    padding: 12px 17px;
     border-radius: 100%;
     margin-top: 4.5vh;
     background-color: rgba(255, 255, 255, 0.3);
@@ -603,7 +639,9 @@ input {
 }
 
 
-.branches__button span {
+.branches__button span,
+.products__button span,
+.brands__button span {
     display: block;
     transform: skew(12deg);
 }
@@ -726,7 +764,7 @@ input {
     height: 5px;
     background-image: linear-gradient(to right, #ffc500 50%, #000 50%);
     transform: skew(-15deg);
-    background-size: 100px;
+    background-size: 200px;
 }
 
 .about {
@@ -771,10 +809,170 @@ input {
 .about-card p {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
+    font-weight: 400;
     line-height: 131.19%;
     color: #FFFFFF;
 }
 
 .footer {
     margin-top: 4.4vh;
+}
+
+
+.sidebar-search {
+    background-color: #fff;
+}
+
+.footer-content h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #2E2E2E;
+    margin-bottom: 3vh;
+}
+
+.footer-content button {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    background-color: var(--mainColor);
+    transform: skew(-12deg);
+    margin-top: 2.8vh;
+}
+
+.footer-content button span {
+    display: block;
+    transform: skew(12deg);
+}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.95em;
+    cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.25em;
+    height: 1.25em;
+    background: #fff;
+    border: 1px solid #231F20;
+}
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '\2713\0020';
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    padding-left: 0.3em;
+    width: 1.25em;
+    height: 1.25em;
+    color: #fff;
+    background-color: #231F20;
+    color: var(--mainColor);
+    transition: all .4s;
+    font-family: 'Lucida Sans Unicode', 'Arial Unicode MS', Arial;
+}
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.footer-content label {
+    font-size: 12px;
+    line-height: 14px;
+    color: #6F6F6F;
+    margin-top: 10px;
+}
+
+.footer-content label a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #0b0b0b;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.footer-content input {
+    width: 100%;
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--mainColor) !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 0;
+    line-height: 19px;
+    color: #6F6F6F;
+}
+
+.footer-anchors a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2E2E2E;
+    display: block;
+    margin-bottom: 1.9vh;
+}
+
+.footer-studio p,
+.footer-studio a {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2E2E2E;
+    margin-bottom: 5.7vh;
+}
+
+.footer-studio a:hover {
+    text-decoration: underline;
+}
+
+.footer-studio {
+    margin-top: 3.55vh;
+}
+
+
+.return__button {
+    font-size: 16px;
+    line-height: 19px;
+    color: #0b0b0b;
+    transition: .4s all;
+}
+
+.return__button:hover { 
+    color: #0b0b0b;
+    margin-left: 10px;
 }
