@@ -1,3 +1,24 @@
+@media (min-width: 993px) and (max-width: 1199.98px) {
+    .slider-for__bg {
+        height: 35vh !important;
+    }
+
+    .slider-nav__bg {
+        height: 10vh !important;
+    }
+}
+
+@media (min-width: 1800px) {
+
+    .slider-for__bg {
+        height: 40vh !important;
+    }
+
+    .slider-nav__bg {
+        height: 12vh !important;
+    }
+}
+
 @media (max-width: 992px) {
 
     .about {
@@ -65,15 +86,15 @@
     .item-custom-card__content h3 {
         margin-top: 2.53vh;
     }
-    
+
     .item-custom-card {
-    border-radius: 0px !important;
-    padding: 20px 0 30px !important;
-}
-    
+        border-radius: 0px !important;
+        padding: 20px 0 30px !important;
+    }
+
     .item-custom-card__bg div {
-    height: 29vh !important;
-}
+        height: 29vh !important;
+    }
 
     .about-content p {
         font-size: 16px !important;
@@ -499,7 +520,7 @@ input {
 
 
 .main {
-    margin-top: 94px;
+    margin-top: 98px;
 }
 
 .sect1 {
@@ -1077,6 +1098,8 @@ input {
     border-radius: 10px;
 }
 
+
+
 .slider-nav__bg {
     background-size: cover;
     background-repeat: no-repeat;
@@ -1237,12 +1260,12 @@ input {
     margin-top: 4.43vh;
 }
 
-.more h2 {
+.more h2, .filters h2{
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    color: #000000;
+    color: #2E2E2E;
     margin-bottom: 2.55vh;
 }
 
@@ -1306,7 +1329,7 @@ input {
 .learn-more {
     font-size: 14px;
     line-height: 16px;
-    padding: 12px 27px;
+    padding: 11px 26px;
     transform: skew(-12deg);
     color: #424242;
     text-align: center;
@@ -1314,6 +1337,13 @@ input {
     background-color: #fff;
     text-transform: uppercase;
     margin-right: 10px;
+    border: 1px solid #fff;
+    transition: .4s all;
+}
+
+.learn-more:hover {
+    border: 1px solid var(--mainColor);
+    color: #424242;
 }
 
 .buy {
@@ -1328,4 +1358,131 @@ input {
     border-radius: 10px;
     text-transform: uppercase;
     background-color: var(--mainColor);
+}
+.filters {
+    padding-top: 12px;
+}
+
+.input-popup {
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px;
+    padding-left: 20px;
+    cursor: pointer;
+    color: #2E2E2E;
+    background-color: #ECECEC;
+    border-radius: 7px;
+    width: 100%;
+    transition: .3s all;
+}
+
+.input-popup-open,
+.input-popup-active {
+    color: #0b0b0b;
+}
+
+.input-popup p {
+    padding-right: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0px;
+    color: #0b0b0b;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+.input-popup-arrow {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 6px;
+    right: 10px;
+    transition: .3s;
+}
+
+.input-popup-arrow div {
+    position: absolute;
+    top: 14px;
+    background-color: #FFC500;;
+    width: 10px;
+    height: 3px;
+    transition: .3s;
+}
+.input-popup-open .input-popup-arrow div,
+.input-popup-active .input-popup-arrow div {
+    background-color: #FFC500;;
+}
+
+.input-popup-arrow div:nth-of-type(1) {
+    left: 17px;
+    transform: rotate(45deg);
+}
+
+.input-popup-open .input-popup-arrow div:nth-of-type(1) {
+    transform: rotate(-45deg);
+}
+
+.input-popup-active .input-popup-arrow div:nth-of-type(1) {
+    left: 20px;
+}
+
+.input-popup-arrow div:nth-of-type(2) {
+    right: 6px;
+    transform: rotate(-45deg);
+}
+
+.input-popup-open .input-popup-arrow div:nth-of-type(2) {
+    transform: rotate(45deg);
+}
+
+.input-popup-active .input-popup-arrow div:nth-of-type(2) {
+    right: 10px;
+}
+
+.input-popup-content {
+    position: absolute;
+    display: none;
+    left: 15px;
+    top: 75px;
+    width: calc(100% - 30px);
+    border: 1px solid #969696;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: #FFF;
+    z-index: 3;
+}
+
+.input-popup-content p {
+    margin: 8px;
+    padding-right: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7A7A7A;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .4s all;
+}
+.input-popup-content p:hover{   
+    color: #2E2E2E;
+}
+
+.filter-tabs {
+    width: 100%;
+}
+
+.filter-tabs h6{
+    font-size: 16px;
+    line-height: 19px;
+    color: #7A7A7A;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
 }
