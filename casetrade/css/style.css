@@ -6,6 +6,9 @@
     .slider-nav__bg {
         height: 10vh !important;
     }
+    .modal-dialog {
+        max-width: 70% !important;
+    }
 }
 
 @media (min-width: 1800px) {
@@ -18,11 +21,42 @@
     }
 }
 
-@media (max-width: 992px) {   
-    .arrow-left, .arrow-right {
-        top: 30% !important;
-    } 
+@media (max-width: 992px) {
+    .modal-dialog {
+        max-width: 100% !important;
+    }
     
+    .modal {
+        height: 110%;
+    }
+
+    .modal-dialog-centered {
+        align-items: stretch;
+        margin: 0;
+    }
+
+    .modal-content {
+        border: none;
+        padding: 20px !important;
+        padding-top: 15vh !important;
+        border-radius: 0px;
+    }
+
+    .modal-content h3 {
+        font-size: 24px !important;
+        line-height: 28px !important;
+    }
+    
+    .modal-content p {
+        font-size: 14px !important;
+        line-height: 16px !important;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        top: 30% !important;
+    }
+
     .slider-for__bg {
         height: 35vh !important;
     }
@@ -957,7 +991,8 @@ input {
     margin-bottom: 3vh;
 }
 
-.footer-content button {
+.footer-content button,
+.modal-content-custom button {
     font-weight: bold;
     display: block;
     font-size: 18px;
@@ -976,7 +1011,8 @@ input {
     margin-top: 2.8vh;
 }
 
-.footer-content button span {
+.footer-content button span,
+.modal-content-custom span {
     display: block;
     transform: skew(12deg);
 }
@@ -1036,14 +1072,16 @@ input {
     transform: scale(1);
 }
 
-.footer-content label {
+.footer-content label,
+.modal-content-custom label {
     font-size: 12px;
     line-height: 14px;
     color: #6F6F6F;
     margin-top: 10px;
 }
 
-.footer-content label a {
+.footer-content label a,
+.modal-content-custom label a {
     font-size: 12px;
     line-height: 14px;
     color: #0b0b0b;
@@ -1051,7 +1089,8 @@ input {
     text-decoration: underline;
 }
 
-.footer-content input {
+.footer-content input,
+.modal-content input {
     width: 100%;
     margin-bottom: 8px;
     border-bottom: 2px solid var(--mainColor) !important;
@@ -1124,7 +1163,7 @@ input {
 }
 
 .slider-nav {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 6.34vh;
 }
 
@@ -1270,7 +1309,8 @@ input {
     margin-top: 4.43vh;
 }
 
-.more h2, .filters h2{
+.more h2,
+.filters h2 {
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
@@ -1369,6 +1409,7 @@ input {
     text-transform: uppercase;
     background-color: var(--mainColor);
 }
+
 .filters {
     padding-top: 12px;
 }
@@ -1417,14 +1458,17 @@ input {
 .input-popup-arrow div {
     position: absolute;
     top: 14px;
-    background-color: #FFC500;;
+    background-color: #FFC500;
+    ;
     width: 10px;
     height: 3px;
     transition: .3s;
 }
+
 .input-popup-open .input-popup-arrow div,
 .input-popup-active .input-popup-arrow div {
-    background-color: #FFC500;;
+    background-color: #FFC500;
+    ;
 }
 
 .input-popup-arrow div:nth-of-type(1) {
@@ -1476,7 +1520,8 @@ input {
     cursor: pointer;
     transition: .4s all;
 }
-.input-popup-content p:hover{   
+
+.input-popup-content p:hover {
     color: #2E2E2E;
 }
 
@@ -1484,15 +1529,50 @@ input {
     width: 100%;
 }
 
-.filter-tabs h6{
+.filter-tabs h6 {
     font-size: 16px;
     line-height: 19px;
     color: #7A7A7A;
     font-weight: normal;
     margin-bottom: 5px;
 }
+
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
+}
+
+.modal-content h3 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #6E6E6E;
+}
+
+.modal-content {
+    border: none;
+    padding: 50px 100px;
+    border-radius: 0px;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    opacity: 1;
+}
+
+.modal-dialog {
+    max-width: 37vw;
 }

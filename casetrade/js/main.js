@@ -30,6 +30,11 @@
                 mask: '+{38}(000)000-00-00'
             });
 
+        var phoneMask = IMask(
+            document.getElementById('recipient-phone-modal'), {
+                mask: '+{38}(000)000-00-00'
+            });
+
         $('.slider-for').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
