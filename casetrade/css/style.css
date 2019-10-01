@@ -9,7 +9,6 @@
 }
 
 @media (min-width: 1800px) {
-
     .slider-for__bg {
         height: 40vh !important;
     }
@@ -19,7 +18,10 @@
     }
 }
 
-@media (max-width: 992px) {    
+@media (max-width: 992px) {   
+    .arrow-left, .arrow-right {
+        top: 30% !important;
+    } 
     
     .slider-for__bg {
         height: 35vh !important;
@@ -1122,7 +1124,7 @@ input {
 }
 
 .slider-nav {
-    margin-top: 13px;
+    margin-top: 15px;
     margin-bottom: 6.34vh;
 }
 
