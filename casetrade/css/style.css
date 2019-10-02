@@ -1,6 +1,6 @@
-@media (min-width: 993px) and (max-width: 1199.98px) {
+@media (min-width: 993px) and (max-width: 1050.98px) {
     .slider-for__bg {
-        height: 35vh !important;
+        height: 30vh !important;
     }
 
     .slider-nav__bg {
@@ -9,6 +9,11 @@
 
     .modal-dialog {
         max-width: 70% !important;
+    }
+
+    .arrow-left,
+    .arrow-right {
+        top: 13.5vh !important;
     }
 
     .item-custom-card__bg div {
@@ -1264,7 +1269,7 @@ input {
 
 .arrow-left {
     position: absolute;
-    top: 35%;
+    top: 25vh;
     left: 20px;
     z-index: 100;
     cursor: pointer;
@@ -1272,7 +1277,7 @@ input {
 
 .arrow-right {
     position: absolute;
-    top: 35%;
+    top: 25vh;
     right: 20px;
     z-index: 100;
     cursor: pointer;
