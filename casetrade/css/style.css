@@ -6,8 +6,13 @@
     .slider-nav__bg {
         height: 10vh !important;
     }
+
     .modal-dialog {
         max-width: 70% !important;
+    }
+
+    .item-custom-card__bg div {
+        height: 20vh !important;
     }
 }
 
@@ -25,7 +30,17 @@
     .modal-dialog {
         max-width: 100% !important;
     }
-    
+
+
+    .pagination-custom {
+        padding-bottom: 10px !important;
+    }
+
+
+    [data-pagination] {
+        font-size: 10pt !important;
+    }
+
     .modal {
         height: 110%;
     }
@@ -46,7 +61,7 @@
         font-size: 24px !important;
         line-height: 28px !important;
     }
-    
+
     .modal-content p {
         font-size: 14px !important;
         line-height: 16px !important;
@@ -1331,6 +1346,7 @@ input {
     background-size: cover;
     background-repeat: no-repeat;
     height: 29.9vh;
+    border-radius: 10px;
 }
 
 .item-custom-card__content h3 {
@@ -1575,4 +1591,85 @@ input {
 
 .modal-dialog {
     max-width: 37vw;
+}
+
+[data-pagination],
+[data-pagination] *,
+[data-pagination] *:before,
+[data-pagination] *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-kerning: auto;
+}
+
+[data-pagination] {
+    font-size: 12pt;
+    line-height: 1;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    margin: 1em auto;
+    text-align: center;
+    transition: font-size .2s ease-in-out;
+}
+
+[data-pagination] ul {
+    list-style-type: none;
+    display: inline;
+    font-size: 100%;
+    margin: 0;
+    padding: .5em;
+}
+
+[data-pagination] ul li {
+    display: inline-block;
+    font-size: 100%;
+    width: auto;
+    border-radius: 3px;
+}
+
+[data-pagination] > a {
+    font-size: 140%;
+}
+
+[data-pagination] a {
+    color: #777;
+    font-size: 100%;
+    padding: .5em;
+}
+
+[data-pagination] a:focus,
+[data-pagination] a:hover {
+    color: var(--mainColor);
+}
+
+[data-pagination] li.current {
+    border: 1px solid #FFC500;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 5px 2px;
+}
+
+/* Disabled & Hidden Styles */
+[data-pagination] .disabled,
+[data-pagination] [hidden],
+[data-pagination] [disabled] {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.pagination-custom img {
+    transform: scale(1.5);
+    transition: .4s all;
+}
+
+.pagination-custom img:hover {
+    transform: scale(2);
+}
+
+.pagination-custom {
+    padding: 0px;
 }

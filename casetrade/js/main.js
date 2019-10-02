@@ -53,29 +53,6 @@
             asNavFor: '.slider-for',
             focusOnSelect: true,
             appendArrows: ('.arrows'),
-            prevArrow: ('.arrow-left'),
-            nextArrow: ('.arrow-right')
-        });
-
-        $('.slider').slick({
-            infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            autoplay: true,
-            pauseOnHover: false,
-            autoplaySpeed: 3000,
-            speed: 1200,
-            touchMove: true,
-            swipeToSlide: true,
-            draggable: true,
-            arrows: true,
-            prevArrow: $('.left-arrow'),
-            nextArrow: $('.right-arrow'),
-            responsive: [{
-                breakpoint: 1025,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
+            prevArrow: $('.arrow-left'),
+            nextArrow: $('.arrow-right')
         });
