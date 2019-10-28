@@ -1,0 +1,800 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Thin.eot');
+    src: url('../fonts/HelveticaNeueCyr-Thin.eot?iefix') format('eot'),
+        url('../fonts/HelveticaNeueCyr-Thin.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Thin.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+    src: url('../fonts/HelveticaNeueCyr-Roman.eot?iefix') format('eot'),
+        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot?iefix') format('eot'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot');
+    src: url('../fonts/HelveticaNeueCyr-Bold.eot?iefix') format('eot'),
+        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/HelveticaNeueCyr-Heavy.eot');
+    src: url('../fonts/HelveticaNeueCyr-Heavy.eot?iefix') format('eot'),
+        url('../fonts/HelveticaNeueCyr-Heavy.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@media (max-width: 1400px) {
+    .px-body {
+        padding: 0 4vw !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .city {
+        margin-left: 0vw !important;
+        margin-right: 1vw !important;
+    }
+
+    .header-arrows {
+        margin-right: 0.5vw !important;
+    }
+
+    .px-body {
+        padding: 0 2vw !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sidebar__mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .m__hide {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .info-title {
+        font-size: 48px !important;
+        padding-right: 15% !important;
+    }
+    span.regular-text {
+    display: none !important;
+}
+}
+
+@media (max-width: 992px) {
+    .px-body {
+        padding: 0 2.25vw !important;
+    }
+
+    .info-title {
+        font-size: 28px !important;
+        padding-right: 10% !important;
+    }
+
+    .sidebar-content__title {
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
+
+
+    .sidebar-content a {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .sushi-card__custom {
+        padding: 0px 0px 15px 0px !important;
+        margin-bottom: 8px !important;
+        border-radius: 5px !important;
+    }
+
+    .mobile-hide {
+        display: none !important;
+    }
+
+    .card-bg {
+        height: 14.5vh !important;
+        margin-bottom: 13px !important;
+    }
+
+    .sushi-card__custom h3 {
+        font-size: 12px !important;
+        line-height: 12px !important;
+        padding: 0px 5px !important;
+    }
+
+    .sushi-card__custom p {
+        font-size: 10px !important;
+        line-height: 140%;
+    }
+
+    .sushi-card__custom span {
+        font-size: 16px !important;
+        line-height: 140% !important;
+    }
+
+    .sushi-card__custom button {
+        font-size: 12px !important;
+        line-height: 140% !important;
+        border-radius: 14px !important;
+        padding: 6px 0 !important;
+    }
+
+    .custom-card__discount {
+        top: 5% !important;
+    }
+
+    .sushi-cards__title {
+        font-size: 36px !important;
+        margin-bottom: 3vh !important;
+        margin-top: 5.7vh !important;
+    }
+
+    .button-order {
+        font-size: 12px !important;
+        line-height: 12px !important;
+        padding: 12px 0px !important;
+    }
+
+    .sidebar__mobile {
+        margin-top: 84px !important;
+        height: calc(100vh - 84px) !important;
+    }
+
+    .custom-card__discount div {
+        background-image: url(.././img/card-discount-mobile.svg);
+        background-size: contain;
+        font-size: 14px !important;
+        padding-left: 5px !important;
+    }
+
+    .footer a {
+        font-size: 14px !important;
+        line-height: 14px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .footer h4 {
+        margin-bottom: 10px !important;
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
+
+    a.footer-phone {
+        margin-bottom: 2.15vh !important;
+        font-size: 36px !important;
+        line-height: 36px !important;
+    }
+
+    a.footer-mail {
+        margin-bottom: 2.8vh !important;
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .footer-social {
+        margin-top: 1.7vh !important;
+    }
+
+    .footer-line {
+        margin-bottom: 5vh !important;
+    }
+
+    .info {
+        margin-top: 14.5vh !important;
+    }
+
+    .info-bg-text {
+        background-image: url(.././img/info-bg-text.svg);
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        width: 70%;
+        background-position: 0% 50%;
+        font-size: 14px !important;
+        padding: 0px !important;
+        padding-right: 4.5vw !important;
+        padding-left: 6vw !important;
+    }
+
+    .px-table {
+        padding: 0 !important;
+    }
+
+    .card-discount {
+        transform: rotate(-15deg) !important;
+        padding: 15px 11px !important;
+        margin-top: 3.8vh !important;
+    }
+
+    .card-discount p {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .card-discount span {
+        font-size: 12px !important;
+    }
+
+    .info-bg {
+        padding-bottom: 7vh !important;
+    }
+}
+
+:root {
+    --blackColor: #0b0b0b;
+    --yellowColor: #F5CA2D;
+    --lightColor: #FCDA5E;
+}
+
+body {
+    background-color: var(--blackColor);
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input,
+input:focus,
+button,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+.px-body {
+    padding: 0 6vw;
+}
+
+.popover__title {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.popover__wrapper {
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.popover__content {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -15px;
+    transform: translate(0, 10px);
+    background-color: #262626;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    width: auto;
+}
+
+.popover__content-city,
+.popover__content-language {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -10px;
+    transform: translate(0, 10px);
+    background-color: #262626;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    width: auto;
+}
+
+.popover__content-language {
+    left: -4px;
+}
+
+.popover__content a {
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    margin: 0.75rem 0;
+    color: #FFFFFF;
+    transition: .4s all;
+}
+
+.popover__content a:hover {
+    color: var(--yellowColor);
+}
+
+.popover__content:before,
+.popover__content-city:before,
+.popover__content-language:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    right: calc(50% - 10px);
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #262626 transparent;
+    transition-duration: 0.6s;
+    transition-property: transform;
+}
+
+.popover__wrapper:hover .popover__content,
+.popover__wrapper:hover .popover__content-city,
+.popover__wrapper:hover .popover__content-language {
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.rotate {
+    transition: .4s all;
+}
+
+.popover__wrapper:hover .header-arrows,
+.popover__wrapper:hover .rotate {
+    transform: rotateX(180deg);
+}
+
+.popover__message {
+    text-align: center;
+}
+
+.header-arrows {
+    padding-left: 8px;
+    margin-right: 2vw;
+    transition: .4s all;
+}
+
+.headear-links {
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    transition: .4s all;
+    margin-right: 2vw;
+}
+
+.headear-links:hover {
+    color: var(--yellowColor);
+}
+
+.city-switch {
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+}
+
+.city {
+    border: 2px solid #F5CA2D;
+    padding: 5px 12px !important;
+    margin-left: 1.6875vw;
+    box-sizing: border-box;
+    margin-right: 2vw;
+    border-radius: 3px;
+}
+
+.language {
+    border: 2px solid #F5CA2D;
+    padding: 5px 12px !important;
+    border-radius: 3px;
+}
+
+.header-phone a {
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.header-phone p {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 0px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.header-phone span {
+    color: var(--yellowColor);
+}
+
+.button-order {
+    font-size: 18px;
+    line-height: 18px;
+    color: #0b0b0b;
+    font-weight: 500;
+    background-color: var(--yellowColor);
+    border-radius: 25.5px;
+    padding: 16px 0px;
+    display: block;
+    transition: .4s all;
+    text-align: center;
+}
+
+.button-order:hover {
+    color: #0b0b0b;
+    background-color: var(--lightColor);
+}
+
+.info-title {
+    font-size: 56px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-right: 24%;
+    margin-bottom: 4.5vh;
+}
+
+.info-title span {
+    color: var(--yellowColor);
+}
+
+.info-bg {
+    background-size: contain;
+    background-image: url(.././img/info-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    padding-bottom: 15vh;
+}
+
+.info-bg-text {
+    background-image: url(.././img/info-bg-text.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    padding: 20px 0;
+    padding-right: 4.5vw;
+    padding-left: 6vw;
+}
+
+.info {
+    margin-top: calc(10.5vh + 100px);
+}
+
+.card-discount {
+    transform: rotate(-5.5deg);
+    border: 2px dashed #FFFFFF;
+    padding: 30px 20px;
+    margin-top: 7vh;
+}
+
+.card-discount p {
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.card-discount span {
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.header {
+    background-color: #0b0b0b;
+}
+
+.sushi-cards__title {
+    font-size: 64px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-bottom: 7.6vh;
+}
+
+.sushi-cards__title div {
+    width: 6vw;
+    background-color: var(--yellowColor);
+    height: 3px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.sushi-card__custom {
+    padding: 35px 32px 40px 32px;
+    margin-bottom: 3.8vh;
+    background-color: #262626;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+}
+
+.sushi-card__custom h3 {
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0px 20px;
+    margin-bottom: 7px;
+}
+
+.sushi-card__custom p {
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.sushi-card__custom span {
+    font-size: 28px;
+    line-height: 140%;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.sushi-card__custom small {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--yellowColor);
+}
+
+.sushi-card__custom input {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #0b0b0b;
+    width: 40%;
+    text-align: center;
+    background-color: var(--yellowColor);
+}
+
+.sushi-card__custom input::placeholder {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #0b0b0b;
+}
+
+.sushi-card__custom button {
+    font-size: 18px;
+    line-height: 18px;
+    color: #0b0b0b;
+    background-color: var(--yellowColor);
+    padding: 16px 0;
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 25.5px;
+    transition: .4s all;
+}
+
+.sushi-card__custom button:hover {
+    background-color: var(--lightColor);
+}
+
+.card-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(.././img/card-bg.png);
+    height: 38vh;
+    margin-bottom: 20px;
+}
+
+.price-holder {
+    margin-bottom: 20px;
+}
+
+.counter {
+    border: 1px solid var(--yellowColor);
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter img {
+    cursor: pointer;
+    padding: 5px;
+    margin: auto;
+}
+
+.custom-card__discount {
+    width: 90%;
+    text-align: left;
+    position: absolute;
+    top: 10%;
+}
+
+.custom-card__discount div {
+    background-image: url(.././img/card-discount.svg);
+    background-repeat: no-repeat;
+    font-size: 24px;
+    color: #0b0b0b;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.footer {
+    margin-top: 9vh;
+}
+
+.footer a {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer h4 {
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-line {
+    background-color: var(--yellowColor);
+    height: 3px;
+    width: 100%;
+    margin-bottom: 7.35vh;
+}
+
+.footer-social {
+    margin-top: 5.7vh;
+    display: inline-flex;
+}
+
+.hamburger {
+    cursor: pointer;
+    transition: all .5s;
+    float: right;
+}
+
+.hamburger div {
+    height: 3px;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.hamburger div:nth-child(1) {
+    width: 39px;
+}
+
+.hamburger div:nth-child(2) {
+    width: 39px;
+    margin-top: 6px;
+    transition: 1s all;
+    opacity: 1;
+}
+
+.hamburger:hover div:nth-child(2) {
+    width: 32px;
+    margin-left: 7px;
+}
+
+.hamburger div:nth-child(3) {
+    width: 39px;
+    margin-top: 6px;
+}
+
+.sidebar__mobile {
+    background-color: #0b0b0b;
+    margin-top: 116px;
+    height: calc(100vh - 116px);
+    z-index: 12150;
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    top: 0;
+    transition: 1s all;
+}
+
+.sidebar__mobile a:hover {
+    text-decoration: none;
+}
+
+.active-sidebar {
+    right: 0%;
+    transition: 1s all;
+}
+
+.nav__chrested {
+    cursor: pointer;
+    transition: .4s all;
+    z-index: 200;
+}
+
+.nav__chrested div {
+    height: 3px;
+    background-color: #fff;
+}
+
+.nav__chrested div:nth-child(1) {
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+.nav__chrested div:nth-child(2) {
+    opacity: 0;
+    position: relative;
+    right: -1000%;
+}
+
+.nav__chrested div:nth-child(3) {
+    width: 30px;
+    transform: rotate(-45deg);
+    margin-top: -11px;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.sidebar-content a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 2.05vh;
+    font-weight: 300;
+}
+
+.sidebar-content img {
+    padding: 0px 5px;
+}
+
+a.sidebar-content__title {
+    font-weight: 600;
+    margin-top: 5.07vh;
+    font-size: 36px;
+    line-height: 36px;
+}
+span.regular-text {
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 600;
+}
