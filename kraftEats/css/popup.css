@@ -1,0 +1,93 @@
+@media (max-width: 1024px) {
+    .popup {
+        width: 100%;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    padding-top: 5.8vh !important;
+    padding-bottom: 6.15vh !important;
+    }
+
+    .custom-button {
+        width: 100% !important;
+        padding: 12px 0px !important;
+    }
+}
+
+body {
+    background-color: #0b0b0b;
+}
+
+.popup {
+    background-image: url(.././img/log-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 712px;
+    padding-top: 10.8vh;
+    padding-bottom: 12.15vh;
+    padding-left: 8.25vw;
+    padding-right: 8.25vw;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    border: 5px solid var(--yellowColor);
+
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.popup p {
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.popup__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 56px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.custom-button {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-radius: 25.5px;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    padding: 16px 0px;
+    background-color: var(--yellowColor);
+    transition: .3s all;
+}
+
+.custom-button:hover {
+    text-decoration: none;
+    background-color: var(--lightColor);
+    color: #fff;
+}
+
+/*# sourceMappingURL=popup.css.map */

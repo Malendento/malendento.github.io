@@ -48,13 +48,23 @@
     font-style: normal;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1399.98px) {
     .px-body {
         padding: 0 4vw !important;
     }
+
+    .headear-links {
+        margin-right: 1.5vw !important;
+    }
+
+    .city {
+        padding: 5px 12px !important;
+        margin-left: 0.6875vw !important;
+        margin-right: 0vw !important;
+    }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1299.98px) {
     .city {
         margin-left: 0vw !important;
         margin-right: 1vw !important;
@@ -69,32 +79,92 @@
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1199.98px) {
     .sidebar__mobile {
         display: none;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
     .m__hide {
         display: none;
+    }
+
+    .info-bg-text {
+        background-image: url(.././img/info-bg-text-ipad.svg) !important;
+        background-size: cover !important;
+        width: 65% !important;
+        font-size: 18px !important;
+        padding: 10px 0 !important;
+        padding-right: 4.5vw !important;
+        padding-left: calc(2vw + 16px) !important;
+    }
+
+    .burger-card span {
+        font-size: 26px !important;
+    }
+
+    .burger-card button {
+        margin-top: 20px;
+    }
+
+    .burger-card__bg {
+        height: 25vh !important;
     }
 }
 
 @media (max-width: 1024px) {
+    .burger-card {
+        padding: 23px 24px 23px 24px !important;
+        margin-bottom: 2vh !important;
+    }
 
     .info-title {
         font-size: 48px !important;
         padding-right: 15% !important;
     }
+
+    .burger-card h3 {
+        font-size: 24px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .burger-card p {
+        font-size: 16px !important;
+        margin-bottom: 2.5vh !important;
+    }
+
     span.regular-text {
-    display: none !important;
-}
+        display: none !important;
+    }
+
+    .card-bg {
+        height: 25vh !important;
+    }
+
+    .ordering h1 {
+        font-size: 48px !important;
+        margin-bottom: 4.05vh !important;
+    }
 }
 
 @media (max-width: 992px) {
+    .ordering h1 {
+        font-size: 36px !important;
+        margin-bottom: 12px !important;
+    }
     .px-body {
         padding: 0 2.25vw !important;
+    }
+
+    .info-bg-text {
+        background-image: url(.././img/info-bg-text-phone.svg) !important;
+        background-size: cover !important;
+        width: 80% !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+        padding-right: 5.5vw !important;
+        padding-left: calc(0vw + 16px) !important;
     }
 
     .info-title {
@@ -107,6 +177,9 @@
         line-height: 24px !important;
     }
 
+    .price-holder {
+        margin-bottom: 10px !important;
+    }
 
     .sidebar-content a {
         font-size: 18px !important;
@@ -114,10 +187,12 @@
     }
 
     .sushi-card__custom {
-        padding: 0px 0px 15px 0px !important;
+        padding: 10px 8px 15px 8px !important;
         margin-bottom: 8px !important;
         border-radius: 5px !important;
     }
+
+
 
     .mobile-hide {
         display: none !important;
@@ -134,14 +209,20 @@
         padding: 0px 5px !important;
     }
 
+
+
     .sushi-card__custom p {
         font-size: 10px !important;
-        line-height: 140%;
+        margin-bottom: 10px !important;
     }
 
     .sushi-card__custom span {
         font-size: 16px !important;
         line-height: 140% !important;
+    }
+
+    .burger-card span {
+        font-size: 26px !important;
     }
 
     .sushi-card__custom button {
@@ -151,8 +232,10 @@
         padding: 6px 0 !important;
     }
 
+
+
     .custom-card__discount {
-        top: 5% !important;
+        top: 8% !important;
     }
 
     .sushi-cards__title {
@@ -168,15 +251,19 @@
     }
 
     .sidebar__mobile {
-        margin-top: 84px !important;
-        height: calc(100vh - 84px) !important;
+        margin-top: 52px !important;
+        height: calc(100vh - 52px) !important;
     }
 
     .custom-card__discount div {
         background-image: url(.././img/card-discount-mobile.svg);
         background-size: contain;
         font-size: 14px !important;
-        padding-left: 5px !important;
+        padding-left: 8px !important;
+    }
+
+    .sushi-cards__title div {
+        width: 15vw !important;
     }
 
     .footer a {
@@ -211,21 +298,14 @@
         margin-bottom: 5vh !important;
     }
 
-    .info {
-        margin-top: 14.5vh !important;
+    .info,
+    .ordering {
+        margin-top: 10vh !important;
     }
-
-    .info-bg-text {
-        background-image: url(.././img/info-bg-text.svg);
-        background-size: contain !important;
-        background-repeat: no-repeat;
-        width: 70%;
-        background-position: 0% 50%;
-        font-size: 14px !important;
-        padding: 0px !important;
-        padding-right: 4.5vw !important;
-        padding-left: 6vw !important;
-    }
+    
+    .ordering {
+    margin-top: 52px !important;
+}
 
     .px-table {
         padding: 0 !important;
@@ -242,12 +322,27 @@
         line-height: 20px !important;
     }
 
+
+
     .card-discount span {
         font-size: 12px !important;
     }
 
     .info-bg {
         padding-bottom: 7vh !important;
+    }
+
+    .sushi-card__custom small {
+        font-size: 12px !important;
+        border: 1px solid #676767;
+        padding: 4px 9px;
+    }
+
+    .burger-card small {
+        font-size: 12px !important;
+        border: 1px solid #676767;
+        padding: 4px 9px;
+        display: block;
     }
 }
 
@@ -491,6 +586,66 @@ button:focus {
     margin-top: calc(10.5vh + 100px);
 }
 
+.ordering {
+    margin-top: 116px;
+}
+
+.ordering button {
+    font-size: 18px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    color: #0b0b0b;
+    background-color: var(--yellowColor);
+    padding: 16px 0;
+    border-radius: 25.5px;
+    transition: .4s all;
+    margin-bottom: 9.5vh;
+}
+
+.ordering button:hover {
+    background-color: var(--lightolor);
+}
+
+.ordering input,
+.ordering textarea {
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 18px;
+    line-height: 120%;
+    color: #0b0b0b;
+    margin-bottom: 16px;
+}
+
+.ordering textarea::placeholder {
+    font-size: 18px;
+    line-height: 120%;
+    color: #0b0b0b;
+}
+
+.ordering span {
+    font-size: 18px;
+    line-height: 120%;
+    color: #0b0b0b;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.ordering h1 {
+    font-size: 56px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 5.7vh;
+    margin-top: 5vh;
+    color: #000000;
+    font-weight: 700;
+}
+
 .card-discount {
     transform: rotate(-5.5deg);
     border: 2px dashed #FFFFFF;
@@ -524,7 +679,14 @@ button:focus {
     text-transform: uppercase;
     color: #FFFFFF;
     font-weight: 700;
+    text-align: center;
     margin-bottom: 7.6vh;
+}
+
+.sushi-cards__title img {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1.77vh;
 }
 
 .sushi-cards__title div {
@@ -573,7 +735,14 @@ button:focus {
     color: var(--yellowColor);
 }
 
-.sushi-card__custom input {
+.burger-card small {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--yellowColor);
+}
+
+.sushi-card__custom input,
+.burger-card input {
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -583,7 +752,8 @@ button:focus {
     background-color: var(--yellowColor);
 }
 
-.sushi-card__custom input::placeholder {
+.sushi-card__custom input::placeholder,
+.burger-card input::placeholder {
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -792,9 +962,75 @@ a.sidebar-content__title {
     font-size: 36px;
     line-height: 36px;
 }
+
 span.regular-text {
     font-size: 18px;
     line-height: 18px;
     color: #000000;
     font-weight: 600;
+}
+
+.burger-card {
+    padding: 35px 50px 40px 50px;
+    margin-bottom: 3.8vh;
+    background-color: #262626;
+    border-radius: 10px;
+}
+
+.burger-card span {
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.burger-card button {
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    color: #0b0b0b;
+    padding: 16px 0;
+    background-color: var(--yellowColor);
+    border-radius: 25.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.burger-card h3 {
+    font-size: 42px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.burger-card p {
+    text-align: left;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-bottom: 4.3vh;
+}
+
+.burger-card__bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(.././img/card-burger.png);
+    height: 38vh;
+    margin-bottom: 20px;
+}
+
+.modal {
+    height: 100vh;
+}
+
+.modal-card {
+    border: 5px solid var(--yellowColor);
+    background-image: url(.././img/log-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 47.3vh;
+    max-width: 43vw;
 }
