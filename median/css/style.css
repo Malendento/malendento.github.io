@@ -40,8 +40,10 @@
     font-style: normal;
 }
 
-@media (max-width: 991.98px) {
-    
+@media (max-width: 1399.98px) {
+    .px-body {
+    padding: 0 80px !important;
+}
 }
 
 :root {
@@ -67,7 +69,6 @@ body {
 .px-body {
     padding: 0 160px;
 }
-
 
 .header-bg {
     width: 100%;
