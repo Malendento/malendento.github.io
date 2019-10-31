@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900');
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regular.eot?iefix') format('eot'),
+    url('../fonts/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-SemiBold.eot');
+    src: url('../fonts/Gilroy-SemiBold.eot?iefix') format('eot'),
+    url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: url('../fonts/Gilroy-Bold.eot?iefix') format('eot'),
+    url('../fonts/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Black.eot');
+    src: url('../fonts/Gilroy-Black.eot?iefix') format('eot'),
+    url('../fonts/Gilroy-Black.woff') format('woff'),
+    url('../fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@media (max-width: 991.98px) {
+    
+}
+
+:root {
+    --mainColor: ;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+input, button, input:focus, button:focus {
+    outline: none;
+    border: none;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: 'Gilroy', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.px-body {
+    padding: 0 160px;
+}
+
+
+.header-bg {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.header-image {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+.header a{
+    font-size: 18px;
+    line-height: 21px;
+    display: inline-block;
+    color: #FFFFFF;
+    margin-right: 3.125vw;
+}
+
+.active-page {
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.header {
+    padding: 5.07vh 0;
+}
+
+
+
+
+
+.lang-switch button{
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fafafa;    
+}
+
+.lang-switch {
+    font-size: 18px;
+    color: #fafafa;    
+}
+
+button.active-language {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.info {
+    margin-top: 21.4vh;
+}
+
+.info-top p{    
+    margin-bottom: 5.07vh;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-align: right;
+}
+
+.info-top h1{
+    margin-bottom: 5.07vh;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 52px;
+    color: #FFFFFF;
+}
+
+.course-start {
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+    padding: 16px 0;
+    color: #2C2C2C;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.programm {
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.info-counter p{
+    font-size: 36px;
+    line-height: 44px;
+    color: #FAFAFA;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.info-counter span{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #FAFAFA;
+}
