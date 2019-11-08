@@ -23,8 +23,3 @@
                 $(this).toggleClass('nav__chrested');
             });
         });
-
-var phoneMask = IMask(
-            document.getElementById('recipient-phone'), {
-                mask: '+{38}(000)000-00-00'
-            });
