@@ -40,9 +40,54 @@
     font-style: normal;
 }
 
+@media (min-width: 1699.98px) {
+    .mt-15 {
+        margin-top: 25.3vh !important;
+    }
+}
+
 @media (max-width: 1399.98px) {
     .px-body {
         padding: 0 5vw !important;
+    }
+
+    .mt-15 {
+        margin-top: 25.3vh !important;
+    }
+}
+
+@media (max-width: 1024.98px) {
+    .info {
+        background-image: url(.././img/head-bg.svg) !important;
+        background-size: cover !important;
+        height: 100% !important;
+        padding-top: 10vh !important;
+    }
+
+    .info p {
+        margin-bottom: 7vh !important;
+    }
+
+    .mt-15 {
+        margin-top: 15.3vh !important;
+    }
+
+    .team-bg {
+        height: 43vh !important;
+    }
+
+    .team h2 {
+        margin-bottom: 3.6vh !important;
+    }
+
+    .team-text {
+        margin-top: 5.07vh !important;
+    }
+
+    .team {
+        background-size: contain !important;
+        padding-top: 6vh !important;
+        padding-bottom: 8vh !important;
     }
 }
 
@@ -790,7 +835,7 @@ button.active-language {
 }
 
 .footer-nav:nth-child(2) {
-    margin-left: 5vw;
+    margin-left: 2vw;
 }
 
 .footer-nav a {
