@@ -314,6 +314,10 @@
         transform: translateX(5px);
     }
 
+    .card-discount:hover {
+        transform: rotate(-15deg) scale(1) !important;
+    }
+
     .order-card h6 {
         font-size: 14px !important;
         line-height: 14px !important;
@@ -567,9 +571,8 @@
         margin-top: 3.8vh !important;
     }
 
-    .card-discount p {
+    .card-discount h3 {
         font-size: 20px !important;
-        line-height: 20px !important;
     }
 
     .cart-plus,
@@ -588,6 +591,7 @@
 
     .card-discount span {
         font-size: 12px !important;
+    margin-bottom: 0px !important;
     }
 
     .your-order__card {
@@ -1129,26 +1133,34 @@ textarea:focus {
 }
 
 .card-discount {
-    transform: rotate(-5.5deg);
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
     border: 2px dashed #FFFFFF;
-    padding: 30px 40px;
-    margin-top: 7vh;
+    padding: 10px 25px;
+    margin-top: 9vh;
+    transition: .4s all;
 }
 
-.card-discount p {
-    font-size: 36px;
-    line-height: 36px;
+.card-discount:hover {
+    transform: rotate(-15deg) scale(1.08);
+}
+
+.card-discount h3 {
+    font-size: 40px;
+    line-height: 1.65;
     color: #FFFFFF;
+    margin-bottom: 0;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .card-discount span {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 20px;
+    line-height: 24px;
     display: block;
-    color: #FFFFFF;
+    text-transform: uppercase;
     margin-bottom: 10px;
+    color: #FFFFFF;
     font-weight: 500;
 }
 
