@@ -12,7 +12,7 @@
     <meta name="keywords" content="">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
@@ -47,7 +47,7 @@
                         <a href="#">
                             <h2 class="popover__title">Бургери<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
                         </a>
-                        <div class="popover__content">
+                        <div class="popover__content popover__content-burger">
                             <a href="#">Бургер меню</a>
                             <a href="#">Бургери</a>
                             <a href="#">Крафт Бургери</a>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2 col-lg-3 col-6">
-                    <a class="button-order" href="#">Швидке замовлення</a></div>
+                    <a class="button-order" data-toggle="modal" data-target="#orderFastModal" href="#">Швидке замовлення</a></div>
                 <div class="col-lg-1 col-3 d-xl-none text-right">
                     <div class="hamburger">
                         <div></div>
@@ -88,6 +88,35 @@
             </div>
         </div>
     </header>
+
+    <!--   MODAL-FAST-ORDER-->
+    <div class="modal fade" id="orderFastModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content-custom">
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row justify-content-center no-gutters">
+                            <div class="col-12 text-center">
+                                <h3>швидшке замовлення</h3>
+                            </div>
+                            <div class="col-10">
+                                <span>Ваше ім'я</span>
+                                <input type="text" name="recipient-modal-name" required="">
+                            </div>
+                            <div class="col-10">
+                                <span>Ваш телефон</span>
+                                <input id="recipient-phone" type="tel" name="recipient-modal-phone" required="">
+                            </div>
+                            <div class="col-7 text-center">
+                                <button type="submit">Зателефонуйте мені</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--   END-MODAL-FAST-ORDER-->
 
     <section class="sidebar-content">
         <div class="sidebar__mobile">
@@ -132,27 +161,28 @@
     <main class="main">
         <section class="info">
             <div class="container-fluid info-bg">
+
                 <div class="row">
                     <div class="px-lg-3  px-1">
-                        <h1 class="info-title px-body">доставка у львові до 29 хвилин або <span>по єбалу у подарунок</span></h1>
+                        <h1 class="info-title px-body">доставка у львові до 29 хвилин або <span>бургер у подарунок</span></h1>
                     </div>
                     <div class="col-lg-12 px-0">
-                        <div class="info-bg-text">доставка бургерів та сушів у селі старий гуманець</div>
+                        <div class="info-bg-text">твій голод ще ніколи<br class="d-xl-none"> не був таким коротким</div>
                     </div>
                     <div class="px-lg-3">
                         <div class="px-body px-table">
                             <div class="card-discount text-center">
                                 <p>акція 2+1</p>
-                                <span>Кожен четвертий бургер у подарунок.</span>
-                                <span>Промокод FREEBURGER4.</span>
+                                <span>На позиції з<br> позначкою 2+1
+                                    <br>у нашому меню</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        
+
+
         <section class="sushi-cards">
             <div class="container-fluid px-body">
                 <div class="row no-gutters mb-lg-5">
@@ -167,27 +197,32 @@
                         <div class="sushi-card__custom">
                             <div class="card-bg">
                             </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
                         <div class="custom-card__discount">
                             <div>2+1</div>
@@ -195,52 +230,32 @@
                         <div class="sushi-card__custom">
                             <div class="card-bg">
                             </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
-                        <div class="sushi-card__custom">
-                            <div class="card-bg">
-                            </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
                         <div class="custom-card__discount">
                             <div>2+1</div>
@@ -248,33 +263,72 @@
                         <div class="sushi-card__custom">
                             <div class="card-bg">
                             </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
+                        <div class="custom-card__discount">
+                            <div>2+1</div>
+                        </div>
+                        <div class="sushi-card__custom">
+                            <div class="card-bg">
+                            </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row no-gutters mb-lg-5">
                     <div class="col-lg-12 text-center">
                         <h2 class="sushi-cards__title">роли<div></div>
                         </h2>
                     </div>
+
                     <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
                         <div class="custom-card__discount">
                             <div>2+1</div>
@@ -282,27 +336,32 @@
                         <div class="sushi-card__custom">
                             <div class="card-bg">
                             </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
                         <div class="custom-card__discount">
                             <div>2+1</div>
@@ -310,52 +369,32 @@
                         <div class="sushi-card__custom">
                             <div class="card-bg">
                             </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
-                        <div class="sushi-card__custom">
-                            <div class="card-bg">
-                            </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
                         <div class="custom-card__discount">
                             <div>2+1</div>
@@ -363,27 +402,32 @@
                         <div class="sushi-card__custom">
                             <div class="card-bg">
                             </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
                         <div class="custom-card__discount">
                             <div>2+1</div>
@@ -391,115 +435,72 @@
                         <div class="sushi-card__custom">
                             <div class="card-bg">
                             </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
+                        <div class="custom-card__discount">
+                            <div>2+1</div>
+                        </div>
+                        <div class="sushi-card__custom">
+                            <div class="card-bg">
+                            </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <div class="row no-gutters mb-lg-5">
                     <div class="col-lg-12 text-center">
                         <h2 class="sushi-cards__title">суші<div></div>
                         </h2>
                     </div>
-                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
-                        <div class="custom-card__discount">
-                            <div>2+1</div>
-                        </div>
-                        <div class="sushi-card__custom">
-                            <div class="card-bg">
-                            </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
 
-                           <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
-                        <div class="custom-card__discount">
-                            <div>2+1</div>
-                        </div>
-                        <div class="sushi-card__custom">
-                            <div class="card-bg" style="background-image: url(./img/card-bg-2.png)">
-                            </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
-                        <div class="sushi-card__custom">
-                            <div class="card-bg">
-                            </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
-                            </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
                         <div class="custom-card__discount">
                             <div>2+1</div>
@@ -507,24 +508,127 @@
                         <div class="sushi-card__custom">
                             <div class="card-bg">
                             </div>
-                            <h3>каліфорнія крафт сет(6 ролів)</h3>
-                            <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
-                            <div class="row align-items-center no-gutters price-holder">
-                                <div class="col-3 text-center counter mobile-hide">
-                                    <img src="./img/minus.svg">
-                                    <input type="text" placeholder="1" value="1">
-                                    <img src="./img/plus.svg"></div>
-                                <div class="col-lg-6 text-lg-center  col-7">
-                                    <span>650 грн</span></div>
-                                <div class="col-lg-3 col-5">
-                                    <small>900 г</small></div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
-                                    <button onclick="">
-                                        <span class="mobile-hide regular-text">додати </span>в коризну
-                                    </button>
-                                </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
+                        <div class="custom-card__discount">
+                            <div>2+1</div>
+                        </div>
+                        <div class="sushi-card__custom">
+                            <div class="card-bg">
+                            </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
+                        <div class="custom-card__discount">
+                            <div>2+1</div>
+                        </div>
+                        <div class="sushi-card__custom">
+                            <div class="card-bg">
+                            </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-6 px-lg-3 px-1 text-center">
+                        <div class="custom-card__discount">
+                            <div>2+1</div>
+                        </div>
+                        <div class="sushi-card__custom">
+                            <div class="card-bg">
+                            </div>
+                            <div class="bottom-padding">
+                                <h3>каліфорнія крафт сет(6 ролів)</h3>
+                                <p>Рол Футомакі, Рол Каліфорнія, Рол Філадельфія, Рол Дракон, Рол Імператор</p>
+                                <form action="">
+                                    <div class="row align-items-center no-gutters price-holder">
+                                        <div class="col-3 text-center counter mobile-hide">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                        <div class="col-lg-6 text-lg-center  col-7">
+                                            <span>650 грн</span></div>
+                                        <div class="col-lg-3 col-5">
+                                            <small>900 г</small></div>
+                                    </div>
+                                    <div class="row no-gutters justify-content-center">
+                                        <div class="col-xl-9 col-lg-8 px-lg-0 px-3 text-center">
+                                            <button type="submit" onclick="">
+                                                <span class="mobile-hide regular-text">додати </span>в коризну
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -532,7 +636,7 @@
             </div>
         </section>
 
-        <section class="cart">
+        <section class="cart px-lg-3 px-1">
             <div class="container-fluid px-body">
                 <div class="row no-gutters">
                     <div class="col-lg-12 text-center">
@@ -540,12 +644,262 @@
                         </h2>
                     </div>
                 </div>
+                <form action="">
+                    <div class="row no-gutters">
+                        <div class="cart-bg mb-lg-0 mb-3">
+                            <h3>Напої</h3>
+                            <div class="row no-gutters mb-3">
+                                <div class="col-1 counters">
+                                    <button class="cart-plus" type="button">
+                                        <img src="./img/plus-cart.svg">
+                                    </button>
+                                    <button class="cart-minus" type="button">
+                                        <img src="./img/minus-cart.svg">
+                                    </button>
+                                </div>
+                                <div class="col-7 pl-4">
+                                    <p>Coca-Cola 0,5</p>
+                                </div>
+                                <div class="col-3">
+                                    <span>34 грн</span>
+                                </div>
+                                <div class="col-1">
+                                    <div class="cart-text">(<small>1</small>)</div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mb-3">
+                                <div class="col-1 counters">
+                                    <button class="cart-plus" type="button">
+                                        <img src="./img/plus-cart.svg">
+                                    </button>
+                                    <button class="cart-minus" type="button">
+                                        <img src="./img/minus-cart.svg">
+                                    </button>
+                                </div>
+                                <div class="col-7 pl-4">
+                                    <p>Coca-Cola 0,5</p>
+                                </div>
+                                <div class="col-3">
+                                    <span>34 грн</span>
+                                </div>
+                                <div class="col-1">
+                                    <div class="cart-text">(<small>1</small>)</div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mb-3">
+                                <div class="col-1 counters">
+                                    <button class="cart-plus" type="button">
+                                        <img src="./img/plus-cart.svg">
+                                    </button>
+                                    <button class="cart-minus" type="button">
+                                        <img src="./img/minus-cart.svg">
+                                    </button>
+                                </div>
+                                <div class="col-7 pl-4">
+                                    <p>Coca-Cola 0,5</p>
+                                </div>
+                                <div class="col-3">
+                                    <span>34 грн</span>
+                                </div>
+                                <div class="col-1">
+                                    <div class="cart-text">(<small>1</small>)</div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mb-3">
+                                <div class="col-1 counters">
+                                    <button class="cart-plus" type="button">
+                                        <img src="./img/plus-cart.svg">
+                                    </button>
+                                    <button class="cart-minus" type="button">
+                                        <img src="./img/minus-cart.svg">
+                                    </button>
+                                </div>
+                                <div class="col-7 pl-4">
+                                    <p>Coca-Cola 0,5</p>
+                                </div>
+                                <div class="col-3">
+                                    <span>34 грн</span>
+                                </div>
+                                <div class="col-1">
+                                    <div class="cart-text">(<small>1</small>)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-bg mb-lg-0 mb-3">
+                            <h3>Додатки</h3>
+                            <div class="row no-gutters mb-3">
+                                <div class="col-1 counters">
+                                    <button class="cart-plus" type="button">
+                                        <img src="./img/plus-cart.svg">
+                                    </button>
+                                    <button class="cart-minus" type="button">
+                                        <img src="./img/minus-cart.svg">
+                                    </button>
+                                </div>
+                                <div class="col-7 pl-4">
+                                    <p>Coca-Cola 0,5</p>
+                                </div>
+                                <div class="col-3">
+                                    <span>34 грн</span>
+                                </div>
+                                <div class="col-1">
+                                    <div class="cart-text">(<small>1</small>)</div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mb-3">
+                                <div class="col-1 counters">
+                                    <button class="cart-plus" type="button">
+                                        <img src="./img/plus-cart.svg">
+                                    </button>
+                                    <button class="cart-minus" type="button">
+                                        <img src="./img/minus-cart.svg">
+                                    </button>
+                                </div>
+                                <div class="col-7 pl-4">
+                                    <p>Coca-Cola 0,5</p>
+                                </div>
+                                <div class="col-3">
+                                    <span>34 грн</span>
+                                </div>
+                                <div class="col-1">
+                                    <div class="cart-text">(<small>1</small>)</div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mb-3">
+                                <div class="col-1 counters">
+                                    <button class="cart-plus" type="button">
+                                        <img src="./img/plus-cart.svg">
+                                    </button>
+                                    <button class="cart-minus" type="button">
+                                        <img src="./img/minus-cart.svg">
+                                    </button>
+                                </div>
+                                <div class="col-7 pl-4">
+                                    <p>Coca-Cola 0,5</p>
+                                </div>
+                                <div class="col-3">
+                                    <span>34 грн</span>
+                                </div>
+                                <div class="col-1">
+                                    <div class="cart-text">(<small>1</small>)</div>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mb-3">
+                                <div class="col-1 counters">
+                                    <button class="cart-plus" type="button">
+                                        <img src="./img/plus-cart.svg">
+                                    </button>
+                                    <button class="cart-minus" type="button">
+                                        <img src="./img/minus-cart.svg">
+                                    </button>
+                                </div>
+                                <div class="col-7 pl-4">
+                                    <p>Coca-Cola 0,5</p>
+                                </div>
+                                <div class="col-3">
+                                    <span>34 грн</span>
+                                </div>
+                                <div class="col-1">
+                                    <div class="cart-text">(<small>1</small>)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters your-order">
+                        <div class="your-order__card order-lg-2 mb-lg-0 mb-3">
+                            <div class="your-order__card-bg">
+                                <div class="total-price text-lg-left text-center">
+                                    Сума: <span>768 грн</span>
+                                    <div class="total-price-range">
+                                        <div class="range-bar">
+                                            <span class="range-handler green-handler" style="left: 23.2%;"></span>
+                                            <span class="range-progress green-progress" style="width: 23.2%;"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <p class="total-price-text text-lg-left text-center">Безкоштовна доставка від 250 грн</p>
+                            </div>
+                        </div>
+
+                        <div class="your-order__card order-lg-1">
+                            <h2>Ваше замовлення</h2>
+                            <div class="row no-gutters mb-3 sushi-order align-items-center">
+                                <div class="col-8 align-items-center sushi-order-display">
+                                    <button class="your-order-button mr-lg-3 mr-2" type="button"><img src="./img/your-order-plus.svg"></button>
+                                    <h6>рол футомакі (6шт)</h6>
+                                </div>
+                                <div class="col-4 align-items-center text-right price-counters">
+                                    <div class="sushi-order__text"><span>2 шт</span>/<small>115 грн</small></div>
+                                    <button class="your-order-button" type="button"><img src="./img/your-order-minus.svg"></button>
+                                </div>
+                            </div>
+                            <div class="row no-gutters mb-3 align-items-center sushi-order">
+                                <div class="col-8 align-items-center sushi-order-display">
+                                    <button class="your-order-button mr-lg-3 mr-2" type="button"><img src="./img/your-order-plus.svg"></button>
+                                    <h6>рол футомакі (6шт)</h6>
+                                </div>
+                                <div class="col-4 align-items-center text-right price-counters">
+                                    <div class="sushi-order__text"><span>2 шт</span>/<small>115 грн</small></div>
+                                    <button class="your-order-button" type="button"><img src="./img/your-order-minus.svg"></button>
+                                </div>
+                            </div>
+
+                            <div class="row no-gutters mb-3 burger-order align-items-center">
+                                <div class="col-4 align-items-center sushi-order-display">
+                                    <button class="your-order-button mr-lg-3 mr-2" type="button"><img src="./img/your-order-plus.svg"></button>
+                                    <h6>майкл джордан
+                                    </h6>
+                                </div>
+                                <div class="col-4 inline-flex">
+                                    <img src="./img/cutlet.svg">
+                                    <img src="./img/fire.svg">
+                                    <img src="./img/fire.svg">
+                                    <img src="./img/fire.svg">
+                                </div>
+                                <div class="col-4 text-right align-items-center price-counters">
+                                    <div class="sushi-order__text"><span>2 шт</span>/<small>115 грн</small></div>
+                                    <button class="your-order-button" type="button"><img src="./img/your-order-minus.svg"></button>
+                                </div>
+                            </div>
+
+                            <div class="row no-gutters mb-3 burger-order align-items-center">
+                                <div class="col-4 align-items-center sushi-order-display">
+                                    <button class="your-order-button mr-lg-3 mr-2" type="button"><img src="./img/your-order-plus.svg"></button>
+                                    <h6>майкл джордан
+                                    </h6>
+                                </div>
+                                <div class="col-4 inline-flex">
+                                    <img src="./img/cutlet.svg">
+                                    <img src="./img/fire.svg">
+                                    <img src="./img/fire.svg">
+                                    <img src="./img/fire.svg">
+                                </div>
+                                <div class="col-4 align-items-center text-right price-counters">
+                                    <div class="sushi-order__text"><span>2 шт</span>/<small>115 грн</small></div>
+                                    <button class="your-order-button" type="button">
+                                        <div class="button-hide">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-4">
+                            <p class="order-text">Безкоштовна доставка</p>
+                            <button class="order-complete" type="submit">оформлення замовлення</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
 
 
-    <footer class="footer mb-lg-4">
+    <footer class="footer mb-lg-0 mb-3">
         <div class="container-fluid px-body">
             <div class="px-lg-3 px-1">
                 <div class="footer-line"></div>
@@ -553,15 +907,14 @@
             <div class="row px-lg-3 px-1 no-gutters">
                 <div class="col-lg-3 col-6">
                     <a href="#">
-
                         <picture>
                             <source srcset="./img/logo.svg" media="(min-width: 992px)">
                             <img src="./img/mobile-footer-logo.svg">
                         </picture>
                     </a>
                     <div class="footer-social">
-                        <a class="pr-3" href="#"><img src="./img/fb.svg"></a>
-                        <a href="#"><img src="./img/inst.svg"></a>
+                        <a class="pr-3" href="#" target="_blank"><img src="./img/fb.svg"></a>
+                        <a href="#" target="_blank"><img src="./img/inst.svg"></a>
                     </div>
                 </div>
                 <div class="col-lg-2 col-6 text-lg-left text-right">
@@ -573,10 +926,15 @@
                 <div class="col-lg-7 text-lg-right text-center">
                     <h4><a class="footer-phone" href="tel:+380931707917">(093) 17 079 17</a></h4>
                     <a class="footer-mail" href="mailto:info@kraftburger.com.ua">info@kraftburger.com.ua</a>
-                    <div class="footer-social pb-lg-0 pb-5">
+                    <div class="footer-social">
                         <img class="pr-4" src="./img/visa.svg">
                         <img src="./img/mastercard.svg">
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-end no-gutters px-lg-3 px-1 mt-3">
+                <div class="col-lg-12 text-lg-right text-center">
+                    <div class="studio-reference">Розроблено в <a class="studio-link" target="_blank" href="https://crayfish.studio">Crayfish studio</a></div>
                 </div>
             </div>
         </div>
@@ -586,7 +944,8 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <script src="./js/main.js"></script>
 
 </body>

@@ -48,6 +48,12 @@
     font-style: normal;
 }
 
+@media (min-width: 1499.98px) {
+    .meat-choose {
+        margin-right: 1.25vw !important;
+    }
+}
+
 @media (max-width: 1399.98px) {
     .px-body {
         padding: 0 4vw !important;
@@ -76,6 +82,11 @@
 
     .px-body {
         padding: 0 2vw !important;
+    }
+
+    .burger-meat-element svg {
+        width: 35px !important;
+        height: 35px !important;
     }
 }
 
@@ -111,9 +122,64 @@
     .burger-card__bg {
         height: 25vh !important;
     }
+
+    .your-order__card h6 {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .sushi-order__text,
+    .sushi-order__text small,
+    .sushi-order__text span {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .button-hide div:nth-child(2) {
+        top: 0px !important;
+    }
 }
 
 @media (max-width: 1024px) {
+    #map {
+        margin-bottom: -13px !important;
+        transform: translateX(6px) !important;
+    }
+
+    .order-total-price,
+    .order-total-price span {
+        font-size: 26px !important;
+        line-height: 26px !important;
+    }
+
+    .order-item-count,
+    .order-item-count span,
+    .order-item-count small {
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+
+    .order-text {
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+
+    .order-fry-level {
+        transform: scale(0.8);
+    }
+
+    .order-card h6 {
+        font-size: 16px !important;
+        line-height: 16px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .order-card h3 {
+        font-size: 26px !important;
+        line-height: 26px !important;
+        margin-bottom: 15px !important;
+    }
+
     .burger-card {
         padding: 23px 24px 23px 24px !important;
         margin-bottom: 2vh !important;
@@ -142,19 +208,160 @@
         height: 25vh !important;
     }
 
-    .ordering h1 {
+    .ordering h1,
+    .delivery h1,
+    .action h1 {
         font-size: 48px !important;
         margin-bottom: 4.05vh !important;
     }
+
+    .order-complete {
+        width: 100% !important;
+    }
+
+    .your-order__card h6 {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .sushi-order__text,
+    .sushi-order__text small,
+    .sushi-order__text span {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .button-hide div:nth-child(2) {
+        top: 0px !important;
+    }
+
+    .sushi-cards__title,
+    .craft-burger-logo {
+        font-size: 48px !important;
+        margin-bottom: 2vh !important;
+        margin-top: 2.7vh !important;
+    }
+
+    .craft-burgers h2 {
+        font-size: 64px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .craft-burgers span,
+    .burger-price {
+        font-size: 36px !important;
+    }
+
+    .burger-weight,
+    .burger-weight small {
+        font-size: 18px !important;
+        line-height: 120% !important;
+    }
+
+    .craft-burgers h6 {
+        font-size: 18px !important;
+        margin-top: 10px !important;
+        margin-bottom: 4vh !important;
+    }
+
+    .burgers-card__title {
+        font-size: 16px !important;
+        padding: 4px 0 !important;
+    }
+
+    .burger-card__content {
+        padding: 13px 3px 14px 5px !important;
+        margin-bottom: 4vh !important;
+    }
+
+    .meat-choose {
+        font-size: 12px !important;
+    }
+
+    .fry-choose {
+        font-size: 12px !important;
+        margin-right: 0px !important;
+    }
+
+    .cutlet-double {
+        font-size: 12px !important;
+    }
+
+    .delivery-card p {
+        margin-bottom: 5vh !important;
+    }
+
+    .action-card-bg {
+        height: 59vh !important;
+    }
+
+    .action-custom-card {
+        width: 296px !important;
+        height: 164px !important;
+    }
+
+    .action-card {
+        border: 0 !important;
+        border-top: 1px solid #4F4F4F !important;
+        border-bottom: 1px solid #4F4F4F !important;
+    }
 }
 
-@media (max-width: 992px) {
-    .ordering h1 {
+@media (max-width: 991.98px) {
+    #map {
+        border: 0;
+        margin-bottom: -13px;
+        transform: translateX(5px);
+    }
+
+    .order-card h6 {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+
+    .order-item-count,
+    .order-item-count span,
+    .order-item-count small {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+
+    .order-total-price,
+    .order-total-price span {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .order-card h3 {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .order-card {
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .ordering h1,
+    .delivery h1,
+    .action h1 {
         font-size: 36px !important;
         margin-bottom: 12px !important;
+        margin-top: 3vh !important;
     }
+
     .px-body {
         padding: 0 2.25vw !important;
+    }
+
+    .cart-bg {
+        padding: 24px 15px 8px 15px !important;
+        width: 100% !important;
+    }
+
+    .cart-bg:nth-child(1) {
+        margin-right: 0 !important;
     }
 
     .info-bg-text {
@@ -187,12 +394,13 @@
     }
 
     .sushi-card__custom {
-        padding: 10px 8px 15px 8px !important;
         margin-bottom: 8px !important;
         border-radius: 5px !important;
     }
 
-
+    .bottom-padding {
+        padding: 0px 8px 15px 8px !important;
+    }
 
     .mobile-hide {
         display: none !important;
@@ -214,6 +422,12 @@
         margin-bottom: 10px !important;
     }
 
+    .radio-sushi-burger p {
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin-bottom: 15px;
+    }
+
     .sushi-card__custom span {
         font-size: 16px !important;
         line-height: 140% !important;
@@ -223,6 +437,26 @@
         font-size: 26px !important;
     }
 
+    .radio-sushi-burger span {
+        font-size: 20px !important;
+        line-height: 20px !important;
+    }
+
+    .cart-bg p,
+    .cart-bg span,
+    .cart-bg small,
+    .cart-text {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
+
+    .radio-sushi-burger label {
+        padding: 14px 0 16px;
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin-bottom: 15px !important;
+    }
+
     .sushi-card__custom button {
         font-size: 12px !important;
         line-height: 140% !important;
@@ -230,11 +464,22 @@
         padding: 6px 0 !important;
     }
 
+    .ordering button {
+        line-height: 140% !important;
+    }
+
+    .order-button {
+        padding: 16px 0 !important;
+        line-height: 16px !important;
+        font-size: 13px !important
+    }
+
     .custom-card__discount {
         top: 8% !important;
     }
 
-    .sushi-cards__title {
+    .sushi-cards__title,
+    .craft-burger-logo {
         font-size: 36px !important;
         margin-bottom: 3vh !important;
         margin-top: 5.7vh !important;
@@ -258,7 +503,12 @@
         padding-left: 8px !important;
     }
 
-    .sushi-cards__title div {
+    .button-hide div:nth-child(2) {
+        top: 0px !important;
+    }
+
+    .sushi-cards__title div,
+    .craft-burger-logo div {
         width: 15vw !important;
     }
 
@@ -295,13 +545,17 @@
     }
 
     .info,
-    .ordering {
+    .ordering,
+    .delivery,
+    .action {
         margin-top: 12vh !important;
     }
-    
-    .ordering {
-    margin-top: 52px !important;
-}
+
+    .ordering,
+    .delivery,
+    .action {
+        margin-top: 52px !important;
+    }
 
     .px-table {
         padding: 0 !important;
@@ -317,17 +571,104 @@
         font-size: 20px !important;
         line-height: 20px !important;
     }
-    
+
+    .cart-plus,
+    .cart-minus {
+        transform: translateY(-3px) scale(0.9);
+    }
+
+    .cart-plus:hover,
+    .cart-minus:hover {
+        transform: none !important;
+    }
+
+    .cart-plus {
+        margin-right: 2px !important;
+    }
+
     .card-discount span {
         font-size: 12px !important;
     }
 
+    .your-order__card {
+        width: 100% !important;
+    }
+
+    .inline-flex img {
+        transform: scale(0.8);
+        margin: 0 1px !important;
+    }
+
+    .your-order-button img {
+        width: 15px;
+
+    }
+
+    .sushi-cards__title img {
+        transform: scale(0.1);
+    }
+
+    .order-complete {
+        width: 100% !important;
+    }
+
+    .sushi-order__text,
+    .sushi-order__text small,
+    .sushi-order__text span {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+
+    .your-order__card h6 {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+
+    .your-order h2 {
+        font-size: 24px !important;
+        line-height: 24px !important;
+    }
+
+    .burger-meat-element svg {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .craft-burgers h2 {
+        font-size: 64px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .total-price {
+        font-size: 24px !important;
+        line-height: 24px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .total-price-text {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+
+    .your-order__card:nth-child(2) {
+        margin-right: 0 !important;
+    }
+
+    .your-order__card-bg {
+        background-color: #262626;
+        padding: 30px 25px 30px !important;
+    }
+
+    .your-order {
+        margin-top: 0 !important;
+    }
+
     .info-bg {
         padding-bottom: 7vh !important;
-    background-image: url(.././img/qwerty.svg) !important;
-    background-size: 60% !important;
-    background-position: 100% 100% !important;
-    padding-bottom: 15vh;
+        background-image: url(.././img/qwerty.svg) !important;
+        background-size: 60% !important;
+        background-position: 100% 100% !important;
+        padding-bottom: 15vh;
     }
 
     .sushi-card__custom small {
@@ -342,10 +683,66 @@
         padding: 4px 9px;
         display: block;
     }
+
+    a.studio-link {
+        font-size: 18px !important;
+        line-height: 18px !important;
+    }
 }
 
 @media (max-width:768px) {
-        .info-bg-text {
+    .info-bg-text {
+        background-image: url(.././img/info-bg-text-phone.svg) !important;
+        background-size: cover !important;
+        width: 40% !important;
+        font-size: 14px !important;
+        padding: 5px !important;
+        padding-right: 5.5vw !important;
+        padding-left: calc(0vw + 16px) !important;
+    }
+
+    .order-item-count,
+    .order-item-count span,
+    .order-item-count small {
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+
+    .delivery-card h2 {
+        font-size: 24px !important;
+        line-height: 120%;
+    }
+
+    .delivery-card {
+        padding: 0 !important;
+        border: none !important;
+    }
+
+    .delivery-card p {
+        font-size: 18px !important;
+        padding-right: 0 !important;
+        margin-bottom: 4vh !important;
+    }
+
+    .zone-search button {
+        width: 100% !important;
+    }
+
+    #map {
+        transform: translateX(0px) !important;
+    }
+
+    .delivery-info h4 {
+        font-size: 18px !important;
+    }
+
+    .delivery-zones li.active:after {
+        top: 10% !important;
+    }
+}
+
+@media (max-width:668px) {
+    .info-bg-text {
         background-image: url(.././img/info-bg-text-phone.svg) !important;
         background-size: cover !important;
         width: 70% !important;
@@ -353,6 +750,24 @@
         padding: 5px !important;
         padding-right: 5.5vw !important;
         padding-left: calc(0vw + 16px) !important;
+    }
+
+    p.order-text {
+        font-size: 14px !important;
+        line-height: 14px !important;
+    }
+}
+
+
+@media (max-width:350px) {
+    .burger-meat-element svg {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .meat-choose {
+        font-size: 12px !important;
+        margin-right: 5px !important;
     }
 }
 
@@ -362,10 +777,30 @@
     --lightColor: #FCDA5E;
 }
 
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+    background-color: var(--yellowColor);
+    outline: 1px solid #708090;
+}
+
 body {
+    min-width: 320px;
+    font-family: 'HelveticaNeueCyr', sans-serif;
     background-color: var(--blackColor);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -375,7 +810,9 @@ a:hover {
 input,
 input:focus,
 button,
-button:focus {
+button:focus,
+textarea,
+textarea:focus {
     outline: none;
     border: none;
 }
@@ -410,6 +847,18 @@ button:focus {
     width: auto;
 }
 
+.popover__content-burger {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: -28px;
+    transform: translate(0, 10px);
+    background-color: #262626;
+    border-radius: 10px;
+    padding: 0.75rem 0.5rem;
+    width: 152px;
+}
+
 .popover__content-city,
 .popover__content-language {
     opacity: 0;
@@ -440,13 +889,15 @@ button:focus {
     margin: 0rem 0 0.75rem 0;
 }
 
-.popover__content a:hover, .popover__wrapper button:hover {
+.popover__content a:hover,
+.popover__wrapper button:hover {
     color: var(--yellowColor);
 }
 
 .popover__content:before,
 .popover__content-city:before,
-.popover__content-language:before {
+.popover__content-language:before,
+.popover__content-burger:before {
     position: absolute;
     z-index: -1;
     content: "";
@@ -461,7 +912,8 @@ button:focus {
 
 .popover__wrapper:hover .popover__content,
 .popover__wrapper:hover .popover__content-city,
-.popover__wrapper:hover .popover__content-language {
+.popover__wrapper:hover .popover__content-language,
+.popover__wrapper:hover .popover__content-burger {
     z-index: 10;
     opacity: 1;
     visibility: visible;
@@ -508,9 +960,13 @@ button:focus {
     transition: .4s all;
 }
 
+.city-switch:nth-child(1) {
+    margin-bottom: 8px;
+}
+
 .city {
     border: 2px solid #F5CA2D;
-    padding: 5px 12px 8px  !important;
+    padding: 5px 12px 8px !important;
     margin-left: 1.6875vw;
     box-sizing: border-box;
     margin-right: 2vw;
@@ -547,7 +1003,7 @@ button:focus {
     font-size: 18px;
     line-height: 18px;
     color: #0b0b0b;
-    font-weight: 500;
+    font-weight: 600;
     background-color: var(--yellowColor);
     border-radius: 25.5px;
     padding: 16px 0px;
@@ -564,7 +1020,7 @@ button:focus {
 .info-title {
     font-size: 56px;
     line-height: 120%;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     color: #FFFFFF;
     padding-right: 24%;
@@ -602,7 +1058,9 @@ button:focus {
     margin-top: calc(10.5vh + 100px);
 }
 
-.ordering {
+.ordering,
+.delivery,
+.action {
     margin-top: 116px;
 }
 
@@ -622,7 +1080,7 @@ button:focus {
 }
 
 .ordering button:hover {
-    background-color: var(--lightolor);
+    background-color: var(--lightColor);
 }
 
 .ordering input,
@@ -635,6 +1093,7 @@ button:focus {
     font-size: 18px;
     line-height: 120%;
     color: #0b0b0b;
+    transition: .4s all;
     margin-bottom: 16px;
 }
 
@@ -652,20 +1111,27 @@ button:focus {
     display: block;
 }
 
-.ordering h1 {
+.ordering h1,
+.delivery h1,
+.action h1 {
     font-size: 56px;
     line-height: 120%;
     text-transform: uppercase;
     margin-bottom: 5.7vh;
     margin-top: 5vh;
     color: #000000;
-    font-weight: 700;
+    font-weight: 900;
+}
+
+.delivery h1,
+.action h1 {
+    color: #fff;
 }
 
 .card-discount {
     transform: rotate(-5.5deg);
     border: 2px dashed #FFFFFF;
-    padding: 30px 20px;
+    padding: 30px 40px;
     margin-top: 7vh;
 }
 
@@ -674,6 +1140,7 @@ button:focus {
     line-height: 36px;
     color: #FFFFFF;
     text-transform: uppercase;
+    font-weight: 700;
 }
 
 .card-discount span {
@@ -689,7 +1156,8 @@ button:focus {
     background-color: #0b0b0b;
 }
 
-.sushi-cards__title {
+.sushi-cards__title,
+.craft-burger-logo {
     font-size: 64px;
     line-height: 120%;
     text-transform: uppercase;
@@ -699,13 +1167,20 @@ button:focus {
     margin-bottom: 7.6vh;
 }
 
+.craft-burger-logo img {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1vh;
+}
+
 .sushi-cards__title img {
     display: flex;
     margin: 0 auto;
     margin-top: 1.77vh;
 }
 
-.sushi-cards__title div {
+.sushi-cards__title div,
+.craft-burger-logo div {
     width: 6vw;
     background-color: var(--yellowColor);
     height: 3px;
@@ -714,7 +1189,6 @@ button:focus {
 }
 
 .sushi-card__custom {
-    padding: 35px 32px 40px 32px;
     margin-bottom: 3.8vh;
     background-color: #262626;
     background-repeat: no-repeat;
@@ -797,7 +1271,7 @@ button:focus {
 .card-bg {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-image: url(.././img/card-bg.png);
     height: 38vh;
     margin-bottom: 20px;
@@ -953,6 +1427,11 @@ button:focus {
 
 .inline-flex {
     display: inline-flex;
+    justify-content: center;
+}
+
+.inline-flex img {
+    margin: 0 7.5px;
 }
 
 .sidebar-content a {
@@ -982,7 +1461,7 @@ a.sidebar-content__title {
 span.regular-text {
     font-size: 18px;
     line-height: 18px;
-    color: #000000;
+    color: #0b0b0b;
     font-weight: 600;
 }
 
@@ -998,6 +1477,7 @@ span.regular-text {
     line-height: 140%;
     text-align: center;
     color: #FFFFFF;
+    font-weight: 600;
 }
 
 .burger-card button {
@@ -1010,6 +1490,11 @@ span.regular-text {
     border-radius: 25.5px;
     text-transform: uppercase;
     font-weight: 600;
+    transition: .4s all;
+}
+
+.burger-card button:hover {
+    background-color: var(--lightColor);
 }
 
 .burger-card h3 {
@@ -1049,4 +1534,878 @@ span.regular-text {
     background-repeat: no-repeat;
     max-height: 47.3vh;
     max-width: 43vw;
+}
+
+.order-button {
+    padding: 18px 0 !important;
+}
+
+.bottom-padding {
+    padding: 0px 32px 40px 32px;
+}
+
+.radio-sushi-burger p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    color: #0b0b0b;
+}
+
+.radio-sushi-burger span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    text-transform: uppercase;
+}
+
+.radio-sushi-burger label {
+    width: 100%;
+    padding: 14px 0 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    border: 3px solid #F5CA2D;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.radio-sushi-burger input[type="radio"] {
+    display: none;
+}
+
+.radio-sushi-burger input[type="radio"]:checked + label {
+    background-color: #F5CA2D;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 12px rgba(152, 152, 152, 0.5);
+}
+
+.studio-reference {
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.studio-reference a {
+    display: inline-block;
+    transition: .8s all;
+}
+
+.studio-reference a:hover {
+    text-decoration: underline;
+}
+
+a.studio-link {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.cart-bg {
+    background-color: var(--yellowColor);
+    padding: 24px 40px 34px 40px;
+    width: 49%;
+}
+
+.cart-bg:nth-child(1) {
+    margin-right: 2%;
+}
+
+.cart-bg p,
+.cart-bg span,
+.cart-bg small,
+.cart-text {
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.cart h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #0b0b0b;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+.cart-plus,
+.cart-minus {
+    background: transparent;
+    padding: 0;
+    transition: .4s all;
+}
+
+.cart-plus {
+    margin-right: 5px;
+}
+
+.cart-plus:hover,
+.cart-minus:hover {
+    transform: scale(1.1);
+}
+
+.counters {
+    display: inline-flex;
+}
+
+.your-order {
+    margin-top: 6.72vh;
+}
+
+.your-order h2 {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 15px;
+    color: var(--yellowColor);
+}
+
+.your-order__card {
+    width: 49%;
+}
+
+.your-order__card h6 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.your-order__card:nth-child(2) {
+    margin-right: 2%;
+}
+
+.your-order-button {
+    background: transparent;
+    padding: 0;
+}
+
+.sushi-order-display {
+    display: inline-flex;
+}
+
+.sushi-order__text,
+.sushi-order__text small,
+.sushi-order__text span {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.price-counters {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.button-hide div {
+    background-color: var(--yellowColor);
+    height: 18px;
+    margin-right: 10px;
+}
+
+.button-hide div:nth-child(1) {
+    width: 2px;
+    transform: rotate(45deg);
+}
+
+.button-hide div:nth-child(2) {
+    width: 2px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 3px;
+}
+
+.order-complete {
+    padding: 17px 0;
+    background-color: var(--yellowColor);
+    transition: .4s all;
+    font-size: 18px;
+    line-height: 18px;
+    color: #0b0b0b;
+    border-radius: 28px;
+    width: 80%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.order-complete:hover {
+    background-color: var(--lightColor);
+}
+
+.order-text {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 42px;
+    margin-top: 15px;
+    color: #FFFFFF;
+}
+
+.your-order__card-bg {
+    background-color: #262626;
+    padding: 39px 41px 37px;
+}
+
+.total-price {
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.total-price-text {
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 18px;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+.total-price span {
+    display: inline-block;
+    font-size: 48px;
+    line-height: 47px;
+    color: var(--yellowColor);
+}
+
+.total-price-range {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.total-price-range .range-bar {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: block;
+    height: 14px;
+}
+
+.total-price-range .range-bar .range-handler {
+    position: absolute;
+    left: 60%;
+    -webkit-transform: translateX(-14px);
+    transform: translateX(-14px);
+    -webkit-transition: left .3s ease-out;
+    transition: left .3s ease-out;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-image: radial-gradient(circle closest-side at 50% 50%, #f2b000 0, #d17b1e 100%);
+}
+
+.total-price-range .range-bar .range-progress {
+    width: 60%;
+    -webkit-transition: width .3s ease-out;
+    transition: width .3s ease-out;
+    height: 100%;
+    border-radius: 15px;
+    display: block;
+    background-color: #ffeb00;
+    -webkit-box-shadow: 0 0 5px 0 #fffef3;
+    box-shadow: 0 0 5px 0 #fffef3;
+}
+
+.total-price-range .range-bar .range-progress.success {
+    width: 100% !important;
+    background-color: #00be00;
+}
+
+.craft-burgers span,
+.burger-price {
+    display: inline-block;
+    font-size: 64px;
+    line-height: 90%;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.burger-weight,
+.burger-weight small {
+    font-size: 28px;
+    line-height: 120%;
+    font-weight: 300;
+    color: #F5CA2D;
+}
+
+.craft-burgers h2 {
+    font-size: 88px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+.craft-burgers h6 {
+    font-size: 28px;
+    line-height: 120%;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 4.2vh;
+    margin-bottom: 4.8vh;
+    color: #FFFFFF;
+    padding-right: 12%;
+}
+
+.burgers-card__title {
+    font-size: 24px;
+    line-height: 120%;
+    color: #0b0b0b;
+    padding: 7px 0;
+    background-color: var(--yellowColor);
+    text-align: center;
+    width: 60%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.burger-card__content {
+    border: 2px solid #F5CA2D;
+    padding: 26px 9px 26px 27px;
+    margin-bottom: 4.8vh;
+}
+
+.craft-burgers button {
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+    padding: 15px 0;
+    background-color: var(--yellowColor);
+    border-radius: 25.5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .4s all;
+}
+
+.craft-burgers button:hover {
+    background-color: var(--lightColor);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+label,
+checkbox {
+    cursor: pointer;
+}
+
+.burger-meat-element input[type="radio"]:checked + label .color-change,
+.fry-level input[type="radio"]:checked + label .color-change {
+    fill: var(--yellowColor);
+    color: var(--yellowColor);
+}
+
+input[type="checkbox"]:checked + label .color-change {
+    fill: var(--yellowColor);
+    color: var(--yellowColor);
+}
+
+.burger-meat-element svg {
+    width: 45px;
+    height: 45px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.meat-choose {
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-right: 0.625vw;
+    margin-bottom: 0;
+}
+
+.fry-choose {
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    display: inline-flex;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.fry-level svg {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.cutlet-double svg {
+    width: 40px;
+    height: 40px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cutlet-double {
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.order-card h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--yellowColor);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.order-card {
+    border: 5px solid var(--yellowColor);
+    padding: 30px 20px 30px 20px;
+    margin-bottom: 40px;
+}
+
+.order-card h6 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.order-total-price,
+.order-total-price span {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--yellowColor);
+    font-weight: 700;
+}
+
+.order-item-count,
+.order-item-count span,
+.order-item-count small {
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 24px;
+    color: #0b0b0b;
+    font-weight: 400;
+}
+
+.radio-payment label {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--almost-black);
+}
+
+.radio {
+    margin: 16px 0;
+    display: block;
+    cursor: pointer;
+}
+
+.radio input + span:not(:empty) {
+    padding-left: 30px;
+}
+
+.radio input + span {
+    font-size: 18px;
+    line-height: 22px;
+    height: 20px;
+    display: block;
+    position: relative;
+}
+
+label span {
+    position: relative;
+    color: #D0D0D0;
+}
+
+.radio input + span {
+    font-size: 18px;
+    line-height: 120%;
+    display: block;
+    position: relative;
+}
+
+.radio input + span:not(:empty) {
+    padding-left: 30px;
+}
+
+.radio input + span:before,
+.radio input + span:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.radio input + span:before {
+    background: #d1d7e3;
+    transition: background 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+
+.radio input + span:after {
+    background: #fff;
+    transform: scale(0.8);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+
+.radio input:checked + span:before {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    background: var(--yellowColor);
+}
+
+.radio input:checked + span:after {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.radio:hover input + span:before {
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+}
+
+.radio:hover input + span:after {
+    -webkit-transform: scale(0.74);
+    transform: scale(0.74);
+}
+
+.radio:hover input:checked + span:after {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+.delivery-card {
+    padding: 6.34vh 0 0 3.625vw;
+    border: 6px solid var(--yellowColor);
+}
+
+.delivery-card a {
+    text-transform: uppercase;
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #0b0b0b;
+    background-color: var(--yellowColor);
+    padding: 16px 0;
+    border-radius: 25.5px;
+    font-weight: 600;
+    transition: .4s all;
+}
+
+.delivery-card a:hover {
+    background-color: var(--lightColor);
+}
+
+.delivery-card p {
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    padding-right: 15%;
+    margin-bottom: 9.5vh;
+}
+
+.delivery-info ul {
+    margin-bottom: 40px;
+    padding-left: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.delivery-card h2 {
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.delivery-info h4 {
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+
+.delivery-info li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.delivery-info li:before {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    left: 0;
+    top: -3px;
+    height: 34px;
+    width: 34px;
+    background-color: #f3d445;
+}
+
+.delivery-zones li.red-zone:before {
+    background-color: #FE3D00;
+}
+
+.delivery-zones li.green-zone:before {
+    background-color: #02D310;
+}
+
+.delivery-info li:after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    height: 18px;
+    border-radius: 100%;
+    width: 18px;
+    background-color: #000;
+}
+
+.delivery-zones li.active.green-zone,
+.delivery-zones li.active.green-zone h4 {
+    color: #02D310;
+}
+
+.delivery-zones li.active.red-zone,
+.delivery-zones li.active.red-zone h4 {
+    color: #FE3D00;
+}
+
+.delivery-zones li.active:after {
+    top: calc(50% - 12px);
+    left: 11px;
+    right: 0;
+    width: 12px;
+    height: 21px;
+    border-radius: 0%;
+    background: transparent;
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.zone-search span {
+    display: block;
+    font-size: 18px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.zone-search input {
+    width: 100%;
+    font-size: 18px;
+    line-height: 120%;
+    padding: 15px 0;
+    padding-left: 20px;
+    color: #0b0b0b;
+    border-radius: 10px;
+}
+
+.zone-search button {
+    margin-top: 25px;
+    width: 40%;
+    text-transform: uppercase;
+    padding: 16px 0;
+    background-color: var(--yellowColor);
+    transition: .4s all;
+    border-radius: 25.5px;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #0b0b0b;
+    font-weight: 600;
+}
+
+.zone-search button:hover {
+    background-color: var(--lightColor);
+}
+
+.zone-search label {
+    width: 100%;
+}
+
+.zone-search {
+    margin-bottom: 10vh;
+}
+
+#map {
+    border: 0;
+    margin-bottom: -13px;
+    transform: translateX(5px);
+}
+
+.action-card {
+    border: 1px solid #4F4F4F;
+}
+
+.action-card a:nth-child(2) {
+    margin: 25px auto 0;
+    border-radius: 25.5px;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 16px 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+    color: #0b0b0b;
+    display: block;
+    background-color: var(--yellowColor);
+    transition: .4s all;
+}
+
+.action-card a:nth-child(2):hover {
+    background-color: var(--lightColor)
+}
+
+.action-card-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 81vh;
+    display: flex;
+    justify-content: center;
+}
+
+.action-card__border {
+    border: 0px;
+    border-bottom: 1px solid #4F4F4F;
+    border-top: 1px solid #4F4F4F;
+}
+
+.bg-first {
+    background-image: url(.././img/action-burger-bg.svg);
+}
+
+.bg-second {
+    background-image: url(.././img/action-delivery-bg.svg);
+}
+
+.bg-third {
+    background-image: url(.././img/action-sushi-bg.svg);
+}
+
+.action-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.action-custom-card {
+    border: 2px dashed #FFFFFF;
+    width: 18.5vw;
+    height: 20.79vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .4s all;
+}
+
+.action-custom-card:hover {
+    transform: scale(1.075);
+}
+
+
+.action-custom-card h3 {
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.action-custom-card p,
+.action-custom-card span {
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.ordering-focus input:focus,
+.ordering-focus textarea:focus {
+    border: 1px solid var(--yellowColor);
+}
+
+.modal-content-custom {
+    border: 5px solid #F5CA2D;
+    padding: 30px 0px;
+}
+
+.modal-content-custom h3 {
+    font-size: 34px;
+    line-height: 120%;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    color: #0b0b0b;
+}
+
+.modal-content-custom span {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    margin-bottom: 15px;
+    display: block;
+    color: #0b0b0b;
+}
+
+.modal-content-custom input {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 400;
+    color: #0b0b0b;
+    padding: 10px 0 10px 20px;
+    border: 1px solid #C4C4C4;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.modal-content-custom input:focus {
+    border: 1px solid var(--yellowColor);
+}
+
+.modal-content-custom button {
+    font-size: 18px;
+    line-height: 120%;
+    font-weight: 600;
+    color: #0b0b0b;
+    padding: 12px 0 10px;
+    width: 100%;
+    background-color: var(--yellowColor);
+    border-radius: 25.5px;
+    margin-top: 20px
 }

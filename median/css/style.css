@@ -281,8 +281,20 @@
         line-height: 36px !important;
         margin-bottom: 10px !important;
     }
-}
 
+    .dots-animation div:nth-child(4),
+    .dots-animation div:nth-child(5),
+    .dots-animation div:nth-child(6),
+    .dots-animation div:nth-child(7),
+    .dots-animation div:nth-child(8),
+    .dots-animation div:nth-child(9),
+    .dots-animation div:nth-child(10),
+    .dots-animation div:nth-child(11),
+    .dots-animation div:nth-child(12),
+    .dots-animation div:nth-child(13) {
+        display: none !important;
+    }
+}
 
 :root {
     --gradientStart: #A3B5F1;

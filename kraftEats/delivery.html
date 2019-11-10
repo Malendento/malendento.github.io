@@ -129,137 +129,74 @@
     </section>
 
 
-    <main class="main bg-white">
-        <section class="ordering">
+    <main class="main">
+        <section class="delivery px-lg-3 px-1">
             <div class="container-fluid px-body">
-                <div class="row justify-content-between no-gutters px-lg-3 px-1">
+                <div class="row justify-content-between no-gutters">
                     <div class="col-12 text-center">
-                        <h1>оформлення замовлення</h1>
+                        <h1>доставка та оплата</h1>
                     </div>
+                </div>
+                <div class="row mt-md-0 mt-4 no-gutters delivery-card">
+                    <div class="col-lg-5 delivery-info">
+                        <h2>зони та час доставки</h2>
+                        <ul class="delivery-zones">
+                            <li class="green-zone active">
+                                <h4>Зелена зона - 29 хв</h4>
+                            </li>
+                            <li class="red-zone">
+                                <h4>Червона зона - 59 хв</h4>
+                            </li>
+                        </ul>
+                        <p>* Доставка безкоштовна при замовленні на суму від 250 грн</p>
 
-                    <div class="col-lg-6 order-lg-2 radio-sushi-burger">
-                        <p>Оберіть акцію:</p>
-                        <form action="">
-                            <div class="row no-gutters">
-                                <div class="col-lg-6 pr-lg-2">
-                                    <input id="sushi-action-button" type="radio" name="action-buttons" value="sushiSale">
-                                    <label for="sushi-action-button">Суші 2+1</label>
-                                </div>
-                                <div class="col-lg-6 pl-lg-2">
-                                    <input id="burger-action-button" type="radio" name="action-buttons" value="burgerSale">
-                                    <label for="burger-action-button">Бургери 3+1</label>
-                                </div>
+                        <h2>зони та час доставки</h2>
+                        <ul class="delivery-zones">
+                            <li>
+                                <h4>Оплата кур’єру готівкою</h4>
+                            </li>
+                            <li>
+                                <h4>Оплата кур’єру картою</h4>
+                            </li>
+                            <li>
+                                <h4>Онлайн оплата через сервіс LiqPay</h4>
+                            </li>
+                        </ul>
+                        <div class="row no-gutters">
+                            <div class="col-xl-7 col-lg-10">
+                                <a href="index.html">зробити замовлення</a>
                             </div>
-                            <p>Застосовані промокоди:</p>
-                            <span class="mb-5">FREEBURGER4</span>
-                        </form>
-
-                        <!--                        ВАШЕ ЗАМОВЛЕННЯ-->
-
-                        <div class="order-card">
-                            <div class="row mb-4 no-gutters">
-                                <div class="col-8">
-                                    <h3>Ваше замовлення:</h3>
-                                </div>
-                                <div class="col-4 text-right">
-                                    <div class="order-total-price">
-                                        <span>750</span> грн
-                                    </div>
-                                </div>
-                                <div class="col-8">
-                                    <h6>рол футомакі (6шт)</h6>
-                                </div>
-                                <div class="col-4 mb-auto text-right">
-                                    <div class="order-item-count">
-                                        <span>2</span> шт / <small>115</small> грн
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row mb-4 no-gutters">
-                                <div class="col-4 my-lg-auto mb-auto">
-                                    <h6 class="mb-0">майкл djordan 
-                                    </h6>
-                                </div>
-                                <div class="col-4 my-lg-auto mb-auto inline-flex order-fry-level">
-                                    <img src="./img/order-cutlet.svg">
-                                    <img src="./img/order-fry-level.svg">
-                                    <img src="./img/order-fry-level.svg">
-                                    <img src="./img/order-fry-level.svg">
-                                </div>
-                                <div class="col-4 my-lg-auto mb-auto text-right">
-                                    <div class="order-item-count">
-                                        <span>2</span> шт / <small>115</small> грн
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="order-text my-0">Безкоштовна доставка</p>
                         </div>
-
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40673.51543390977!2d30.421490813892014!3d50.420706931875635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb43292f307%3A0x62d718976a4ab868!2z0KHQvtC70L7QvCfRj9C90YHRjNC60LjQuSDRgNCw0LnQvtC9LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1572286991013!5m2!1suk!2sua" width="100%" height="415" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                     </div>
-
-                    <div class="col-lg-5 mt-lg-0 mt-4 order-lg-1">
-                        <form class="ordering-focus" action="">
-                            <span>Ім'я</span>
-                            <input type="text" name="name" required="">
-                            <span>Номер телефону</span>
-                            <input type="tel" id="recipient-phone" name="phone" required="">
-                            <span class="mt-lg-4">Вулиця</span>
-                            <input id="street" name="street" type="text" value="" placeholder="" required="">
-                            <div class="row no-gutters mb-lg-4">
-                                <div class="col-4 pr-2">
+                    <div class="col-lg-7 mt-md-0 mt-4">
+                        <form class="zone-search" action="">
+                            <div class="row no-gutters justify-content-center">
+                               <div class="col-md-8 mr-md-4">
+                                <h2>знайти адресу</h2></div>
+                                <div class="col-md-6 col-8">
+                                <label>
+                                        <span>Вулиця</span>
+									<span class="mb-0">
+										<input id="street" name="street" type="text" placeholder="Вулиця" required="">
+									</span>
+                                    </label>
+                                </div>
+                                <div class="col-md-2 col-3 ml-md-4 ml-3">
+                                <label>
                                     <span>Будинок</span>
-                                    <input type="text" maxlength="4" name="house" required="">
+								<span class="mb-0">
+									<input id="houseNumber" name="house" maxlength="4" type="text" required="">
+								</span>
+                                </label>
                                 </div>
-                                <div class="col-4 px-1">
-                                    <span>Квартира</span>
-                                    <input type="text" name="apartment" maxlength="3" required="">
+                                <div class="col-md-8 mr-md-4">
+                                    <button type="submit">знайти</button>
                                 </div>
-                                <div class="col-4 pl-2">
-                                    <span>К-сть осіб</span>
-                                    <input type="text" name="people_qty" maxlength="3" required="">
-                                </div>
-                            </div>
-
-                            <span>Промокод</span>
-                            <div class="row no-gutters">
-                                <div class="col-8 pr-lg-3 pr-2">
-                                    <input type="text" name="promocode">
-                                </div>
-                                <div class="col-4">
-                                    <button class="mb-0 order-button">Застосувати</button>
-                                </div>
-                            </div>
-
-                            <span>З якої суми підготувати решту</span>
-                            <input type="text" name="sum">
-
-                            <!--                        RADIOBUTTONS HERE-->
-                            <div class="radio-payment mb-5">
-                            <label for="cash" class="radio">
-                                <input id="cash" type="radio" name="r" value="cash" checked="">
-                                <span>Оплата кур’єру готівкою</span>
-                            </label>
-                            <label for="card" class="radio">
-                                <input id="card" type="radio" name="r" value="card">
-                                <span>Оплата кур’єру картою</span>
-                            </label>
-
-                            <label for="liqpay" class="radio">
-                                <input id="liqpay" type="radio" name="r" value="liqpay">
-                                <span>Онлайн оплата через сервіс LiqPay</span>
-                            </label>
-                            </div>
-                            
-                            <!--                        RADIOBUTTONS END-->
-                            <span>Коментар</span>
-                            <textarea name="user_coment" placeholder="Введіть тут код домофону, або іншу інформацію" cols="40" rows="5"></textarea>
-                            <div class="row no-gutters">
-                                <div class="col-xl-12">
-                                    <button type="submit">підтвердити замовлення</button></div>
                             </div>
                         </form>
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.48246544447!2d23.942195833904684!3d49.8327786773887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add706d33115b%3A0x6b1b0043205dfc9d!2zMTAwINCg0LXQvdGC0LPQtdC9!5e0!3m2!1suk!2sua!4v1573312788099!5m2!1suk!2sua" width="100%" height="450" frameborder="0"  allowfullscreen=""></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
