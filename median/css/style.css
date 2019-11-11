@@ -1000,9 +1000,19 @@ button.active-language {
     font-size: 18px;
     line-height: 22px;
     color: #2C2C2C;
-
 }
 
 .overflow {
     overflow-x: hidden;
+}
+
+.change {
+    background-color: #fafafa !important;
+}
+
+a.navbar-links-change {
+    color: #2c2c2c;
+}
+.lang-switch-change, .lang-switch-change button{
+    color: #2c2c2c;
 }
