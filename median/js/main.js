@@ -11,15 +11,8 @@
                 $('.sidebar__mobile').removeClass('active-sidebar');
             });
 
-            $('.sidebar-search__anchors a, .mobile-sidebar__logo, .sidebar-search__language a').on('click', function () {
-                $('.hamburger').removeClass('nav__chrested');
-            });
-
             $('.hamburger').click(function () {
                 $('.sidebar__mobile').toggleClass('active-sidebar');
             });
-
-            $('.hamburger').click(function () {
-                $(this).toggleClass('nav__chrested');
-            });
         });
+

@@ -28,7 +28,8 @@
                 <div class="container-fluid px-body">
                     <div class="row header no-gutters justify-content-between">
                         <div class="col-2">
-                            <img src="./img/logo-navbar.svg">
+                           <a href="#">
+                            <img id="navbar-logo" src="./img/logo-navbar.svg"></a>
                         </div>
                         <div class="col-8 align-self-center text-center">
                             <a class="navbar-links active-page" href="#">Главная</a>
@@ -255,6 +256,8 @@
         </section>
     </main>
 
+   <aside></aside>
+   
     <footer class="footer">
         <div class="container-fluid px-body">
             <div class="row no-gutters justify-content-between">
@@ -316,6 +319,7 @@
         });
     </script>
 
+    
     <script>
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
@@ -325,10 +329,12 @@
                 $(".menu-toggle").addClass("change");
                 $(".navbar-links").addClass("navbar-links-change");
                 $(".lang-switch").addClass("lang-switch-change");
+                $("#navbar-logo").attr("src","./img/logo-navbar-black.svg");
             } else {
                 $(".menu-toggle").removeClass("change");
                 $(".navbar-links").removeClass("navbar-links-change");
                 $(".lang-switch").removeClass("lang-switch-change");
+                $("#navbar-logo").attr("src","./img/logo-navbar.svg");
             }
         });
     </script>

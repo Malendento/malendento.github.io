@@ -21,72 +21,74 @@
 
 <body>
     <header class="header fixed-top">
-        <div class="container-fluid px-body">
-            <div class="row align-items-center px-lg-3 px-1 no-gutters py-lg-4 py-2">
-                <div class="col-xl-1 col-lg-2 col-3">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./img/logo.svg" media="(min-width: 992px)">
-                            <img src="./img/mobile-logo.svg">
-                        </picture>
-                    </a>
-                </div>
-                <div class="col-lg-6 text-center m__hide">
-                    <div class="popover__wrapper">
+        <nav>
+            <div class="container-fluid px-body">
+                <div class="row align-items-center px-lg-3 px-1 no-gutters py-lg-4 py-2">
+                    <div class="col-xl-1 col-lg-2 col-md-4 col-3">
                         <a href="#">
-                            <h2 class="popover__title">Суші<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            <picture>
+                                <source srcset="./img/logo.svg" media="(min-width: 992px)">
+                                <img src="./img/mobile-logo.svg">
+                            </picture>
                         </a>
-                        <div class="popover__content">
-                            <a href="#">Сети</a>
-                            <a href="#">Роли</a>
-                            <a href="#">Суші</a>
-                        </div>
                     </div>
+                    <div class="col-lg-6 text-center m__hide">
+                        <div class="popover__wrapper">
+                            <a href="#">
+                                <h2 class="popover__title">Суші<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            </a>
+                            <div class="popover__content">
+                                <a href="#">Сети</a>
+                                <a href="#">Роли</a>
+                                <a href="#">Суші</a>
+                            </div>
+                        </div>
 
-                    <div class="popover__wrapper">
-                        <a href="#">
-                            <h2 class="popover__title">Бургери<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
-                        </a>
-                        <div class="popover__content popover__content-burger">
-                            <a href="#">Бургер меню</a>
-                            <a href="#">Бургери</a>
-                            <a href="#">Крафт Бургери</a>
+                        <div class="popover__wrapper">
+                            <a href="#">
+                                <h2 class="popover__title">Бургери<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            </a>
+                            <div class="popover__content popover__content-burger">
+                                <a href="#">Бургер меню</a>
+                                <a href="#">Бургери</a>
+                                <a href="#">Крафт Бургери</a>
+                            </div>
                         </div>
-                    </div>
-                    <a class="headear-links" href="#">Доставка</a>
-                    <a class="headear-links" href="#">Акції</a>
+                        <a class="headear-links" href="#">Доставка</a>
+                        <a class="headear-links" href="#">Акції</a>
 
-                    <div class="popover__wrapper city">
-                        <h2 class="popover__title">Львів<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
-                        <div class="popover__content-city">
-                            <button onclick="" class="city-switch">Одеса</button>
+                        <div class="popover__wrapper city">
+                            <h2 class="popover__title">Львів<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
+                            <div class="popover__content-city">
+                                <button onclick="" class="city-switch">Одеса</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-2 col-6 header-phone mobile-hide">
-                    <a href="tel:+380931707917">(093) 17 079 17</a>
-                    <p>Працюємо з <span>11:00</span> до <span>00:00</span></p>
-                </div>
-                <div class="col-xl-1 col-lg-1 m__hide text-xl-left text-center">
-                    <div class="popover__wrapper language">
-                        <h2 class="popover__title">UA<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
-                        <div class="popover__content-language">
-                            <button onclick="" class="city-switch">RU</button>
-                            <button onclick="" class="city-switch">EN</button>
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-6 header-phone text-md-left text-center ali">
+                        <a href="tel:+380931707917">(093) 17 079 17</a>
+                        <p>Працюємо з <span>11:00</span> до <span>00:00</span></p>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 m__hide text-xl-left text-center">
+                        <div class="popover__wrapper language">
+                            <h2 class="popover__title">UA<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
+                            <div class="popover__content-language">
+                                <button onclick="" class="city-switch">RU</button>
+                                <button onclick="" class="city-switch">EN</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-6">
-                    <a class="button-order" href="#">Швидке замовлення</a></div>
-                <div class="col-lg-1 col-3 d-xl-none text-right">
-                    <div class="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="col-xl-2 col-lg-3 col-6 mobile-hide">
+                        <a class="button-order" data-toggle="modal" data-target="#orderFastModal" href="#">Швидке замовлення</a></div>
+                    <div class="col-lg-1 col-md-2 col-3 d-xl-none text-right">
+                        <div class="hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <section class="sidebar-content">
@@ -141,17 +143,17 @@
                         <p>Оберіть акцію:</p>
                         <form action="">
                             <div class="row no-gutters">
-                                <div class="col-lg-6 pr-lg-2">
+                                <div class="col-6 pr-2">
                                     <input id="sushi-action-button" type="radio" name="action-buttons" value="sushiSale">
                                     <label for="sushi-action-button">Суші 2+1</label>
                                 </div>
-                                <div class="col-lg-6 pl-lg-2">
+                                <div class="col-6 pl-2">
                                     <input id="burger-action-button" type="radio" name="action-buttons" value="burgerSale">
                                     <label for="burger-action-button">Бургери 3+1</label>
                                 </div>
                             </div>
                             <p>Застосовані промокоди:</p>
-                            <span class="mb-5">FREEBURGER4</span>
+                            <span class="mb-3">FREEBURGER4</span>
                         </form>
 
                         <!--                        ВАШЕ ЗАМОВЛЕННЯ-->
@@ -196,7 +198,9 @@
                             <p class="order-text my-0">Безкоштовна доставка</p>
                         </div>
 
+                       <div id="desktop-map" class="mobile-hide">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40673.51543390977!2d30.421490813892014!3d50.420706931875635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb43292f307%3A0x62d718976a4ab868!2z0KHQvtC70L7QvCfRj9C90YHRjNC60LjQuSDRgNCw0LnQvtC9LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1572286991013!5m2!1suk!2sua" width="100%" height="415" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
                     </div>
 
                     <div class="col-lg-5 mt-lg-0 mt-4 order-lg-1">
@@ -205,9 +209,9 @@
                             <input type="text" name="name" required="">
                             <span>Номер телефону</span>
                             <input type="tel" id="recipient-phone" name="phone" required="">
-                            <span class="mt-lg-4">Вулиця</span>
+                            <span>Вулиця</span>
                             <input id="street" name="street" type="text" value="" placeholder="" required="">
-                            <div class="row no-gutters mb-lg-4">
+                            <div class="row no-gutters">
                                 <div class="col-4 pr-2">
                                     <span>Будинок</span>
                                     <input type="text" maxlength="4" name="house" required="">
@@ -236,7 +240,7 @@
                             <input type="text" name="sum">
 
                             <!--                        RADIOBUTTONS HERE-->
-                            <div class="radio-payment mb-5">
+                            <div class="radio-payment">
                             <label for="cash" class="radio">
                                 <input id="cash" type="radio" name="r" value="cash" checked="">
                                 <span>Оплата кур’єру готівкою</span>
@@ -254,7 +258,7 @@
                             
                             <!--                        RADIOBUTTONS END-->
                             <span>Коментар</span>
-                            <textarea name="user_coment" placeholder="Введіть тут код домофону, або іншу інформацію" cols="40" rows="5"></textarea>
+                            <textarea name="user_coment" placeholder="Введіть тут код домофону, або іншу інформацію" cols="40" rows="2"></textarea>
                             <div class="row no-gutters">
                                 <div class="col-xl-12">
                                     <button type="submit">підтвердити замовлення</button></div>
@@ -264,6 +268,11 @@
                 </div>
             </div>
         </section>
+        
+        <div id="mobile-map" class="container-fluid px-body d-lg-none">
+                       <div class="row no-gutters px-1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40673.51543390977!2d30.421490813892014!3d50.420706931875635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ceb43292f307%3A0x62d718976a4ab868!2z0KHQvtC70L7QvCfRj9C90YHRjNC60LjQuSDRgNCw0LnQvtC9LCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1572286991013!5m2!1suk!2sua" width="100%" height="415" frameborder="0" style="border:0; margin-bottom: 30px;" allowfullscreen=""></iframe></div>
+        </div>
     </main>
 
 

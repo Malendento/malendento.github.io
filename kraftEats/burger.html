@@ -20,73 +20,76 @@
 </head>
 
 <body>
+   
     <header class="header fixed-top">
-        <div class="container-fluid px-body">
-            <div class="row align-items-center px-lg-3 px-1 no-gutters py-lg-4 py-2">
-                <div class="col-xl-1 col-lg-2 col-3">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./img/logo.svg" media="(min-width: 992px)">
-                            <img src="./img/mobile-logo.svg">
-                        </picture>
-                    </a>
-                </div>
-                <div class="col-lg-6 text-center m__hide">
-                    <div class="popover__wrapper">
+        <nav>
+            <div class="container-fluid px-body">
+                <div class="row align-items-center px-lg-3 px-1 no-gutters py-lg-4 py-2">
+                    <div class="col-xl-1 col-lg-2 col-md-4 col-3">
                         <a href="#">
-                            <h2 class="popover__title">Суші<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            <picture>
+                                <source srcset="./img/logo.svg" media="(min-width: 992px)">
+                                <img src="./img/mobile-logo.svg">
+                            </picture>
                         </a>
-                        <div class="popover__content">
-                            <a href="#">Сети</a>
-                            <a href="#">Роли</a>
-                            <a href="#">Суші</a>
-                        </div>
                     </div>
+                    <div class="col-lg-6 text-center m__hide">
+                        <div class="popover__wrapper">
+                            <a href="#">
+                                <h2 class="popover__title">Суші<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            </a>
+                            <div class="popover__content">
+                                <a href="#">Сети</a>
+                                <a href="#">Роли</a>
+                                <a href="#">Суші</a>
+                            </div>
+                        </div>
 
-                    <div class="popover__wrapper">
-                        <a href="#">
-                            <h2 class="popover__title">Бургери<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
-                        </a>
-                        <div class="popover__content popover__content-burger">
-                            <a href="#">Бургер меню</a>
-                            <a href="#">Бургери</a>
-                            <a href="#">Крафт Бургери</a>
+                        <div class="popover__wrapper">
+                            <a href="#">
+                                <h2 class="popover__title">Бургери<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            </a>
+                            <div class="popover__content popover__content-burger">
+                                <a href="#">Бургер меню</a>
+                                <a href="#">Бургери</a>
+                                <a href="#">Крафт Бургери</a>
+                            </div>
                         </div>
-                    </div>
-                    <a class="headear-links" href="#">Доставка</a>
-                    <a class="headear-links" href="#">Акції</a>
+                        <a class="headear-links" href="#">Доставка</a>
+                        <a class="headear-links" href="#">Акції</a>
 
-                    <div class="popover__wrapper city">
-                        <h2 class="popover__title">Львів<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
-                        <div class="popover__content-city">
-                            <button onclick="" class="city-switch">Одеса</button>
+                        <div class="popover__wrapper city">
+                            <h2 class="popover__title">Львів<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
+                            <div class="popover__content-city">
+                                <button onclick="" class="city-switch">Одеса</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-2 col-6 header-phone mobile-hide">
-                    <a href="tel:+380931707917">(093) 17 079 17</a>
-                    <p>Працюємо з <span>11:00</span> до <span>00:00</span></p>
-                </div>
-                <div class="col-xl-1 col-lg-1 m__hide text-xl-left text-center">
-                    <div class="popover__wrapper language">
-                        <h2 class="popover__title">UA<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
-                        <div class="popover__content-language">
-                            <button onclick="" class="city-switch">RU</button>
-                            <button onclick="" class="city-switch">EN</button>
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-6 header-phone text-md-left text-center ali">
+                        <a href="tel:+380931707917">(093) 17 079 17</a>
+                        <p>Працюємо з <span>11:00</span> до <span>00:00</span></p>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 m__hide text-xl-left text-center">
+                        <div class="popover__wrapper language">
+                            <h2 class="popover__title">UA<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
+                            <div class="popover__content-language">
+                                <button onclick="" class="city-switch">RU</button>
+                                <button onclick="" class="city-switch">EN</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-6">
-                    <a class="button-order" data-toggle="modal" data-target="#orderFastModal" href="#">Швидке замовлення</a></div>
-                <div class="col-lg-1 col-3 d-xl-none text-right">
-                    <div class="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="col-xl-2 col-lg-3 col-6 mobile-hide">
+                        <a class="button-order" data-toggle="modal" data-target="#orderFastModal" href="#">Швидке замовлення</a></div>
+                    <div class="col-lg-1 col-md-2 col-3 d-xl-none text-right">
+                        <div class="hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
 
@@ -135,18 +138,18 @@
             <div class="container-fluid info-bg">
                 <div class="row">
                     <div class="px-lg-3  px-1">
-                        <h1 class="info-title px-body">доставка у львові до 29 хвилин або <span>бургер у подарунок</span></h1>
+                        <h1 class="info-title px-body">доставка у львові до 29 хвилин або <span>рол у подарунок</span></h1>
                     </div>
                     <div class="col-lg-12 px-0">
                         <div class="info-bg-text">твій голод ще ніколи<br class="d-lg-none"> не був таким коротким</div>
                     </div>
-                    <div class="px-lg-3">
+                    <div class="px-lg-3 ml-table">
                         <div class="px-body px-table">
                             <div class="card-discount">
                                 <h3>акція 3+1</h3>
-                                <span>Кожен четвертий
+                                <span class="line-height-text">Кожен четвертий
                                     крафт</span>
-                                    <span>бургер
+                                <span class="line-height-text">бургер
                                     у подарунок.</span>
                             </div>
                         </div>
@@ -164,7 +167,7 @@
                         </h2>
                     </div>
 
-                    <div class="col-md-6 px-md-3 px-1 text-center">
+                    <div class="col-md-6 px-md-3 px-1 text-center mb-5">
                         <div class="burger-card">
                             <div class="burger-card__bg"></div>
                             <div class="row no-gutters">
@@ -175,37 +178,35 @@
                                     <small class="mobile-hide">900 г</small>
                                 </div>
                             </div>
-                            <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
-                            <form action="">
-                                <div class="row no-gutters align-items-center justify-content-between">
-                                    <div class="col-xl-6 col-6 m__hide">
-                                        <button type="submit">додати в корзину</button>
-                                    </div>
-                                    <div class="col-lg-2 mobile-hide col-3 my-auto">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col-12 text-center counter">
-                                                <img src="./img/minus.svg">
-                                                <input type="text" placeholder="1" value="1">
-                                                <img src="./img/plus.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-5">
-                                        <span>115 грн</span>
-                                    </div>
-                                    <div class="col-lg-3 col-3 d-xl-none">
-                                        <small>900 г</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="">
-                                <div class="d-xl-none px-4">
+                            <div class="card-height-subtitle height-subtitle__burger">
+                                <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
+                            </div>
+                            <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-xl-6 col-6 m__hide">
                                     <button type="submit">додати в корзину</button>
                                 </div>
-                            </form>
+                                <div class="col-lg-2 mobile-hide col-3 my-auto">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-12 text-center counter">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-5 text-lg-center text-left">
+                                    <span>115 грн</span>
+                                </div>
+                                <div class="col-lg-3 col-3 d-xl-none">
+                                    <small>900 г</small>
+                                </div>
+                            </div>
+                            <div class="d-xl-none px-4">
+                                <button type="submit">додати в корзину</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 px-md-3 px-1 text-center">
+                    <div class="col-md-6 px-md-3 px-1 text-center mb-5">
                         <div class="burger-card">
                             <div class="burger-card__bg"></div>
                             <div class="row no-gutters">
@@ -216,37 +217,35 @@
                                     <small class="mobile-hide">900 г</small>
                                 </div>
                             </div>
-                            <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
-                            <form action="">
-                                <div class="row no-gutters align-items-center justify-content-between">
-                                    <div class="col-xl-6 col-6 m__hide">
-                                        <button type="submit">додати в корзину</button>
-                                    </div>
-                                    <div class="col-lg-2 mobile-hide col-3 my-auto">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col-12 text-center counter">
-                                                <img src="./img/minus.svg">
-                                                <input type="text" placeholder="1" value="1">
-                                                <img src="./img/plus.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-5">
-                                        <span>115 грн</span>
-                                    </div>
-                                    <div class="col-lg-3 col-3 d-xl-none">
-                                        <small>900 г</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="">
-                                <div class="d-xl-none px-4">
+                            <div class="card-height-subtitle height-subtitle__burger">
+                                <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
+                            </div>
+                            <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-xl-6 col-6 m__hide">
                                     <button type="submit">додати в корзину</button>
                                 </div>
-                            </form>
+                                <div class="col-lg-2 mobile-hide col-3 my-auto">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-12 text-center counter">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-5 text-lg-center text-left">
+                                    <span>115 грн</span>
+                                </div>
+                                <div class="col-lg-3 col-3 d-xl-none">
+                                    <small>900 г</small>
+                                </div>
+                            </div>
+                            <div class="d-xl-none px-4">
+                                <button type="submit">додати в корзину</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 px-md-3 px-1 text-center">
+                    <div class="col-md-6 px-md-3 px-1 text-center mb-5">
                         <div class="burger-card">
                             <div class="burger-card__bg"></div>
                             <div class="row no-gutters">
@@ -257,37 +256,35 @@
                                     <small class="mobile-hide">900 г</small>
                                 </div>
                             </div>
-                            <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
-                            <form action="">
-                                <div class="row no-gutters align-items-center justify-content-between">
-                                    <div class="col-xl-6 col-6 m__hide">
-                                        <button type="submit">додати в корзину</button>
-                                    </div>
-                                    <div class="col-lg-2 mobile-hide col-3 my-auto">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col-12 text-center counter">
-                                                <img src="./img/minus.svg">
-                                                <input type="text" placeholder="1" value="1">
-                                                <img src="./img/plus.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-5">
-                                        <span>115 грн</span>
-                                    </div>
-                                    <div class="col-lg-3 col-3 d-xl-none">
-                                        <small>900 г</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="">
-                                <div class="d-xl-none px-4">
+                            <div class="card-height-subtitle height-subtitle__burger">
+                                <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
+                            </div>
+                            <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-xl-6 col-6 m__hide">
                                     <button type="submit">додати в корзину</button>
                                 </div>
-                            </form>
+                                <div class="col-lg-2 mobile-hide col-3 my-auto">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-12 text-center counter">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-5 text-lg-center text-left">
+                                    <span>115 грн</span>
+                                </div>
+                                <div class="col-lg-3 col-3 d-xl-none">
+                                    <small>900 г</small>
+                                </div>
+                            </div>
+                            <div class="d-xl-none px-4">
+                                <button type="submit">додати в корзину</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 px-md-3 px-1 text-center">
+                    <div class="col-md-6 px-md-3 px-1 text-center mb-5">
                         <div class="burger-card">
                             <div class="burger-card__bg"></div>
                             <div class="row no-gutters">
@@ -298,37 +295,35 @@
                                     <small class="mobile-hide">900 г</small>
                                 </div>
                             </div>
-                            <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
-                            <form action="">
-                                <div class="row no-gutters align-items-center justify-content-between">
-                                    <div class="col-xl-6 col-6 m__hide">
-                                        <button type="submit">додати в корзину</button>
-                                    </div>
-                                    <div class="col-lg-2 mobile-hide col-3 my-auto">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col-12 text-center counter">
-                                                <img src="./img/minus.svg">
-                                                <input type="text" placeholder="1" value="1">
-                                                <img src="./img/plus.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-5">
-                                        <span>115 грн</span>
-                                    </div>
-                                    <div class="col-lg-3 col-3 d-xl-none">
-                                        <small>900 г</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="">
-                                <div class="d-xl-none px-4">
+                            <div class="card-height-subtitle height-subtitle__burger">
+                                <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
+                            </div>
+                            <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-xl-6 col-6 m__hide">
                                     <button type="submit">додати в корзину</button>
                                 </div>
-                            </form>
+                                <div class="col-lg-2 mobile-hide col-3 my-auto">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-12 text-center counter">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-5 text-lg-center text-left">
+                                    <span>115 грн</span>
+                                </div>
+                                <div class="col-lg-3 col-3 d-xl-none">
+                                    <small>900 г</small>
+                                </div>
+                            </div>
+                            <div class="d-xl-none px-4">
+                                <button type="submit">додати в корзину</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 px-md-3 px-1 text-center">
+                    <div class="col-md-6 px-md-3 px-1 text-center mb-5">
                         <div class="burger-card">
                             <div class="burger-card__bg"></div>
                             <div class="row no-gutters">
@@ -339,33 +334,31 @@
                                     <small class="mobile-hide">900 г</small>
                                 </div>
                             </div>
-                            <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
-                            <form action="">
-                                <div class="row no-gutters align-items-center justify-content-between">
-                                    <div class="col-xl-6 col-6 m__hide">
-                                        <button type="submit">додати в корзину</button>
-                                    </div>
-                                    <div class="col-lg-2 mobile-hide col-3 my-auto">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col-12 text-center counter">
-                                                <img src="./img/minus.svg">
-                                                <input type="text" placeholder="1" value="1">
-                                                <img src="./img/plus.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-5">
-                                        <span>115 грн</span>
-                                    </div>
-                                    <div class="col-lg-3 col-3 d-xl-none">
-                                        <small>900 г</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="">
-                                <div class="d-xl-none px-4">
+                            <div class="card-height-subtitle height-subtitle__burger">
+                                <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
+                            </div>
+                            <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-xl-6 col-6 m__hide">
                                     <button type="submit">додати в корзину</button>
                                 </div>
-                            </form>
+                                <div class="col-lg-2 mobile-hide col-3 my-auto">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-12 text-center counter">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-5 text-lg-center text-left">
+                                    <span>115 грн</span>
+                                </div>
+                                <div class="col-lg-3 col-3 d-xl-none">
+                                    <small>900 г</small>
+                                </div>
+                            </div>
+                            <div class="d-xl-none px-4">
+                                <button type="submit">додати в корзину</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -376,7 +369,7 @@
                         </h2>
                     </div>
 
-                    <div class="col-md-6 px-md-3 px-1 text-center">
+                    <div class="col-md-6 px-md-3 px-1 text-center mb-5">
                         <div class="burger-card">
                             <div class="burger-card__bg"></div>
                             <div class="row no-gutters">
@@ -387,37 +380,35 @@
                                     <small class="mobile-hide">900 г</small>
                                 </div>
                             </div>
-                            <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
-                            <form action="">
-                                <div class="row no-gutters align-items-center justify-content-between">
-                                    <div class="col-xl-6 col-6 m__hide">
-                                        <button type="submit">додати в корзину</button>
-                                    </div>
-                                    <div class="col-lg-2 mobile-hide col-3 my-auto">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col-12 text-center counter">
-                                                <img src="./img/minus.svg">
-                                                <input type="text" placeholder="1" value="1">
-                                                <img src="./img/plus.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-5">
-                                        <span>115 грн</span>
-                                    </div>
-                                    <div class="col-lg-3 col-3 d-xl-none">
-                                        <small>900 г</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="">
-                                <div class="d-xl-none px-4">
+                            <div class="card-height-subtitle height-subtitle__burger">
+                                <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
+                            </div>
+                            <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-xl-6 col-6 m__hide">
                                     <button type="submit">додати в корзину</button>
                                 </div>
-                            </form>
+                                <div class="col-lg-2 mobile-hide col-3 my-auto">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-12 text-center counter">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-5 text-lg-center text-left">
+                                    <span>115 грн</span>
+                                </div>
+                                <div class="col-lg-3 col-3 d-xl-none">
+                                    <small>900 г</small>
+                                </div>
+                            </div>
+                            <div class="d-xl-none px-4">
+                                <button type="submit">додати в корзину</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 px-md-3 px-1 text-center">
+                    <div class="col-md-6 px-md-3 px-1 text-center mb-5">
                         <div class="burger-card">
                             <div class="burger-card__bg"></div>
                             <div class="row no-gutters">
@@ -428,37 +419,35 @@
                                     <small class="mobile-hide">900 г</small>
                                 </div>
                             </div>
-                            <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
-                            <form action="">
-                                <div class="row no-gutters align-items-center justify-content-between">
-                                    <div class="col-xl-6 col-6 m__hide">
-                                        <button type="submit">додати в корзину</button>
-                                    </div>
-                                    <div class="col-lg-2 mobile-hide col-3 my-auto">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col-12 text-center counter">
-                                                <img src="./img/minus.svg">
-                                                <input type="text" placeholder="1" value="1">
-                                                <img src="./img/plus.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-5">
-                                        <span>115 грн</span>
-                                    </div>
-                                    <div class="col-lg-3 col-3 d-xl-none">
-                                        <small>900 г</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="">
-                                <div class="d-xl-none px-4">
+                            <div class="card-height-subtitle height-subtitle__burger">
+                                <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
+                            </div>
+                            <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-xl-6 col-6 m__hide">
                                     <button type="submit">додати в корзину</button>
                                 </div>
-                            </form>
+                                <div class="col-lg-2 mobile-hide col-3 my-auto">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-12 text-center counter">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-5 text-lg-center text-left">
+                                    <span>115 грн</span>
+                                </div>
+                                <div class="col-lg-3 col-3 d-xl-none">
+                                    <small>900 г</small>
+                                </div>
+                            </div>
+                            <div class="d-xl-none px-4">
+                                <button type="submit">додати в корзину</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 px-md-3 px-1 text-center">
+                    <div class="col-md-6 px-md-3 px-1 text-center mb-5">
                         <div class="burger-card">
                             <div class="burger-card__bg"></div>
                             <div class="row no-gutters">
@@ -469,33 +458,31 @@
                                     <small class="mobile-hide">900 г</small>
                                 </div>
                             </div>
-                            <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
-                            <form action="">
-                                <div class="row no-gutters align-items-center justify-content-between">
-                                    <div class="col-xl-6 col-6 m__hide">
-                                        <button type="submit">додати в корзину</button>
-                                    </div>
-                                    <div class="col-lg-2 mobile-hide col-3 my-auto">
-                                        <div class="row align-items-center no-gutters">
-                                            <div class="col-12 text-center counter">
-                                                <img src="./img/minus.svg">
-                                                <input type="text" placeholder="1" value="1">
-                                                <img src="./img/plus.svg"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-5">
-                                        <span>115 грн</span>
-                                    </div>
-                                    <div class="col-lg-3 col-3 d-xl-none">
-                                        <small>900 г</small>
-                                    </div>
-                                </div>
-                            </form>
-                            <form action="">
-                                <div class="d-xl-none px-4">
+                            <div class="card-height-subtitle height-subtitle__burger">
+                                <p>Бургер Антон (соус техаський, сир чеддер, айсберг, помідор, куряча котлета, цибуля синя) картопля фрі, кока-кола 0,5</p>
+                            </div>
+                            <div class="row no-gutters align-items-center justify-content-between">
+                                <div class="col-xl-6 col-6 m__hide">
                                     <button type="submit">додати в корзину</button>
                                 </div>
-                            </form>
+                                <div class="col-lg-2 mobile-hide col-3 my-auto">
+                                    <div class="row align-items-center no-gutters">
+                                        <div class="col-12 text-center counter">
+                                            <img src="./img/minus.svg">
+                                            <input type="text" placeholder="1" value="1">
+                                            <img src="./img/plus.svg"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-5 text-lg-center text-left">
+                                    <span>115 грн</span>
+                                </div>
+                                <div class="col-lg-3 col-3 d-xl-none">
+                                    <small>900 г</small>
+                                </div>
+                            </div>
+                            <div class="d-xl-none px-4">
+                                <button type="submit">додати в корзину</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -513,146 +500,147 @@
                 </div>
 
                 <!--                RTL-CARD-->
+
+
                 <div class="row craft-burgers justify-content-between no-gutters mb-5">
-                    <div class="col-lg-6 align-self-center order-lg-2">
+                    <div class="col-lg-6 col-md-8 col-12 align-self-center order-lg-2 pl-lg-5 mx-auto mb-lg-0 mb-4">
                         <img class="
                         img-fluid" src="./img/burger-tramp.png">
                     </div>
-                    <div class="col-lg-5 order-lg-1">
-                        <h2>трамп</h2>
+                    <div class="col-lg-6 col-md-12 order-lg-1">
+                        <h2>бонапарт 2.0</h2>
                         <div class="row no-gutters">
-                            <div class="col-xl-6 col-5 burger-price">
+                            <div class="col-xl-5 col-lg-5 col-md-3 col-6 burger-price">
                                 <span>134</span> грн
                             </div>
                             <div class="col-5 align-self-end burger-weight">
-                                / <small>315</small> грам
+                                <strong>/</strong> <small>315</small> грам
                             </div>
                         </div>
-                        <h6>бекон / мікс салату / чедер / помідор / соус bbq</h6>
-                        <form action="">
-                            <div class="craft-burgers__card">
-                                <div class="burgers-card__title">Оберіть котлету</div>
-                                <div class="burger-card__content">
-                                    <div class="row no-gutters">
-                                        <div class="col-6 align-self-center">
-                                            <div class="burger-meat-element">
-                                                <input type="radio" id="chicken-2" name="cutlet" value="chicken">
-                                                <label for="chicken-2" class="meat-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px">
-                                                        <g id="outline">
-                                                            <path class="color-change" d="M57,25a5,5,0,0,0,.916-9.916A5,5,0,0,0,48,16a4.133,4.133,0,0,0,1.5,3.089l-3.272,3.272A25.826,25.826,0,0,0,32,18a26.441,26.441,0,0,0-18.374,7.637C8.78,30.317,6,36.282,6,42c0,4.672,1.417,9.41,9.371,12H2v1a7.008,7.008,0,0,0,7,7H55a7.008,7.008,0,0,0,7-7V54H48.81C54.256,52.127,58,48.584,58,42c0-5.432-2.516-11.087-6.928-15.657l2.84-2.84A4.132,4.132,0,0,0,57,25Zm2.9,31A5.008,5.008,0,0,1,55,60H9a5.008,5.008,0,0,1-4.9-4ZM56,42c0,8.523-6.953,12-24,12S8,50.523,8,42C8,29.61,20.9,20,32,20a23.79,23.79,0,0,1,12.78,3.806l-2.057,2.057a11.427,11.427,0,0,0-5.23.547,21.325,21.325,0,0,0-8.2,4.883,9.185,9.185,0,0,0,0,13.414,8.207,8.207,0,0,0,5.865,2.449c.206,0,.413-.008.621-.022a10.981,10.981,0,0,0,6.928-3.427,17.652,17.652,0,0,0,4.4-8.278,11.681,11.681,0,0,0,.11-5.236l2.436-2.436C53.643,31.909,56,37.169,56,42Zm-14.707.293a9.017,9.017,0,0,1-5.658,2.846,6.27,6.27,0,0,1-4.928-1.846,7.174,7.174,0,0,1,0-10.586c2.8-2.8,7.439-4.961,10.7-4.961a3.982,3.982,0,0,1,2.888.961C46.969,31.383,44.837,38.749,41.293,42.293ZM46.4,28.185a5.207,5.207,0,0,0-.694-.892,4.726,4.726,0,0,0-.9-.686l6.9-6.9a1,1,0,0,0-.138-1.529C50.469,17.417,50,16.766,50,16a3,3,0,0,1,6,0,1,1,0,0,0,1,1,3,3,0,0,1,0,6c-.765,0-1.416-.47-2.178-1.569a1,1,0,0,0-1.529-.138Z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M32,22c-.514,0-12.68.153-19.88,13.526l1.76.948C20.5,24.189,31.888,24,32,24Z" fill="#FFFFFF"></path>
-                                                            <rect class="color-change" x="11" y="38" width="2" height="2" fill="#FFFFFF"></rect>
-                                                            <polygon class="color-change" points="31.707 2.293 30.293 3.707 32.586 6 28.586 10 32.293 13.707 33.707 12.293 31.414 10 35.414 6 31.707 2.293" fill="#FFFFFF"></polygon>
-                                                            <polygon class="color-change" points="23.707 4.293 22.293 5.707 24.586 8 20.586 12 24.293 15.707 25.707 14.293 23.414 12 27.414 8 23.707 4.293" fill="#FFFFFF"></polygon>
-                                                            <polygon class="color-change" points="39.707 4.293 38.293 5.707 40.586 8 36.586 12 40.293 15.707 41.707 14.293 39.414 12 43.414 8 39.707 4.293" fill="#FFFFFF"></polygon>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change">Куряча</div>
-                                                </label>
-                                                <input type="radio" id="yalovichina-2" name="cutlet" value="yalovichina" checked="" />
-                                                <label for="yalovichina-2" class="meat-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px">
-                                                        <g id="meat-food-steak">
-                                                            <path class="color-change" d="M45,2h-.051L24.711,3.023A22.93,22.93,0,0,0,4,25.91V46a16,16,0,0,0,32,0V31.685a4.994,4.994,0,0,1,3.787-4.851l7.881-1.971A10.983,10.983,0,0,0,56,14.192V13A11.013,11.013,0,0,0,45,2ZM6,46V25.91A20.924,20.924,0,0,1,24.861,5.018L45.024,4a8.934,8.934,0,0,1,3.346.662A8.88,8.88,0,0,1,51,11v1.19a8.98,8.98,0,0,1-6.813,8.73L36.3,22.891A6.99,6.99,0,0,0,31,29.68V44A14.024,14.024,0,0,1,17,58a13.7,13.7,0,0,1-6.165-1.442A13.959,13.959,0,0,1,6,46ZM54,14.192a8.989,8.989,0,0,1-6.816,8.732L39.3,24.9a6.987,6.987,0,0,0-5.3,6.79V46A13.994,13.994,0,0,1,18.55,59.924,16.024,16.024,0,0,0,33,44V29.68a5,5,0,0,1,3.782-4.85l7.89-1.97A10.975,10.975,0,0,0,53,12.19V11a11.035,11.035,0,0,0-.349-2.715A8.927,8.927,0,0,1,54,13Z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M10.707,47.707,12.5,45.914,17.086,50.5l-1.793,1.793,1.414,1.414L18.5,51.914l2.793,2.793,1.414-1.414L19.914,50.5,23.5,46.914l1.793,1.793,1.414-1.414L24.914,45.5l1.793-1.793-1.414-1.414L23.5,44.086,18.914,39.5l1.793-1.793-1.414-1.414L17.5,38.086l-6.793-6.793L9.293,32.707,16.086,39.5,12.5,43.086,9.707,40.293,8.293,41.707,11.086,44.5,9.293,46.293ZM17.5,40.914,22.086,45.5,18.5,49.086,13.914,44.5Z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M10.707,25.707,12,24.414,17.586,30l-1.293,1.293,1.414,1.414L19,31.414l8.293,8.293,1.414-1.414L20.414,30,24.5,25.914l2.793,2.793,1.414-1.414L25.914,24.5l1.793-1.793-1.414-1.414L24.5,23.086,18.914,17.5l1.793-1.793-1.414-1.414L17.5,16.086l-2.793-2.793-1.414,1.414L16.086,17.5,12,21.586l-1.293-1.293L9.293,21.707,10.586,23,9.293,24.293ZM17.5,18.914,23.086,24.5,19,28.586,13.414,23Z" fill="#FFFFFF"></path>
-                                                            <polygon class="color-change" points="24.293 16.293 25.707 17.707 27 16.414 32.293 21.707 33.707 20.293 28.414 15 33 10.414 41.293 18.707 42.707 17.293 34.414 9 35.707 7.707 34.293 6.293 33 7.586 31.707 6.293 30.293 7.707 31.586 9 27 13.586 21.707 8.293 20.293 9.707 25.586 15 24.293 16.293" fill="#FFFFFF"></polygon>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change">Яловича</div>
-                                                </label>
-                                                <input type="radio" id="soeva-2" name="cutlet" value="soeva">
-                                                <label for="soeva-2" class="meat-choose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                        <h6>ФРАНЦУЗЬКИЙ СИРНИЙ СОУС <strong>/</strong> МІКС САЛАТУ <strong>/</strong> СОУС БАЛЬЗАМІК <strong>/</strong> ПАРМЕЗАН</h6>
+                        <div class="craft-burgers__card">
+                            <div class="burgers-card__title">Оберіть котлету</div>
+                            <div class="burger-card__content mx-lg-0 mx-md-auto">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6 col-md-6 col-6 align-self-center text-md-center text-left">
+                                        <div class="burger-meat-element">
+                                            <input type="radio" id="chicken-2" name="cutlet" value="chicken">
+                                            <label for="chicken-2" class="meat-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px">
+                                                    <g id="outline">
+                                                        <path class="color-change" d="M57,25a5,5,0,0,0,.916-9.916A5,5,0,0,0,48,16a4.133,4.133,0,0,0,1.5,3.089l-3.272,3.272A25.826,25.826,0,0,0,32,18a26.441,26.441,0,0,0-18.374,7.637C8.78,30.317,6,36.282,6,42c0,4.672,1.417,9.41,9.371,12H2v1a7.008,7.008,0,0,0,7,7H55a7.008,7.008,0,0,0,7-7V54H48.81C54.256,52.127,58,48.584,58,42c0-5.432-2.516-11.087-6.928-15.657l2.84-2.84A4.132,4.132,0,0,0,57,25Zm2.9,31A5.008,5.008,0,0,1,55,60H9a5.008,5.008,0,0,1-4.9-4ZM56,42c0,8.523-6.953,12-24,12S8,50.523,8,42C8,29.61,20.9,20,32,20a23.79,23.79,0,0,1,12.78,3.806l-2.057,2.057a11.427,11.427,0,0,0-5.23.547,21.325,21.325,0,0,0-8.2,4.883,9.185,9.185,0,0,0,0,13.414,8.207,8.207,0,0,0,5.865,2.449c.206,0,.413-.008.621-.022a10.981,10.981,0,0,0,6.928-3.427,17.652,17.652,0,0,0,4.4-8.278,11.681,11.681,0,0,0,.11-5.236l2.436-2.436C53.643,31.909,56,37.169,56,42Zm-14.707.293a9.017,9.017,0,0,1-5.658,2.846,6.27,6.27,0,0,1-4.928-1.846,7.174,7.174,0,0,1,0-10.586c2.8-2.8,7.439-4.961,10.7-4.961a3.982,3.982,0,0,1,2.888.961C46.969,31.383,44.837,38.749,41.293,42.293ZM46.4,28.185a5.207,5.207,0,0,0-.694-.892,4.726,4.726,0,0,0-.9-.686l6.9-6.9a1,1,0,0,0-.138-1.529C50.469,17.417,50,16.766,50,16a3,3,0,0,1,6,0,1,1,0,0,0,1,1,3,3,0,0,1,0,6c-.765,0-1.416-.47-2.178-1.569a1,1,0,0,0-1.529-.138Z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M32,22c-.514,0-12.68.153-19.88,13.526l1.76.948C20.5,24.189,31.888,24,32,24Z" fill="#FFFFFF"></path>
+                                                        <rect class="color-change" x="11" y="38" width="2" height="2" fill="#FFFFFF"></rect>
+                                                        <polygon class="color-change" points="31.707 2.293 30.293 3.707 32.586 6 28.586 10 32.293 13.707 33.707 12.293 31.414 10 35.414 6 31.707 2.293" fill="#FFFFFF"></polygon>
+                                                        <polygon class="color-change" points="23.707 4.293 22.293 5.707 24.586 8 20.586 12 24.293 15.707 25.707 14.293 23.414 12 27.414 8 23.707 4.293" fill="#FFFFFF"></polygon>
+                                                        <polygon class="color-change" points="39.707 4.293 38.293 5.707 40.586 8 36.586 12 40.293 15.707 41.707 14.293 39.414 12 43.414 8 39.707 4.293" fill="#FFFFFF"></polygon>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change">Куряча</div>
+                                            </label>
+                                            <input type="radio" id="yalovichina-2" name="cutlet" value="yalovichina" checked="" />
+                                            <label for="yalovichina-2" class="meat-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px">
+                                                    <g id="meat-food-steak">
+                                                        <path class="color-change" d="M45,2h-.051L24.711,3.023A22.93,22.93,0,0,0,4,25.91V46a16,16,0,0,0,32,0V31.685a4.994,4.994,0,0,1,3.787-4.851l7.881-1.971A10.983,10.983,0,0,0,56,14.192V13A11.013,11.013,0,0,0,45,2ZM6,46V25.91A20.924,20.924,0,0,1,24.861,5.018L45.024,4a8.934,8.934,0,0,1,3.346.662A8.88,8.88,0,0,1,51,11v1.19a8.98,8.98,0,0,1-6.813,8.73L36.3,22.891A6.99,6.99,0,0,0,31,29.68V44A14.024,14.024,0,0,1,17,58a13.7,13.7,0,0,1-6.165-1.442A13.959,13.959,0,0,1,6,46ZM54,14.192a8.989,8.989,0,0,1-6.816,8.732L39.3,24.9a6.987,6.987,0,0,0-5.3,6.79V46A13.994,13.994,0,0,1,18.55,59.924,16.024,16.024,0,0,0,33,44V29.68a5,5,0,0,1,3.782-4.85l7.89-1.97A10.975,10.975,0,0,0,53,12.19V11a11.035,11.035,0,0,0-.349-2.715A8.927,8.927,0,0,1,54,13Z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M10.707,47.707,12.5,45.914,17.086,50.5l-1.793,1.793,1.414,1.414L18.5,51.914l2.793,2.793,1.414-1.414L19.914,50.5,23.5,46.914l1.793,1.793,1.414-1.414L24.914,45.5l1.793-1.793-1.414-1.414L23.5,44.086,18.914,39.5l1.793-1.793-1.414-1.414L17.5,38.086l-6.793-6.793L9.293,32.707,16.086,39.5,12.5,43.086,9.707,40.293,8.293,41.707,11.086,44.5,9.293,46.293ZM17.5,40.914,22.086,45.5,18.5,49.086,13.914,44.5Z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M10.707,25.707,12,24.414,17.586,30l-1.293,1.293,1.414,1.414L19,31.414l8.293,8.293,1.414-1.414L20.414,30,24.5,25.914l2.793,2.793,1.414-1.414L25.914,24.5l1.793-1.793-1.414-1.414L24.5,23.086,18.914,17.5l1.793-1.793-1.414-1.414L17.5,16.086l-2.793-2.793-1.414,1.414L16.086,17.5,12,21.586l-1.293-1.293L9.293,21.707,10.586,23,9.293,24.293ZM17.5,18.914,23.086,24.5,19,28.586,13.414,23Z" fill="#FFFFFF"></path>
+                                                        <polygon class="color-change" points="24.293 16.293 25.707 17.707 27 16.414 32.293 21.707 33.707 20.293 28.414 15 33 10.414 41.293 18.707 42.707 17.293 34.414 9 35.707 7.707 34.293 6.293 33 7.586 31.707 6.293 30.293 7.707 31.586 9 27 13.586 21.707 8.293 20.293 9.707 25.586 15 24.293 16.293" fill="#FFFFFF"></polygon>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change">Яловича</div>
+                                            </label>
+                                            <input type="radio" id="soeva-2" name="cutlet" value="soeva">
+                                            <label for="soeva-2" class="meat-choose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                                                    <g>
                                                         <g>
-                                                            <g>
-                                                                <path class="color-change" d="M379.269,0c-68.668,0-125.406,51.938-132.073,119.467c-68.571,4.352-123.372,59.1-127.729,127.729    C51.937,253.864,0,310.602,0,379.27V512h132.731c68.668,0,125.406-51.941,132.073-119.471    c29.495-1.903,57.741-13.34,80.182-32.591l-9.767-11.385c-19.6,16.814-44.178,26.926-69.905,28.899V355.3h-15v29.784    C247.265,447.852,195.644,497,132.731,497H15V379.27c0-60.31,45.168-110.238,104.2-116.953v21.869h15v-29.914    c0.893-63.311,49.972-115.003,112.485-119.724V156.7h15v-29.784C264.735,64.148,316.356,15,379.269,15H497v117.73    c0,60.31-45.168,110.238-104.2,116.953v-21.869h-15v29.915c-0.401,28.454-10.787,55.973-29.247,77.491l11.385,9.766    c19.251-22.44,30.688-50.687,32.591-80.182C460.058,258.137,512,201.398,512,132.73V0H379.269z" fill="#FFFFFF"></path>
-                                                                <path class="color-change" d="M432.731,189.418c30.437-30.439,30.443-79.706,0-110.149c-30.438-30.438-79.707-30.442-110.149,0    c-30.438,30.438-30.442,79.705,0,110.149c26.265,26.263,67.616,30.247,98.309,9.728l-8.337-12.471    c-24.831,16.602-58.208,13.294-79.366-7.864c-24.576-24.577-24.579-64.357,0-88.935c24.574-24.576,64.356-24.582,88.936,0    c24.575,24.573,24.58,64.355,0,88.935L432.731,189.418z" fill="#FFFFFF"></path>
-                                                                <path class="color-change" d="M311.074,311.075c30.368-30.369,30.368-79.781,0-110.15c-30.368-30.367-79.78-30.367-110.148,0    c-30.368,30.369-30.368,79.781,0,110.15C231.293,341.442,280.705,341.443,311.074,311.075z M211.532,211.532    c24.514-24.515,64.413-24.524,88.936,0c24.52,24.52,24.52,64.416,0,88.936c-24.519,24.521-64.416,24.521-88.936,0    C187.013,275.948,187.013,236.052,211.532,211.532z" fill="#FFFFFF"></path>
-                                                                <path class="color-change" d="M128.509,305.604c-43.046,0-77.887,34.834-77.887,77.887c0,43.234,35.006,77.851,77.887,77.851    c42.884,0,77.887-34.62,77.887-77.851C206.396,340.445,171.56,305.604,128.509,305.604z M172.977,427.959    c-24.52,24.52-64.417,24.521-88.936,0c-11.877-11.878-18.419-27.67-18.419-44.468c0-34.756,28.126-62.887,62.887-62.887    c34.755,0,62.887,28.126,62.887,62.887C191.396,400.289,184.854,416.081,172.977,427.959z" fill="#FFFFFF"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path class="color-change" d="M302.874,265.742l-14.69-3.033c0.798-3.866,0.927-7.996,0.233-12.163l14.796-2.465    C304.167,253.807,304.1,259.804,302.874,265.742z M286.106,242.761c-1.636-3.736-3.941-7.105-6.851-10.015l10.605-10.607    c4.237,4.236,7.596,9.149,9.985,14.604L286.106,242.761z" fill="#FFFFFF"></path>
-                                                            </g>
+                                                            <path class="color-change" d="M379.269,0c-68.668,0-125.406,51.938-132.073,119.467c-68.571,4.352-123.372,59.1-127.729,127.729    C51.937,253.864,0,310.602,0,379.27V512h132.731c68.668,0,125.406-51.941,132.073-119.471    c29.495-1.903,57.741-13.34,80.182-32.591l-9.767-11.385c-19.6,16.814-44.178,26.926-69.905,28.899V355.3h-15v29.784    C247.265,447.852,195.644,497,132.731,497H15V379.27c0-60.31,45.168-110.238,104.2-116.953v21.869h15v-29.914    c0.893-63.311,49.972-115.003,112.485-119.724V156.7h15v-29.784C264.735,64.148,316.356,15,379.269,15H497v117.73    c0,60.31-45.168,110.238-104.2,116.953v-21.869h-15v29.915c-0.401,28.454-10.787,55.973-29.247,77.491l11.385,9.766    c19.251-22.44,30.688-50.687,32.591-80.182C460.058,258.137,512,201.398,512,132.73V0H379.269z" fill="#FFFFFF"></path>
+                                                            <path class="color-change" d="M432.731,189.418c30.437-30.439,30.443-79.706,0-110.149c-30.438-30.438-79.707-30.442-110.149,0    c-30.438,30.438-30.442,79.705,0,110.149c26.265,26.263,67.616,30.247,98.309,9.728l-8.337-12.471    c-24.831,16.602-58.208,13.294-79.366-7.864c-24.576-24.577-24.579-64.357,0-88.935c24.574-24.576,64.356-24.582,88.936,0    c24.575,24.573,24.58,64.355,0,88.935L432.731,189.418z" fill="#FFFFFF"></path>
+                                                            <path class="color-change" d="M311.074,311.075c30.368-30.369,30.368-79.781,0-110.15c-30.368-30.367-79.78-30.367-110.148,0    c-30.368,30.369-30.368,79.781,0,110.15C231.293,341.442,280.705,341.443,311.074,311.075z M211.532,211.532    c24.514-24.515,64.413-24.524,88.936,0c24.52,24.52,24.52,64.416,0,88.936c-24.519,24.521-64.416,24.521-88.936,0    C187.013,275.948,187.013,236.052,211.532,211.532z" fill="#FFFFFF"></path>
+                                                            <path class="color-change" d="M128.509,305.604c-43.046,0-77.887,34.834-77.887,77.887c0,43.234,35.006,77.851,77.887,77.851    c42.884,0,77.887-34.62,77.887-77.851C206.396,340.445,171.56,305.604,128.509,305.604z M172.977,427.959    c-24.52,24.52-64.417,24.521-88.936,0c-11.877-11.878-18.419-27.67-18.419-44.468c0-34.756,28.126-62.887,62.887-62.887    c34.755,0,62.887,28.126,62.887,62.887C191.396,400.289,184.854,416.081,172.977,427.959z" fill="#FFFFFF"></path>
                                                         </g>
-                                                    </svg>
-                                                    <div class="color-change">Соєва</div>
-                                                </label>
-                                            </div>
+                                                        <g>
+                                                            <path class="color-change" d="M302.874,265.742l-14.69-3.033c0.798-3.866,0.927-7.996,0.233-12.163l14.796-2.465    C304.167,253.807,304.1,259.804,302.874,265.742z M286.106,242.761c-1.636-3.736-3.941-7.105-6.851-10.015l10.605-10.607    c4.237,4.236,7.596,9.149,9.985,14.604L286.106,242.761z" fill="#FFFFFF"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change">Соєва</div>
+                                            </label>
                                         </div>
-                                        <div class="col-4 pl-xl-4 pl-3 align-self-center">
-                                            <div class="fry-level">
-                                                <input type="radio" id="well-done-1" name="fry-level" value="well-done" checked="" />
-                                                <label for="well-done-1" class="fry-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
-                                                        <g>
-                                                            <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change align-self-center">Well done</div>
-                                                </label>
-                                                <input type="radio" id="medium-1" name="fry-level" value="medium">
-                                                <label for="medium-1" class="fry-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
-                                                        <g>
-                                                            <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change align-self-center">Medium</div>
-                                                </label>
-                                                <input type="radio" id="rare-1" name="fry-level" value="rare">
-                                                <label for="rare-1" class="fry-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
-                                                        <g>
-                                                            <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change align-self-center">Rare</div>
-                                                </label>
-                                            </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-2 col-4 pl-xl-4 pl-3 align-self-center">
+                                        <div class="fry-level">
+                                            <input type="radio" id="well-done-1" name="fry-level" value="well-done" checked="" />
+                                            <label for="well-done-1" class="fry-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
+                                                    <g>
+                                                        <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change align-self-center">Well done</div>
+                                            </label>
+                                            <input type="radio" id="medium-1" name="fry-level" value="medium">
+                                            <label for="medium-1" class="fry-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
+                                                    <g>
+                                                        <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change align-self-center">Medium</div>
+                                            </label>
+                                            <input type="radio" id="rare-1" name="fry-level" value="rare">
+                                            <label for="rare-1" class="fry-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
+                                                    <g>
+                                                        <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change align-self-center">Rare</div>
+                                            </label>
                                         </div>
-                                        <div class="col-2 align-self-center text-center">
-                                            <div class="cutlet-double">
-                                                <input type="checkbox" id="double-cutlet-2" name="double-cutlet-2" value="double-cutlet" />
-                                                <label for="double-cutlet-2" class="cutlet-choose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 463 463" style="enable-background:new 0 0 463 463;" xml:space="preserve" width="512px" height="512px">
-                                                        <g>
-                                                            <path class="color-change" d="M444.767,325.558c-0.336-0.712-0.831-2.07-0.361-3.168C456.744,293.544,463,262.964,463,231.5   c0-59.894-22.701-116.482-64.002-159.75C399,71.667,399,71.584,399,71.5c0-17.369-14.131-31.5-31.5-31.5   c-1.702,0-3.441,0.167-5.253,0.508C323.61,13.997,278.477,0,231.5,0C171.824,0,115.149,22.669,71.918,63.831   c-0.815,0.777-1.807,1.11-2.654,0.894C67.385,64.244,65.446,64,63.5,64C50.542,64,40,74.542,40,87.5   c0,3.148,0.629,6.213,1.869,9.107c0.41,0.958,0.021,2.068-0.48,2.788C14.312,138.287,0,183.968,0,231.5   c0,30.346,5.776,59.817,17.173,87.645C16.394,321.908,16,324.707,16,327.5c0,13.086,7.911,24.598,20.154,29.326   c0.728,0.281,1.119,0.584,1.242,0.773C80.357,423.598,152.919,463,231.5,463c24.962,0,49.549-3.968,73.081-11.794   c1.125-0.377,2.331,0.115,3.144,0.592c3.569,2.095,7.641,3.202,11.775,3.202c11.954,0,21.851-8.972,23.314-20.535   c32.434-17.831,60.39-43.423,81.053-74.244c0.617-0.92,1.911-1.34,2.888-1.531c6.34-1.237,11.729-6.048,17.47-15.601   c2.4-3.992,3.171-8.766,2.115-13.097C445.969,328.473,445.44,326.98,444.767,325.558z M431.208,331.972   c0.24,0.507,0.428,1.037,0.559,1.574c0.122,0.499-0.034,1.212-0.397,1.816c-4.631,7.705-7.049,8.521-7.486,8.606   c-5.402,1.054-9.717,3.786-12.476,7.901c-20.117,30.006-47.623,54.714-79.545,71.452c-2.702,1.417-4.277,4.33-3.982,7.367   c0.026,0.272,0.061,0.541,0.098,0.81l0.021,0.159c-0.084,4.615-3.864,8.343-8.499,8.343c-1.488,0-2.896-0.383-4.182-1.138   c-4.933-2.897-10.427-3.568-15.472-1.89C277.845,444.29,254.85,448,231.5,448c-73.488,0-141.351-36.854-181.532-98.584   c-1.897-2.914-4.805-5.19-8.409-6.583C35.145,340.356,31,334.337,31,327.5c0-1.95,0.392-3.949,1.165-5.942   c0.706-1.82,0.675-3.843-0.087-5.64C20.746,289.183,15,260.781,15,231.5c0-44.452,13.382-87.169,38.699-123.534   c3.625-5.207,4.357-11.66,1.958-17.264C55.221,89.684,55,88.606,55,87.5c0-4.687,3.813-8.5,8.5-8.5   c0.693,0,1.383,0.086,2.048,0.256c5.885,1.505,12.132-0.201,16.713-4.563C122.691,36.2,175.692,15,231.5,15   c45.001,0,88.188,13.732,124.892,39.711c1.875,1.328,4.257,1.722,6.46,1.07C364.654,55.248,366.131,55,367.5,55   c9.098,0,16.5,7.402,16.5,16.5c0,0.269-0.07,0.777-0.138,1.269c-0.036,0.259-0.071,0.519-0.104,0.779   c-0.285,2.275,0.487,4.555,2.094,6.19C425.929,120.494,448,174.391,448,231.5c0,29.425-5.849,58.02-17.385,84.99   C428.554,321.308,428.764,326.806,431.208,331.972z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M180.803,50.197c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l230.976,230.976   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L180.803,50.197z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M137.732,71.126c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l254.143,254.143   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L137.732,71.126z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M102.76,100.153c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l260.089,260.089   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L102.76,100.153z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M75.758,137.152c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l250.09,250.09   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L75.758,137.152z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M57.862,183.255c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l221.883,221.883   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L57.862,183.255z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M53.572,242.966c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l165.481,165.48   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L53.572,242.966z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M389.667,152.274c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606   l-79.442-79.442c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L389.667,152.274z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M236.803,42.197c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l184,184   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L236.803,42.197z" fill="#FFFFFF"></path>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change">Подвійна котлета +49 грн</div>
-                                                </label>
-                                            </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-2 align-self-center text-center">
+                                        <div class="cutlet-double">
+                                            <input type="checkbox" id="double-cutlet-2" name="double-cutlet-2" value="double-cutlet" />
+                                            <label for="double-cutlet-2" class="cutlet-choose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 463 463" style="enable-background:new 0 0 463 463;" xml:space="preserve" width="512px" height="512px">
+                                                    <g>
+                                                        <path class="color-change" d="M444.767,325.558c-0.336-0.712-0.831-2.07-0.361-3.168C456.744,293.544,463,262.964,463,231.5   c0-59.894-22.701-116.482-64.002-159.75C399,71.667,399,71.584,399,71.5c0-17.369-14.131-31.5-31.5-31.5   c-1.702,0-3.441,0.167-5.253,0.508C323.61,13.997,278.477,0,231.5,0C171.824,0,115.149,22.669,71.918,63.831   c-0.815,0.777-1.807,1.11-2.654,0.894C67.385,64.244,65.446,64,63.5,64C50.542,64,40,74.542,40,87.5   c0,3.148,0.629,6.213,1.869,9.107c0.41,0.958,0.021,2.068-0.48,2.788C14.312,138.287,0,183.968,0,231.5   c0,30.346,5.776,59.817,17.173,87.645C16.394,321.908,16,324.707,16,327.5c0,13.086,7.911,24.598,20.154,29.326   c0.728,0.281,1.119,0.584,1.242,0.773C80.357,423.598,152.919,463,231.5,463c24.962,0,49.549-3.968,73.081-11.794   c1.125-0.377,2.331,0.115,3.144,0.592c3.569,2.095,7.641,3.202,11.775,3.202c11.954,0,21.851-8.972,23.314-20.535   c32.434-17.831,60.39-43.423,81.053-74.244c0.617-0.92,1.911-1.34,2.888-1.531c6.34-1.237,11.729-6.048,17.47-15.601   c2.4-3.992,3.171-8.766,2.115-13.097C445.969,328.473,445.44,326.98,444.767,325.558z M431.208,331.972   c0.24,0.507,0.428,1.037,0.559,1.574c0.122,0.499-0.034,1.212-0.397,1.816c-4.631,7.705-7.049,8.521-7.486,8.606   c-5.402,1.054-9.717,3.786-12.476,7.901c-20.117,30.006-47.623,54.714-79.545,71.452c-2.702,1.417-4.277,4.33-3.982,7.367   c0.026,0.272,0.061,0.541,0.098,0.81l0.021,0.159c-0.084,4.615-3.864,8.343-8.499,8.343c-1.488,0-2.896-0.383-4.182-1.138   c-4.933-2.897-10.427-3.568-15.472-1.89C277.845,444.29,254.85,448,231.5,448c-73.488,0-141.351-36.854-181.532-98.584   c-1.897-2.914-4.805-5.19-8.409-6.583C35.145,340.356,31,334.337,31,327.5c0-1.95,0.392-3.949,1.165-5.942   c0.706-1.82,0.675-3.843-0.087-5.64C20.746,289.183,15,260.781,15,231.5c0-44.452,13.382-87.169,38.699-123.534   c3.625-5.207,4.357-11.66,1.958-17.264C55.221,89.684,55,88.606,55,87.5c0-4.687,3.813-8.5,8.5-8.5   c0.693,0,1.383,0.086,2.048,0.256c5.885,1.505,12.132-0.201,16.713-4.563C122.691,36.2,175.692,15,231.5,15   c45.001,0,88.188,13.732,124.892,39.711c1.875,1.328,4.257,1.722,6.46,1.07C364.654,55.248,366.131,55,367.5,55   c9.098,0,16.5,7.402,16.5,16.5c0,0.269-0.07,0.777-0.138,1.269c-0.036,0.259-0.071,0.519-0.104,0.779   c-0.285,2.275,0.487,4.555,2.094,6.19C425.929,120.494,448,174.391,448,231.5c0,29.425-5.849,58.02-17.385,84.99   C428.554,321.308,428.764,326.806,431.208,331.972z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M180.803,50.197c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l230.976,230.976   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L180.803,50.197z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M137.732,71.126c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l254.143,254.143   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L137.732,71.126z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M102.76,100.153c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l260.089,260.089   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L102.76,100.153z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M75.758,137.152c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l250.09,250.09   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L75.758,137.152z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M57.862,183.255c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l221.883,221.883   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L57.862,183.255z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M53.572,242.966c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l165.481,165.48   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L53.572,242.966z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M389.667,152.274c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606   l-79.442-79.442c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L389.667,152.274z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M236.803,42.197c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l184,184   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L236.803,42.197z" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change">Подвійна котлета +49 грн</div>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="product-added">Бургер додано</div>
                             </div>
-                            <div class="row no-gutters">
-                                <div class="col-xl-6 col-lg-8">
-                                    <button type="submit">додати в корзину</button>
-                                </div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-xl-6 col-lg-8">
+                                <button class="cool-button">додати в корзину</button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
 
                 <!--                LTR-CARD-->
                 <div class="row craft-burgers justify-content-between no-gutters mb-5">
-                    <div class="col-lg-6 align-self-center order-lg-1">
+                    <div class="col-lg-6 col-md-8 col-12 align-self-center order-lg-2 pr-lg-5 mx-auto mb-lg-0 mb-4 order-lg-1">
                         <img class="
-                        img-fluid" src="./img/burger-tramp.png">
+                        img-fluid px-md-0 px-4" src="./img/burger-tramp.png">
                     </div>
-                    <div class="col-lg-5 order-lg-2">
-                        <h2>трамп</h2>
+                    <div class="col-lg-6 order-lg-2">
+                        <h2>майкл джордан</h2>
                         <div class="row no-gutters">
-                            <div class="col-lg-6 col-5 burger-price">
+                            <div class="col-lg-6 col-5 col-md-3 col-6 burger-price">
                                 <span>134</span> грн
                             </div>
                             <div class="col-5 align-self-end burger-weight">
@@ -660,117 +648,116 @@
                             </div>
                         </div>
                         <h6>бекон / мікс салату / чедер / помідор / соус bbq</h6>
-                        <form action="">
-                            <div class="craft-burgers__card">
-                                <div class="burgers-card__title">Оберіть котлету</div>
-                                <div class="burger-card__content">
-                                    <div class="row no-gutters">
-                                        <div class="col-6 align-self-center">
-                                            <div class="burger-meat-element">
-                                                <input type="radio" id="chicken-1" name="kotleta" value="chicken">
-                                                <label for="chicken-1" class="meat-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px">
-                                                        <g id="outline">
-                                                            <path class="color-change" d="M57,25a5,5,0,0,0,.916-9.916A5,5,0,0,0,48,16a4.133,4.133,0,0,0,1.5,3.089l-3.272,3.272A25.826,25.826,0,0,0,32,18a26.441,26.441,0,0,0-18.374,7.637C8.78,30.317,6,36.282,6,42c0,4.672,1.417,9.41,9.371,12H2v1a7.008,7.008,0,0,0,7,7H55a7.008,7.008,0,0,0,7-7V54H48.81C54.256,52.127,58,48.584,58,42c0-5.432-2.516-11.087-6.928-15.657l2.84-2.84A4.132,4.132,0,0,0,57,25Zm2.9,31A5.008,5.008,0,0,1,55,60H9a5.008,5.008,0,0,1-4.9-4ZM56,42c0,8.523-6.953,12-24,12S8,50.523,8,42C8,29.61,20.9,20,32,20a23.79,23.79,0,0,1,12.78,3.806l-2.057,2.057a11.427,11.427,0,0,0-5.23.547,21.325,21.325,0,0,0-8.2,4.883,9.185,9.185,0,0,0,0,13.414,8.207,8.207,0,0,0,5.865,2.449c.206,0,.413-.008.621-.022a10.981,10.981,0,0,0,6.928-3.427,17.652,17.652,0,0,0,4.4-8.278,11.681,11.681,0,0,0,.11-5.236l2.436-2.436C53.643,31.909,56,37.169,56,42Zm-14.707.293a9.017,9.017,0,0,1-5.658,2.846,6.27,6.27,0,0,1-4.928-1.846,7.174,7.174,0,0,1,0-10.586c2.8-2.8,7.439-4.961,10.7-4.961a3.982,3.982,0,0,1,2.888.961C46.969,31.383,44.837,38.749,41.293,42.293ZM46.4,28.185a5.207,5.207,0,0,0-.694-.892,4.726,4.726,0,0,0-.9-.686l6.9-6.9a1,1,0,0,0-.138-1.529C50.469,17.417,50,16.766,50,16a3,3,0,0,1,6,0,1,1,0,0,0,1,1,3,3,0,0,1,0,6c-.765,0-1.416-.47-2.178-1.569a1,1,0,0,0-1.529-.138Z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M32,22c-.514,0-12.68.153-19.88,13.526l1.76.948C20.5,24.189,31.888,24,32,24Z" fill="#FFFFFF"></path>
-                                                            <rect class="color-change" x="11" y="38" width="2" height="2" fill="#FFFFFF"></rect>
-                                                            <polygon class="color-change" points="31.707 2.293 30.293 3.707 32.586 6 28.586 10 32.293 13.707 33.707 12.293 31.414 10 35.414 6 31.707 2.293" fill="#FFFFFF"></polygon>
-                                                            <polygon class="color-change" points="23.707 4.293 22.293 5.707 24.586 8 20.586 12 24.293 15.707 25.707 14.293 23.414 12 27.414 8 23.707 4.293" fill="#FFFFFF"></polygon>
-                                                            <polygon class="color-change" points="39.707 4.293 38.293 5.707 40.586 8 36.586 12 40.293 15.707 41.707 14.293 39.414 12 43.414 8 39.707 4.293" fill="#FFFFFF"></polygon>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change">Куряча</div>
-                                                </label>
-                                                <input type="radio" id="yalovichina-1" name="kotleta" value="yalovichina" checked="" />
-                                                <label for="yalovichina-1" class="meat-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px">
-                                                        <g id="meat-food-steak">
-                                                            <path class="color-change" d="M45,2h-.051L24.711,3.023A22.93,22.93,0,0,0,4,25.91V46a16,16,0,0,0,32,0V31.685a4.994,4.994,0,0,1,3.787-4.851l7.881-1.971A10.983,10.983,0,0,0,56,14.192V13A11.013,11.013,0,0,0,45,2ZM6,46V25.91A20.924,20.924,0,0,1,24.861,5.018L45.024,4a8.934,8.934,0,0,1,3.346.662A8.88,8.88,0,0,1,51,11v1.19a8.98,8.98,0,0,1-6.813,8.73L36.3,22.891A6.99,6.99,0,0,0,31,29.68V44A14.024,14.024,0,0,1,17,58a13.7,13.7,0,0,1-6.165-1.442A13.959,13.959,0,0,1,6,46ZM54,14.192a8.989,8.989,0,0,1-6.816,8.732L39.3,24.9a6.987,6.987,0,0,0-5.3,6.79V46A13.994,13.994,0,0,1,18.55,59.924,16.024,16.024,0,0,0,33,44V29.68a5,5,0,0,1,3.782-4.85l7.89-1.97A10.975,10.975,0,0,0,53,12.19V11a11.035,11.035,0,0,0-.349-2.715A8.927,8.927,0,0,1,54,13Z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M10.707,47.707,12.5,45.914,17.086,50.5l-1.793,1.793,1.414,1.414L18.5,51.914l2.793,2.793,1.414-1.414L19.914,50.5,23.5,46.914l1.793,1.793,1.414-1.414L24.914,45.5l1.793-1.793-1.414-1.414L23.5,44.086,18.914,39.5l1.793-1.793-1.414-1.414L17.5,38.086l-6.793-6.793L9.293,32.707,16.086,39.5,12.5,43.086,9.707,40.293,8.293,41.707,11.086,44.5,9.293,46.293ZM17.5,40.914,22.086,45.5,18.5,49.086,13.914,44.5Z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M10.707,25.707,12,24.414,17.586,30l-1.293,1.293,1.414,1.414L19,31.414l8.293,8.293,1.414-1.414L20.414,30,24.5,25.914l2.793,2.793,1.414-1.414L25.914,24.5l1.793-1.793-1.414-1.414L24.5,23.086,18.914,17.5l1.793-1.793-1.414-1.414L17.5,16.086l-2.793-2.793-1.414,1.414L16.086,17.5,12,21.586l-1.293-1.293L9.293,21.707,10.586,23,9.293,24.293ZM17.5,18.914,23.086,24.5,19,28.586,13.414,23Z" fill="#FFFFFF"></path>
-                                                            <polygon class="color-change" points="24.293 16.293 25.707 17.707 27 16.414 32.293 21.707 33.707 20.293 28.414 15 33 10.414 41.293 18.707 42.707 17.293 34.414 9 35.707 7.707 34.293 6.293 33 7.586 31.707 6.293 30.293 7.707 31.586 9 27 13.586 21.707 8.293 20.293 9.707 25.586 15 24.293 16.293" fill="#FFFFFF"></polygon>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change">Яловича</div>
-                                                </label>
-                                                <input type="radio" id="soeva-1" name="kotleta" value="soeva">
-                                                <label for="soeva-1" class="meat-choose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                        <div class="craft-burgers__card">
+                            <div class="burgers-card__title">Оберіть котлету</div>
+                            <div class="burger-card__content mx-lg-0 mx-md-auto">
+                                <div class="row no-gutters">
+                                    <div class="col-lg-6 col-md-6 col-6 align-self-center text-md-center text-left">
+                                        <div class="burger-meat-element">
+                                            <input type="radio" id="chicken-1" name="kotleta" value="chicken">
+                                            <label for="chicken-1" class="meat-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px">
+                                                    <g id="outline">
+                                                        <path class="color-change" d="M57,25a5,5,0,0,0,.916-9.916A5,5,0,0,0,48,16a4.133,4.133,0,0,0,1.5,3.089l-3.272,3.272A25.826,25.826,0,0,0,32,18a26.441,26.441,0,0,0-18.374,7.637C8.78,30.317,6,36.282,6,42c0,4.672,1.417,9.41,9.371,12H2v1a7.008,7.008,0,0,0,7,7H55a7.008,7.008,0,0,0,7-7V54H48.81C54.256,52.127,58,48.584,58,42c0-5.432-2.516-11.087-6.928-15.657l2.84-2.84A4.132,4.132,0,0,0,57,25Zm2.9,31A5.008,5.008,0,0,1,55,60H9a5.008,5.008,0,0,1-4.9-4ZM56,42c0,8.523-6.953,12-24,12S8,50.523,8,42C8,29.61,20.9,20,32,20a23.79,23.79,0,0,1,12.78,3.806l-2.057,2.057a11.427,11.427,0,0,0-5.23.547,21.325,21.325,0,0,0-8.2,4.883,9.185,9.185,0,0,0,0,13.414,8.207,8.207,0,0,0,5.865,2.449c.206,0,.413-.008.621-.022a10.981,10.981,0,0,0,6.928-3.427,17.652,17.652,0,0,0,4.4-8.278,11.681,11.681,0,0,0,.11-5.236l2.436-2.436C53.643,31.909,56,37.169,56,42Zm-14.707.293a9.017,9.017,0,0,1-5.658,2.846,6.27,6.27,0,0,1-4.928-1.846,7.174,7.174,0,0,1,0-10.586c2.8-2.8,7.439-4.961,10.7-4.961a3.982,3.982,0,0,1,2.888.961C46.969,31.383,44.837,38.749,41.293,42.293ZM46.4,28.185a5.207,5.207,0,0,0-.694-.892,4.726,4.726,0,0,0-.9-.686l6.9-6.9a1,1,0,0,0-.138-1.529C50.469,17.417,50,16.766,50,16a3,3,0,0,1,6,0,1,1,0,0,0,1,1,3,3,0,0,1,0,6c-.765,0-1.416-.47-2.178-1.569a1,1,0,0,0-1.529-.138Z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M32,22c-.514,0-12.68.153-19.88,13.526l1.76.948C20.5,24.189,31.888,24,32,24Z" fill="#FFFFFF"></path>
+                                                        <rect class="color-change" x="11" y="38" width="2" height="2" fill="#FFFFFF"></rect>
+                                                        <polygon class="color-change" points="31.707 2.293 30.293 3.707 32.586 6 28.586 10 32.293 13.707 33.707 12.293 31.414 10 35.414 6 31.707 2.293" fill="#FFFFFF"></polygon>
+                                                        <polygon class="color-change" points="23.707 4.293 22.293 5.707 24.586 8 20.586 12 24.293 15.707 25.707 14.293 23.414 12 27.414 8 23.707 4.293" fill="#FFFFFF"></polygon>
+                                                        <polygon class="color-change" points="39.707 4.293 38.293 5.707 40.586 8 36.586 12 40.293 15.707 41.707 14.293 39.414 12 43.414 8 39.707 4.293" fill="#FFFFFF"></polygon>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change">Куряча</div>
+                                            </label>
+                                            <input type="radio" id="yalovichina-1" name="kotleta" value="yalovichina" checked="" />
+                                            <label for="yalovichina-1" class="meat-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512px" height="512px">
+                                                    <g id="meat-food-steak">
+                                                        <path class="color-change" d="M45,2h-.051L24.711,3.023A22.93,22.93,0,0,0,4,25.91V46a16,16,0,0,0,32,0V31.685a4.994,4.994,0,0,1,3.787-4.851l7.881-1.971A10.983,10.983,0,0,0,56,14.192V13A11.013,11.013,0,0,0,45,2ZM6,46V25.91A20.924,20.924,0,0,1,24.861,5.018L45.024,4a8.934,8.934,0,0,1,3.346.662A8.88,8.88,0,0,1,51,11v1.19a8.98,8.98,0,0,1-6.813,8.73L36.3,22.891A6.99,6.99,0,0,0,31,29.68V44A14.024,14.024,0,0,1,17,58a13.7,13.7,0,0,1-6.165-1.442A13.959,13.959,0,0,1,6,46ZM54,14.192a8.989,8.989,0,0,1-6.816,8.732L39.3,24.9a6.987,6.987,0,0,0-5.3,6.79V46A13.994,13.994,0,0,1,18.55,59.924,16.024,16.024,0,0,0,33,44V29.68a5,5,0,0,1,3.782-4.85l7.89-1.97A10.975,10.975,0,0,0,53,12.19V11a11.035,11.035,0,0,0-.349-2.715A8.927,8.927,0,0,1,54,13Z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M10.707,47.707,12.5,45.914,17.086,50.5l-1.793,1.793,1.414,1.414L18.5,51.914l2.793,2.793,1.414-1.414L19.914,50.5,23.5,46.914l1.793,1.793,1.414-1.414L24.914,45.5l1.793-1.793-1.414-1.414L23.5,44.086,18.914,39.5l1.793-1.793-1.414-1.414L17.5,38.086l-6.793-6.793L9.293,32.707,16.086,39.5,12.5,43.086,9.707,40.293,8.293,41.707,11.086,44.5,9.293,46.293ZM17.5,40.914,22.086,45.5,18.5,49.086,13.914,44.5Z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M10.707,25.707,12,24.414,17.586,30l-1.293,1.293,1.414,1.414L19,31.414l8.293,8.293,1.414-1.414L20.414,30,24.5,25.914l2.793,2.793,1.414-1.414L25.914,24.5l1.793-1.793-1.414-1.414L24.5,23.086,18.914,17.5l1.793-1.793-1.414-1.414L17.5,16.086l-2.793-2.793-1.414,1.414L16.086,17.5,12,21.586l-1.293-1.293L9.293,21.707,10.586,23,9.293,24.293ZM17.5,18.914,23.086,24.5,19,28.586,13.414,23Z" fill="#FFFFFF"></path>
+                                                        <polygon class="color-change" points="24.293 16.293 25.707 17.707 27 16.414 32.293 21.707 33.707 20.293 28.414 15 33 10.414 41.293 18.707 42.707 17.293 34.414 9 35.707 7.707 34.293 6.293 33 7.586 31.707 6.293 30.293 7.707 31.586 9 27 13.586 21.707 8.293 20.293 9.707 25.586 15 24.293 16.293" fill="#FFFFFF"></polygon>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change">Яловича</div>
+                                            </label>
+                                            <input type="radio" id="soeva-1" name="kotleta" value="soeva">
+                                            <label for="soeva-1" class="meat-choose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+                                                    <g>
                                                         <g>
-                                                            <g>
-                                                                <path class="color-change" d="M379.269,0c-68.668,0-125.406,51.938-132.073,119.467c-68.571,4.352-123.372,59.1-127.729,127.729    C51.937,253.864,0,310.602,0,379.27V512h132.731c68.668,0,125.406-51.941,132.073-119.471    c29.495-1.903,57.741-13.34,80.182-32.591l-9.767-11.385c-19.6,16.814-44.178,26.926-69.905,28.899V355.3h-15v29.784    C247.265,447.852,195.644,497,132.731,497H15V379.27c0-60.31,45.168-110.238,104.2-116.953v21.869h15v-29.914    c0.893-63.311,49.972-115.003,112.485-119.724V156.7h15v-29.784C264.735,64.148,316.356,15,379.269,15H497v117.73    c0,60.31-45.168,110.238-104.2,116.953v-21.869h-15v29.915c-0.401,28.454-10.787,55.973-29.247,77.491l11.385,9.766    c19.251-22.44,30.688-50.687,32.591-80.182C460.058,258.137,512,201.398,512,132.73V0H379.269z" fill="#FFFFFF"></path>
-                                                                <path class="color-change" d="M432.731,189.418c30.437-30.439,30.443-79.706,0-110.149c-30.438-30.438-79.707-30.442-110.149,0    c-30.438,30.438-30.442,79.705,0,110.149c26.265,26.263,67.616,30.247,98.309,9.728l-8.337-12.471    c-24.831,16.602-58.208,13.294-79.366-7.864c-24.576-24.577-24.579-64.357,0-88.935c24.574-24.576,64.356-24.582,88.936,0    c24.575,24.573,24.58,64.355,0,88.935L432.731,189.418z" fill="#FFFFFF"></path>
-                                                                <path class="color-change" d="M311.074,311.075c30.368-30.369,30.368-79.781,0-110.15c-30.368-30.367-79.78-30.367-110.148,0    c-30.368,30.369-30.368,79.781,0,110.15C231.293,341.442,280.705,341.443,311.074,311.075z M211.532,211.532    c24.514-24.515,64.413-24.524,88.936,0c24.52,24.52,24.52,64.416,0,88.936c-24.519,24.521-64.416,24.521-88.936,0    C187.013,275.948,187.013,236.052,211.532,211.532z" fill="#FFFFFF"></path>
-                                                                <path class="color-change" d="M128.509,305.604c-43.046,0-77.887,34.834-77.887,77.887c0,43.234,35.006,77.851,77.887,77.851    c42.884,0,77.887-34.62,77.887-77.851C206.396,340.445,171.56,305.604,128.509,305.604z M172.977,427.959    c-24.52,24.52-64.417,24.521-88.936,0c-11.877-11.878-18.419-27.67-18.419-44.468c0-34.756,28.126-62.887,62.887-62.887    c34.755,0,62.887,28.126,62.887,62.887C191.396,400.289,184.854,416.081,172.977,427.959z" fill="#FFFFFF"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path class="color-change" d="M302.874,265.742l-14.69-3.033c0.798-3.866,0.927-7.996,0.233-12.163l14.796-2.465    C304.167,253.807,304.1,259.804,302.874,265.742z M286.106,242.761c-1.636-3.736-3.941-7.105-6.851-10.015l10.605-10.607    c4.237,4.236,7.596,9.149,9.985,14.604L286.106,242.761z" fill="#FFFFFF"></path>
-                                                            </g>
+                                                            <path class="color-change" d="M379.269,0c-68.668,0-125.406,51.938-132.073,119.467c-68.571,4.352-123.372,59.1-127.729,127.729    C51.937,253.864,0,310.602,0,379.27V512h132.731c68.668,0,125.406-51.941,132.073-119.471    c29.495-1.903,57.741-13.34,80.182-32.591l-9.767-11.385c-19.6,16.814-44.178,26.926-69.905,28.899V355.3h-15v29.784    C247.265,447.852,195.644,497,132.731,497H15V379.27c0-60.31,45.168-110.238,104.2-116.953v21.869h15v-29.914    c0.893-63.311,49.972-115.003,112.485-119.724V156.7h15v-29.784C264.735,64.148,316.356,15,379.269,15H497v117.73    c0,60.31-45.168,110.238-104.2,116.953v-21.869h-15v29.915c-0.401,28.454-10.787,55.973-29.247,77.491l11.385,9.766    c19.251-22.44,30.688-50.687,32.591-80.182C460.058,258.137,512,201.398,512,132.73V0H379.269z" fill="#FFFFFF"></path>
+                                                            <path class="color-change" d="M432.731,189.418c30.437-30.439,30.443-79.706,0-110.149c-30.438-30.438-79.707-30.442-110.149,0    c-30.438,30.438-30.442,79.705,0,110.149c26.265,26.263,67.616,30.247,98.309,9.728l-8.337-12.471    c-24.831,16.602-58.208,13.294-79.366-7.864c-24.576-24.577-24.579-64.357,0-88.935c24.574-24.576,64.356-24.582,88.936,0    c24.575,24.573,24.58,64.355,0,88.935L432.731,189.418z" fill="#FFFFFF"></path>
+                                                            <path class="color-change" d="M311.074,311.075c30.368-30.369,30.368-79.781,0-110.15c-30.368-30.367-79.78-30.367-110.148,0    c-30.368,30.369-30.368,79.781,0,110.15C231.293,341.442,280.705,341.443,311.074,311.075z M211.532,211.532    c24.514-24.515,64.413-24.524,88.936,0c24.52,24.52,24.52,64.416,0,88.936c-24.519,24.521-64.416,24.521-88.936,0    C187.013,275.948,187.013,236.052,211.532,211.532z" fill="#FFFFFF"></path>
+                                                            <path class="color-change" d="M128.509,305.604c-43.046,0-77.887,34.834-77.887,77.887c0,43.234,35.006,77.851,77.887,77.851    c42.884,0,77.887-34.62,77.887-77.851C206.396,340.445,171.56,305.604,128.509,305.604z M172.977,427.959    c-24.52,24.52-64.417,24.521-88.936,0c-11.877-11.878-18.419-27.67-18.419-44.468c0-34.756,28.126-62.887,62.887-62.887    c34.755,0,62.887,28.126,62.887,62.887C191.396,400.289,184.854,416.081,172.977,427.959z" fill="#FFFFFF"></path>
                                                         </g>
-                                                    </svg>
-                                                    <div class="color-change">Соєва</div>
-                                                </label>
-                                            </div>
+                                                        <g>
+                                                            <path class="color-change" d="M302.874,265.742l-14.69-3.033c0.798-3.866,0.927-7.996,0.233-12.163l14.796-2.465    C304.167,253.807,304.1,259.804,302.874,265.742z M286.106,242.761c-1.636-3.736-3.941-7.105-6.851-10.015l10.605-10.607    c4.237,4.236,7.596,9.149,9.985,14.604L286.106,242.761z" fill="#FFFFFF"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change">Соєва</div>
+                                            </label>
                                         </div>
-                                        <div class="col-4 pl-xl-4 pl-3 align-self-center">
-                                            <div class="fry-level">
-                                                <input type="radio" id="well-done-2" name="fry-level-2" value="well-done" checked="" />
-                                                <label for="well-done-2" class="fry-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
-                                                        <g>
-                                                            <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change align-self-center">Well done</div>
-                                                </label>
-                                                <input type="radio" id="medium-2" name="fry-level-2" value="medium">
-                                                <label for="medium-2" class="fry-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
-                                                        <g>
-                                                            <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change align-self-center">Medium</div>
-                                                </label>
-                                                <input type="radio" id="rare-2" name="fry-level-2" value="rare">
-                                                <label for="rare-2" class="fry-choose">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
-                                                        <g>
-                                                            <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change align-self-center">Rare</div>
-                                                </label>
-                                            </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-2 col-4 pl-xl-4 pl-3 align-self-center">
+                                        <div class="fry-level">
+                                            <input type="radio" id="well-done-2" name="fry-level-2" value="well-done" checked="" />
+                                            <label for="well-done-2" class="fry-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
+                                                    <g>
+                                                        <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change align-self-center">Well done</div>
+                                            </label>
+                                            <input type="radio" id="medium-2" name="fry-level-2" value="medium">
+                                            <label for="medium-2" class="fry-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
+                                                    <g>
+                                                        <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change align-self-center">Medium</div>
+                                            </label>
+                                            <input type="radio" id="rare-2" name="fry-level-2" value="rare">
+                                            <label for="rare-2" class="fry-choose">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 533.333 533.333" style="enable-background:new 0 0 533.333 533.333;" xml:space="preserve">
+                                                    <g>
+                                                        <path class="color-change" d="M165.494,533.333c-35.545-73.962-16.616-116.343,10.703-156.272c29.917-43.728,37.627-87.013,37.627-87.013   s23.518,30.573,14.11,78.39c41.548-46.25,49.389-119.938,43.115-148.159c93.914,65.63,134.051,207.737,79.96,313.054   c287.695-162.776,71.562-406.339,33.934-433.775c12.543,27.435,14.922,73.88-10.416,96.42C331.635,33.333,225.583,0,225.583,0   c12.543,83.877-45.466,175.596-101.404,244.13c-1.965-33.446-4.053-56.525-21.641-88.531   C98.59,216.357,52.157,265.884,39.583,326.76C22.551,409.2,52.341,469.562,165.494,533.333z" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change align-self-center">Rare</div>
+                                            </label>
                                         </div>
-                                        <div class="col-2 align-self-center text-center">
-                                            <div class="cutlet-double">
-                                                <input type="checkbox" id="double-cutlet" name="double-cutlet" value="double-cutlet" />
-                                                <label for="double-cutlet" class="cutlet-choose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 463 463" style="enable-background:new 0 0 463 463;" xml:space="preserve" width="512px" height="512px">
-                                                        <g>
-                                                            <path class="color-change" d="M444.767,325.558c-0.336-0.712-0.831-2.07-0.361-3.168C456.744,293.544,463,262.964,463,231.5   c0-59.894-22.701-116.482-64.002-159.75C399,71.667,399,71.584,399,71.5c0-17.369-14.131-31.5-31.5-31.5   c-1.702,0-3.441,0.167-5.253,0.508C323.61,13.997,278.477,0,231.5,0C171.824,0,115.149,22.669,71.918,63.831   c-0.815,0.777-1.807,1.11-2.654,0.894C67.385,64.244,65.446,64,63.5,64C50.542,64,40,74.542,40,87.5   c0,3.148,0.629,6.213,1.869,9.107c0.41,0.958,0.021,2.068-0.48,2.788C14.312,138.287,0,183.968,0,231.5   c0,30.346,5.776,59.817,17.173,87.645C16.394,321.908,16,324.707,16,327.5c0,13.086,7.911,24.598,20.154,29.326   c0.728,0.281,1.119,0.584,1.242,0.773C80.357,423.598,152.919,463,231.5,463c24.962,0,49.549-3.968,73.081-11.794   c1.125-0.377,2.331,0.115,3.144,0.592c3.569,2.095,7.641,3.202,11.775,3.202c11.954,0,21.851-8.972,23.314-20.535   c32.434-17.831,60.39-43.423,81.053-74.244c0.617-0.92,1.911-1.34,2.888-1.531c6.34-1.237,11.729-6.048,17.47-15.601   c2.4-3.992,3.171-8.766,2.115-13.097C445.969,328.473,445.44,326.98,444.767,325.558z M431.208,331.972   c0.24,0.507,0.428,1.037,0.559,1.574c0.122,0.499-0.034,1.212-0.397,1.816c-4.631,7.705-7.049,8.521-7.486,8.606   c-5.402,1.054-9.717,3.786-12.476,7.901c-20.117,30.006-47.623,54.714-79.545,71.452c-2.702,1.417-4.277,4.33-3.982,7.367   c0.026,0.272,0.061,0.541,0.098,0.81l0.021,0.159c-0.084,4.615-3.864,8.343-8.499,8.343c-1.488,0-2.896-0.383-4.182-1.138   c-4.933-2.897-10.427-3.568-15.472-1.89C277.845,444.29,254.85,448,231.5,448c-73.488,0-141.351-36.854-181.532-98.584   c-1.897-2.914-4.805-5.19-8.409-6.583C35.145,340.356,31,334.337,31,327.5c0-1.95,0.392-3.949,1.165-5.942   c0.706-1.82,0.675-3.843-0.087-5.64C20.746,289.183,15,260.781,15,231.5c0-44.452,13.382-87.169,38.699-123.534   c3.625-5.207,4.357-11.66,1.958-17.264C55.221,89.684,55,88.606,55,87.5c0-4.687,3.813-8.5,8.5-8.5   c0.693,0,1.383,0.086,2.048,0.256c5.885,1.505,12.132-0.201,16.713-4.563C122.691,36.2,175.692,15,231.5,15   c45.001,0,88.188,13.732,124.892,39.711c1.875,1.328,4.257,1.722,6.46,1.07C364.654,55.248,366.131,55,367.5,55   c9.098,0,16.5,7.402,16.5,16.5c0,0.269-0.07,0.777-0.138,1.269c-0.036,0.259-0.071,0.519-0.104,0.779   c-0.285,2.275,0.487,4.555,2.094,6.19C425.929,120.494,448,174.391,448,231.5c0,29.425-5.849,58.02-17.385,84.99   C428.554,321.308,428.764,326.806,431.208,331.972z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M180.803,50.197c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l230.976,230.976   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L180.803,50.197z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M137.732,71.126c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l254.143,254.143   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L137.732,71.126z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M102.76,100.153c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l260.089,260.089   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L102.76,100.153z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M75.758,137.152c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l250.09,250.09   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L75.758,137.152z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M57.862,183.255c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l221.883,221.883   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L57.862,183.255z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M53.572,242.966c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l165.481,165.48   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L53.572,242.966z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M389.667,152.274c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606   l-79.442-79.442c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L389.667,152.274z" fill="#FFFFFF"></path>
-                                                            <path class="color-change" d="M236.803,42.197c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l184,184   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L236.803,42.197z" fill="#FFFFFF"></path>
-                                                        </g>
-                                                    </svg>
-                                                    <div class="color-change">Подвійна котлета +49 грн</div>
-                                                </label>
-                                            </div>
+                                    </div>
+                                    <div class="col-lg-2 col-md-4 col-2 align-self-center text-center">
+                                        <div class="cutlet-double">
+                                            <input type="checkbox" id="double-cutlet" name="double-cutlet" value="double-cutlet" />
+                                            <label for="double-cutlet" class="cutlet-choose"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 463 463" style="enable-background:new 0 0 463 463;" xml:space="preserve" width="512px" height="512px">
+                                                    <g>
+                                                        <path class="color-change" d="M444.767,325.558c-0.336-0.712-0.831-2.07-0.361-3.168C456.744,293.544,463,262.964,463,231.5   c0-59.894-22.701-116.482-64.002-159.75C399,71.667,399,71.584,399,71.5c0-17.369-14.131-31.5-31.5-31.5   c-1.702,0-3.441,0.167-5.253,0.508C323.61,13.997,278.477,0,231.5,0C171.824,0,115.149,22.669,71.918,63.831   c-0.815,0.777-1.807,1.11-2.654,0.894C67.385,64.244,65.446,64,63.5,64C50.542,64,40,74.542,40,87.5   c0,3.148,0.629,6.213,1.869,9.107c0.41,0.958,0.021,2.068-0.48,2.788C14.312,138.287,0,183.968,0,231.5   c0,30.346,5.776,59.817,17.173,87.645C16.394,321.908,16,324.707,16,327.5c0,13.086,7.911,24.598,20.154,29.326   c0.728,0.281,1.119,0.584,1.242,0.773C80.357,423.598,152.919,463,231.5,463c24.962,0,49.549-3.968,73.081-11.794   c1.125-0.377,2.331,0.115,3.144,0.592c3.569,2.095,7.641,3.202,11.775,3.202c11.954,0,21.851-8.972,23.314-20.535   c32.434-17.831,60.39-43.423,81.053-74.244c0.617-0.92,1.911-1.34,2.888-1.531c6.34-1.237,11.729-6.048,17.47-15.601   c2.4-3.992,3.171-8.766,2.115-13.097C445.969,328.473,445.44,326.98,444.767,325.558z M431.208,331.972   c0.24,0.507,0.428,1.037,0.559,1.574c0.122,0.499-0.034,1.212-0.397,1.816c-4.631,7.705-7.049,8.521-7.486,8.606   c-5.402,1.054-9.717,3.786-12.476,7.901c-20.117,30.006-47.623,54.714-79.545,71.452c-2.702,1.417-4.277,4.33-3.982,7.367   c0.026,0.272,0.061,0.541,0.098,0.81l0.021,0.159c-0.084,4.615-3.864,8.343-8.499,8.343c-1.488,0-2.896-0.383-4.182-1.138   c-4.933-2.897-10.427-3.568-15.472-1.89C277.845,444.29,254.85,448,231.5,448c-73.488,0-141.351-36.854-181.532-98.584   c-1.897-2.914-4.805-5.19-8.409-6.583C35.145,340.356,31,334.337,31,327.5c0-1.95,0.392-3.949,1.165-5.942   c0.706-1.82,0.675-3.843-0.087-5.64C20.746,289.183,15,260.781,15,231.5c0-44.452,13.382-87.169,38.699-123.534   c3.625-5.207,4.357-11.66,1.958-17.264C55.221,89.684,55,88.606,55,87.5c0-4.687,3.813-8.5,8.5-8.5   c0.693,0,1.383,0.086,2.048,0.256c5.885,1.505,12.132-0.201,16.713-4.563C122.691,36.2,175.692,15,231.5,15   c45.001,0,88.188,13.732,124.892,39.711c1.875,1.328,4.257,1.722,6.46,1.07C364.654,55.248,366.131,55,367.5,55   c9.098,0,16.5,7.402,16.5,16.5c0,0.269-0.07,0.777-0.138,1.269c-0.036,0.259-0.071,0.519-0.104,0.779   c-0.285,2.275,0.487,4.555,2.094,6.19C425.929,120.494,448,174.391,448,231.5c0,29.425-5.849,58.02-17.385,84.99   C428.554,321.308,428.764,326.806,431.208,331.972z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M180.803,50.197c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l230.976,230.976   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L180.803,50.197z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M137.732,71.126c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l254.143,254.143   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L137.732,71.126z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M102.76,100.153c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l260.089,260.089   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L102.76,100.153z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M75.758,137.152c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l250.09,250.09   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L75.758,137.152z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M57.862,183.255c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l221.883,221.883   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L57.862,183.255z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M53.572,242.966c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l165.481,165.48   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L53.572,242.966z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M389.667,152.274c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606   l-79.442-79.442c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606L389.667,152.274z" fill="#FFFFFF"></path>
+                                                        <path class="color-change" d="M236.803,42.197c-2.929-2.929-7.678-2.929-10.606,0c-2.929,2.929-2.929,7.678,0,10.606l184,184   c1.464,1.464,3.384,2.197,5.303,2.197s3.839-0.732,5.303-2.197c2.929-2.929,2.929-7.678,0-10.606L236.803,42.197z" fill="#FFFFFF"></path>
+                                                    </g>
+                                                </svg>
+                                                <div class="color-change">Подвійна котлета<br>+49 грн</div>
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row no-gutters">
-                                <div class="col-xl-6 col-lg-8">
-                                    <button type="submit">додати в корзину</button>
-                                </div>
+                            <div class="product-added">Бургер додано</div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col-xl-6 col-lg-8">
+                                <button class="cool-button">додати в корзину</button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -842,7 +829,18 @@
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script src="./js/main.js"></script>
+    <script>
+        $(function() {
+            $('.cool-button').on("click", function() {
+                $('.product-added').addClass("product-added-active");
+                setTimeout(RemoveClass, 2000);
+            });
 
+            function RemoveClass() {
+                $('.product-added').removeClass("product-added-active");
+            }
+        });
+    </script>
 
     <!--   MODAL-FAST-ORDER-->
     <div class="modal fade" id="orderFastModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

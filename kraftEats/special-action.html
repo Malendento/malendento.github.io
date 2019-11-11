@@ -21,72 +21,74 @@
 
 <body>
     <header class="header fixed-top">
-        <div class="container-fluid px-body">
-            <div class="row align-items-center px-lg-3 px-1 no-gutters py-lg-4 py-2">
-                <div class="col-xl-1 col-lg-2 col-3">
-                    <a href="#">
-                        <picture>
-                            <source srcset="./img/logo.svg" media="(min-width: 992px)">
-                            <img src="./img/mobile-logo.svg">
-                        </picture>
-                    </a>
-                </div>
-                <div class="col-lg-6 text-center m__hide">
-                    <div class="popover__wrapper">
+        <nav>
+            <div class="container-fluid px-body">
+                <div class="row align-items-center px-lg-3 px-1 no-gutters py-lg-4 py-2">
+                    <div class="col-xl-1 col-lg-2 col-md-4 col-3">
                         <a href="#">
-                            <h2 class="popover__title">Суші<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            <picture>
+                                <source srcset="./img/logo.svg" media="(min-width: 992px)">
+                                <img src="./img/mobile-logo.svg">
+                            </picture>
                         </a>
-                        <div class="popover__content">
-                            <a href="#">Сети</a>
-                            <a href="#">Роли</a>
-                            <a href="#">Суші</a>
-                        </div>
                     </div>
+                    <div class="col-lg-6 text-center m__hide">
+                        <div class="popover__wrapper">
+                            <a href="#">
+                                <h2 class="popover__title">Суші<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            </a>
+                            <div class="popover__content">
+                                <a href="#">Сети</a>
+                                <a href="#">Роли</a>
+                                <a href="#">Суші</a>
+                            </div>
+                        </div>
 
-                    <div class="popover__wrapper">
-                        <a href="#">
-                            <h2 class="popover__title">Бургери<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
-                        </a>
-                        <div class="popover__content popover__content-burger">
-                            <a href="#">Бургер меню</a>
-                            <a href="#">Бургери</a>
-                            <a href="#">Крафт Бургери</a>
+                        <div class="popover__wrapper">
+                            <a href="#">
+                                <h2 class="popover__title">Бургери<img class="header-arrows" src="./img/arrow-bottom.svg"></h2>
+                            </a>
+                            <div class="popover__content popover__content-burger">
+                                <a href="#">Бургер меню</a>
+                                <a href="#">Бургери</a>
+                                <a href="#">Крафт Бургери</a>
+                            </div>
                         </div>
-                    </div>
-                    <a class="headear-links" href="#">Доставка</a>
-                    <a class="headear-links" href="#">Акції</a>
+                        <a class="headear-links" href="#">Доставка</a>
+                        <a class="headear-links" href="#">Акції</a>
 
-                    <div class="popover__wrapper city">
-                        <h2 class="popover__title">Львів<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
-                        <div class="popover__content-city">
-                            <button onclick="" class="city-switch">Одеса</button>
+                        <div class="popover__wrapper city">
+                            <h2 class="popover__title">Львів<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
+                            <div class="popover__content-city">
+                                <button onclick="" class="city-switch">Одеса</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-2 col-6 header-phone mobile-hide">
-                    <a href="tel:+380931707917">(093) 17 079 17</a>
-                    <p>Працюємо з <span>11:00</span> до <span>00:00</span></p>
-                </div>
-                <div class="col-xl-1 col-lg-1 m__hide text-xl-left text-center">
-                    <div class="popover__wrapper language">
-                        <h2 class="popover__title">UA<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
-                        <div class="popover__content-language">
-                            <button onclick="" class="city-switch">RU</button>
-                            <button onclick="" class="city-switch">EN</button>
+                    <div class="col-xl-2 col-lg-6 col-md-6 col-6 header-phone text-md-left text-center ali">
+                        <a href="tel:+380931707917">(093) 17 079 17</a>
+                        <p>Працюємо з <span>11:00</span> до <span>00:00</span></p>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 m__hide text-xl-left text-center">
+                        <div class="popover__wrapper language">
+                            <h2 class="popover__title">UA<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
+                            <div class="popover__content-language">
+                                <button onclick="" class="city-switch">RU</button>
+                                <button onclick="" class="city-switch">EN</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-6">
-                    <a class="button-order" href="#">Швидке замовлення</a></div>
-                <div class="col-lg-1 col-3 d-xl-none text-right">
-                    <div class="hamburger">
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                    <div class="col-xl-2 col-lg-3 col-6 mobile-hide">
+                        <a class="button-order" data-toggle="modal" data-target="#orderFastModal" href="#">Швидке замовлення</a></div>
+                    <div class="col-lg-1 col-md-2 col-3 d-xl-none text-right">
+                        <div class="hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <section class="sidebar-content">
