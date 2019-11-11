@@ -1040,7 +1040,7 @@ button.active-language {
     z-index: 12150;
     position: fixed;
     left: -100%;
-    width: 100vw;
+    width: 100%;
     top: -100%;
     transition: 1s ease-in;
 }
