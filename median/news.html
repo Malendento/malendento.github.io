@@ -18,29 +18,27 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <title>Median-blog</title>
+    <title>Median-news</title>
 </head>
 
-<body class="body">
-    <header class="m__hide">
+<body id="header" class="body">
+    <header id="menuToggle" class="m__hide fixed-top menu-toggle">
         <nav>
-            <div id="menuToggle" class="menu-toggle">
-                <div class="container-fluid px-body">
-                    <div class="row header no-gutters justify-content-between">
-                        <div class="col-2">
-                           <a href="#">
+            <div class="container-fluid px-body">
+                <div class="row header no-gutters justify-content-between">
+                    <div class="col-2">
+                        <a href="#">
                             <img id="navbar-logo" src="./img/logo-navbar.svg"></a>
-                        </div>
-                        <div class="col-8 align-self-center text-center">
-                            <a class="navbar-links active-page" href="#">Главная</a>
-                            <a class="navbar-links" href="#">Главная</a>
-                            <a class="navbar-links" href="#">Главная</a>
-                            <a class="navbar-links" href="#">Главная</a>
-                        </div>
-                        <div class="col-2 align-self-center text-right">
-                            <div class="lang-switch">
-                                <button class="active-language">en</button>\<button>ru</button>
-                            </div>
+                    </div>
+                    <div class="col-8 align-self-center text-center">
+                        <a class="navbar-links active-page" href="#">Главная</a>
+                        <a class="navbar-links" href="#">Главная</a>
+                        <a class="navbar-links" href="#">Главная</a>
+                        <a class="navbar-links" href="#">Главная</a>
+                    </div>
+                    <div class="col-2 align-self-center text-right">
+                        <div class="lang-switch">
+                            <button class="active-language">en</button>\<button>ru</button>
                         </div>
                     </div>
                 </div>
@@ -48,11 +46,58 @@
         </nav>
     </header>
 
-    <section class="sidebar-content">
-        <div class="sidebar__mobile">
+    <div class="fixed__container">
+        <a href="#header" class="fixed__item fixed__get-up">
+            <img src="./img/scroll-to-top.svg" alt="^">
+        </a>
+    </div>
 
+    <div class="sidebar-content">
+        <div class="sidebar__mobile">
+            <div class="container-fluid px-body">
+                <div class="row no-gutters header-mobile justify-content-between">
+                    <div class="col-4">
+                        <a href="#"><img src="./img/navbar-mobile.svg"></a>
+                    </div>
+                    <div class="col-2 align-self-center">
+                        <div class="nav__chrested">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-12 sidebar-links text-center">
+                        <a class="sidebar-links__active">Главная</a>
+                        <a>Главная</a>
+                        <a>Главная</a>
+                        <a>Главная</a>
+                    </div>
+                    <div class="col-9 sidebar-footer text-center">
+                        <a class="sidebar-footer__problem" href="#">Сообщить об проблеме</a>
+                        <div class="inline-block inline-block__links">
+                            <a href="#"><img src="./img/footer-fb.svg"></a>
+                            <a href="#"><img src="./img/footer-message.svg"></a>
+                            <a href="#"><img src="./img/footer-telegram.svg"></a>
+                            <a href="#"><img src="./img/footer-linked.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+
+    <div class="container-fluid px-body">
+        <div class="row no-gutters">
+            <div class="col-lg-8">
+
+
+            </div>
+
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
 
     <main class="main">
         <section class="blog-page">
@@ -72,21 +117,109 @@
             </div>
             <div class="container-fluid px-body">
                 <div class="row no-gutters">
-                    <div class="col-lg-12 col-xl-10 text-lg-left text-center mt-lg-0 mt-5">
-                        <h1 class="mt-lg-5">Выбор стратегии ставок</h1>
+                    <div class="col-lg-12 col-xl-10 text-lg-left text-center mt-md-0 mt-5">
+                        <h1 class="mt-lg-5">Блог</h1>
                     </div>
-                    <div id="bg-white" class="col-lg-6 text-lg-left text-center">
+                    <div id="bg-white" class="col-lg-6 text-lg-left text-center pb-xl-0 pb-lg-5 pb-0">
                         <p>Реклама на основе эффективности</p>
+                    </div>
+                    <div class="col-12 d-lg-none my-5">
+                        <a class="blog-page-button" href="#">Подписаться</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="blog-wrapper blog-scroll m__hide">
-            <div class="container-fluid px-body">
-                <div class="row no-gutters justify-content-end">
-                    <div class="col-lg-4">
-                        <aside>
+
+        <section class="blog-wrapper">
+            <div class="row no-gutters px-body">
+                <div class="col-12 blog-links">
+                    <a href="index.html">Главная<img class="mx-3" src="./img/blog/blog-arrow.svg"></a>
+                    <a href="blog.html">Блог<img class="mx-3" src="./img/blog/blog-arrow.svg"></a>
+                    <a class="active-blog-page" href="#">Выбор стратегии ставок</a>
+                    <div class="row no-gutters d-lg-none">
+                        <form class="search-bar search-bar__mobile" action="">
+                            <input type="text" placeholder="Поиск">
+                            <button type="submit">
+                                <img src="./img/blog/button-search.svg">
+                            </button>
+                        </form>
+                        <button class="category-button" type="button" data-toggle="collapse" data-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
+                            Категории<img class="align-self-center" src="./img/blog/button-category.svg">
+                        </button>
+
+                        <div class="d-flex">
+
+                        </div>
+                        <div class="collapse w-100" id="collapseCategory">
+                            <div class="card card-body">
+                                <div class="blog-category blog-category-mobile">
+                                    <h3 class="text-center">Категории</h3>
+                                    <h4>Блог</h4>
+                                    <ul>
+                                        <li><a href="#">Блог</a></li>
+                                        <li><a href="#">Блог</a></li>
+                                        <li><a href="#">Блог</a></li>
+                                    </ul>
+                                    <h4>WIKI</h4>
+                                    <ul>
+                                        <li><a href="#">Блог</a></li>
+                                        <li><a href="#">Блог</a></li>
+                                        <li><a href="#">Блог</a></li>
+                                        <li><a href="#">Блог</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container-fluid px-body">
+        <div class="row no-gutters mt-lg-0 mt-4">
+            <div class="col-lg-8 pr-lg-4 news-content">
+                <div class="news-top-image"></div>
+                <div class="row justify-content-between no-gutters news-social">
+                    <div class="col-lg-7 d-flex">
+                        <p>Поделиться:</p>
+                        <div class="inline-block__links align-self-center">
+                            <a href="#"><img src="./img/news/fb.svg"></a>
+                            <a href="#"><img src="./img/news/messenger.svg"></a>
+                            <a href="#"><img src="./img/news/telegram.svg"></a>
+                            <a href="#"><img src="./img/news/linkedin.svg"></a>
+                        </div>
+                    </div>
+                    <div class="col-4 m__hide">
+                        <button>Прочитать позже</button>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-none button-news__mobile">
+                    <button>Подписаться</button>
+                    <button>Прочитать позже</button>
+                </div>
+                <span>Sep 26, 2019</span>
+                <h2>Получите видеоразбор двух кейсов преподавателя по рекламе в Facebook &amp; Instagram</h2>
+                <div class="news-content__image_top">
+                    <div></div>
+                </div>
+                <h2>Получите видеоразбор двух кейсов преподавателя по рекламе в Facebook &amp; Instagram</h2>
+                <p class="news-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="news-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="news-content__image">
+                    <div></div>
+                </div>
+                <h2>Получите видеоразбор двух кейсов преподавателя по рекламе в Facebook &amp; Instagram</h2>
+                <p class="news-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="news-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="news-content__image_end">
+                </div>
+            </div>
+            <div class="col-4 m__hide">
+                <aside class="blog-wrapper blog-scroll m__hide">
+                    <div class="container-fluid px-0">
+                        <div class="row no-gutters justify-content-end">
                             <div class="search-bar">
                                 <form action="">
                                     <input type="text" placeholder="Поиск">
@@ -95,7 +228,7 @@
                                     </button>
                                 </form>
                             </div>
-                            
+
                             <div class="subscribe-bar">
                                 <div class="subscribe-bar__content">
                                     <h3>Подпишись</h3>
@@ -119,139 +252,111 @@
                                     <li><a href="#">Блог</a></li>
                                 </ul>
                             </div>
-                        </aside>
+                        </div>
                     </div>
-                </div>
+                </aside>
             </div>
-        </section>
+        </div>
+    </div>
 
-
-        <section class="blog-wrapper">
-            <div class="container-fluid px-body">
+    <div class="container-fluid px-body mt-20">
+        <div class="row no-gutters justify-content-center">
+            <h2 class="news-subtext">Вам может быть интересно</h2>
+        </div>
+        <div class="row m__hide no-gutters blog-news mt-4">
+            <div class="blog-news__item">
+                <div class="news-item__image">
+                </div>
+                <h4>Выбор стратегии ставок</h4>
+                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
                 <div class="row no-gutters">
-                    <div class="col-12 blog-links">
-                        <a href="index.html">Главная <img class="mx-3" src="./img/blog/blog-arrow.svg"></a>
-                        <a href="#">Блог</a>
-                        <div class="row no-gutters d-lg-none">
-                            <form class="search-bar search-bar__mobile" action="">
-                                    <input type="text" placeholder="Поиск">
-                                    <button type="submit">
-                                        <img src="./img/blog/button-search.svg">
-                                    </button>
-                            </form>
-                        </div>
+                    <div class="col-7">
+                        <span>Sep 26, 2019</span>
                     </div>
-                    
-                    
-                    <div class="col-lg-8 blog-news mt-0">
-                        <div class="row no-gutters">
-                            <div class="blog-news__item-w">
-                                <div class="news-item__image">
-                                </div>
-                                <h4>Выбор стратегии ставок</h4>
-                                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
-                                <div class="row no-gutters">
-                                    <div class="col-7">
-                                        <span>Sep 26, 2019</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-news__item-w">
-                                <div class="news-item__image">
-                                </div>
-                                <h4>Выбор стратегии ставок</h4>
-                                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
-                                <div class="row no-gutters">
-                                    <div class="col-7">
-                                        <span>Sep 26, 2019</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-news__item-w">
-                                <div class="news-item__image">
-                                </div>
-                                <h4>Выбор стратегии ставок</h4>
-                                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
-                                <div class="row no-gutters">
-                                    <div class="col-7">
-                                        <span>Sep 26, 2019</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-news__item-w">
-                                <div class="news-item__image">
-                                </div>
-                                <h4>Выбор стратегии ставок</h4>
-                                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
-                                <div class="row no-gutters">
-                                    <div class="col-7">
-                                        <span>Sep 26, 2019</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-news__item-w">
-                                <div class="news-item__image">
-                                </div>
-                                <h4>Выбор стратегии ставок</h4>
-                                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
-                                <div class="row no-gutters">
-                                    <div class="col-7">
-                                        <span>Sep 26, 2019</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="blog-news__item-w">
-                                <div class="news-item__image">
-                                </div>
-                                <h4>Выбор стратегии ставок</h4>
-                                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
-                                <div class="row no-gutters">
-                                    <div class="col-7">
-                                        <span>Sep 26, 2019</span>
-                                    </div>
-                                    <div class="col-5">
-                                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="col-5">
+                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-news__item">
+                <div class="news-item__image">
+                </div>
+                <h4>Выбор стратегии ставок</h4>
+                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
+                <div class="row no-gutters">
+                    <div class="col-7">
+                        <span>Sep 26, 2019</span>
+                    </div>
+                    <div class="col-5">
+                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-news__item">
+                <div class="news-item__image">
+                </div>
+                <h4>Выбор стратегии ставок</h4>
+                <p>посещений ежемесячно - максимальный объем нашего трафика</p>
+                <div class="row no-gutters">
+                    <div class="col-7">
+                        <span>Sep 26, 2019</span>
+                    </div>
+                    <div class="col-5">
+                        <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--                MOBILE-BLOG-->
+        <div class="row mt-lg-4 position-relative blog-home__slider d-lg-none no-gutters">
+            <div>
+                <div class="col-12 px-body">
+                    <div class="blog-mobile__bg"></div>
+                    <h5>Выбор стратегии ставок</h5>
+                    <p>Чтобы оценить экспертность преподавателя, достаточно увидеть какой уровень кампаний был реализован клиентам</p>
+                    <div class="row no-gutters">
+                        <div class="col-lg-7 col-md-9 col-7">
+                            <span>Sep 26, 2019</span>
                         </div>
-                        <div class="row no-gutters justify-content-center">
-                            <div class="pagination-custom">
-                                <nav data-pagination="">
-                                    <a href=# disabled><img src="./img/blog/pagination-left.svg"></a>
-                                    <ul>
-                                        <li class=current><a href=#1>1</a>
-                                        <li><a href=#2>2</a>
-                                        <li><a href=#3>3</a>
-                                        <li><a href=#4>4</a>
-                                        <li><a href=#5>5</a>
-                                        <li><a href=#6>...</a>
-                                        <li><a href=#41>41</a>
-                                    </ul>
-                                    <a href=#2><img src="./img/blog/pagination-right.svg"></a>
-                                </nav>
-                            </div>
+                        <div class="col-lg-5 col-md-3 col-5">
+                            <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+            <div>
+                <div class="col-12 px-body">
+                    <div class="blog-mobile__bg"></div>
+                    <h5>Выбор стратегии ставок</h5>
+                    <p>Чтобы оценить экспертность преподавателя, достаточно увидеть какой уровень кампаний был реализован клиентам</p>
+                    <div class="row no-gutters">
+                        <div class="col-lg-7 col-md-9 col-7">
+                            <span>Sep 26, 2019</span>
+                        </div>
+                        <div class="col-lg-5 col-md-3 col-5">
+                            <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="col-12 px-body">
+                    <div class="blog-mobile__bg"></div>
+                    <h5>Выбор стратегии ставок</h5>
+                    <p>Чтобы оценить экспертность преподавателя, достаточно увидеть какой уровень кампаний был реализован клиентам</p>
+                    <div class="row no-gutters">
+                        <div class="col-lg-7 col-md-9 col-7">
+                            <span>Sep 26, 2019</span>
+                        </div>
+                        <div class="col-lg-5 col-md-3 col-5">
+                            <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container-fluid px-body">
@@ -298,6 +403,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/slick.min.js"></script>
 
 
     <script>
@@ -314,7 +420,7 @@
         });
     </script>
 
-    
+
     <script>
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
@@ -324,13 +430,37 @@
                 $(".menu-toggle").addClass("change");
                 $(".navbar-links").addClass("navbar-links-change");
                 $(".lang-switch").addClass("lang-switch-change");
-                $("#navbar-logo").attr("src","./img/logo-navbar-black.svg");
+                $("#navbar-logo").attr("src", "./img/logo-navbar-black.svg");
             } else {
                 $(".menu-toggle").removeClass("change");
                 $(".navbar-links").removeClass("navbar-links-change");
                 $(".lang-switch").removeClass("lang-switch-change");
-                $("#navbar-logo").attr("src","./img/logo-navbar.svg");
+                $("#navbar-logo").attr("src", "./img/logo-navbar.svg");
             }
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.blog-home__slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                pauseOnHover: false,
+                autoplaySpeed: 5000,
+                speed: 800,
+                touchMove: true,
+                //swipeToSlide: true,
+                draggable: true,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        dots: true
+                    }
+                }]
+            });
         });
     </script>
 </body>

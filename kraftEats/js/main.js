@@ -30,3 +30,9 @@
                     mask: '+{38}(000)000-00-00'
                 });
         });
+
+const phoneMask = IMask(
+    document.getElementById('your-id'), {
+      mask: '+{00}(000)000-00-00',
+    },
+  );

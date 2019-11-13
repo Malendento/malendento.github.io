@@ -16,20 +16,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="https://median-ads.com/wp-content/themes/eduma/images/favicon.png" type="image/png">
 
     <title>Median</title>
 </head>
 
-<body class="body">
-    <header class="m__hide">
+<body id="header" class="body">
+    <header id="menuToggle" class="m__hide fixed-top menu-toggle">
         <nav>
-            <div id="menuToggle" class="menu-toggle">
                 <div class="container-fluid px-body">
                     <div class="row header no-gutters justify-content-between">
                         <div class="col-2">
-                           <a href="#">
-                            <img id="navbar-logo" src="./img/logo-navbar.svg"></a>
+                            <a href="#">
+                                <img id="navbar-logo" src="./img/logo-navbar.svg"></a>
                         </div>
                         <div class="col-8 align-self-center text-center">
                             <a class="navbar-links active-page" href="#">Главная</a>
@@ -44,13 +43,18 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </nav>
     </header>
 
-    <aside class="sidebar-content">
+    <div class="fixed__container">
+        <a href="#header" class="fixed__item fixed__get-up">
+            <img src="./img/scroll-to-top.svg" alt="^">
+        </a>
+    </div>
+
+    <div class="sidebar-content">
         <div class="sidebar__mobile">
-               <div class="container-fluid px-body">
+            <div class="container-fluid px-body">
                 <div class="row no-gutters header-mobile justify-content-between">
                     <div class="col-4">
                         <a href="#"><img src="./img/navbar-mobile.svg"></a>
@@ -80,9 +84,9 @@
                         </div>
                     </div>
                 </div>
-</div>
+            </div>
         </div>
-    </aside>
+    </div>
 
     <main class="main">
         <section class="info">
@@ -635,12 +639,12 @@
                             <h5>Выбор стратегии ставок</h5>
                             <p>Чтобы оценить экспертность преподавателя, достаточно увидеть какой уровень кампаний был реализован клиентам</p>
                             <div class="row no-gutters">
-                                <div class="col-7">
-                                    <span>Sep 26, 2019</span>
-                                </div>
-                                <div class="col-5">
-                                    <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                </div>
+                            <div class="col-lg-7 col-md-9 col-7">
+                                <span>Sep 26, 2019</span>
+                            </div>
+                            <div class="col-lg-5 col-md-3 col-5">
+                                <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -650,12 +654,12 @@
                             <h5>Выбор стратегии ставок</h5>
                             <p>Чтобы оценить экспертность преподавателя, достаточно увидеть какой уровень кампаний был реализован клиентам</p>
                             <div class="row no-gutters">
-                                <div class="col-7">
-                                    <span>Sep 26, 2019</span>
-                                </div>
-                                <div class="col-5">
-                                    <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                </div>
+                            <div class="col-lg-7 col-md-9 col-7">
+                                <span>Sep 26, 2019</span>
+                            </div>
+                            <div class="col-lg-5 col-md-3 col-5">
+                                <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -665,12 +669,12 @@
                             <h5>Выбор стратегии ставок</h5>
                             <p>Чтобы оценить экспертность преподавателя, достаточно увидеть какой уровень кампаний был реализован клиентам</p>
                             <div class="row no-gutters">
-                                <div class="col-7">
-                                    <span>Sep 26, 2019</span>
-                                </div>
-                                <div class="col-5">
-                                    <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
-                                </div>
+                            <div class="col-lg-7 col-md-9 col-7">
+                                <span>Sep 26, 2019</span>
+                            </div>
+                            <div class="col-lg-5 col-md-3 col-5">
+                                <a href="#">Прочесть<img class="pl-3" src="./img/item-arrow.svg"></a>
+                            </div>
                             </div>
                         </div>
                     </div>
@@ -726,7 +730,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/slick.min.js"></script>
 
-    
+
     <script>
         var lastScrollTop = 5;
         document.getElementById("menuToggle").classList.remove("hided");
@@ -740,7 +744,7 @@
             lastScrollTop = st;
         });
     </script>
-    
+
     <script>
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
@@ -750,16 +754,16 @@
                 $(".menu-toggle").addClass("change");
                 $(".navbar-links").addClass("navbar-links-change");
                 $(".lang-switch").addClass("lang-switch-change");
-                $("#navbar-logo").attr("src","./img/logo-navbar-black.svg");
+                $("#navbar-logo").attr("src", "./img/logo-navbar-black.svg");
             } else {
                 $(".menu-toggle").removeClass("change");
                 $(".navbar-links").removeClass("navbar-links-change");
                 $(".lang-switch").removeClass("lang-switch-change");
-                $("#navbar-logo").attr("src","./img/logo-navbar.svg");
+                $("#navbar-logo").attr("src", "./img/logo-navbar.svg");
             }
         });
     </script>
-    
+
     <script>
         $(document).ready(function() {
             $('.slider').slick({
