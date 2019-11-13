@@ -190,9 +190,7 @@
 }
 
 @media (min-width: 991.99px) {
-    .overflow {
-        overflow-x: visible !important;
-    }
+
 }
 
 @media (max-width: 991.98px) {
@@ -1243,9 +1241,7 @@ button.active-language {
     color: #2C2C2C;
 }
 
-.overflow {
-    overflow-x: hidden;
-}
+
 
 .change {
     background-color: #fafafa !important;
