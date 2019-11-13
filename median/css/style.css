@@ -339,7 +339,7 @@
         height: 137px !important;
         width: 137px !important;
         right: -28% !important;
-        top: -90% !important;
+        top: -5% !important;
     }
 
     .training-bg {
@@ -569,6 +569,7 @@ html {
     font-family: 'Gilroy', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .px-body {
@@ -777,7 +778,7 @@ button.active-language {
 
 .agency-bg-circle {
     position: absolute;
-    z-index: -10;
+    z-index: 10;
     background-color: #6D93FF;
     height: 164px;
     width: 164px;
@@ -787,8 +788,9 @@ button.active-language {
 
 .training-bg-circle {
     position: absolute;
-    z-index: -10;
+    z-index: 1;
     background-color: #6D93FF;
+    float: right;
     height: 164px;
     width: 164px;
     right: 0;
@@ -803,6 +805,8 @@ button.active-language {
     color: #2C2C2C;
     margin-bottom: 0;
     padding-left: 3vw;
+    position: relative;
+    z-index: 11;
 }
 
 .training h2 {
@@ -812,6 +816,8 @@ button.active-language {
     color: #2C2C2C;
     margin-bottom: 0;
     padding-right: 4vw;
+    position: relative;
+    z-index: 11;
 }
 
 .dots-animation__agency {
@@ -1740,3 +1746,4 @@ a.sidebar-links__active {
     background: #C4C4C4;
     height: 73vh;
 }
+
