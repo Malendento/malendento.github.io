@@ -39,7 +39,9 @@
                     </div>
                     <div class="col-2 align-self-center text-right">
                         <div class="lang-switch">
-                            <button class="active-language">en</button>\<button>ru</button>
+                            <form action="" method="post">
+                                <button class="active-language" name="lang" value="en">en</button>\<button name="lang" value="ru">ru</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -105,14 +107,14 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid px-body">
+            <div id="bg-white" class="container-fluid px-body">
                 <div class="row no-gutters mt-lg-0 mt-md-5 mt-0">
                     <div class="col-lg-12 text-lg-left text-center mt-lg-0 mt-5">
                         <h1 class="mt-mob mb-xl-5 mb-lg-4 mb-md-5 agency-title">Наймите удаленного персонального эксперта по рекламе в соцсетях с международным опытом работы по стоимости сотрудника!</h1>
                     </div>
                     <div class="col-lg-12">
-                        <div class="row no-gutters justify-content-start">
-                            <div class="col-xl-2 col-lg-3 col-md-8 col-12 mr-lg-4 mr-md-4 mb-lg-0 mb-md-5 mb-3 text-center mx-lg-0 mx-md-auto ">
+                        <div class="row no-gutters justify-content-start mb-lg-0 mb-5">
+                            <div class="col-xl-2 col-lg-3 col-md-8 col-12 mr-lg-4 mr-md-4 mb-lg-5 mb-md-5 mb-3 text-center mx-lg-0 mx-md-auto ">
                                 <a class="button-agency agency_header__button" href="#">Заполнить бриф</a>
                             </div>
                             <div class="col-xl-2 col-lg-3 col-md-8 col-12 mx-lg-0 mx-md-auto text-center mb-lg-0 mb-md-5">
@@ -121,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="bg-white" class="row mt-15 no-gutters justify-content-end">
+                <div class="row mt-15 no-gutters justify-content-end">
                     <div class="col-xl-5 col-lg-7 mt-lg-0 mt-md-5">
                         <div class="row no-gutters">
                             <div class="col-lg-7 text-lg-right text-center">
@@ -254,9 +256,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row d-lg-none breef-mobile__buttons justify-content-center">
+                <div class="row d-lg-none breef-mobile__buttons justify-content-center no-gutters">
                     <div class="col-12">
-                        <p>Ознакомиться с услугами агенства:</p>
+                        <p class="px-4">Ознакомиться с услугами агенства:</p>
                     </div>
                     <div class="row no-gutters justify-content-center">
                         <div class="col-10"><a href="#">Подробнее</a></div>
@@ -267,7 +269,7 @@
             <div class="container-fluid mt-15 pb-10 px-0">
                 <div class="row no-gutters pl-breef justify-content-between">
                     <div class="col-lg-6 order-lg-2">
-                        <h2 class="breef-title d-lg-none">Заполните бриф</h2>
+                        <h2 class="breef-title d-lg-none mb-4">Заполните бриф</h2>
                         <div class="breef-bg"></div>
                     </div>
                     <div class="col-lg-5 order-lg-1 my-auto">
@@ -319,7 +321,6 @@
                                 <div class="school-card__wrp">
                                     <img class="school-main__image" src="./img/agency/marketing.svg">
                                     <a class="hover-button" href="index.html">Обсудить</a>
-                                    <p class="agency-scool">Реклама в Facebook &amp; Instagram 2.0. PRO</p>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +331,6 @@
                                 <div class="school-card__wrp">
                                     <img class="school-main__image" src="./img/agency/marketing.svg">
                                     <a class="hover-button" href="#">Обсудить</a>
-                                    <p class="agency-scool">Реклама в Facebook &amp; Instagram 2.0. PRO</p>
                                 </div>
                             </div>
                         </div>
@@ -341,7 +341,6 @@
                                 <div class="school-card__wrp">
                                     <img class="school-main__image" src="./img/agency/marketing.svg">
                                     <a class="hover-button" href="#">Обсудить</a>
-                                    <p class="agency-scool">Реклама в Facebook &amp; Instagram 2.0. PRO</p>
                                 </div>
                             </div>
                         </div>
@@ -504,31 +503,24 @@
             if (x <= middle) {
                 $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
                     ".school-main__image").addClass("course-right");
-                $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
-                    "p.agency-scool").addClass("course-right");
 
             } else {
                 $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
                     ".school-main__image").addClass("course-left");
-                $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
-                    "p.agency-scool").addClass("course-left");
             }
 
         }).mouseleave(function(el) {
             $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
                 ".school-main__image").removeClass("course-left").removeClass("course-right");
-            $(this).find(".school-card").find(".school-card__image").find(".school-card__wrp").find(
-                "p.agency-scool").removeClass("course-left").removeClass("course-right");
         })
 
         $(document).click(function(event) {
 
             if (!$(event.target).closest(".school-hover").length) {
                 $("body").find(".school-main__image").removeClass("course-left").removeClass("course-right");
-                $("body").find("p.agency-scool").removeClass("course-left").removeClass("course-right");
             }
         });
-        
+
         $('.school-card').hover(function() {
             //ne click  
             $('.hover-button').css("pointer-events", "none");

@@ -83,13 +83,6 @@
         background-image: none !important;
     }
 
-    p.agency-scool {
-        top: 30% !important;
-        font-size: 14px !important;
-        line-height: 24px !important;
-        padding: 0 50px !important;
-    }
-
     .individual-text {
         font-size: 40px !important;
         line-height: 40px !important;
@@ -126,7 +119,7 @@
 
     .info p,
     .blog-page p {
-        margin-bottom: 7vh !important;
+        margin-bottom: 8vh !important;
     }
 
     .training-mt {
@@ -254,8 +247,7 @@
 
     .stages {
         margin-top: 8vh !important;
-        background-position: 0% 90% !important;
-        background-size: auto !important;
+        background-image: none !important;
     }
 
     .breef-bg {
@@ -275,6 +267,13 @@
         font-size: 30px !important;
         line-height: 48px !important;
     }
+
+    .school-card p {
+        font-size: 20px !important;
+        line-height: 24px !important;
+    }
+
+
 }
 
 @media (max-width: 991.98px) {
@@ -586,10 +585,7 @@
         margin-top: 15vh !important;
     }
 
-    p.agency-scool {
-        top: 45% !important;
-        padding: 0 200px !important;
-    }
+
 
     .individual-text {
         font-size: 30px !important;
@@ -647,8 +643,8 @@
         padding: 0 20px !important;
     }
 
-    p.agency-scool {
-        padding: 0 70px !important;
+    .footer-nav {
+        margin-bottom: 20px;
     }
 
     .individual-text {
@@ -1622,6 +1618,12 @@ a.navbar-links-change {
     padding: 16px 0;
     display: block;
     text-align: center;
+    transition: .4s all;
+}
+
+.subscribe-bar a:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 16px rgba(44, 44, 44, 0.3);
 }
 
 .subscribe-bar__content {
@@ -1643,6 +1645,7 @@ a.navbar-links-change {
     font-size: 36px;
     line-height: 44px;
     color: #2C2C2C;
+    margin-bottom: 4vh;
 }
 
 .blog-category h4 {
@@ -2281,18 +2284,7 @@ h2.breef-circle-text {
 }
 
 
-p.agency-scool {
-    position: absolute;
-    font-weight: bold;
-    top: 45%;
-    font-size: 16px;
-    line-height: 28px;
-    padding: 0 30px;
-    margin-bottom: 0;
-    text-align: center;
-    color: #2C2C2C;
-    transition: all 0.5s ease-in-out;
-}
+
 
 
 
