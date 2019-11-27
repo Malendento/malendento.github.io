@@ -7,11 +7,11 @@
         });
 
         $(document).ready(function () {
-            $('.sidebar-content a, .city-switch').on('click', function () {
+            $('.sidebar-links a, .sidebar-social__links a, .mobile-logo').on('click', function () {
                 $('.sidebar__mobile').removeClass('active-sidebar');
             });
 
-            $('.sidebar-content a, .city-switch').on('click', function () {
+            $('.sidebar-links a, .sidebar-social__links a, .mobile-logo').on('click', function () {
                 $('.hamburger').removeClass('nav__chrested');
             });
 
@@ -23,10 +23,3 @@
                 $(this).toggleClass('nav__chrested');
             });
         });
-
-
-        const phoneMask = IMask(
-            document.getElementById('recipient-phone'), {
-                mask: '+{00}(000)000-00-00',
-            },
-        );

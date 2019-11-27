@@ -17,92 +17,122 @@
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
 
     <title>Krosno</title>
 </head>
 
 <body>
-
-    <!--
-    <section class="sidebar-content">
-        <div class="sidebar__mobile">
-            <div class="container-fluid mt-4 px-body">
-                <div class="row no-gutters justify-content-center">
-                    <div class="inline-flex">
-                        <div class="popover__wrapper city">
-                            <h2 class="popover__title">Львів<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
-                            <div class="popover__content-city">
-                                <button onclick="" class="city-switch">Одеса</button>
-                            </div>
-                        </div>
-
-                        <div class="popover__wrapper language ml-4">
-                            <h2 class="popover__title">UA<img class="rotate pl-2" src="./img/arrow-bottom.svg"></h2>
-                            <div class="popover__content-language">
-                                <button onclick="" class="city-switch">RU</button>
-                                <button onclick="" class="city-switch">EN</button>
-                            </div>
-                        </div>
+    <section class="sidebar__mobile">
+        <div class="container-fluid px-body">
+            <div class="row no-gutters">
+                <div class="sidebar-links">
+                    <a href="#">Хто ми</a>
+                    <a href="#">Наші послуги</a>
+                    <a class="mb-0" href="#">Типи ремонтів </a>
+                    <div class="sidebar-repair__types">
+                        <a href="#">Косметичний ремонт</a>
+                        <a href="#">Капітальний ремонт</a>
+                        <a href="#">Все включено</a>
                     </div>
-                    <a class="sidebar-content__title" href="#">суші</a>
-                    <a href="#">сети</a>
-                    <a href="#">роли</a>
-                    <a href="#">суші</a>
-                    <a class="sidebar-content__title" href="#">бургери</a>
-                    <a href="#">бургер меню</a>
-                    <a href="#">бургери</a>
-                    <div class="inline-flex">
-                        <img src="./img/star.svg">
-                        <a class="mb-0" href="#">крафт бургери</a>
-                        <img src="./img/star.svg">
+                    <a href="#">Чому ми</a>
+                    <a href="#">Галерея робіт</a>
+                    <a class="mb-0" href="#">Контакти</a>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="sidebar-social__links">
+                    <div class="d-flex justify-content-between">
+                        <a href="#">Instagram</a>
+                        <a href="tel:+380673443400">+380673443400</a>
                     </div>
-                    <a class="sidebar-content__title" href="#">доставка</a>
-                    <a class="sidebar-content__title" href="#">акції</a>
+                    <div class="d-flex justify-content-between">
+                        <a href="#">facebook</a>
+                        <a href="mailto:krosno_lviv@yahoo.com">krosno_lviv@yahoo.com </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
--->
-
 
     <main class="main">
         <div class="home-bg position-relative">
-            <nav class="nav">
-                <div class="container-fluid px-body">
-                    <div class="row no-gutters">
-                        <div class="col-2 align-self-center">
-                            <a href="#">
-                                LOGOHERE
-                            </a>
+            <div class="lines-container px-body">
+                <div class="row no-gutters justify-content-between">
+                    <div class="col-2">
+                        <div class="verical-line"></div>
+                        <div class="verical-line-2 m-hide"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="verical-line-2 m-hide"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="verical-line-2"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="verical-line-2 m-hide"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="verical-line-2 m-hide"></div>
+                    </div>
+                    <div class="col-2">
+                        <div class="verical-line-2"></div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="navbar-custom">
+                    <div class="container-fluid px-body m-hide">
+                        <div class="row no-gutters">
+                            <div class="col-2 align-self-center">
+                                <a href="#">
+                                    LOGOHERE
+                                </a>
+                            </div>
+                            <div class="col-8 text-center nav-links align-self-center">
+                                <a href="#">Хто ми</a>
+                                <a href="#">Наші послуги</a>
+                                <a href="#">Типи ремонтів<img class="pl-2" src="./img/home-page/navbar-arrow.svg"></a>
+                                <a href="#">Чому ми</a>
+                                <a href="#">Галерея робіт</a>
+                                <a href="#">Контакти</a>
+                            </div>
+                            <div class="col-2 pl-nav text-center">
+                                <a class="order-button" href="#">Замовити послугу</a>
+                            </div>
                         </div>
-                        <div class="col-8 text-center nav-links align-self-center">
-                            <a href="#">Хто ми</a>
-                            <a href="#">Наші послуги</a>
-                            <a href="#">Типи ремонтів<img class="pl-2" src="./img/home-page/navbar-arrow.svg"></a>
-                            <a href="#">Чому ми</a>
-                            <a href="#">Галерея робіт</a>
-                            <a href="#">Контакти</a>
-                        </div>
-                        <div class="col-2 pl-nav text-center">
-                            <a class="order-button" href="#">Замовити послугу</a>
+                    </div>
+                    <div class="container-fluid px-body d-lg-none fixed-top mobile-navbar-container">
+                        <div class="row no-gutters mobile-navbar justify-content-between">
+                            <div class="col-3"><a class="mobile-logo" href="#">logohere</a></div>
+                            <div class="col-2">
+                                <div class="hamburger">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </nav>
             <section class="home">
                 <div class="container-fluid px-body">
-                    <div class="row">
-                        <div class="col-lg-7">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-7 col-lg-8 col-10 mx-lg-0 mx-auto my-lg-auto text-lg-left text-center">
                             <h1>Якісно виконуємо усі види ремонтних робіт</h1>
                             <p>Ремонт квартир, офісів та будинків. Надаємо першокласні послуги, та гарантуємо якість виконання.</p>
-                            <div class="row no-gutters">
-                                <div class="col-lg-4 home-buttons mr-lg-4">
+                            <div class="row no-gutters pb-lg-0 pb-5">
+                                <div class="col-lg-4 home-buttons mr-lg-4 mb-lg-0 mb-md-4 mb-3">
                                     <a href="#">Замовити послугу</a>
                                 </div>
-                                <div class="col-lg-4 home-buttons">
+                                <div class="col-lg-4 home-buttons mb-lg-0 mb-4">
                                     <a href="#">Список послуг</a>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-4 m-hide pl-0">
+                            <div class="home-picture">
                             </div>
                         </div>
                     </div>
@@ -110,7 +140,7 @@
                         <div class="col-2">
                             <a href="tel:+380673443400">+380673443400</a>
                         </div>
-                        <div class="col-2 d-flex justify-content-between align-self-center">
+                        <div class="col-xl-2 col-lg-3 d-flex justify-content-between align-self-center">
                             <a href="#">Facebook</a>
                             <a href="#">Insagram</a>
                         </div>
@@ -119,40 +149,48 @@
             </section>
         </div>
         <section class="who-we position-relative">
-            <div class="who-we-bg-top"><img src="./img/home-page/who-we-bg-top.svg"></div>
-            <div class="who-we-bg-bottom"><img src="./img/home-page/who-we-bg-bottom.svg"></div>
+            <div class="who-we-bg-top m-hide"><img src="./img/home-page/who-we-bg-top.svg"></div>
+            <div class="who-we-bg-bottom m-hide"><img src="./img/home-page/who-we-bg-bottom.svg"></div>
+            <img class="who-we__circle" src="./img/home-page/who-we-mobile.svg">
             <div class="container-fluid px-body">
                 <div class="row">
-                    <div class="col-lg-5 my-lg-auto">
-                        <div class="who-we__bg">
+                    <div class="col-lg who-we__text">
+                        <div class="d-md-none">
+                            <h2>хто ми такі ?</h2>
+                            <img src="./img/home-page/who-we-arrows.svg">
+                        </div>
+                    </div>
+                    <div class="col-md-5 my-md-auto">
+                        <img class="d-md-none sect2-pos img-fluid" src="./img/home-page/sect2-pos.png">
+                        <div class="who-we__bg mobile-hidden">
                             <div class="bg-place"></div>
                         </div>
                     </div>
-                    <div class="col-lg-7 pt-lg-5 who-we__text">
-                        <div class="d-flex mb-lg-5">
+                    <div class="col-md-7 pt-lg-5 who-we__text">
+                        <div class="d-md-flex mb-md-5 mobile-hidden">
                             <h2>хто ми такі ?</h2>
-                            <img class="ml-5 align-self-center" src="./img/home-page/who-we-arrows.svg">
+                            <img class="ml-lg-5 ml-4 align-self-center" src="./img/home-page/who-we-arrows.svg">
                         </div>
-                        <div class="row no-gutters mb-lg-4">
+                        <div class="row no-gutters mb-md-4 mobile-hidden">
                             <div class="col-1"><span>01</span></div>
-                            <div class="col-11 pl-lg-4">
+                            <div class="col-11 pl-md-4">
                                 <p>Наші <b>професійні майстри</b> виконують найрізноманітніші будівельно-монтажні, ремонтні та оздоблювальні роботи за <b>максимально короткі та зручні для вас терміни.</b></p>
                             </div>
                         </div>
-                        <div class="row no-gutters mb-lg-4">
+                        <div class="row no-gutters mb-md-4 mobile-hidden">
                             <div class="col-1"><span>02</span></div>
-                            <div class="col-11 pl-lg-4">
+                            <div class="col-11 pl-md-4">
                                 <p>Ми застосовуємо <b>найсучасніші технології та тільки якісні і перевірені матеріали.</b></p>
                             </div>
                         </div>
-                        <div class="row no-gutters">
+                        <div class="row no-gutters mobile-hidden">
                             <div class="col-1"><span>03</span></div>
-                            <div class="col-11 pl-lg-4">
+                            <div class="col-11 pl-md-4">
                                 <p>Саме тому ми робимо дуже якісний ремонт Вашої оселі, офісу чи іншого приміщення та <b>гарантуємо його довговічність.</b></p>
                             </div>
                         </div>
 
-                        <div class="row no-gutters justify-content-between">
+                        <div class="row no-gutters justify-content-between mobile-hidden">
                             <div class="who-we__card">
                                 <div>
                                     <h6>11</h6>
@@ -166,6 +204,26 @@
                                 </div>
                             </div>
                             <div class="who-we__card">
+                                <div>
+                                    <h6>219</h6>
+                                    <p>задоволених клієнтів</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-gutters justify-content-between mb-5 position-relative">
+                            <div class="col-6 who-we__card">
+                                <div>
+                                    <h6>11</h6>
+                                    <p>Поточних проектів</p>
+                                </div>
+                            </div>
+                            <div class="col-6 who-we__card card-my">
+                                <div>
+                                    <h6>436</h6>
+                                    <p>Виконаних замовлень</p>
+                                </div>
+                            </div>
+                            <div class="col-6 who-we__card">
                                 <div>
                                     <h6>219</h6>
                                     <p>задоволених клієнтів</p>
@@ -229,24 +287,57 @@
             </div>
         </section>
 
-        <section class="masters-repair position-relative">
+        <section class="masters-repair">
             <div class="container-fluid px-0 masters">
-                <div class="row no-gutters">
-                    <div class="col-lg-8 pl-10 my-20">
+                <div class="lines-container px-body">
+                    <div class="row no-gutters justify-content-between m-hide">
+                        <div class="col-4">
+                            <div class="verical-line"></div>
+                            <div class="verical-line-2"></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="verical-line"></div>
+                            <div class="verical-line-2"></div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters justify-content-between d-lg-none">
+                        <div class="col-6">
+                            <div class="verical-line"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="verical-line"></div>
+                            <div class="verical-line-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters position-relative pt-lg-4">
+                    <div class="col-xl-8 pl-10 my-20 text-lg-left text-center">
                         <h3>Усі послуги надають кваліфіковані майстри, перевірені часом</h3>
                         <p>Наші працівники є справжніми фахівцями. Ми любимо свою роботу і дбаємо про репутацію компанії. Головний критерій при прийомі на роботу - порядність, тому ви отримуєте лише приємний досвід співпраці з нами.</p>
                         <div class="row no-gutters">
-                            <div class="col-lg-3">
+                            <div class="col-xl-3 col-lg-4">
                                 <a href="#">Замовити послугу</a></div>
                         </div>
                     </div>
-                    <div class="col-lg-4 m-hide">
+                    <div class="col-xl-4 m-hide">
                         <div class="masters-bg"></div>
                     </div>
                 </div>
             </div>
 
             <div class="container-fluid px-body repair-types">
+                <div class="lines-container m-hide">
+                    <div class="row no-gutters justify-content-between">
+                        <div class="col-4">
+                            <div class="verical-line verical-line_w"></div>
+                            <div class="verical-line-2 verical-line_w"></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="verical-line verical-line_w"></div>
+                            <div class="verical-line-2 verical-line_w"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row no-gutters">
                     <div class="col-12 text-center">
                         <h2>типи ремонтів</h2>
@@ -254,7 +345,7 @@
                 </div>
                 <div class="row no-gutters">
                     <div class="repair-types__card">
-                        <div class="repair-bg" style="background-image: url(.././img/home-page/cosmetic.png);">
+                        <div class="repair-bg" style="background-image: url(.././img/home-page/cosmetic.png)">
                             <div class="repair-content">
                                 <h4>Косметичний</h4>
                                 <p>Підходить для швидкого оновлення інтер'єру квартири або офісу</p>
@@ -267,10 +358,10 @@
                         </div>
                     </div>
                     <div class="repair-types__card">
-                        <div class="repair-bg" style="background-image: url(.././img/home-page/kapital.png);">
+                        <div class="repair-bg" style="background-image: url(.././img/home-page/kapital.png)">
                             <div class="repair-content">
                                 <h4>Капітальний</h4>
-                                <p>Підходить для швидкого оновлення інтер'єру квартири або офісу</p>
+                                <p>Даний варіант підходить для повної зміни інтер'єру, або для ремонту в новобудові</p>
                                 <div class="row no-gutters">
                                     <div class="col-lg-8">
                                         <a href="#">Детальніше</a>
@@ -280,10 +371,10 @@
                         </div>
                     </div>
                     <div class="repair-types__card">
-                        <div class="repair-bg" style="background-image: url(.././img/home-page/all-include.png);">
+                        <div class="repair-bg" style="background-image: url(.././img/home-page/all-include.png)">
                             <div class="repair-content">
                                 <h4>Все включено</h4>
-                                <p>Підходить для швидкого оновлення інтер'єру квартири або офісу</p>
+                                <p>Клієнт приймає участь тільки в затверджені індивідуального дизайну, а всі інші роботи виконуємо ми. В пропозиції розрахована вартість всіх робіт та матеріалів.</p>
                                 <div class="row no-gutters">
                                     <div class="col-lg-8">
                                         <a href="#">Детальніше</a>
@@ -299,12 +390,12 @@
         <section class="why-we">
             <div class="container-fluid px-body pb-12">
                 <div class="row no-gutters">
-                    <div class="col-lg-12 d-flex">
+                    <div class="col-lg-12 d-flex text-lg-left text-center">
                         <h2>чому варто обрати нас?</h2>
-                        <img class="ml-5 align-self-center" src="./img/home-page/who-we-arrows.svg">
+                        <img class="ml-5 align-self-center m-hide" src="./img/home-page/who-we-arrows.svg">
                     </div>
                 </div>
-                <div class="row no-gutters why-we__cards mt-8">
+                <div class="row no-gutters why-we__cards mt-8 m-hide">
                     <div class="why-we__item">
                         <h5>Ремонт будь-якої складності</h5>
                         <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
@@ -326,7 +417,7 @@
                         <span>04</span>
                     </div>
                 </div>
-                <div class="row no-gutters why-we__cards">
+                <div class="row no-gutters why-we__cards m-hide">
                     <div class="why-we__item">
                         <h5>Ремонт будь-якої складності</h5>
                         <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
@@ -348,6 +439,50 @@
                         <span>08</span>
                     </div>
                 </div>
+
+                <div class="row no-gutters whywe-mobile-slider">
+                    <div class="why-we__item">
+                        <h5>Ремонт будь-якої складності</h5>
+                        <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
+                        <span>01</span>
+                    </div>
+                    <div class="why-we__item">
+                        <h5>Ремонт будь-якої складності</h5>
+                        <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
+                        <span>02</span>
+                    </div>
+                    <div class="why-we__item">
+                        <h5>Ремонт будь-якої складності</h5>
+                        <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
+                        <span>03</span>
+                    </div>
+                    <div class="why-we__item">
+                        <h5>Ремонт будь-якої складності</h5>
+                        <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
+                        <span>04</span>
+                    </div>
+                    <div class="why-we__item">
+                        <h5>Ремонт будь-якої складності</h5>
+                        <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
+                        <span>05</span>
+                    </div>
+                    <div class="why-we__item">
+                        <h5>Ремонт будь-якої складності</h5>
+                        <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
+                        <span>06</span>
+                    </div>
+                    <div class="why-we__item">
+                        <h5>Ремонт будь-якої складності</h5>
+                        <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
+                        <span>07</span>
+                    </div>
+                    <div class="why-we__item">
+                        <h5>Ремонт будь-якої складності</h5>
+                        <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
+                        <span>08</span>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -355,7 +490,7 @@
             <div class="container-fluid px-body position-relative">
                 <div class="row no-gutters">
                     <div class="col-lg-12 text-center">
-                        <h2>чому варто обрати нас?</h2>
+                        <h2>результати нашої роботи</h2>
                     </div>
                 </div>
                 <div class="results-arrow__left">
@@ -402,8 +537,30 @@
 
         <section class="info-trust">
             <div class="container-fluid px-body info">
+                <img class="circle-container m-hide" src="./img/home-page/asd.png">
+                <div class="lines-container">
+                    <div class="row no-gutters justify-content-between m-hide">
+                        <div class="col-4">
+                            <div class="verical-line"></div>
+                            <div class="verical-line-2"></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="verical-line"></div>
+                            <div class="verical-line-2"></div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters justify-content-between d-lg-none">
+                        <div class="col-6">
+                            <div class="verical-line"></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="verical-line"></div>
+                            <div class="verical-line-2"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row no-gutters">
-                    <div class="col-lg-8 pr-lg-5 pt-10">
+                    <div class="col-xl-8 col-lg-9 text-lg-left text-center pr-lg-5 pt-10">
                         <h3>Ми беремо на себе
                             головну біль від ремонту, зберігаючи
                             ваш час, кошти та нерви</h3>
@@ -412,11 +569,11 @@
                 </div>
                 <form class="info-form" action="" method="">
                     <div class="row no-gutters">
-                        <div class="col-lg-3 mr-lg-3">
+                        <div class="col-lg-3 mr-lg-3 mb-lg-0 mb-3">
                             <input type="text" placeholder="Ваше ім'я" name="recipient-name-first">
                         </div>
-                        <div class="col-lg-3 mr-lg-3">
-                            <input type="text" placeholder="Номер телефону" name="recipient-phone-first">
+                        <div class="col-lg-3 mr-lg-3 mb-lg-0 mb-3">
+                            <input type="text" id="recipient-phone-first" placeholder="Номер телефону" name="recipient-phone-first">
                         </div>
                         <div class="col-lg-2">
                             <button type="submit">Відправити</button>
@@ -426,11 +583,25 @@
             </div>
 
             <div class="container-fluid px-body trust">
+                <div class="lines-container m-hide">
+                    <div class="row no-gutters justify-content-between">
+                        <div class="col-4">
+                            <div class="verical-line verical-line_w"></div>
+                            <div class="verical-line-2 verical-line_w"></div>
+                        </div>
+                        <div class="col-4">
+                            <div class="verical-line verical-line_w"></div>
+                            <div class="verical-line-2 verical-line_w"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="row no-gutters">
                     <div class="col-12 text-center">
                         <h2>нам довіряють</h2>
                     </div>
                 </div>
+                <div class="trust-arrow__left d-lg-none"><img src="./img/home-page/arrow-left-mobile.svg"></div>
+                <div class="trust-arrow__right d-lg-none"><img src="./img/home-page/arrow-right-mobile.svg"></div>
                 <div class="trust-slider">
                     <div class="slide-count">
                         <div class="row no-gutters justify-content-center">
@@ -438,8 +609,8 @@
                                 <img class="mx-auto" src="./img/home-page/hrisha.svg">
                                 <small>Гріша Шишкович</small>
                             </div>
-                            <div class="col-lg-7 pl-lg-5">
-                                <p>Я їбу там уїбало оце пацани хуярять, ремонтікі блять, хуйонтікі, піздец па красоте всьо вам замутять базарю бля буду гангстером<br>Мені взагалі пообіцяли пів грама шишок за цей відгук, а так пацани молодцом да, ваще чотко красавчіки респект уважуха брат<br><br>Як то кажуть, ножи в кармане, Аллах над намі, вперед заробітчани</p>
+                            <div class="col-lg-7 pl-lg-5 text-lg-left text-center">
+                                <p>Наші професійні майстри виконують найрізноманітніші будівельно-монтажні, ремонтні та оздоблювальні роботи за максимально короткі та зручні для вас терміни. Ми застосовуємо найсучасніші технології та тільки якісні і перевірені матеріали. Саме тому ми робимо більш якісний ремонт Вашої оселі, офісу чи іншого комерційного приміщення та гарантуємо його довговічність</p>
                             </div>
                         </div>
                     </div>
@@ -493,43 +664,48 @@
     </main>
 
     <footer class="footer">
+        <img class="img-fluid footer-mob-img" src="./img/home-page/footer-mobile.svg">
         <div class="container-fluid px-body">
             <div class="row no-gutters">
-                <div class="col-lg-3 footer-socail__links">
+                <div class="col-lg-3 footer-socail__links text-lg-left text-center">
                     <h3>КРОСНО</h3>
-                    <a href="tel:+380673443400">+380673443400</a>
-                    <a href="tel:+380673443400">+380673443400</a>
-                    <a href="#">instagram</a>
-                    <a href="#">facebook</a>
+                    <div class="d-lg-block d-flex justify-content-center">
+                        <a class="mr-lg-0 mr-3" href="tel:+380673443400">+380673443400</a>
+                        <a href="tel:+380673443400">+380673443400</a>
+                    </div>
+                    <div class="d-lg-block d-flex justify-content-center">
+                        <a class="mr-lg-0 mr-5" href="#">instagram</a>
+                        <a href="#">facebook</a>
+                    </div>
                     <a href="mailto:krosno_lviv@yahoo.com">krosno_lviv@yahoo.com</a>
                 </div>
-                <div class="col-lg-2 footer-nav-links">
+                <div class="col-lg-2 footer-nav-links text-lg-left text-center">
                     <a href="#">Хто ми</a>
                     <a href="#">Наші послуги</a>
                     <a href="#">Чому ми</a>
                     <a href="#">Галерея робіт</a>
                     <a href="#">Контакти</a>
                 </div>
-                <div class="col-lg-3 footer-nav-links">
+                <div class="col-lg-3 footer-nav-links text-lg-left text-center mb-lg-0 mb-5">
                     <a href="#">Косметичний ремонт</a>
                     <a href="#">Капітальний ремонт</a>
                     <a href="#">Все включено</a>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-3 footer-form text-lg-right">
+                <div class="col-xl-1 col-auto"></div>
+                <div class="col-xl-3 col-lg-4 footer-form text-lg-right text-center">
                     <form action="" method="">
                         <h3 class="mb-lg-4">Залиште контакти для зворотнього зв’язку</h3>
                         <input type="text" placeholder="Ваше ім'я" name="recipient-name-second">
-                        <input type="text" placeholder="Номер телефону" name="recipient-phone-second">
+                        <input id="recipient-phone-second" type="text" placeholder="Номер телефону" name="recipient-phone-second">
                         <button type="submit">Відправити</button>
                     </form>
                 </div>
             </div>
             <div class="row justify-content-between no-gutters py-6">
-                <div class="col-lg-3 text-lg-left text-center">
+                <div class="col-lg-3 text-lg-left text-center mb-lg-0 mb-3">
                     <div class="studio-reference">2019 <a class="studio-link" href="index.html">Krosno</a> All rights reserved</div>
                 </div>
-                <div class="col-lg-3 text-lg-right text-center">
+                <div class="col-lg-3 text-lg-right text-center mb-lg-0 mb-5">
                     <div class="studio-reference">developed by <a class="studio-link" target="_blank" href="https://crayfish.studio">Crayfish studio</a></div>
                 </div>
             </div>
@@ -576,6 +752,24 @@
         });
 
         $(document).ready(function() {
+            $('.whywe-mobile-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                pauseOnHover: true,
+                autoplaySpeed: 3000,
+                speed: 1200,
+                centerMode: false,
+                touchMove: true,
+                draggable: true,
+                arrows: true,
+                prevArrow: $('.results-arrow__left'),
+                nextArrow: $('.results-arrow__right')
+            });
+        });
+
+        $(document).ready(function() {
             $('.trust-slider').slick({
                 infinite: false,
                 slidesToShow: 1,
@@ -614,6 +808,14 @@
         function setSlideNumber() {
             document.getElementById("slider-counter").innerHTML = "0" + hrysha;
         }
+    </script>
+
+    <script>
+        const phoneMask = IMask(
+            document.getElementById('recipient-phone-first'), {
+                mask: '+{00}(000)000-00-00'
+            },
+        );
     </script>
     <!--   MODAL-FAST-ORDER-->
     <!--

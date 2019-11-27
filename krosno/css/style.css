@@ -1,11 +1,441 @@
+@media (max-width: 1350px) {
+    .nav-links a {
+        margin-right: 1vw !important;
+    }
+
+    .nav-links a:last-child {
+        margin-right: 0vw !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .order-button {
+        font-size: 14px !important;
+        line-height: 18px !important;
+    }
+
+    .results-bg {
+        height: 40vh !important;
+    }
+}
+
+@media (max-width: 1024.99px) {
+    .nav-links a {
+        font-size: 14px !important;
+        line-height: 18px !important;
+    }
+
+    .info-form {
+        padding-bottom: 6vh !important;
+    }
+
+    .home p {
+        margin-bottom: 4vh !important;
+    }
+
+    .who-we {
+        padding-top: 5vh !important;
+    }
+
+    .who-we__text h2,
+    .service h2,
+    .repair-types h2,
+    .why-we h2,
+    .results h2,
+    .trust h2 {
+        font-size: 38px !important;
+        line-height: 50px !important;
+    }
+
+    .who-we__bg .bg-place {
+        height: 30vh !important;
+    }
+
+    .service-card__item {
+        height: 20vh !important;
+    }
+
+    .service-card p {
+        padding: 0 10px !important;
+        font-size: 16px !important;
+    }
+
+    .who-we__text {
+        padding: 0 4% 0 3vw !important;
+    }
+
+    .who-we__card {
+        margin-top: 4vh !important;
+        margin-bottom: 6vh !important;
+        height: 15vw !important;
+        width: 15vw !important;
+    }
+
+    .home h1 {
+        font-size: 50px !important;
+        line-height: 60px !important;
+        margin-bottom: 3vh !important;
+    }
+
+    .home {
+        padding-top: 10vh !important;
+    }
+
+    .home-picture {
+        height: 35vh !important;
+    }
+
+    .mt-20 {
+        margin-top: 5vh !important;
+    }
+
+    .my-20 {
+        margin-top: 7vh !important;
+        margin-bottom: 7vh !important;
+    }
+
+    .repair-bg {
+        height: 40vh !important;
+    }
+
+    .why-we {
+        padding-top: 5vh !important;
+    }
+
+    .mt-8 {
+        margin-top: 5vh !important;
+    }
+
+    .results {
+        margin-top: 5vh !important;
+        margin-bottom: 4vh !important;
+    }
+
+    .results-bg {
+        height: 30vh !important;
+    }
+
+    .results h2 {
+        margin-bottom: 4vh !important;
+    }
+
+    .why-we__item {
+        padding: 0 1vw !important;
+        height: 20vh !important;
+    }
+
+    .repair-types h2 {
+        margin-bottom: 5vh !important;
+        margin-top: 5vh !important;
+    }
+
+    .repair-types {
+        padding-bottom: 6vh !important;
+    }
+
+    .pb-12 {
+        padding-bottom: 7vh !important;
+    }
+
+    .px-body {
+        padding: 0 2vw !important;
+    }
+
+    .circle-container {
+        top: 15% !important;
+        z-index: -1 !important;
+    }
+
+    .footer-nav-links {
+        padding-top: 10.5vh !important;
+    }
+
+    .trust {
+        padding-bottom: 5vh !important;
+        background-image: none !important;
+    }
+
+    .py-6 {
+        padding-top: 4vh !important;
+        padding-bottom: 8vh !important;
+    }
+
+    .pt-10 {
+        padding-top: 6vh !important;
+    }
+
+    .trust-slider {
+        margin-bottom: 2vh !important;
+    }
+
+    .trust h2 {
+        margin-bottom: 4vh !important;
+        padding-top: 5vh !important;
+    }
+}
+
 @media (max-width: 992.98px) {
     .m-hide {
         display: none !important;
+    }
+
+    .service-card p {
+        padding: 0px !important;
+        font-size: 18px !important;
+    }
+
+    .home h1 {
+        font-size: 40px !important;
+        line-height: 49px !important;
+        padding: 0 2.125vw;
+        margin-bottom: 5vh !important;
+    }
+
+    .home p {
+        font-weight: 400 !important;
+        font-size: 16px !important;
+        padding-right: 0 !important;
+        color: #FFFFFF;
+        margin-bottom: 4.8vh !important;
+    }
+
+    .services-row {
+        display: block !important;
+        padding: 0px 2vw !important;
+    }
+
+    .service-card__item {
+        height: 25vh !important;
+        width: 100% !important;
+        padding: 0 10px;
+        border-right: 1px solid #BDBDBD;
+        border-bottom: 1px solid #BDBDBD;
+    }
+
+    .service-card__item:last-child {
+        border-bottom: 0px solid #BDBDBD;
+    }
+
+    .repair-types__card {
+        width: 100% !important;
+        margin-right: 0% !important;
+        margin-bottom: 20px;
+    }
+
+    .repair-bg {
+        height: 55vh !important;
+    }
+
+    .repair-content {
+        bottom: 0% !important;
+        padding: 20px 28px !important;
+    }
+
+    .repair-content h4 {
+        font-size: 24px !important;
+    }
+
+    .repair-content p {
+        font-size: 16px !important;
+        margin-top: 6px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .results-bg {
+        height: 55vh !important;
+    }
+
+    .info h3 {
+        font-size: 36px !important;
+        line-height: 44px !important;
+    }
+
+    .info p {
+        font-size: 16px !important;
+        margin-bottom: 4vh !important;
+    }
+
+    .pl-10 {
+        padding: 0 4vw !important;
+    }
+
+    .masters h3 {
+        font-size: 36px !important;
+        line-height: 44px !important;
+        margin-bottom: 19px !important;
+    }
+
+    .masters p {
+        font-size: 16px !important;
+        margin-bottom: 4.5vh !important;
+        padding: 0 20px !important;
+    }
+
+    .masters {
+        background-image: url(.././img/home-page/masters-bg-mob.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+    .trust-arrow__left,
+    .trust-arrow__right {
+        position: absolute;
+        top: 35% !important;
+    }
+
+    .trust-arrow__right {
+        right: 2vw;
+    }
+
+    .trust-slider small {
+        margin-bottom: 28px;
+    }
+
+    .footer h3 {
+        margin-bottom: 5vh !important;
+    }
+
+    .footer-nav-links {
+        padding-top: 6vh !important;
+    }
+
+    .who-we__card {
+        margin-top: 4vh !important;
+        margin-bottom: 6vh !important;
+        height: 16vw !important;
+        width: 16vw !important;
+    }
+
+    .who-we__card p {
+        font-size: 16px !important;
+    }
+
+    .who-we__card h6 {
+        font-size: 32px !important;
+        line-height: 40px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .why-we__item {
+        padding: 25px 40px !important;
+        height: 40vh !important;
+        background: #5F0E6A;
+        border: none !important;
+    }
+
+    .why-we__item h5 {
+        font-size: 24px !important;
+        color: #fff !important;
+        margin-bottom: 17px;
+    }
+
+    .why-we__item p {
+        font-size: 16px !important;
+        color: #fff !important;
+    }
+
+    .why-we__item span {
+        color: #fff !important;
+        bottom: -20% !important;
+        right: 10px;
+    }
+}
+
+@media (min-width: 450.98px) {
+
+    .footer-mob-img {
+        display: none;
     }
 }
 
 @media (max-width: 450.99px) {
 
+    .who-we__card {
+        margin-top: 0vh !important;
+        margin-bottom: 6vh !important;
+        height: 156px !important;
+    }
+
+    .who-we__card p {
+        padding: 0 10px;
+    }
+
+    .mobile-hidden {
+        display: none !important;
+    }
+
+    .footer {
+        background-image: none !important;
+        background: #2A0030;
+    }
+
+    .trust-slider p {
+        font-size: 16px !important;
+    }
+
+    .trust h2 {
+        margin-bottom: 6.7vh !important;
+        padding-top: 6vh !important;
+    }
+
+    .trust-arrow__left,
+    .trust-arrow__right {
+        position: absolute;
+        top: 31% !important;
+    }
+
+    .trust-arrow__right {
+        right: 24px;
+    }
+
+    .px-body {
+        padding: 0 24px !important;
+    }
+
+    .who-we__text h2,
+    .service h2,
+    .repair-types h2,
+    .why-we h2,
+    .results h2,
+    .trust h2 {
+        font-size: 32px !important;
+        line-height: 39px !important;
+    }
+
+    .services-row {
+        padding: 0px 24px !important;
+    }
+
+    .service-card span {
+        font-size: 36px !important;
+        padding: 0 6px !important;
+    }
+}
+
+@media (max-width: 325px) {
+    .who-we__card {
+        height: 140px !important;
+    }
+
+    .service-card__item {
+        height: 30vh !important;
+    }
+
+    .who-we__circle {
+        bottom: 2% !important;
+    }
+
+    .why-we__item {
+        padding: 25px 20px !important;
+        height: 50vh !important;
+    }
+
+    .why-we__item span {
+        bottom: -25% !important;
+    }  
+    .home {
+        padding-top: 15vh !important;
+    }
 }
 
 body {
@@ -34,20 +464,100 @@ textarea:focus {
     padding: 0 4vw;
 }
 
+.hamburger {
+    cursor: pointer;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 48px;
+    height: 48px;
+    background-color: #5F0E6A;
+    border-radius: 100%;
+}
+
+.hamburger div {
+    height: 3px;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.hamburger div:nth-child(1) {
+    width: 25px;
+    margin: 0 auto;
+}
+
+.hamburger div:nth-child(2) {
+    width: 25px;
+    margin: 0 auto;
+    margin-top: 4px;
+    transition: 1s all;
+    opacity: 1;
+}
+
+.hamburger div:nth-child(3) {
+    width: 25px;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+.sidebar__mobile {
+    background-color: #2A0030;
+    height: calc(110% - 78px);
+    margin-top: 78px;
+    position: fixed;
+    right: -100%;
+    width: 100%;
+    top: 0;
+    transition: 1s all;
+    z-index: 1999;
+}
+
+.active-sidebar {
+    right: 0%;
+    transition: 1s all;
+}
+
+.nav__chrested {
+    cursor: pointer;
+    transition: .4s all;
+    z-index: 200;
+}
+
+.nav__chrested div {
+    height: 3px;
+    background-color: #fff;
+}
+
+.nav__chrested div:nth-child(1) {
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+.nav__chrested div:nth-child(2) {
+    opacity: 0;
+    position: relative;
+    right: -1000%;
+}
+
+.nav__chrested div:nth-child(3) {
+    width: 25px;
+    transform: rotate(-45deg);
+    margin-top: -10px;
+}
+
 .nav-links a {
     display: inline-block;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    margin-right: 3vw;
 }
 
-.nav-links a:nth-child(1),
-.nav-links a:nth-child(2),
-.nav-links a:nth-child(3),
-.nav-links a:nth-child(4),
-.nav-links a:nth-child(5) {
-    margin-right: 3vw;
+.nav-links a:last-child {
+    margin-right: 0vw;
 }
 
 .pl-nav {
@@ -65,7 +575,9 @@ textarea:focus {
 }
 
 .home {
-    padding-top: calc(10vh + 92px);
+    padding-top: calc(10vh + 40px);
+    position: relative;
+    z-index: 5;
 }
 
 .home h1 {
@@ -88,21 +600,36 @@ textarea:focus {
 .home-buttons a {
     display: block;
     text-align: center;
-    padding: 18px 0;
+    padding: 16px 0;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
+    transition: .6s all;
     color: #52115A;
     background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.home-buttons a:hover {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    color: #fff;
 }
 
 .home-buttons:nth-child(1) a {
     color: #FFFFFF;
     background: rgba(95, 14, 106, 0.9);
+    border: 2px solid rgba(95, 14, 106, 0.9);
+}
+
+.home-buttons:nth-child(1) a:hover {
+    color: #FFFFFF;
+    background: transparent;
+    border: 2px solid #ffffff;
 }
 
 .mt-20 {
-    margin-top: 20vh;
+    margin-top: 11.4vh;
 }
 
 .home-links a {
@@ -111,6 +638,7 @@ textarea:focus {
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    margin-right: 3vw;
 }
 
 .home-links {
@@ -124,6 +652,7 @@ textarea:focus {
 
 .who-we__bg {
     position: relative;
+    right: 0;
     left: -2.1875vw;
     top: -20px;
 }
@@ -133,7 +662,7 @@ textarea:focus {
     background-size: contain;
     background-repeat: no-repeat;
     height: 75.9vh;
-    background-position: bottom;
+    background-position: center;
 }
 
 .who-we__text {
@@ -141,7 +670,11 @@ textarea:focus {
 }
 
 .who-we__text h2,
-.service h2, .repair-types h2, .why-we h2, .results h2, .trust h2 {
+.service h2,
+.repair-types h2,
+.why-we h2,
+.results h2,
+.trust h2 {
     font-weight: 800;
     font-size: 48px;
     line-height: 59px;
@@ -206,32 +739,22 @@ textarea:focus {
 }
 
 .repair-types h2 {
-    margin-bottom: 7.6vh;    
+    margin-bottom: 7.6vh;
+    margin-top: 7.75vh;
 }
 
 .results h2 {
-    margin-bottom: 8.9vh;    
+    margin-bottom: 8.9vh;
 }
 
 .trust h2 {
-    margin-bottom: 9.76vh;    
-}
-
-.nav {
-    position: absolute;
-    top: 0;
-    padding: 24px 0;
-    width: 100%;
+    margin-bottom: 9.76vh;
+    padding-top: 7.85vh;
 }
 
 .home-bg {
-    background-image: url(.././img/home-page/home-bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #2A0030;
 }
-
-
-
 
 .service-card__item {
     background-repeat: no-repeat;
@@ -253,8 +776,6 @@ textarea:focus {
     background-position: center center;
 }
 
-
-
 .service-card__item:hover p {
     color: #FFFFFF;
 }
@@ -268,6 +789,7 @@ textarea:focus {
     font-weight: bold;
     font-size: 18px;
     line-height: 140%;
+    margin-bottom: 0;
     color: #0F0F0F;
     text-align: center;
     transition: .8s all;
@@ -323,8 +845,8 @@ textarea:focus {
 
 .masters {
     background: #2A0030;
-    padding-top: 22px;
-    margin-bottom: 7.75vh;
+    position: relative;
+    z-index: 5;
 }
 
 .masters a {
@@ -359,6 +881,8 @@ textarea:focus {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    z-index: 5;
+    position: relative;
 }
 
 .pl-10 {
@@ -369,6 +893,7 @@ textarea:focus {
     margin-top: calc(11.4vh - 22px);
     margin-bottom: 11.4vh;
 }
+
 .repair-bg {
     background-size: cover;
     position: relative;
@@ -389,9 +914,7 @@ textarea:focus {
     bottom: 0%;
 }
 
-
-
-.repair-content h4{
+.repair-content h4 {
     font-weight: bold;
     font-size: 28px;
     line-height: 140%;
@@ -399,7 +922,7 @@ textarea:focus {
     color: #FFFFFF;
 }
 
-.repair-content p{
+.repair-content p {
     font-size: 18px;
     line-height: 140%;
     margin-top: 20px;
@@ -407,7 +930,7 @@ textarea:focus {
     color: #FFFFFF;
 }
 
-.repair-content a{
+.repair-content a {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
@@ -430,11 +953,15 @@ textarea:focus {
 
 .repair-types {
     padding-bottom: 9vh;
+    position: relative;
+    z-index: 5;
 }
 
 .why-we {
     background: #ECEEF0;
     padding-top: 9vh;
+    position: relative;
+    z-index: 30;
 }
 
 .why-we__cards {
@@ -460,13 +987,13 @@ textarea:focus {
     flex-direction: column;
     justify-content: center;
     height: 35.5vh;
-    transition: .6s all;
+    transition: .8s all;
     width: 25%;
     border-left: 1px solid rgba(42, 0, 48, 0.3);
     overflow-y: hidden;
 }
 
-.why-we__item h5{
+.why-we__item h5 {
     font-weight: bold;
     font-size: 18px;
     line-height: 140%;
@@ -474,7 +1001,7 @@ textarea:focus {
     transition: .6s all;
 }
 
-.why-we__item p{
+.why-we__item p {
     font-weight: normal;
     font-size: 18px;
     line-height: 140%;
@@ -482,7 +1009,7 @@ textarea:focus {
     color: #000000;
 }
 
-.why-we__item span{
+.why-we__item span {
     font-weight: bold;
     font-size: 96px;
     line-height: 140%;
@@ -498,11 +1025,12 @@ textarea:focus {
     background-position: center center;
 }
 
-.why-we__item:hover p, .why-we__item:hover h5{
+.why-we__item:hover p,
+.why-we__item:hover h5 {
     color: #FFFFFF;
 }
 
-.why-we__item:hover span{
+.why-we__item:hover span {
     color: #ECEEF0;
 }
 
@@ -527,7 +1055,8 @@ textarea:focus {
     height: 76vh;
 }
 
-.results-arrow__left, .results-arrow__right {
+.results-arrow__left,
+.results-arrow__right {
     z-index: 20;
     cursor: pointer;
     display: flex;
@@ -536,7 +1065,7 @@ textarea:focus {
     top: 55%;
 }
 
-.results-arrow__left{
+.results-arrow__left {
     left: 15%;
 }
 
@@ -547,17 +1076,18 @@ textarea:focus {
 .results-slider {
     cursor: grab;
 }
+
 .info {
-    background-image: url(.././img/home-page/info-bg.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #2A0030;
+    position: relative;
+    z-index: 10;
 }
 
-.info span{
+.info span {
     background-color: #5F0E6A;
 }
 
-.info h3{
+.info h3 {
     font-weight: bold;
     font-size: 48px;
     line-height: 138%;
@@ -565,7 +1095,7 @@ textarea:focus {
     margin-bottom: 24px;
 }
 
-.info p{
+.info p {
     font-size: 18px;
     line-height: 140%;
     margin-bottom: 6.7vh;
@@ -574,14 +1104,15 @@ textarea:focus {
 
 
 
-.info-form input{
+.info-form input {
     width: 100%;
     padding: 18px 2vw;
     border: 2px solid rgba(255, 255, 255, 0.4);
     background: transparent;
 }
 
-.info-form input, .info-form input::placeholder {
+.info-form input,
+.info-form input::placeholder {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
@@ -592,7 +1123,7 @@ textarea:focus {
     padding-top: 10.8vh;
 }
 
-.info-form button{
+.info-form button {
     background: rgba (255, 255, 255, 0.9);
     font-weight: bold;
     font-size: 16px;
@@ -608,8 +1139,13 @@ textarea:focus {
 }
 
 .trust {
-    margin-top: 7.85vh;
+    position: relative;
     padding-bottom: 12.2vh;
+    background-image: url(.././img/home-page/qwerty.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
 }
 
 .trust-slider {
@@ -624,7 +1160,7 @@ textarea:focus {
     color: #000000;
 }
 
-.trust-slider small{
+.trust-slider small {
     font-weight: bold;
     font-size: 18px;
     line-height: 140%;
@@ -640,7 +1176,7 @@ textarea:focus {
     color: #BDBDBD;
 }
 
-.slider-counters span{
+.slider-counters span {
     font-weight: 800;
     font-size: 48px;
     line-height: 59px;
@@ -649,18 +1185,22 @@ textarea:focus {
     padding-right: 22px;
 }
 
-.trust-arrow__left, .trust-arrow__right{
+.trust-arrow__left,
+.trust-arrow__right {
     cursor: pointer;
+    z-index: 1488;
 }
 
 .footer {
     background-image: url(.././img/home-page/footer-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 4;
+    position: relative;
     padding-top: 6.1vh;
 }
 
-.footer h3{
+.footer h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -678,22 +1218,21 @@ textarea:focus {
     transition: .4s all;
 }
 
-.footer-socail__links a:hover{
+.footer-socail__links a:hover {
     padding-left: 1vw;
 }
 
-.footer-socail__links a:last-child {
-    margin-bottom: 0px;
-}
 
-.footer-nav-links a{
+
+.footer-nav-links a {
     font-size: 18px;
     line-height: 140%;
     display: block;
     margin-bottom: 18px;
     color: #FFFFFF;
 }
-.footer-nav-links a:last-child{
+
+.footer-nav-links a:last-child {
     margin-bottom: 0px;
 }
 
@@ -701,7 +1240,7 @@ textarea:focus {
     padding-top: 12vh;
 }
 
-.footer-form input{
+.footer-form input {
     width: 100%;
     margin-bottom: 16px;
     padding: 18px 32px;
@@ -709,14 +1248,15 @@ textarea:focus {
     border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-.footer-form input, .footer-form input::placeholder{
+.footer-form input,
+.footer-form input::placeholder {
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
 }
 
-.footer-form button{
+.footer-form button {
     width: 100%;
     font-weight: bold;
     font-size: 16px;
@@ -728,12 +1268,14 @@ textarea:focus {
     border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-.studio-reference, .studio-reference a{
+.studio-reference,
+.studio-reference a {
     font-size: 14px;
     line-height: 115.9%;
     color: #FFFFFF;
-} 
-.studio-link{
+}
+
+.studio-link {
     font-weight: 500;
 }
 
@@ -741,3 +1283,146 @@ textarea:focus {
     padding-top: 6.2vh;
     padding-bottom: 10.4vh;
 }
+
+.verical-line {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    height: 110vh;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.verical-line-2 {
+    position: absolute;
+    right: 0;
+    height: 110vh;
+    z-index: 1;
+    width: 1px;
+    background-color: rgba(234, 229, 234, 0.1);
+}
+
+.info-trust {
+    z-index: 1;
+    position: relative;
+}
+
+.lines-container {
+    width: 100%;
+    position: relative;
+}
+
+.verical-line_w {
+    background-color: rgba(42, 0, 48, 0.1);
+}
+
+
+
+.masters-repair {
+    z-index: 3;
+    position: relative;
+}
+
+
+
+
+
+.home-picture {
+    background-image: url(.././img/home-page/zxc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60vh;
+}
+
+.circle-container {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+
+.sidebar-links a {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 3vh;
+}
+
+.sidebar-repair__types a {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.sidebar-repair__types a:last-child {
+    margin-bottom: 24px;
+}
+
+.sidebar-repair__types {
+    margin-top: 8px;
+}
+
+.sidebar-social__links {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.sidebar-social__links a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.mobile-navbar {
+    padding: 15px 0;
+}
+
+.navbar-custom {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 24px 0;
+}
+
+.mobile-navbar-container {
+    background-color: #2A0030;
+}
+
+.footer-mob-img {
+    position: absolute;
+    bottom: 0;
+}
+
+.sect2-pos {
+    position: relative;
+    right: -24px;
+}
+
+.card-my {
+    transform: translateY(65%);
+}
+
+.who-we__circle {
+    position: absolute;
+    right: 0px;
+    bottom: 4%;
+}
+
+.why-we-mobile-slider {}
