@@ -151,11 +151,11 @@
         <section class="who-we position-relative">
             <div class="who-we-bg-top m-hide"><img src="./img/home-page/who-we-bg-top.svg"></div>
             <div class="who-we-bg-bottom m-hide"><img src="./img/home-page/who-we-bg-bottom.svg"></div>
-            <img class="who-we__circle" src="./img/home-page/who-we-mobile.svg">
+            <img class="who-we__circle d-lg-none" src="./img/home-page/who-we-mobile.svg">
             <div class="container-fluid px-body">
                 <div class="row">
-                    <div class="col-lg who-we__text">
-                        <div class="d-md-none">
+                    <div class="col-lg who-we__text d-md-none">
+                        <div>
                             <h2>хто ми такі ?</h2>
                             <img src="./img/home-page/who-we-arrows.svg">
                         </div>
@@ -210,7 +210,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row no-gutters justify-content-between mb-5 position-relative">
+                        <div class="row no-gutters justify-content-between mb-5 position-relative d-lg-none">
                             <div class="col-6 who-we__card">
                                 <div>
                                     <h6>11</h6>
@@ -440,7 +440,9 @@
                     </div>
                 </div>
 
-                <div class="row no-gutters whywe-mobile-slider">
+                <div class="whywe-mobile__left d-lg-none"><img src="./img/home-page/arrow-left-mobile.svg"></div>
+                <div class="whywe-mobile__right d-lg-none"><img src="./img/home-page/arrow-right-mobile.svg"></div>
+                <div class="row no-gutters whywe-mobile-slider d-lg-none">
                     <div class="why-we__item">
                         <h5>Ремонт будь-якої складності</h5>
                         <p>Виконаємо ремонт будь-якої складності і будь-якого приміщення в призначені терміни.</p>
@@ -764,8 +766,8 @@
                 touchMove: true,
                 draggable: true,
                 arrows: true,
-                prevArrow: $('.results-arrow__left'),
-                nextArrow: $('.results-arrow__right')
+                prevArrow: $('.whywe-mobile__left'),
+                nextArrow: $('.whywe-mobile__right')
             });
         });
 

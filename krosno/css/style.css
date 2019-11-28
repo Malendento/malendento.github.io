@@ -339,6 +339,16 @@
         bottom: -20% !important;
         right: 10px;
     }
+    
+        .why-we__item span {
+        bottom: -15% !important;
+    }  
+}
+
+@media (max-width: 768px) {
+    .px-body {
+        padding: 0 24px !important;
+    }
 }
 
 @media (min-width: 450.98px) {
@@ -1426,3 +1436,16 @@ textarea:focus {
 }
 
 .why-we-mobile-slider {}
+.whywe-mobile__left {
+ position: absolute;
+    z-index: 1488;
+    top: 60%;
+    left: 0;
+}
+
+.whywe-mobile__right {
+     position: absolute;
+    z-index: 1488;
+    top: 60%;
+    right: 0;
+}
