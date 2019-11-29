@@ -248,8 +248,21 @@
                         <h3>дорожня галузь та транспорт</h3>
                     </a>
                 </div>
+                
+<!--                NEW FEATURE-->
+                
+                <div id="collapseBranches" class="row branches-anchors no-gutters px-mobile collapse">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/aeroport.svg">
+                        <h3>дорожня галузь та транспорт</h3>
+                    </a>
+                    <a href="#">
+                        <img class="img-fluid" src="./img/aeroport.svg">
+                        <h3>дорожня галузь та транспорт</h3>
+                    </a>
+                </div>
                 <div class="row no-gutters justify-content-center px-mobile">
-                    <a class="branches__button" href="#"><span>усі галузі</span></a>
+                    <button class="branches__button" data-toggle="collapse" data-target="#collapseBranches" role="button" aria-expanded="false" aria-controls="collapseBranches"><span>усі галузі</span></button>
                 </div>
             </div>
         </section>
@@ -299,8 +312,33 @@
                     </a>
                     <p class="products-text__mobile d-lg-none">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
                 </div>
+                
+<!--                NEW FEATURE-->
+                
+                <div id="collapseProducts" class="collapse">
+                    <div class="row no-gutters px-mobile">
+                        <a href="#" class="products-card" style="background-image: url(./img/products.png)">
+                            <div class="col-lg-6 pl-lg-5 pl-0 text-lg-left text-center">
+                                <h3>Навантажувачі</h3>
+                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                                <img src="./img/Arrow-left.svg">
+                            </div>
+                        </a>
+                        <p class="products-text__mobile d-lg-none">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                    </div>
+                    <div class="row no-gutters px-mobile">
+                        <a href="#" class="products-card" style="background-image: url(./img/products.png)">
+                            <div class="col-lg-6 pl-lg-5 pl-0 text-lg-left text-center">
+                                <h3>Навантажувачі</h3>
+                                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                                <img src="./img/Arrow-left.svg">
+                            </div>
+                        </a>
+                        <p class="products-text__mobile d-lg-none">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+                    </div>
+                </div>
                 <div class="row no-gutters justify-content-center px-mobile">
-                    <a class="products__button" href="#"><span>усі продукти</span></a>
+                    <button class="products__button" data-toggle="collapse" data-target="#collapseProducts" role="button" aria-expanded="false" aria-controls="collapseProducts"><span>усі продукти</span></button>
                 </div>
             </div>
         </section>

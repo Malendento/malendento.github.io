@@ -92,13 +92,21 @@
                             <div class="col-8 text-center nav-links align-self-center">
                                 <a href="#">Хто ми</a>
                                 <a href="#">Наші послуги</a>
-                                <a href="#">Типи ремонтів<img class="pl-2" src="./img/home-page/navbar-arrow.svg"></a>
+                                <div class="popover__wrapper">
+                                    <a href="#">Типи ремонтів<img class="rotate pl-2" src="./img/home-page/navbar-arrow.svg">
+                                    </a>
+                                    <div class="popover__content">
+                                        <a href="#">Косметичний</a>
+                                        <a href="#">Капітальний</a>
+                                        <a href="#">Все включено</a>
+                                    </div>
+                                </div>
                                 <a href="#">Чому ми</a>
                                 <a href="#">Галерея робіт</a>
                                 <a href="#">Контакти</a>
                             </div>
                             <div class="col-2 pl-nav text-center">
-                                <a class="order-button" href="#">Замовити послугу</a>
+                                <a class="order-button" href="#" data-toggle="modal" data-target="#orderServiceModal">Замовити послугу</a>
                             </div>
                         </div>
                     </div>
@@ -372,7 +380,7 @@
                     </div>
                     <div class="repair-types__card">
                         <div class="repair-bg" style="background-image: url(.././img/home-page/all-include.png)">
-                            <div class="repair-content">
+                            <div class="repair-content repair-content-pos">
                                 <h4>Все включено</h4>
                                 <p>Клієнт приймає участь тільки в затверджені індивідуального дизайну, а всі інші роботи виконуємо ми. В пропозиції розрахована вартість всіх робіт та матеріалів.</p>
                                 <div class="row no-gutters">
@@ -815,31 +823,32 @@
     <script>
         const phoneMask = IMask(
             document.getElementById('recipient-phone-first'), {
-                mask: '+{00}(000)000-00-00'
+                mask: '+{00}(000)000-00-00',
             },
         );
     </script>
     <!--   MODAL-FAST-ORDER-->
-    <!--
-    <div class="modal fade" id="orderFastModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+    <div class="modal fade" id="orderServiceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-content-custom">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 <div class="modal-body">
-                    <form action="">
+                    <form action="" method="">
                         <div class="row justify-content-center no-gutters">
-                            <div class="col-12 text-center">
-                                <h3>швидшке замовлення</h3>
+                            <div class="col-10 text-center mb-4">
+                                <h4>Залиште ваші контакти і ми вам зателефонуємо</h4>
                             </div>
                             <div class="col-10">
-                                <span>Ваше ім'я</span>
-                                <input type="text" name="recipient-modal-name" required="">
+                                <input type="text" name="recipient-modal-name" required="" placeholder="Ваше ім'я">
                             </div>
                             <div class="col-10">
-                                <span>Ваш телефон</span>
-                                <input id="recipient-phone" type="tel" name="recipient-modal-phone" required="">
+                                <input id="recipient-phone" type="tel" name="recipient-modal-phone" required="" placeholder="Номер телефону">
                             </div>
                             <div class="col-7 text-center">
-                                <button type="submit">Зателефонуйте мені</button>
+                                <button class="form-modal-button" type="submit">Зателефонуйте мені</button>
                             </div>
                         </div>
                     </form>
@@ -847,7 +856,7 @@
             </div>
         </div>
     </div>
--->
+
 </body>
 
 </html>
