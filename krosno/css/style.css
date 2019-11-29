@@ -961,7 +961,7 @@ textarea:focus {
 
 .service-card__item {
     background-repeat: no-repeat;
-    background-position: -1000px 50%;
+    background-position: 50% 1000px;
     background-size: cover;
     background-image: none;
     cursor: pointer;
