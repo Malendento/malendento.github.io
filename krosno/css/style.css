@@ -1096,6 +1096,7 @@ textarea:focus {
 }
 
 .repair-bg {
+    background-image: url(.././img/home-page/cosmetic.png);
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
