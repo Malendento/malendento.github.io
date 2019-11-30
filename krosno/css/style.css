@@ -650,6 +650,10 @@
         top: 27% !important;
     }
 
+    .you-get__item {
+        height: 30vh !important;
+    }
+
     .finished-arrow__right {
         top: 27% !important;
     }
