@@ -895,9 +895,13 @@ button.active-language {
     background-repeat: no-repeat;
     height: 100vh;
     padding-top: 20.3vh;
+    background-position: center;
 }
 
-
+.blog-page-background {
+    background-image: url(.././img/blog/head-bg.svg);
+    height: 80vh;
+}
 
 .info h1,
 .blog-page h1 {
@@ -1306,10 +1310,6 @@ button.active-language {
     transition: .4s all;
 }
 
-.blog-news a:hover {
-    padding-left: 10px;
-}
-
 .blog-news__item {
     width: 32%;
 }
@@ -1317,15 +1317,6 @@ button.active-language {
 .blog-news__item:nth-child(1),
 .blog-news__item:nth-child(2) {
     margin-right: 2%;
-}
-
-.news-item__image {
-    background-image: url(.././img/team-image.png);
-    height: 63.4vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
 }
 
 .footer {
@@ -2385,4 +2376,93 @@ a.mobile__buttons-bottom {
     box-sizing: border-box;
     border-radius: 30px;
     padding: 15px 0;
+}
+
+
+
+
+
+
+.news-item__image {
+    background-image: url(.././img/team-image.png);
+    height: 63.4vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.news-item__image div{
+    width: 100%;
+    height: 100%;
+    transition: .6s all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(17, 12, 69, 0.4);
+     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+}
+
+.news-item__image a{
+    width: 40%;
+    margin: auto;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 36px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+    color: #FFFFFF;
+    transition: opacity .6s easy-in-out;
+    opacity: 0;
+}
+
+.news-item__image:hover a{
+    opacity: 1;
+    padding: 10px 0px !important;
+}
+
+.news-item__image:hover div{
+    opacity: 1;
+}
+
+.blog-news a:last-child:hover {
+    padding-left: 10px;
+}
+.block-item {
+    margin-left: 0%;
+    margin-bottom: 40px;
+    width: 100%;
+    background: #FAFAFA;
+    box-shadow: 0px 4px 16px rgba(44, 44, 44, 0.1);
+    border-radius: 5px;
+}
+
+.block-item div{
+    padding: 17px;
+}
+
+.block-item h5{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 0;
+    align-items: center;
+    color: #2C2C2C;
+}
+
+.block-item a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    align-items: center;
+    color: #6D5FFF;
+}
+
+.block-item a:hover{
+    text-decoration: underline;
 }

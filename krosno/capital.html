@@ -27,17 +27,10 @@
         <div class="container-fluid px-body">
             <div class="row no-gutters">
                 <div class="sidebar-links">
-                    <a href="#">Хто ми</a>
-                    <a href="#">Наші послуги</a>
-                    <a class="mb-0" href="#">Типи ремонтів </a>
-                    <div class="sidebar-repair__types">
-                        <a href="#">Косметичний ремонт</a>
-                        <a href="#">Капітальний ремонт</a>
-                        <a href="#">Все включено</a>
-                    </div>
-                    <a href="#">Чому ми</a>
-                    <a href="#">Галерея робіт</a>
-                    <a class="mb-0" href="#">Контакти</a>
+                    <a href="#you-get">Список послуг</a>
+                    <a href="#finished">Виконані замовлення</a>
+                    <a href="#how-we-work">Як ми працюємо</a>
+                    <a href="#contacts">Контакти</a>
                 </div>
             </div>
             <div class="row no-gutters">
@@ -90,20 +83,10 @@
                                 </a>
                             </div>
                             <div class="col-8 text-center nav-links align-self-center">
-                                <a href="#">Хто ми</a>
-                                <a href="#">Наші послуги</a>
-                                <div class="popover__wrapper">
-                                    <a href="#">Типи ремонтів<img class="rotate pl-2" src="./img/home-page/navbar-arrow.svg">
-                                    </a>
-                                    <div class="popover__content">
-                                        <a href="#">Косметичний</a>
-                                        <a href="#">Капітальний</a>
-                                        <a href="#">Все включено</a>
-                                    </div>
-                                </div>
-                                <a href="#">Чому ми</a>
-                                <a href="#">Галерея робіт</a>
-                                <a href="#">Контакти</a>
+                                <a href="#you-get">Список послуг</a>
+                                <a href="#finished">Виконані замовлення</a>
+                                <a href="#how-we-work">Як ми працюємо</a>
+                                <a href="#contacts">Контакти</a>
                             </div>
                             <div class="col-2 pl-nav text-center">
                                 <a class="order-button" href="#" data-toggle="modal" data-target="#orderServiceModal">Замовити послугу</a>
@@ -132,7 +115,7 @@
                             <p class="pr-0 mb-5">Найкращий варіант для повного оновлення інтер’єру, або ремонту у новобудові. Капітальний ремонт принесе вам нову якість життя.</p>
                             <div class="row no-gutters pb-lg-0 pb-5">
                                 <div class="col-lg-4 home-buttons mr-lg-4 mb-lg-0 mb-md-4 mb-3">
-                                    <a href="#">Замовити послугу</a>
+                                    <a href="#" data-toggle="modal" data-target="#orderServiceModal">Замовити послугу</a>
                                 </div>
                                 <div class="col-lg-4 home-buttons mb-lg-0 mb-4">
                                     <a href="#">Список послуг</a>
@@ -159,7 +142,7 @@
 
         <section class="you-get">
             <div class="container-fluid px-body">
-                <div class="row no-gutters">
+                <div id="you-get" class="row no-gutters">
                     <div class="col-12 text-lg-left text-center">
                         <div class="d-md-flex mb-3">
                             <h2>що ви отримуєте ?</h2>
@@ -221,7 +204,7 @@
                     <div class="col-lg-4 my-lg-auto text-lg-left text-center">
                         <h3 class="mb-lg-3 mb-md-4">Нова суперціна</h3>
                         <span>Акційний період розпочато - економія до 30%</span>
-                        <a class="m-hide" href="#">Замовити послугу</a>
+                        <a class="m-hide" href="#" data-toggle="modal" data-target="#orderServiceModal">Замовити послугу</a>
                     </div>
                     <div class="col-lg-4 m-hide">
                         <img class="img-fluid" src="./img/repair/devylya.png">
@@ -239,7 +222,7 @@
             <div class="container-fluid px-body position-relative">
                 <div class="row no-gutters">
                     <div class="col-12 text-center">
-                        <h2 class="mb-lg-5">виконані замовлення</h2>
+                        <h2 id="finished" class="mb-lg-5">виконані замовлення</h2>
                     </div>
                 </div>
                 <div class="finished-arrow__left"><img src="./img/home-page/arrow-left-mobile.svg"></div>
@@ -319,7 +302,7 @@
         </section>
 
         <section class="repair-work">
-            <div class="container-fluid px-body">
+            <div id="how-we-work" class="container-fluid px-body">
                 <div class="row no-gutters">
                     <div class="col-12 text-center">
                         <h2 class="mb-lg-5 mb-4">як ми працюємо</h2>
@@ -403,7 +386,7 @@
                     <div class="col-xl-7 col-lg-9 my-lg-auto">
                         <h3 class="mb-lg-4 text-lg-left text-center">Залишайте заявку та отримуйте найкращу цінову пропозицію</h3>
                         <span class="banner-text-mobile">Скористайтесь пропозицію уже зараз. Акційний період обмежений.</span>
-                        <a class="w-30 m-hide" href="#">Замовити послугу</a>
+                        <a class="w-30 m-hide" href="#" data-toggle="modal" data-target="#orderServiceModal">Замовити послугу</a>
                     </div>
                     <div class="col-xl-4 col-lg-3 my-lg-auto text-center mt-lg-0 mt-4">
                         <small>₴‎3500/м²</small>
@@ -415,7 +398,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contacts" class="footer">
         <img class="img-fluid footer-mob-img" src="./img/home-page/footer-mobile.svg">
         <div class="container-fluid px-body">
             <div class="row no-gutters">
