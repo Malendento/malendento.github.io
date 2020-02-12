@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="31.818" viewBox="0 0 40 31.818">
+  <g id="Group_47" data-name="Group 47" transform="translate(-145.5 -818)">
+    <path id="Path_96" data-name="Path 96" d="M182.773,849.818H148.227a2.731,2.731,0,0,1-2.727-2.727V820.727A2.731,2.731,0,0,1,148.227,818h34.545a2.731,2.731,0,0,1,2.727,2.727v26.364A2.731,2.731,0,0,1,182.773,849.818Zm-34.545-30a.91.91,0,0,0-.909.909v26.364a.91.91,0,0,0,.909.909h34.545a.91.91,0,0,0,.909-.909V820.727a.91.91,0,0,0-.909-.909Z" transform="translate(0 0)" fill="#1e5d58"/>
+    <path id="Path_97" data-name="Path 97" d="M165.528,836.987a3.625,3.625,0,0,1-2.507-1l-17.21-16.39,1.253-1.318,17.211,16.391a1.813,1.813,0,0,0,2.507,0l17.21-16.391,1.255,1.318-17.211,16.39A3.627,3.627,0,0,1,165.528,836.987Z" transform="translate(-0.028 -0.025)" fill="#1e5d58"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="21.894" height="1.818" transform="translate(145.807 848.233) rotate(-41.653)" fill="#1e5d58"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" width="1.818" height="21.894" transform="matrix(0.664, -0.747, 0.747, 0.664, 167.623, 835.043)" fill="#1e5d58"/>
+  </g>
+</svg>

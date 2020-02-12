@@ -1,0 +1,1029 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.px-container {
+    padding: 0 3.8125vw;
+}
+
+.diseases-bg {
+    background-color: #E0C0B4;
+    padding: 8vh 6.25vw;
+}
+
+.landing-diseases h2,
+.our-success h2,
+.landing-sect3 h2,
+.how-to-care h2,
+.howItWorks h2,
+.landing-sign-up h2,
+.landing-results h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 4vh;
+}
+
+.our-success h2,
+.landing-sect3 h2 {
+    margin-bottom: 5vh;
+}
+
+.how-to-care h2 {
+    margin-top: 10.5vh;
+    margin-bottom: 8.8vh;
+}
+
+.howItWorks h2 {
+    margin-bottom: 6vh;
+}
+
+.landing-sign-up h2 {
+    margin-top: 12vh;
+    margin-bottom: 3.4vh;
+}
+
+.landing-results h2 {
+    margin-bottom: 7.5vh;
+}
+
+.landing-diseases p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #231F20;
+    margin-bottom: 6.6vh;
+}
+
+.landing-diseases button {
+    font-size: 22px;
+    line-height: 26px;
+    background: transparent;
+    outline: none;
+    border: 2px solid #000000;
+    color: #111111;
+    padding: 16px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.our-success {
+    margin-top: 13vh;
+}
+
+.diseases-content__bg {
+    background-image: url(.././img/landing-img/a6fcb31027ab390d91fc4dbac2b1f594.png);
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.success-bg p {
+    background: #E0C0B4;
+    padding: 3vw;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 145%;
+    margin-bottom: 0;
+}
+
+.success-info-bg {
+    background: #E0C0B4;
+    width: 24%;
+}
+
+.success-info-bg h5 {
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 105px;
+    margin: 5vh 0 2.3vh 0;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.success-info-bg span {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 5vh;
+    display: block;
+}
+
+.success-doctor-left {
+    position: absolute;
+    bottom: 0;
+    left: -1.5%;
+}
+
+.success-doctor-right {
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+}
+
+.success-doctors {
+    justify-content: space-evenly;
+}
+
+.success-doctors h6 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.success-doctors small {
+    font-size: 18px;
+    line-height: 145%;
+    color: #000000;
+}
+
+.success-mt-15 {
+    margin-top: 15vh;
+}
+
+.success-mt-10 {
+    margin-top: 9.5vh;
+    margin-bottom: 7vh;
+}
+
+.landing-sect3 {
+    margin-top: 12vh;
+}
+
+.landing-sect3 p,
+.landing-sect3 li {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 140%;
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+.sect3-quote p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.09em;
+    color: #000000;
+}
+
+.sect3-quote img {
+    position: relative;
+    bottom: -20px;
+}
+
+.landing-sect3 ul {
+    list-style: none;
+}
+
+.landing-sect3 ul li::before {
+    content: "\2022";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #E0C0B4;
+    /* Change the color */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+.sect3-pl {
+    padding-left: 5% !important;
+}
+
+.sect3-bg {
+    background-image: url(.././img/landing-img/sect-3.svg);
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.sect3-quote {
+    position: absolute;
+    top: -10vh;
+    right: 5%;
+    display: flex;
+    background: #E0C0B4;
+    padding: 2.5vw;
+}
+
+.how-to-care {
+    margin-top: 25vh;
+}
+
+.care-b-top {
+    border-top: 1px solid #0b0b0b;
+}
+
+.care-tab {
+    width: 100%;
+}
+
+.care-tab a {
+    text-transform: uppercase;
+    padding: 8px 10px;
+    font-size: 22px;
+    line-height: 48px;
+    color: #000000 !important;
+    transition: .6s all;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background: #E0C0B4;
+    width: 100%;
+}
+
+.landing-care-content {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    padding: 1.25vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.care-content__bg {
+    background-image: url(.././img/landing-img/sect-4.png);
+    width: 100%;
+    height: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.care-content__text {
+    width: 55%;
+}
+
+.care-content__text p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #000000;
+    margin-bottom: 6vh;
+}
+
+.care-content__text button {
+    font-size: 22px;
+    line-height: 26px;
+    color: #111111;
+    background: transparent;
+    outline: none;
+    padding: 15px 0;
+    width: 65%;
+    text-transform: uppercase;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    display: block;
+    margin-left: auto;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+
+.care-content__bg-size {
+    width: 40%;
+}
+
+.landing-how-it-works {
+    margin-top: 14.5vh;
+}
+
+.first-step {
+    display: flex;
+    justify-content: center;
+    width: 5.9375vw;
+    height: 5.9375vw;
+    background: #E0C0B4;
+    border-radius: 100%;
+}
+
+.first-step div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.howItWorks-card p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #000000;
+    padding-right: 1.5vw;
+    margin-bottom: 0;
+}
+
+.howItWorks-card {
+    padding: 20px 21px 27px 3.375vw !important;
+}
+
+.landing-sign-up {
+    margin-top: 12.5vh;
+    background-size: auto;
+    background-image: url(.././img/landing-img/landing-sign-up.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-bottom: 27vh;
+}
+
+.landing-sign-up p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 131.19%;
+    margin-bottom: 5vh;
+    color: #000000;
+}
+
+.howItWorks-bb {
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5vh;
+}
+
+.landing-form-sign input,
+.landing-form-sign label {
+    width: 100%;
+}
+
+.landing-form-sign span {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    display: block;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.landing-form-sign input,
+.landing-form-sign input::placeholder {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.32;
+}
+
+.landing-form-sign input {
+    opacity: 1;
+    border: 1px solid #000000;
+    outline: none;
+    padding: 24px 18px;
+    margin-bottom: 14px;
+}
+
+.landing-form-sign button {
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background: #0b0b0b;
+    padding: 16px 0;
+    width: 65%;
+    text-transform: uppercase;
+    margin-top: 4.5vh;
+    outline: none;
+    border: none;
+}
+
+.landing-slider__item {
+    width: 99%;
+    border: 1px solid #000000;
+    margin: auto;
+}
+
+.landing-slider__item h3 {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3.8vh;
+    margin-bottom: 3vh;
+}
+
+.landing-slider__item p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 131.19%;
+    color: #000000;
+    padding: 0 1.25vw;
+    margin-bottom: 5vh;
+}
+
+.landing-results-slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landing-slider-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 53.5vh;
+    position: relative;
+}
+
+.landing-slider-image div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #E0C0B4;
+    width: 9vw;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 131.19%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 11px 0;
+    color: #000000;
+}
+
+.landing-slider-left,
+.landing-slider-right {
+    cursor: pointer;
+}
+
+.landing-results {
+    margin-bottom: 11vh;
+}
+
+.landing-clients-card {
+    width: 32.75%;
+    background: #E0C0B4;
+    padding: 1.25vw;
+}
+
+.landing-clients-card p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 131.19%;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.landing-clients-card h6 {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.landing-clients-card span {
+    font-size: 18px;
+    line-height: 21px;
+    color: #5C5C5C;
+}
+
+.contacts-recall {
+    margin-top: 12.8vh;
+    margin-bottom: 11vh;
+}
+
+.contacts-recall h4 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 14px;
+}
+
+.contacts-recall span {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contacts-recall-card {
+    background: #E0C0B4;
+    padding: 9.5vh 9.375vw !important;
+}
+
+.landing-form-recall input,
+.landing-form-recall textarea {
+    width: 100%;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    padding: 18px 24px;
+    margin-bottom: 14px;
+    border: 1px solid #000000;
+}
+
+.landing-form-recall label {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.landing-form-recall input::placeholder,
+.landing-form-recall textarea::placeholder {
+    opacity: 0.4;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.landing-form-recall button {
+    font-size: 25px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: #000000;
+    padding: 16px 0;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    text-transform: uppercase;
+    transition: 0.6s all;
+    margin-top: 5.5vh;
+}
+
+.landing-doctor-mobile h5 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 24px 0 8px;
+}
+
+.landing-doctor-mobile small {
+    font-size: 18px;
+    line-height: 145%;
+    color: #000000;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.landing-accordion-card {
+    background-color: #fff;
+    padding: 30px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    border-radius: 0;
+}
+
+.landing-accordion-card-header {
+    background: transparent;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    padding: 0 8px;
+
+}
+
+.landing-accordion-card-header button {
+    background: transparent;
+    padding: 4px 8px;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #000000;
+    border: none;
+    border-radius: 0;
+    text-align: left;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.landing-accordion-card-body {
+    padding: 0 8px;
+    margin: 25px 0 6.5vh 0;
+}
+
+.landing-accordion-card-body p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 131.19%;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.landing-accordion-card-body button {
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    padding: 16px 0;
+    color: #111111;
+    width: 100%;
+    background: transparent;
+    border: 2px solid #000000;
+    text-transform: uppercase;
+}
+
+.landing-accordion-card .btn-link.focus,
+.btn-link:focus {
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.landing-accordion-card .btn-link:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.card-header img {
+    transition: .6s all;
+}
+
+.card-header [aria-expanded=true] > img {
+    transform: rotate(180deg);
+}
+
+.card-header [aria-expanded=true] {
+    background: #E0C0B4;
+}
+
+.landing-accordion-picture {
+    background-image: url(.././img/landing-img/accordion-mob-pict.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30vh;
+    margin-bottom: 25px;
+}
+
+.clients-mobile-card {
+    background: #E0C0B4;
+    padding: 16px;
+    width: 100%;
+}
+
+
+@media (max-width: 1367px) {
+    .landing-sign-up {
+        background-size: contain;
+    }
+
+    .landing-slider-image {
+        height: 45vh;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .diseases-bg {
+        padding: 4vh 4vw;
+    }
+
+    .landing-diseases h2,
+    .our-success h2,
+    .landing-sect3 h2,
+    .how-to-care h2,
+    .howItWorks h2,
+    .landing-sign-up h2,
+    .landing-results h2 {
+        font-size: 35px;
+        line-height: 42px;
+        margin-bottom: 3vh;
+    }
+
+    .landing-diseases p {
+        margin-bottom: 3vh;
+    }
+
+    .our-success {
+        margin-top: 8vh;
+    }
+
+    .success-doctor-left,
+    .success-doctor-right {
+        max-height: 28vh;
+    }
+
+    .success-mt-15 {
+        margin-top: 10vh;
+    }
+
+    .success-doctors {
+        justify-content: center;
+    }
+
+    .success-mt-10 {
+        margin-top: 8vh;
+        margin-bottom: 5vh;
+    }
+
+    .success-info-bg h5 {
+        font-size: 70px;
+        line-height: 85px;
+        margin: 1vh 0 2vh 0;
+    }
+
+    .success-info-bg span {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 1vh;
+    }
+
+    .landing-sect3 {
+        margin-top: 6vh;
+    }
+
+    .landing-sect3 p,
+    .landing-sect3 li {
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .sect3-bg {
+        height: 100%;
+        background-size: contain;
+        margin-top: 5vh;
+    }
+
+    .sect3-quote {
+        top: 2vh;
+        padding: 2vw;
+    }
+
+    .care-content__text p {
+        margin-bottom: 3vh;
+    }
+
+    .landing-how-it-works {
+        margin-top: 7vh;
+    }
+
+    .howItWorks-card {
+        padding: 20px 2vw 27px 2vw !important;
+    }
+
+    .howItWorks-card img {
+        width: 50%;
+    }
+
+    .landing-sign-up {
+        margin-top: 0vh;
+        padding-bottom: 10vh;
+    }
+
+    .landing-form-sign button {
+        width: 70%;
+        margin-top: 2vh;
+    }
+
+    .landing-slider-image {
+        height: 25vh;
+    }
+
+    .landing-slider-image div {
+        width: 13vw;
+        padding: 11px 0;
+    }
+
+    .landing-slider__item h3 {
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+    }
+
+    .landing-slider__item p {
+        font-size: 18px;
+        margin-bottom: 2.5vh;
+    }
+
+    .px-container {
+        padding: 0 2.1875vw;
+    }
+
+    .contacts-recall {
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+    }
+
+    .contacts-recall-card {
+        padding: 4vh 5vw !important;
+    }
+
+    .landing-form-recall button {
+        width: 60%;
+        margin-top: 1.5vh;
+    }
+}
+
+.landing-diseases-mob-text {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+@media (max-width: 991.98px) {
+    .m__hide {
+        display: none;
+    }
+
+    .landing-clients-card h6 {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 2px;
+
+    }
+
+    .clients-mobile-card img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .contacts-recall-card {
+        padding: 0 !important;
+    }
+
+    .landing-form-recall label {
+        width: 90%;
+        margin-bottom: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .landing-form-recall button {
+        width: 90%;
+        margin-bottom: 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .diseases-content__bg {
+        margin-bottom: 26px;
+        height: 42vh;
+    }
+
+    .success-bg p {
+        background: transparent;
+        padding: 0 0vw;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 145%;
+        margin-bottom: 0;
+    }
+
+    .landing-diseases h2,
+    .our-success h2,
+    .landing-sect3 h2,
+    .how-to-care h2,
+    .howItWorks h2,
+    .landing-sign-up h2,
+    .landing-results h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .success-info-bg {
+        width: 51%;
+        margin-bottom: 20px;
+    }
+
+    .sect3-bg {
+        height: 40vh;
+        background-position: center center;
+        margin-top: 1vh;
+    }
+
+    .sect3-quote {
+        width: 80%;
+        top: 37vh;
+        right: 10%;
+        display: block;
+        padding: 30px 14px;
+    }
+
+    .landing-sect3 p,
+    .landing-sect3 li {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .sect3-quote p {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .first-step {
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .first-step div {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .second-step {
+        margin-left: 27.5%;
+    }
+
+    .third-step {
+        margin-left: 62.5%;
+    }
+
+    .how-to-care h2 {
+        margin-top: 25px;
+        margin-bottom: 4vh;
+    }
+
+    .landing-sign-up {
+        margin-top: 0vh;
+        background-image: none;
+        padding-bottom: 7vh;
+    }
+
+    .landing-sign-up h2 {
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+    }
+
+    .landing-slider-image {
+        width: 100%;
+        height: 33vh;
+    }
+
+    .landing-slider-image div {
+        width: 30vw;
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 470.98px) {
+
+    .second-step {
+        margin-left: 27.5%;
+    }
+
+    .third-step {
+        margin-left: 60%;
+    }
+
+    .first-step {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .sect3-quote {
+        width: 95%;
+        top: 65vh;
+        right: 2.5%;
+        display: block;
+        padding: 30px 14px;
+    }
+
+    .sect3-bg {
+        background-image: url(.././img/landing-img/sect-3.svg);
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .landing-sect3 p,
+    .landing-sect3 li {
+        font-size: 16px;
+    }
+
+    .diseases-content__bg {
+        height: 35vh;
+    }
+
+    .success-info-bg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .success-bg p {
+        font-size: 16px;
+    }
+}

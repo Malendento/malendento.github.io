@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="236.216" height="236.216" viewBox="0 0 236.216 236.216">
+  <defs>
+    <filter id="Path_63" x="0" y="0" width="236.216" height="236.216" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.251"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_35" data-name="Group 35" transform="translate(-367.633 246.466) rotate(-19)">
+    <g transform="matrix(0.95, 0.33, -0.33, 0.95, 427.84, -113.35)" filter="url(#Path_63)">
+      <path id="Path_63-2" data-name="Path 63" d="M504.322-39.862,526.057-53.8l11.856,22.935,25.791-1.2L562.5-6.27,585.44,5.586,571.505,27.322,585.44,49.057,562.5,60.914,563.7,86.7l-25.791-1.2L526.057,108.44,504.322,94.505,482.586,108.44,470.73,85.5l-25.791,1.2,1.2-25.791L423.2,49.057l13.934-21.736L423.2,5.586,446.139-6.27l-1.2-25.791,25.791,1.2L482.586-53.8Z" transform="translate(-367.63 246.47) rotate(-19)" fill="#1e5d58"/>
+    </g>
+    <text id="LIVRAISON_PRÉVUE" data-name="LIVRAISON
+PRÉVUE" transform="translate(506.929 1.135)" fill="#fff" font-size="16" font-family="Lato-Regular, Lato"><tspan x="-41.284" y="0">LIVRAISON</tspan><tspan x="-30.356" y="16">PRÉVUE</tspan></text>
+    <text id="_4eme_TRIM" data-name="4eme TRIM" transform="translate(505.641 35.593)" fill="#fff" font-size="20" font-family="Lato-Black, Lato" font-weight="800"><tspan x="-43.774" y="0">4</tspan><tspan y="0" font-size="11.666" baseline-shift="6.666000209254424">eme </tspan><tspan y="0">TRIM</tspan></text>
+    <text id="_2021" data-name="2021" transform="translate(507.545 66.92)" fill="#fff" font-size="36" font-family="Lato-Black, Lato" font-weight="800"><tspan x="-41.76" y="0">2021</tspan></text>
+  </g>
+</svg>
