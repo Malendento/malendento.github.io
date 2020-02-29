@@ -1,0 +1,335 @@
+.programme-head p {
+    font-style: italic;
+    font-size: 32px;
+    line-height: 20px;
+    text-align: center;
+    color: #1e5d58;
+    margin-bottom: 10vh;
+}
+
+.programme-quality h1 {
+    font-weight: 300;
+    margin-top: 35px;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    color: #1e5d58;
+    text-transform: uppercase;
+    margin-bottom: 8vh;
+}
+
+.programme-quality h3,
+.nature h3,
+.laccord h3,
+.lumiere h3 {
+    padding-left: 10%;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 48px;
+    color: #000;
+}
+
+.programme-quality p,
+.nature p,
+.laccord p,
+.lumiere p {
+    padding-left: 10%;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000;
+    margin-bottom: 0;
+}
+
+.programme-quality img,
+.lumiere img,
+.footer-block img {
+    width: 90%;
+}
+
+.programme-quality {
+    background-color: #ABC9C1;
+}
+
+.nature-line {
+    width: 90%;
+    height: 1px;
+    background: #707070;
+    margin: 12vh 0;
+}
+
+.nature h6 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 60px;
+    color: #1e5d58;
+}
+
+.laccord h2,
+.lumiere h2 {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 12vh;
+    padding-top: 30px;
+    text-align: center;
+    color: #1e5d58;
+    text-transform: uppercase;
+}
+
+.laccord {
+    background: #EAD8A9;
+    padding-bottom: 10vh;
+}
+
+.mt-10 {
+    margin-top: 8vh;
+}
+
+.footer-block {
+    background: #1E5D58;
+}
+
+.footer-block h6 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 45px;
+    line-height: 55px;
+    color: #fff;
+    margin-bottom: 0;
+    padding-top: 10vh;
+}
+
+.quality-bg {
+    background-image: url(.././img/le-programme/fontan.png);
+    height: 50vh;
+    background-size: 90% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.nature-bg {
+    background-image: url(.././img/le-programme/pict-2.png);
+    height: 50vh;
+    background-size: 100% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.nature-bg-2 {
+    background-image: url(.././img/le-programme/pict-3.png);
+    height: 45vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.laccord-bg {
+    background-image: url(.././img/le-programme/pict-4.png);
+    height: 70vh;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+.lumiere-bg {
+    background-image: url(.././img/le-programme/pict-5.png);
+    height: 70vh;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.house-plan-bg {
+    background-image: url(.././img/le-programme/pict-6.png);
+    height: 70vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-block-bg {
+    background-image: url(.././img/le-programme/pict-7.png);
+    height: 70vh;
+    background-size: 90% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1200px) {
+
+    .programme-quality h3,
+    .nature h3,
+    .laccord h3,
+    .lumiere h3 {
+        padding-left: 0%;
+        margin-bottom: 25px;
+
+    }
+
+    .programme-quality p,
+    .nature p,
+    .laccord p,
+    .lumiere p {
+        padding-left: 0%;
+    }
+
+    .quality-bg {
+        height: 40vh;
+        background-size: 100% 100%;
+    }
+
+    .nature-bg {
+        height: 40vh;
+    }
+
+    .nature-line {
+        width: 100%;
+        height: 2px;
+        margin: 5vh 0;
+    }
+
+    .laccord h2,
+    .lumiere h2 {
+        font-size: 48px;
+        line-height: 64px;
+        margin-bottom: 3vh;
+        padding-top: 30px;
+    }
+
+    .laccord-bg {
+        height: 50vh;
+        background-position: center;
+    }
+
+    .laccord {
+        padding-bottom: 4vh;
+    }
+
+    .lumiere-bg {
+        height: 50vh;
+        background-position: center;
+    }
+
+    .house-plan-bg {
+        height: 50vh;
+    }
+
+    .footer-block h6 {
+        margin-bottom: 20px;
+        padding-top: 3vh;
+    }
+
+    .footer-block-bg {
+        height: 45vh;
+        background-size: 100% 100%;
+        background-position: center;
+    }
+
+    .programme-quality h1 {
+        margin-top: 25px;
+        font-size: 64px;
+        line-height: 80px;
+        margin-bottom: 4vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .programme-head img {
+        width: 60%;
+    }
+
+    .programme-head p {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 4vh;
+    }
+
+    .programme-quality h1 {
+        margin-top: 20px;
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 3vh;
+    }
+
+    .programme-quality h3,
+    .nature h3,
+    .laccord h3,
+    .lumiere h3 {
+        font-size: 28px;
+        line-height: 28px;
+
+    }
+
+    .programme-quality p,
+    .nature p,
+    .laccord p,
+    .lumiere p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .quality-bg {
+        height: 25vh;
+    }
+
+    .nature-bg {
+        height: 25vh;
+    }
+
+    .nature h6 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .nature-bg-2 {
+        height: 30vh;
+    }
+
+    .laccord h2,
+    .lumiere h2 {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 2vh;
+        padding-top: 20px;
+    }
+
+    .laccord-bg {
+        height: 32vh;
+    }
+
+    .lumiere-bg {
+        height: 30vh;
+    }
+
+    .house-plan-bg {
+        height: 30vh;
+    }
+
+    .footer-block h6 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .footer-block-bg {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 325px) {
+
+    .laccord-bg {
+        height: 38vh;
+    }
+
+    .lumiere-bg {
+        height: 35vh;
+    }
+
+    .footer-block-bg {
+        height: 40vh;
+    }
+
+}

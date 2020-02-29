@@ -228,46 +228,19 @@
                 infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                autoplay: false,
+                autoplay: true,
+                fade: true,
                 pauseOnHover: true,
                 autoplaySpeed: 3000,
                 speed: 1200,
                 centerMode: false,
                 touchMove: true,
                 draggable: true,
-                arrows: true,
-                dots: true,
-                prevArrow: $('.landing-slider-left'),
-                nextArrow: $('.landing-slider-right'),
-                responsive: [{
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                }]
-            });
-        });
-
-        $(document).ready(function() {
-            $('.landing-clients-slider').slick({
-                infinite: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: false,
-                pauseOnHover: true,
-                autoplaySpeed: 3000,
-                speed: 1200,
-                centerMode: true,
-                touchMove: true,
-                draggable: true,
-                arrows: true,
-                prevArrow: $('.landing-clients-left'),
-                nextArrow: $('.landing-clients-right'),
+                arrows: false,
+                dots: true
             });
         });
     </script>
-
 
 </body>
 

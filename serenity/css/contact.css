@@ -1,0 +1,201 @@
+.contact-form-container {
+    margin-top: 10vh;
+    padding: 0 5vw;
+}
+
+.contact-form-container button {
+    font-weight: 900;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background: #1E5D58;
+    text-transform: uppercase;
+    padding: 13px 0;
+    width: 35%;
+    margin-left: auto;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form-container label {
+    width: 48.5%;
+}
+
+.contact-form-container input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #707070;
+}
+
+.contact-form-container span {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: left;
+    color: #1e5d58;
+}
+
+.contact-form-container input,
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder,
+.contact-form-container textarea {
+    font-size: 18px;
+    text-align: left;
+    color: #1e5d58;
+}
+
+.contact-form-container textarea {
+    width: 100%;
+    border: 1px solid #707070;
+    padding: 17px 15px;
+}
+
+.contact-form-container h1 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 42px;
+    text-align: left;
+    color: #1e5d58;
+}
+
+.radio-interesed-room {
+    display: inline-flex;
+    font-size: 18px;
+    font-weight: 400;
+    color: #707070;
+}
+
+.radio-interesed-room label {
+    margin-right: 4vw;
+    text-align: center;
+}
+
+.radio {
+    margin: 8px 0;
+    display: block;
+    cursor: pointer;
+}
+
+.radio input + span:not(:empty) {
+    padding-left: 30px;
+}
+
+.radio input + span {
+    height: 35px;
+    display: block;
+    position: relative;
+}
+
+.radio input + span {
+    display: block;
+    position: relative;
+    font-size: 26px;
+    line-height: 120%;
+    text-align: left;
+    color: #1e5d58;
+}
+
+.radio input + span:not(:empty) {
+    padding-left: 41px;
+}
+
+.radio input + span:before,
+.radio input + span:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.radio input + span:before {
+    background: #707070;
+    transition: background 0.2s ease, -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+    transition: background 0.2s ease, transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2), -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 2);
+}
+
+.radio input + span:after {
+    background: #fff;
+    transform: scale(0.8);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.4);
+}
+
+.radio input:checked + span:before {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+    background: #1E5D58;
+}
+
+.radio input:checked + span:after {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.radio:hover input + span:before {
+    -webkit-transform: scale(0.92);
+    transform: scale(0.92);
+}
+
+.radio:hover input + span:after {
+    -webkit-transform: scale(0.74);
+    transform: scale(0.74);
+}
+
+.radio:hover input:checked + span:after {
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+.contacts-footer-links {
+    padding: 0 5vw;
+    margin-top: 20px;
+}
+
+.contacts-footer-links p {
+    font-weight: 900;
+    font-size: 16px;
+    color: #1e5d58;
+    margin-bottom: 20px;
+}
+
+.contacts-footer-links a {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    color: #1e5d58;
+}
+
+.contacts-footer-links span {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    color: #ABC9C1;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1200.99px) {
+    .slider-container {
+        display: none;
+    }
+}
+
+@media (max-width: 450.99px) {
+    .contact-form-container label {
+        width: 100%;
+    }
+}

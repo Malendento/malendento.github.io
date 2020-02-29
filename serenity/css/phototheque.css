@@ -1,0 +1,155 @@
+.body {
+    overflow: visible;
+}
+
+.body-overflow {
+    overflow: hidden;
+}
+
+.phototheque-container {
+    margin-top: 12vh;
+    width: 100%;
+    padding: 0 9vw;
+}
+
+.container-item {
+    width: 19%;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    transition: .4s all;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.container-item:hover {
+    transform: scale(1.2);
+}
+
+.container-item img {
+    opacity: 0;
+    transition: .6s all;
+}
+
+.container-item:hover img {
+    opacity: 1;
+}
+
+.close-button-slider {
+    position: absolute;
+    right: 1vw;
+    top: 2%;
+    cursor: pointer;
+    background: transparent;
+    z-index: 500;
+    padding: 0;
+}
+
+.photos-slider div {
+    background-size: cover;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.photos-slider {
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    width: 90%;
+}
+
+.arrow-slider-left {
+    cursor: pointer;
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arrow-slider-right {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 5%;
+}
+
+.custom-modal {
+    background-color: #fff;
+    height: calc(100vh - 97px);
+    margin-top: 97px;
+    position: fixed;
+    left: 0%;
+    transition: 1s all;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+}
+
+.custom-modal-active {
+    opacity: 1;
+    z-index: 200;
+    transition: 1s all;
+}
+
+.footer {
+    background-color: #fff !important;
+    padding: 16px 0;
+    margin-bottom: 0;
+}
+
+@media(max-width: 1199px) {
+    .container-item {
+        width: 32%;
+        height: 25vh;
+    }
+}
+
+@media(max-width: 450px) {
+    .container-item {
+        width: 48%;
+        height: 25vh;
+    }
+
+    .phototheque-container {
+        margin-top: 10vh;
+        padding: 0 3vw;
+    }
+    
+    .custom-modal-body {
+        margin-top: 10vh !important;
+    }
+
+    .photos-slider {
+        cursor: move;
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+        width: 80%;
+    }
+
+    .photos-slider div {
+        height: 60vh;
+    }
+
+    .arrow-slider-left,
+    .arrow-slider-right {
+        width: 10%;
+    }
+
+    .arrow-slider-left img,
+    .arrow-slider-right img {
+        width: 70%;
+    }
+    
+.close-button-slider {
+    right: 4vw;
+    top: 1%;
+}
+}

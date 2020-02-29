@@ -1,0 +1,91 @@
+.plan-map-content {
+    background-image: url(.././img/plan-map.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: calc(100vh - 97px);
+    width: 100%;
+}
+
+.footer {
+    background: #fff;
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 16px 0;
+}
+
+.button-map {
+    top: 176px;
+    background: #abc9c1;
+}
+
+.button-retour {
+    top: 246px;
+    background: transparent;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1e5d58;
+    transition: .6s all;
+}
+
+.button-retour img {
+    transform: rotate(180deg);
+    transition: .6s all;
+}
+
+.button-retour:hover {
+    transform: translateX(-10px);
+    color: #1E5D58;
+}
+
+@media(max-width: 1025px) {
+    .plan-map-content {
+        background-image: url(.././img/plan-map.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: calc(70vh - 97px);
+        width: 100%;
+    }
+}
+
+@media(max-width: 992px) {
+    .plan-map-content {
+        background-image: url(.././img/plan-map.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: calc(100vh - 97px);
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+
+    .plan-map-content {
+        background-image: url(.././img/plan-map.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: calc(90vh - 97px);
+        width: 100%;
+    }
+
+    .footer {
+        position: static;
+        margin-bottom: 0;
+    }
+
+    .button-map {
+        top: 136px;
+        background: #abc9c1;
+    }
+
+    .button-retour {
+        top: 196px;
+    }
+}

@@ -1,0 +1,13 @@
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+    margin: 0;
+    padding: 16px 0;
+    width: 100%;
+}
+
+.map-container {
+    height: calc(100vh - 97px);
+}

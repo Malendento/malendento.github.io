@@ -1,0 +1,118 @@
+.brochure {
+    background-image: url(.././img/Brochure/A4-Horizontal-Brochure-Mockup.svg);
+    background-size: cover;
+    height: calc(100vh - 97px);
+    background-repeat: no-repeat;
+}
+
+.brochure-form {
+    position: absolute;
+    bottom: 12vh;
+    left: 4vw;
+    width: 30%;
+}
+
+.brochure-form button {
+    font-size: 22px;
+    background: #1E5D58;
+    padding: 12px 22px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.brochure-form span {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 18px;
+    text-align: left;
+    color: #000;
+}
+
+.brochure-form label {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+
+.brochure-form input {
+    width: 100%;
+    font-size: 18px;
+    text-align: left;
+    padding: 11px 15px;
+    padding-right: 0;
+    color: #000;
+}
+
+.footer {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    padding: 16px 0;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+    .brochure {
+        background-size: cover;
+        height: calc(100vh - 97px);
+        background-position: center;
+    }
+
+    .footer {
+        width: 70%;
+    }
+
+    .brochure-form {
+        bottom: 8vh;
+        left: 4vw;
+        width: 60%;
+    }
+
+    .brochure-form span {
+        font-size: 24px;
+    }
+
+    .brochure-form input {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 993px) {
+    .brochure-form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .brochure-form {
+        width: 86%;
+        position: static;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+
+    .brochure {
+        background-position: 10%;
+    }
+
+    .brochure-form button {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .footer {
+        position: static;
+        background: #fff;
+        padding: 16px 0;
+        margin-bottom: 0px;
+    }
+
+    .brochure-form input {
+        border: 1px solid #1E5D58;
+    }
+}
