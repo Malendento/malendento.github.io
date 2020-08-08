@@ -345,7 +345,6 @@ textarea:focus {
     text-align: center;
 }
 
-
 .podcast-card {
     background: #262733;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -841,6 +840,8 @@ ul {
     display: block;
 }
 
+/*************************TESTIMONIALS-CSS******************************************/
+
 @media (max-width: 1025px) {
     .px-body {
         padding: 0 4vw;
@@ -1238,4 +1239,92 @@ ul {
         margin-bottom: 3vh;
         width: 100%;
     }
+}
+
+.testimonials-info {
+    margin-top: 93px;
+    padding: 10vh 0 17vh;
+}
+
+.testimonials-info h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 80px;
+    margin-bottom: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.testimonials-info p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.testimonials-info a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    padding: 16px 28px;
+    box-shadow: 0px 4px 20px rgba(17, 19, 20, 0.6);
+    border-radius: 5px;
+    align-self: center;
+}
+
+.video-block {
+    background: #262733;
+    padding: 7vh 4vw;
+}
+
+.video-block p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 4vh;
+}
+
+.video-block span {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.testimonials-sect3-text {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    padding: 4.5vh 2.5vw 7vh;
+}
+
+.testimonials-sect3-text p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.testimonials-sect3-text span {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.testimonials-sect3 {
+    margin-top: 13vh;
+}
+
+.testimonials-sect3-block {
+    margin-bottom: 13vh;
 }
