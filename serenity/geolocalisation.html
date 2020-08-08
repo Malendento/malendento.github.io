@@ -113,10 +113,11 @@
 
                 <div class="col-xl-6 order-xl-1 postion-relative">
                     <a class="contact-button" href="#">contact</a>
-<!--                    <div id="map_french" style="width:300px;height:300px"></div>-->
-                    <div class="map-container w-100">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2644.5374147970515!2d23.99197801560077!3d49.82083674041094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae782cae00b1d%3A0x2cb73a8353b91aed!2z0JrQvtC30LDRhtGM0LrRliDRh9C10LHRg9GA0LXQutC4!5e1!3m2!1suk!2sua!4v1581689133751!5m2!1suk!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                    <div id="map" class="map-container w-100">
+
                     </div>
+
                     <section class="footer mt-5 d-sm-flex d-none justify-content-around">
                         <div class="d-flex">
                             <a href="#">Copyright H2C</a>
@@ -144,7 +145,6 @@
     </main>
 
 
-
     <!-- Optional JavaScript 
     <!-- jQuery first, diven Popper.js, diven Bootstrap JS -->
     <script src="./js/jquery-3.3.1.min.js"></script>
@@ -153,7 +153,63 @@
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/geolocalisation.js"></script>
+    <script>
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        function initMap() {
+            var serenity = {
+                lat: -25.363,
+                lng: 131.044
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: serenity
+            });
 
+            var contentString = '<div id="content" class="text-center">' +
+                '<img src="./img/map-logo.svg">' +
+                '<p class="mb-4">23b , ' + 'route de Veynes' + '<br/>' + '05000 GAP</p>' +
+                '<h3 id="firstHeading" class="firstHeading">PERMANENCES</h3>' +
+                '<div id="bodyContent">' +
+                '<p>le lundi de 14h à 19h</p>' + '<p>le jeudi de 9h à 12h</p>' +
+                '</div>' +
+                '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var marker = new google.maps.Marker({
+                position: serenity,
+                map: map,
+                title: 'Serenity',
+                //icon: iconBase + 'map-marker.svg'
+            });
+            marker.addListener('click', function() {
+                infowindow.open(map, marker);
+            });
+        }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEwUsXsuXoavxBkal3L7X3wiJ8LiOTKO0&callback=initMap" async defer></script>
+    <script>
+        $(document).ready(function() {
+            $('.fixed-slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                fade: true,
+                pauseOnHover: true,
+                autoplaySpeed: 3000,
+                speed: 1200,
+                centerMode: false,
+                touchMove: true,
+                draggable: true,
+                arrows: false,
+                dots: true
+            });
+        });
+    </script>
 </body>
 
 </html>

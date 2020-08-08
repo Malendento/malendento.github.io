@@ -11,3 +11,21 @@
 .map-container {
     height: calc(100vh - 97px);
 }
+
+#content {
+    padding: 0 1vw;
+}
+
+#content p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #1e5d58;
+}
+#content h3 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1e5d58;
+}

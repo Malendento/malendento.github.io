@@ -9,26 +9,8 @@
     color: #fff;
 }
 
-.blog-head-buttons a{
-    display: block;
-    padding: 18px 20px;
-    font-size: 16px;
-    margin-left: 15px;
-    color: #1E5D58;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    -webkit-transition: all 0.5s 0s ease-in-out;
-    -moz-transition: all 0.5s 0s ease-in-out;
-    transition: all 0.5s 0s ease-in-out;
-}
 
-.blog-head-buttons a:hover{
-    color: #fff;
-    background-color: #1E5D58;
-}
-
-.blog-card-content h2{
+.blog-card-content h2 {
     font-size: 28px;
     font-weight: 700;
     text-transform: uppercase;
@@ -36,28 +18,28 @@
     margin-bottom: 15px;
 }
 
-.blog-card-content h2:hover{
+.blog-card-content h2:hover {
     text-decoration: underline;
 }
 
-.blog-card-content p{
+.blog-card-content p {
     font-size: 16px;
     color: #1E5D58;
     margin-bottom: 20px;
 }
 
-.blog-card-content a{
+.blog-card-content a {
     font-size: 16px;
     color: #1E5D58;
     margin-bottom: 20px;
 }
 
-.blog-card-content img{
+.blog-card-content img {
     width: 20px;
     height: 20px;
 }
 
-.blog-card-bg div{
+.blog-card-bg div {
     height: 25vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -75,10 +57,11 @@
     -moz-transition: all 0.3s 0s ease-in-out;
     transition: all 0.3s 0s ease-in-out;
 }
+
 .card-button {
     -webkit-transition: all 0.3s 0s ease-in-out;
     -moz-transition: all 0.3s 0s ease-in-out;
-    transition: all 0.3s 0s ease-in-out;    
+    transition: all 0.3s 0s ease-in-out;
     margin-bottom: 0;
 }
 
@@ -93,29 +76,22 @@
 }
 
 @media (max-width:1025px) {
-.blog-card-bg div{
-    height: 15vh;
-    background-size: contain;
+    .blog-card-bg div {
+        height: 15vh;
+        background-size: contain;
+    }
 }
-}
+
 @media (max-width:992px) {
-.blog-card-bg div{
-    height: 20vh;
+    .blog-card-bg div {
+        height: 20vh;
+    }
 }
-}
+
 @media (max-width:460px) {
-.blog-card-bg div{
-    height: 25vh;
-    margin-bottom: 20px;
-    background-size: cover;
-}
-    
-    .blog-head-buttons a{
-        font-size: 16px;
-        margin-bottom: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-left: 15px;
-    font-weight: 700;
-}
+    .blog-card-bg div {
+        height: 25vh;
+        margin-bottom: 20px;
+        background-size: cover;
+    }
 }
