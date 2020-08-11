@@ -194,7 +194,7 @@ textarea:focus {
     background-position: right;
 }
 
-.home-sect4 h2 {
+.home-sect4 h6 {
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -231,7 +231,7 @@ textarea:focus {
     padding-left: 6.75vw;
 }
 
-.sect5-block h2 {
+.sect5-block h6, .testimonials-h2 {
     margin-top: 10.5vh;
     font-family: 'Ubuntu, sans-serif';
     font-weight: bold;
@@ -283,7 +283,7 @@ textarea:focus {
     padding-bottom: 40vh;
 }
 
-.home-sect6 h2 {
+.home-sect6 h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -314,12 +314,12 @@ textarea:focus {
 
 .home-podcast {
     padding-top: 13.5vh;
-    padding-bottom: 13vh;
+    padding-bottom: 8vh;
     position: relative;
     background: #262733;
 }
 
-.home-podcast h2 {
+.home-podcast h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -374,7 +374,7 @@ textarea:focus {
     padding: 16.9vh 0;
 }
 
-.home-video-form h2 {
+.home-video-form h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -493,7 +493,7 @@ textarea:focus {
     padding-bottom: 16.9vh;
 }
 
-.home-slider h2 {
+.home-slider h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -513,7 +513,7 @@ textarea:focus {
 
 .right-sound {
     position: absolute;
-    bottom: 11.5%;
+    bottom: 6.5%;
     right: 0;
 }
 
@@ -521,7 +521,7 @@ textarea:focus {
     padding: 17.5vh 0;
 }
 
-.home-sect11 h2 {
+.home-sect11 h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 32px;
@@ -565,7 +565,7 @@ textarea:focus {
     margin-bottom: 25px;
 }
 
-.about-block h2 {
+.about-block h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -657,7 +657,6 @@ textarea:focus {
 .footer-social a:first-child {
     margin-left: 0;
 }
-
 
 .sidebar {
     position: fixed;
@@ -842,6 +841,543 @@ ul {
 
 /*************************TESTIMONIALS-CSS******************************************/
 
+.testimonials-info {
+    margin-top: 93px;
+    padding: 10vh 0 17vh;
+}
+
+.testimonials-info h1,
+.incubator h1,
+.podcasts h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 80px;
+    margin-bottom: 24px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.testimonials-info p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.testimonials-info a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    padding: 16px 28px;
+    box-shadow: 0px 4px 20px rgba(17, 19, 20, 0.6);
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 48px;
+}
+
+.video-block {
+    background: #262733;
+    padding: 7vh 4vw;
+}
+
+.video-block p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 4vh;
+}
+
+.video-block span {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.testimonials-sect3-text {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    padding: 4.5vh 2.5vw 7vh;
+}
+
+.testimonials-sect3-text p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.testimonials-sect3-text span {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.testimonials-sect3 {
+    margin-top: 13vh;
+}
+
+.testimonials-sect3-block {
+    margin-bottom: 13vh;
+}
+
+.testimonials-my {
+    margin: 13vh 0;
+}
+
+
+.testimonials-my p {
+    padding-right: 10vw;
+}
+
+.testimonials-comments {
+    margin-bottom: 13vh;
+}
+
+.comments-card {
+    background: #262733;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    padding: 5vh 1.625vw;
+    width: 32%;
+}
+
+.comments-card img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.comments-card p {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+}
+
+.comments-card span {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    text-align: center;
+    display: block;
+}
+
+.mt-8 {
+    margin-top: 8vh;
+}
+
+
+/******************INCUBATOR-CSS*********************/
+
+.incubator-info {
+    margin-top: 93px;
+    padding-top: 13vh;
+    padding-bottom: 30vh;
+    background-image: url(.././img/incubator/sect1-bg.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.incubator-info a {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    padding: 16px 42px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    align-self: center;
+    background: linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    box-shadow: 0px 4px 20px rgba(17, 19, 20, 0.6);
+    border-radius: 5px;
+}
+
+.incubator h2, .incubator h6 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+
+.incubator-sect2 h2 {
+    margin-bottom: 48px;
+}
+
+.incubator p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.incubator-sect2 p {
+    margin-bottom: 24px;
+}
+
+.incubator span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    background: -webkit-linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.incubator-checkmark {
+    margin: 17vh 0 20vh;
+}
+
+.checkmark-card {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.checkmark-card div {
+    display: flex;
+    padding: 10vh 0;
+    justify-content: center;
+    flex-direction: column;
+    background: #262733;
+    width: 100%;
+}
+
+.checkmark-card span {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+
+.checkmark-card .illuminated {
+    background: #2E2F3F;
+}
+
+.incubator-sect3 {
+    padding-bottom: 20vh;
+    background-image: url(.././img/incubator/sect3-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: fill;
+}
+
+.incubator-sect3 h2 {
+    margin-bottom: 48px;
+}
+
+.incubator-sect3 p {
+    margin-bottom: 24px;
+}
+
+.incubator-sect5 {
+    padding: 20vh 0;
+    background-image: url(.././img/incubator/sect5-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: fill;
+}
+
+.incubator-sect5 h2 {
+    margin-bottom: 48px;
+}
+
+.incubator-sect5 p {
+    margin-bottom: 30px;
+}
+
+.incubator h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.incubator-sect5 h3 {
+    margin: 18px 0 40px;
+}
+
+.incubator-sect5 ul {
+    position: relative;
+    margin-left: 0;
+    padding-left: 1.2em;
+}
+
+.incubator-sect5 ul li {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    padding-left: 16px;
+}
+
+.incubator-sect5 ul li::before {
+    content: "\2022";
+    font-size: 36px;
+    background: -webkit-linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    width: 30px;
+    margin-left: 0px;
+    vertical-align: bottom;
+    position: absolute;
+    left: 0;
+}
+
+.incubator-inhalte {
+    background: #262733;
+    padding: 10vh 0 10vh;
+}
+
+.inhalte-bg div {
+    height: 45vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+.incubator-inhalte h3 {
+    margin-bottom: 32px;
+}
+
+.incubator-inhalte p {
+    margin-bottom: 30px;
+}
+
+.incubator-inhalte-line {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 80px;
+    margin-top: 9.5vh;
+    width: 100%;
+}
+
+.incubator-inhalte button {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    box-shadow: 0px 4px 20px rgba(17, 19, 20, 0.25);
+    border-radius: 5px;
+    padding: 16px 5vw;
+}
+
+.incubator .incubator-my {
+    margin: 10vh 0 11.5vh;
+}
+
+
+/******************PODCASTS-CSS*********************/
+
+
+.podcasts-counts {
+    margin-bottom: 32px;
+}
+
+.podcasts-block {
+    margin-top: 93px;
+    padding: 10vh 0 7vh;
+}
+
+.podcasts-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 93px;
+}
+
+.podcasts-counts h5 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.podcasts-counts div {
+    margin-right: 3.5vw;
+}
+
+.podcasts-counts div:last-child {
+    margin-right: 0;
+}
+
+.podcasts-counts span {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.podcasts-text p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.podcasts-text span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.podcasts-text {
+    margin-bottom: 40px;
+}
+
+.podcasts-buttons a {
+    background: #0b0b0b;
+    border: 1px solid #A6A6A6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 198px;
+    height: 48px;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 17px;
+}
+
+.podcasts-buttons a:last-child {
+    margin-right: 0;
+}
+
+.podcasts-buttons {
+    padding-bottom: 3vh;
+}
+
+.podcasts-line {
+    margin: 6vh 0 5vh;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+.podcasts-listen h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.podcasts-listen p {
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.podcasts-listen small {
+    font-size: 18px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.3);
+    display: block;
+    align-self: center;
+    margin-left: 40px;
+}
+
+.podcasts-listen a {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 32px;
+    display: inline-block;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    background: #17181D;
+}
+
+.podcasts-listen img {
+    margin-right: 14px;
+}
+
+.podcasts-border-wrap {
+    position: relative;
+    background: linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.podcasts h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1350px) {
+
+    .podcasts-buttons a {
+        width: 198px;
+        height: 48px;
+        display: flex;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+
+    .podcasts-buttons a:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
 @media (max-width: 1025px) {
     .px-body {
         padding: 0 4vw;
@@ -890,7 +1426,7 @@ ul {
         background-position: 100% 100%;
     }
 
-    .home-sect4 h2 {
+    .home-sect4 h6 {
         margin-bottom: 3vh;
     }
 
@@ -906,7 +1442,7 @@ ul {
         padding-left: 4vw;
     }
 
-    .sect5-block h2 {
+    .sect5-block h6, .testimonials-h2 {
         margin-top: 3vh;
         font-size: 32px;
         line-height: 44px;
@@ -924,6 +1460,11 @@ ul {
         margin-bottom: 3vh;
     }
 
+
+    .sect5-block a {
+        margin-bottom: 4vh;
+    }
+
     .home-sect6 {
         background-size: contain;
         background-repeat: no-repeat;
@@ -932,7 +1473,7 @@ ul {
         padding-bottom: 10vh;
     }
 
-    .home-sect6 h2 {
+    .home-sect6 h6 {
         margin-bottom: 3vh;
     }
 
@@ -945,7 +1486,7 @@ ul {
         padding-bottom: 5vh;
     }
 
-    .home-podcast h2 {
+    .home-podcast h6 {
         margin-bottom: 3vh;
     }
 
@@ -970,7 +1511,7 @@ ul {
         padding: 6vh 0;
     }
 
-    .home-video-form h2 {
+    .home-video-form h6 {
         margin-bottom: 5vh;
     }
 
@@ -983,7 +1524,7 @@ ul {
         padding-bottom: 8vh;
     }
 
-    .home-slider h2 {
+    .home-slider h6 {
         margin-bottom: 4vh;
     }
 
@@ -1009,7 +1550,7 @@ ul {
         padding: 7vh 4vw;
     }
 
-    .about-block h2 {
+    .about-block h6 {
         font-size: 32px;
         line-height: 44px;
     }
@@ -1018,6 +1559,94 @@ ul {
         margin-bottom: 20px;
         margin-top: 2vh;
     }
+
+    /*************************TESTIMONIALS-CSS******************************************/
+    .testimonials-info {
+        padding: 5vh 0 6vh;
+    }
+
+    .video-block {
+        padding: 3vh 4vw;
+    }
+
+    .testimonials-sect3-text {
+        padding: 3vh 2.5vw 3vh;
+    }
+
+    .testimonials-sect3 {
+        margin-top: 6vh;
+    }
+
+    .testimonials-sect3-block,
+    .testimonials-comments {
+        margin-bottom: 6vh;
+    }
+
+    .testimonials-my {
+        margin: 6vh 0;
+    }
+
+    .comments-card {
+        padding: 2vh 1.625vw;
+    }
+
+
+    /******************INCUBATOR-CSS*********************/
+
+    .incubator-info {
+        margin-top: 93px;
+        padding-top: 6vh;
+        padding-bottom: 10vh;
+        background-position: right;
+        background-size: cover;
+    }
+
+    .incubator-checkmark {
+        margin: 7vh 0;
+    }
+
+    .checkmark-card div {
+        padding: 4.4vh 0;
+    }
+
+    .incubator-sect3 {
+        padding-bottom: 7vh;
+    }
+
+    .incubator-sect5 {
+        padding: 7vh 0;
+    }
+
+    .incubator-inhalte {
+        padding: 6vh 0 6vh;
+    }
+
+    .inhalte-bg div {
+        height: 23vh;
+    }
+
+    .incubator-inhalte-line {
+        margin-bottom: 80px;
+        margin-top: 5vh;
+    }
+
+    .incubator .incubator-my {
+        margin: 6vh 0 6vh;
+    }
+
+    /******************PODCASTS-CSS*********************/
+    .podcasts-block {
+        padding: 6vh 0 3vh;
+    }
+
+    .podcasts-line {
+        margin: 3vh 0 2.5vh;
+    }
+
+    .podcasts-buttons {
+        padding-bottom: 2vh;
+    }
+
 }
 
 @media (max-width: 993px) {
@@ -1025,11 +1654,18 @@ ul {
         padding: 0 3vw;
     }
 
+    .about-images img {
+        margin-bottom: 0;
+    }
+
     .sidebar-social a {
         margin-right: 7.5vw;
     }
 
-    .home-headings h1 {
+    .home-headings h1,
+    .testimonials-info h1,
+    .incubator h1,
+    .podcasts h1, .podcasts h4 {
         font-size: 40px;
         line-height: 60px;
     }
@@ -1093,7 +1729,7 @@ ul {
     }
 
     .home-podcast a,
-    .home-podcast h2 {
+    .home-podcast h6 {
         position: relative;
         z-index: 5;
     }
@@ -1104,7 +1740,7 @@ ul {
         padding: 0;
     }
 
-    .home-sect11 h2 {
+    .home-sect11 h6 {
         margin-bottom: 3vh;
     }
 
@@ -1136,16 +1772,79 @@ ul {
 
     .home-info h2,
     .home-sect3 h2,
-    .home-sect4 h2,
-    .sect5-block h2,
-    .home-sect6 h2,
-    .home-video-form h2,
-    .home-slider h2,
-    .home-sect11 h2,
-    .about-block h2,
-    .home-podcast h2 {
+    .home-sect4 h6,
+    .sect5-block h6, .testimonials-h2,
+    .home-sect6 h6,
+    .home-video-form h6,
+    .home-slider h6,
+    .home-sect11 h6,
+    .about-block h6,
+    .home-podcast h6,
+    .incubator h2, .incubator h6 {
         font-size: 32px;
         line-height: 44px;
+    }
+
+
+    /*************************TESTIMONIALS-CSS******************************************/
+
+
+    .testimonials-info a {
+        margin-top: 24px;
+    }
+
+    .video-block p {
+        margin-bottom: 2vh;
+    }
+
+    .testimonials-sect3-text {
+        border: 0;
+    }
+
+    .comments-card {
+        margin: 0 auto;
+        margin-bottom: 32px;
+        width: 60%;
+    }
+
+
+
+    /******************INCUBATOR-CSS*********************/
+    .checkmark-card {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .incubator-sect3 {
+        padding-bottom: 0vh;
+        background-image: none;
+    }
+
+    .incubator-sect5 {
+        padding-bottom: 0;
+        background-image: none;
+    }
+
+    .incubator-sect5-mobile {
+        height: 80vh;
+        background-position: bottom;
+    }
+
+    .inhalte-bg div {
+        height: 45vh;
+    }
+
+
+
+    /******************PODCASTS-CSS*********************/
+
+    .podcasts-sticky {
+        position: static;
+        top: 0;
+    }
+
+    .podcasts-block {
+        padding: 3vh 0 3vh;
     }
 }
 
@@ -1153,14 +1852,15 @@ ul {
 
     .home-info h2,
     .home-sect3 h2,
-    .home-sect4 h2,
-    .sect5-block h2,
-    .home-sect6 h2,
-    .home-video-form h2,
-    .home-slider h2,
-    .home-sect11 h2,
-    .about-block h2,
-    .home-podcast h2 {
+    .home-sect4 h6,
+    .sect5-block h6, .testimonials-h2,
+    .home-sect6 h6,
+    .home-video-form h6,
+    .home-slider h6,
+    .home-sect11 h6,
+    .about-block h6,
+    .home-podcast h6,
+    .incubator h2, .incubator h6 {
         font-size: 24px;
         line-height: 36px;
     }
@@ -1172,9 +1872,21 @@ ul {
     .home-sect6 span,
     .home-sect6 p,
     .home-about p,
-    .home-slider-block p {
+    .home-slider-block p,
+    .incubator p,
+    .incubator li {
         font-size: 16px;
         line-height: 28px;
+    }
+
+    .left-sound {
+        top: 0%;
+        left: 5%;
+    }
+
+    .right-sound {
+        bottom: 0%;
+        right: 10%;
     }
 
     .home-slider-block span {
@@ -1183,6 +1895,19 @@ ul {
 
     .g-button {
         width: 70%;
+    }
+
+    .sidebar-head {
+        padding: 16px 14px;
+    }
+
+    .sidebar {
+        height: calc(100% - 73px);
+        margin-top: 73px;
+    }
+
+    .mt-8 {
+        margin-top: 1vh;
     }
 
     .home-sect3 a {
@@ -1200,6 +1925,10 @@ ul {
     .about-block h3 {
         font-size: 16px;
         line-height: 28px;
+    }
+
+    .sidebar-bottom {
+        margin-top: 15vh;
     }
 
     .about-block h4 {
@@ -1225,7 +1954,10 @@ ul {
         padding: 0 16px;
     }
 
-    .home-headings h1 {
+    .home-headings h1,
+    .testimonials-info h1,
+    .incubator h1,
+    .podcasts h1, .podcasts h4 {
         font-size: 24px;
         line-height: 40px;
     }
@@ -1239,92 +1971,146 @@ ul {
         margin-bottom: 3vh;
         width: 100%;
     }
+
+
+    /*************************TESTIMONIALS-CSS******************************************/
+
+    .testimonials p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .comments-card {
+        width: 100%;
+    }
+
+    .testimonials-sect3-text {
+        padding: 0;
+    }
+
+    .testimonials-info {
+        padding: 3vh 0 6vh;
+    }
+
+    /*************************INCUBATOR-CSS******************************************/
+    .checkmark-card {
+        width: 100%;
+    }
+
+    .incubator-sect5-mobile {
+        height: 55vh;
+        background-position: bottom;
+    }
+
+    .incubator-info {
+        margin-top: 73px;
+        padding-bottom: 7vh;
+    }
+
+    .incubator h3 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .incubator-inhalte button {
+        width: 100%;
+        padding: 16px 1vw;
+    }
+
+    .incubator-inhalte-line {
+        margin-bottom: 64px;
+        margin-top: 4vh;
+    }
+
+    .inhalte-bg div {
+        height: 24vh;
+        background-size: fill;
+        margin-bottom: 30px;
+    }
+
+    /******************PODCASTS-CSS*********************/
+
+    .podcasts-counts span {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .podcasts-counts h5,
+    .podcasts p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .podcasts-buttons a {
+        width: 264px;
+        height: 64px;
+    }
+
+    .podcasts-listen h3 {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+
 }
 
-.testimonials-info {
-    margin-top: 93px;
-    padding: 10vh 0 17vh;
-}
 
-.testimonials-info h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 56px;
-    line-height: 80px;
-    margin-bottom: 24px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
+@media (max-width:321px) {
 
-.testimonials-info p {
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-}
+    .home-info h2,
+    .home-sect3 h2,
+    .home-sect4 h6,
+    .sect5-block h6, .testimonials-h2,
+    .home-sect6 h6,
+    .home-video-form h6,
+    .home-slider h6,
+    .home-sect11 h6,
+    .about-block h6,
+    .home-podcast h6,
+    .incubator h2, .incubator h6 {
+        font-size: 22px;
+        line-height: 32px;
+    }
 
-.testimonials-info a {
-    display: inline-block;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 32px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: linear-gradient(270deg, #FF8424 0%, #FF6624 100%);
-    padding: 16px 28px;
-    box-shadow: 0px 4px 20px rgba(17, 19, 20, 0.6);
-    border-radius: 5px;
-    align-self: center;
-}
+    .about-block h3 {
+        font-size: 14px;
+    }
 
-.video-block {
-    background: #262733;
-    padding: 7vh 4vw;
-}
+    .sidebar span,
+    .footer span {
+        font-size: 15px;
+    }
 
-.video-block p {
-    font-size: 18px;
-    line-height: 32px;
-    color: #FFFFFF;
-    margin-bottom: 4vh;
-}
+    .home-headings h1,
+    .testimonials-info h1,
+    .incubator h1,
+    .podcasts h1, .podcasts h4 {
+        font-size: 20px;
+        line-height: 36px;
+    }
 
-.video-block span {
-    font-style: italic;
-    font-size: 18px;
-    line-height: 32px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
+    .home-sect3 a,
+    .home-sect11 a,
+    .sect5-block a,
+    .home-video-form button {
+        font-size: 16px;
+        line-height: 28px;
+    } 
 
-.testimonials-sect3-text {
-    border: 1px solid #FFFFFF;
-    box-sizing: border-box;
-    padding: 4.5vh 2.5vw 7vh;
-}
+    .home-sect11 a,
+    .about-block a {
+        font-size: 14px;
+    }
 
-.testimonials-sect3-text p {
-    font-size: 18px;
-    line-height: 32px;
-    color: #FFFFFF;
-}
 
-.testimonials-sect3-text span {
-    font-family: 'Ubuntu', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 32px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
+    .home-slider-left,
+    .home-slider-right {
+        transform: scale(0.5);
+    }
 
-.testimonials-sect3 {
-    margin-top: 13vh;
-}
+    /*************************TESTIMONIALS-CSS******************************************/
 
-.testimonials-sect3-block {
-    margin-bottom: 13vh;
+    .testimonials-info a {
+        display: block;
+    }
 }

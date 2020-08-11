@@ -28,3 +28,10 @@ document.querySelector('.hamburger').addEventListener('click', () => {
    document.querySelector('.sidebar').classList.toggle('active-sidebar');
     document.querySelector('.hamburger').classList.toggle('hamburger-crossed');
 });
+
+const buttonScroll = document.querySelector('.incubator-inhalte button');
+
+buttonScroll.addEventListener('click', () => {
+    buttonScroll.scrollIntoView({block: "center", behavior: "smooth"});
+    buttonScroll.style.display = 'none';
+});
