@@ -233,7 +233,7 @@ textarea:focus {
 
 .sect5-block h6, .testimonials-h2 {
     margin-top: 10.5vh;
-    font-family: 'Ubuntu, sans-serif';
+    font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
     font-size: 40px;
     line-height: 52px;
