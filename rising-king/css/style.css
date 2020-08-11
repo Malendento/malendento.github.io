@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+a, button {
+    font-weight: bold;
+}
+
 a:hover {
     text-decoration: none;
 }
