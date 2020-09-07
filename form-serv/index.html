@@ -1,52 +1,52 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-	<title>KLT Health</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KLT Health</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	
-	
-	<!-- Font -->
-	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
-	
-	
-	<link href="common-css/ionicons.css" rel="stylesheet">
-	
-	
-	<link rel="stylesheet" href="common-css/jquery.classycountdown.css" />
-		
-	<link href="03-comming-soon/css/styles.css" rel="stylesheet">
-	
-	<link href="03-comming-soon/css/responsive.css" rel="stylesheet">
-	
+    <meta charset="UTF-8">
+
+
+    <!-- Font -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+
+
+    <link href="common-css/ionicons.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="common-css/jquery.classycountdown.css" />
+
+    <link href="03-comming-soon/css/styles.css" rel="stylesheet">
+
+    <link href="03-comming-soon/css/responsive.css" rel="stylesheet">
+
 </head>
+
 <body>
-	
-	<div class="main-area center-text" style="background-image:url(images/countdown-3-1600x900.jpg);">
-		
-		<div class="display-table">
-			<div class="display-table-cell">
-				
-				<h1 class="title font-white"><b>Coming Soon</b></h1>
-				<p class="desc font-white">Our website is currently undergoing scheduled maintenance.
-					We will be back shortly.</p>
-				
-				<a class="notify-btn" href="mailto:contact@klt-health.de"><b>NOTIFY US</b></a>
-				<form action="post.php" method="post">
-                  <div class="form-group">
-                    <input required type="name" class="form-control mb-1" id="exampleInputEmail1" name="user_name" placeholder="Ім'я">
-                    <input type="phone" class="form-control mb-1" id="exampleInputPassword1" name="user_phone" placeholder="Номер телефону">
-                    <input type="text" class="form-control" id="exampleInputPassword1" name="user_feedback" placeholder="Ваш коментар">
-                  </div>
-                    <div class="modal-footer">
-                    <button type="submit" class="btn btn-order" style="width: 100%">Відправити</button>
-                    </div>
+
+    <div class="main-area center-text" style="background-image:url(images/countdown-3-1600x900.jpg);">
+
+        <div class="display-table">
+            <div class="display-table-cell">
+
+                <h1 class="title font-white"><b>Coming Soon</b></h1>
+                <p class="desc font-white">Our website is currently undergoing scheduled maintenance.
+                    We will be back shortly.</p>
+
+                <a class="notify-btn" href="mailto:contact@klt-health.de"><b>NOTIFY US</b></a>
+                <form action="mail_handler.php" method="post">
+                    First Name: <input type="text" name="first_name"><br>
+                    Last Name: <input type="text" name="last_name"><br>
+                    Email: <input type="text" name="email"><br>
+                    Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+                    <input type="submit" name="submit" value="Submit">
                 </form>
-			</div><!-- display-table -->
-		</div><!-- display-table-cell -->
-	</div><!-- main-area -->
-	
+            </div><!-- display-table -->
+        </div><!-- display-table-cell -->
+    </div><!-- main-area -->
+
 </body>
+
 </html>
