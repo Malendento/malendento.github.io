@@ -1,0 +1,57 @@
+<svg width="360" height="202" viewBox="0 0 360 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="360" height="202" fill="white"/>
+<rect x="0.5" y="0.5" width="359" height="201" fill="#F7F9FC"/>
+<rect opacity="0.1" x="84" y="37" width="76" height="113" fill="#27AE60"/>
+<rect opacity="0.1" x="171" y="53" width="120" height="98" fill="#27AE60"/>
+<rect x="104" y="65" width="174" height="100" rx="2" fill="#27AE60"/>
+<rect x="75" y="45" width="66" height="120" rx="2" fill="#37D279"/>
+<line x1="81" y1="154.5" x2="136" y2="154.5" stroke="white"/>
+<line x1="253.5" y1="140" x2="253.5" y2="91" stroke="white"/>
+<path d="M266 112.5C267.933 112.5 269.5 114.067 269.5 116C269.5 117.933 267.933 119.5 266 119.5C264.067 119.5 262.5 117.933 262.5 116C262.5 114.067 264.067 112.5 266 112.5Z" stroke="white"/>
+<g opacity="0.25">
+<circle cx="243" cy="39" r="2" fill="#27AE60"/>
+<circle cx="243" cy="77" r="2" fill="#27AE60"/>
+<circle cx="279" cy="39" r="2" fill="#27AE60"/>
+<circle cx="279" cy="78" r="2" fill="#27AE60"/>
+<circle cx="255" cy="39" r="2" fill="#27AE60"/>
+<circle cx="255" cy="77" r="2" fill="#27AE60"/>
+<circle cx="291" cy="39" r="2" fill="#27AE60"/>
+<circle cx="291" cy="78" r="2" fill="#27AE60"/>
+<circle cx="267" cy="39" r="2" fill="#27AE60"/>
+<circle cx="267" cy="77" r="2" fill="#27AE60"/>
+<circle cx="303" cy="39" r="2" fill="#27AE60"/>
+<circle cx="303" cy="78" r="2" fill="#27AE60"/>
+<circle cx="267" cy="51" r="2" fill="#27AE60"/>
+<circle cx="267" cy="90" r="2" fill="#27AE60"/>
+<circle cx="303" cy="52" r="2" fill="#27AE60"/>
+<circle cx="303" cy="90" r="2" fill="#27AE60"/>
+<circle cx="267" cy="64" r="2" fill="#27AE60"/>
+<circle cx="267" cy="102" r="2" fill="#27AE60"/>
+<circle cx="303" cy="65" r="2" fill="#27AE60"/>
+<circle cx="303" cy="103" r="2" fill="#27AE60"/>
+<circle cx="255" cy="51" r="2" fill="#27AE60"/>
+<circle cx="255" cy="90" r="2" fill="#27AE60"/>
+<circle cx="291" cy="52" r="2" fill="#27AE60"/>
+<circle cx="291" cy="90" r="2" fill="#27AE60"/>
+<circle cx="255" cy="64" r="2" fill="#27AE60"/>
+<circle cx="255" cy="102" r="2" fill="#27AE60"/>
+<circle cx="291" cy="65" r="2" fill="#27AE60"/>
+<circle cx="291" cy="103" r="2" fill="#27AE60"/>
+<circle cx="243" cy="51" r="2" fill="#27AE60"/>
+<circle cx="243" cy="90" r="2" fill="#27AE60"/>
+<circle cx="279" cy="52" r="2" fill="#27AE60"/>
+<circle cx="279" cy="90" r="2" fill="#27AE60"/>
+<circle cx="243" cy="64" r="2" fill="#27AE60"/>
+<circle cx="243" cy="102" r="2" fill="#27AE60"/>
+<circle cx="279" cy="65" r="2" fill="#27AE60"/>
+<circle cx="279" cy="103" r="2" fill="#27AE60"/>
+</g>
+<path d="M136 66V155H81L136 66Z" fill="url(#paint0_linear)" fill-opacity="0.2"/>
+<rect x="0.5" y="0.5" width="359" height="201" stroke="#F7F9FC"/>
+<defs>
+<linearGradient id="paint0_linear" x1="81" y1="155" x2="143.699" y2="65.7001" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>

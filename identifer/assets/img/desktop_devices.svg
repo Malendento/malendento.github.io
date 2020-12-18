@@ -1,0 +1,55 @@
+<svg width="360" height="202" viewBox="0 0 360 202" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="360" height="202" fill="white"/>
+<rect x="0.5" y="0.5" width="359" height="201" fill="#F7F9FC"/>
+<g opacity="0.25">
+<circle cx="71" cy="32" r="2" fill="#27AE60"/>
+<circle cx="71" cy="70" r="2" fill="#27AE60"/>
+<circle cx="107" cy="32" r="2" fill="#27AE60"/>
+<circle cx="107" cy="71" r="2" fill="#27AE60"/>
+<circle cx="83" cy="32" r="2" fill="#27AE60"/>
+<circle cx="83" cy="70" r="2" fill="#27AE60"/>
+<circle cx="119" cy="32" r="2" fill="#27AE60"/>
+<circle cx="119" cy="71" r="2" fill="#27AE60"/>
+<circle cx="95" cy="32" r="2" fill="#27AE60"/>
+<circle cx="95" cy="70" r="2" fill="#27AE60"/>
+<circle cx="131" cy="32" r="2" fill="#27AE60"/>
+<circle cx="131" cy="71" r="2" fill="#27AE60"/>
+<circle cx="95" cy="44" r="2" fill="#27AE60"/>
+<circle cx="95" cy="83" r="2" fill="#27AE60"/>
+<circle cx="131" cy="45" r="2" fill="#27AE60"/>
+<circle cx="131" cy="83" r="2" fill="#27AE60"/>
+<circle cx="95" cy="57" r="2" fill="#27AE60"/>
+<circle cx="95" cy="95" r="2" fill="#27AE60"/>
+<circle cx="131" cy="58" r="2" fill="#27AE60"/>
+<circle cx="131" cy="96" r="2" fill="#27AE60"/>
+<circle cx="83" cy="44" r="2" fill="#27AE60"/>
+<circle cx="83" cy="83" r="2" fill="#27AE60"/>
+<circle cx="119" cy="45" r="2" fill="#27AE60"/>
+<circle cx="119" cy="83" r="2" fill="#27AE60"/>
+<circle cx="83" cy="57" r="2" fill="#27AE60"/>
+<circle cx="83" cy="95" r="2" fill="#27AE60"/>
+<circle cx="119" cy="58" r="2" fill="#27AE60"/>
+<circle cx="119" cy="96" r="2" fill="#27AE60"/>
+<circle cx="71" cy="44" r="2" fill="#27AE60"/>
+<circle cx="71" cy="83" r="2" fill="#27AE60"/>
+<circle cx="107" cy="45" r="2" fill="#27AE60"/>
+<circle cx="107" cy="83" r="2" fill="#27AE60"/>
+<circle cx="71" cy="57" r="2" fill="#27AE60"/>
+<circle cx="71" cy="95" r="2" fill="#27AE60"/>
+<circle cx="107" cy="58" r="2" fill="#27AE60"/>
+<circle cx="107" cy="96" r="2" fill="#27AE60"/>
+</g>
+<rect opacity="0.1" x="105" y="37" width="178" height="98" fill="#27AE60"/>
+<path d="M96 45C96 43.8954 96.8954 43 98 43H272C273.105 43 274 43.8954 274 45V141C274 142.105 273.105 143 272 143H98C96.8954 143 96 142.105 96 141V45Z" fill="#37D279"/>
+<path d="M267 48V136H103L267 48Z" fill="url(#paint0_linear)" fill-opacity="0.2"/>
+<line x1="103" y1="135.5" x2="267" y2="135.5" stroke="white"/>
+<rect x="160" y="143" width="49" height="22" fill="#27AE60"/>
+<rect x="139" y="165" width="89" height="2" fill="#37D279"/>
+<rect x="0.5" y="0.5" width="359" height="201" stroke="#F7F9FC"/>
+<defs>
+<linearGradient id="paint0_linear" x1="103" y1="136" x2="132.113" y2="10.9547" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
