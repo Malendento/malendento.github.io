@@ -80,29 +80,43 @@ ul {
     grid-gap: 50px;
 }
 
+.header-links div {
+    display: grid;
+    align-items: center;
+}
+
 .header-links_logo a {
     font-size: 24px;
     line-height: 100%;
     color: #FFFFFF;
 }
 
-
 .sidebar {
     display: none;
 }
 
-.header-links a {
+.header-links div > a {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    transition: .4s all;
 }
 
-.header-links a:last-of-type {
+.header-links div > a:hover {
+    color: #27AE60;
+}
+
+.header-links div:last-of-type > a {
     padding: .5rem 2rem;
     background: #27AE60;
     border-radius: 4px;
+}
+
+.header-links div:last-of-type > a:hover {
+    color: #FFFFFF;
+    background: #37D279;
 }
 
 .main {
@@ -169,6 +183,11 @@ ul {
     width: max-content;
     width: -moz-max-content;
     margin-bottom: 6rem;
+    transition: .4s all;
+}
+
+.header-section_content a:hover {
+    background: #37D279;
 }
 
 .header-section_content_link {
@@ -194,6 +213,11 @@ ul {
     border-radius: 0;
     margin: 0 0 0 20px;
     padding: 0;
+    transition: .4s all;
+}
+
+.header-section_content-footer a:hover {
+    background: transparent;
 }
 
 .header-section_image-block {
@@ -533,10 +557,15 @@ ul {
     border: 1px solid #27AE60;
     border-radius: 4px;
     background: transparent;
+    transition: .4s all;
 }
 
 .quickly-efficiently_wrapper-buttons a:nth-child(1) {
     background: #27AE60;
+}
+
+.quickly-efficiently_wrapper-buttons a:nth-child(1):hover {
+    background: #37D279;
 }
 
 .about-us {
@@ -648,6 +677,11 @@ ul {
     border-radius: 4px;
     padding: 10px 2rem;
     white-space: pre;
+    transition: .4s all;
+}
+
+.our-solutions_content a:hover {
+    background: #37D279;
 }
 
 .contacts {
@@ -745,6 +779,11 @@ ul {
     grid-column: 2;
     margin-left: auto;
     width: max-content;
+    transition: .4s all;
+}
+
+.contacts-form button:hover {
+    background: #37D279;
 }
 
 .footer {
