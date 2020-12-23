@@ -857,6 +857,17 @@ ul {
     color: #8F9BB3;
 }
 
+@media (min-width: 1800px) {
+    .video-section_container {
+        padding: 5rem 4.25rem 6rem 70%;
+    }
+
+    .temp-video {
+        width: 46%;
+        left: 19.8vw;
+    }
+}
+
 @media (max-width: 1250px) {
     .video-section_container {
         padding: 3rem 2rem 3.75rem 45%;
